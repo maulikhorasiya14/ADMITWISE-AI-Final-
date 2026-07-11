@@ -1,0 +1,111 @@
+{
+  "generated_at": "2026-06-26",
+  "official_college_name": "Visvesvaraya National Institute of Technology, Nagpur",
+  "target_admission_year": 2026,
+  "validation": {
+    "json_valid": true,
+    "csv_headers_consistent": true,
+    "cutoff_numeric_and_order_valid": true,
+    "cutoff_exact_duplicates_removed": true,
+    "historical_cutoffs_not_labeled_2026": true,
+    "seat_matrix_total": 1143,
+    "seat_matrix_expected_total": 1143,
+    "blank_josaa_rows_excluded": 16,
+    "csab_rows_by_round": {
+      "1": 146,
+      "2": 79,
+      "3": 68
+    }
+  },
+  "counts": {
+    "sources": 34,
+    "authoritative_sources": 14,
+    "institution_controlled_or_associated_sources": 11,
+    "student_experience_sources": 9,
+    "branches": 14,
+    "seat_matrix_records": 28,
+    "cutoffs_total": 3792,
+    "cutoffs_josaa": 3499,
+    "cutoffs_csab": 293,
+    "fees": 5,
+    "placements": 5,
+    "recruiters": 30,
+    "scholarships": 7,
+    "clubs": 20,
+    "conflicts": 5
+  },
+  "files": {
+    "branches.csv": {
+      "bytes": 2478,
+      "sha256": "36885c10a2085bb160b50e1f11f64ef2d8be240720052b24736695aae4314028"
+    },
+    "campus_reality.json": {
+      "bytes": 5049,
+      "sha256": "ec883bd965439c43fb3d3e7c76e96d426a0e5730facf62dc825287e48847d79a"
+    },
+    "clubs.csv": {
+      "bytes": 8717,
+      "sha256": "3f9365937d9b5bb033c965a083b155ad933c037c0baa2058adf39bf009903f90"
+    },
+    "college_profile.json": {
+      "bytes": 2871677,
+      "sha256": "0aa19798b2430fa8d344361d0d662cc652d8e3fad3dc49d0cb8f9d7dfda3214e"
+    },
+    "college_summary.md": {
+      "bytes": 9140,
+      "sha256": "d40c77bc5c7592e85147580320c2a4cd352b00e3bee57cb734d83513214456e1"
+    },
+    "cutoffs.csv": {
+      "bytes": 959500,
+      "sha256": "76254b5db382d1d9fb314027c35ed37987859c3c2638712daf4109de93172723"
+    },
+    "data_conflicts.csv": {
+      "bytes": 1800,
+      "sha256": "5b63e730381055826934692d16df3e2eff69c07bce66ee62ca0faa92948e7bdb"
+    },
+    "excluded_sources.md": {
+      "bytes": 1168,
+      "sha256": "ac45431227e7f65bc3da49475aa44fbbd227bc04db9d5ceeea1a2848678bd27b"
+    },
+    "fees.csv": {
+      "bytes": 2027,
+      "sha256": "533d924a8da0dee1b89a2437a4a17512940942f023ea5fb367059b4501dd8b85"
+    },
+    "import_readiness.json": {
+      "bytes": 1003,
+      "sha256": "e4857294dcc5ad31dd98443d88e88041bc6ad4cd4f55cb68faa897389cd72e24"
+    },
+    "location.csv": {
+      "bytes": 1173,
+      "sha256": "d8d771baa7a09f66083e071e7f882377d08241375390242c7cace8110e5cfdb4"
+    },
+    "manual_verification_checklist.md": {
+      "bytes": 1383,
+      "sha256": "2a762ddf20ae108aa797dddb800ca5845a365069f848288fd38b192594113d2e"
+    },
+    "placements.csv": {
+      "bytes": 2047,
+      "sha256": "760eb6bab646d45ef307da6f926de6d8e1d3ba63cff5c1b633437c97bdaadfdb"
+    },
+    "recruiters.csv": {
+      "bytes": 9654,
+      "sha256": "71d236facb80f3862c11473f5c35601b2db393f371036bd73a212b6f33477916"
+    },
+    "research_log.md": {
+      "bytes": 1637,
+      "sha256": "4faf6ed537abe3119b3f7342e0b3a11c34c4603bf7ac80405117b1e0ec487773"
+    },
+    "scholarships.csv": {
+      "bytes": 3612,
+      "sha256": "6582f7ccd90d1e17bf7d9adfaf63a4f204ff4c49084cb18145349e9dd60d6c63"
+    },
+    "sources.csv": {
+      "bytes": 11875,
+      "sha256": "448921d8c1310ae64101e38b0e06f0ab0e9287269248d8546362f522d7c75979"
+    },
+    "student_experience_sources.csv": {
+      "bytes": 4115,
+      "sha256": "3ff2eeaaa2d362d6799ea9cc0dd3a50c23b3dae79e7d39f610e4731991ee1d34"
+    }
+  }
+}

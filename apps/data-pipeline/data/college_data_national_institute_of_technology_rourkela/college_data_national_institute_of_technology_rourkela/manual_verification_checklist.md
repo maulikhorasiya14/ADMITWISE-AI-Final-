@@ -1,0 +1,22 @@
+# Manual Verification Checklist
+
+- [ ] Confirm official identity, main campus and JoSAA institute code 223.
+- [ ] Confirm the 2026 seat matrix total of 1,063 and each quota/category/gender count.
+- [ ] Recheck all JoSAA 2023-2025 cutoff mappings and the 12 excluded blank-rank combinations.
+- [ ] Confirm JoSAA category rank-type mapping and CSAB CRL convention.
+- [ ] Confirm every CSAB Round 1-3 page extraction for NIT Rourkela and no IIIT/other campus mixing.
+- [ ] Confirm no official 2026 cutoffs have concluded before publication.
+- [ ] Obtain and verify the final 2026-27 fee structure.
+- [ ] Confirm current income-remission documentation and renewal requirements.
+- [ ] Confirm current NAAC status and programme-wise NBA validity dates.
+- [ ] Confirm current hostel count, capacity, room occupancy, allocation guarantee and gender-wise rules.
+- [ ] Confirm official curfew/leave and guest-entry rules for 2026-27.
+- [ ] Obtain the final CDC 2024-25 placement table and resolve 373 vs 426 companies and 1,274 vs 1,258 offers.
+- [ ] Confirm whether the 62.44 LPA figure is domestic CTC and whether any international offer exists.
+- [ ] Confirm recruiter roles, eligible branches, CGPA thresholds, selected counts and package components.
+- [ ] Confirm current alumni-scholarship amounts, deadlines and selection counts.
+- [ ] Verify club activity and recruitment from current official club channels.
+- [ ] Map-verify campus coordinates, Rourkela Airport distance, hospital and city-centre travel times.
+- [ ] Check current Alliance Air/airport operations immediately before travel.
+- [ ] Interview multiple current students across genders, branches and halls before elevating hostel/campus claims.
+- [ ] Re-open all source links and archive permitted official documents before database import.

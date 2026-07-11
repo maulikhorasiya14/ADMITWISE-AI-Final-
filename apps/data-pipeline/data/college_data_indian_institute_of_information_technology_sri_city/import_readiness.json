@@ -1,0 +1,38 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": true,
+  "cutoffs": true,
+  "fees": true,
+  "scholarships": false,
+  "placements": true,
+  "recruiters": true,
+  "hostels_and_facilities": false,
+  "clubs": true,
+  "location": false,
+  "student_experience": true,
+  "blocking_issues": [
+    "NAAC/NBA/AICTE status unresolved",
+    "2026 placement report is provisional",
+    "hostel inventory and construction require confirmation",
+    "scholarship scheme details require live verification"
+  ],
+  "recommended_import_order": [
+    "college_identity",
+    "admission_routes",
+    "branches",
+    "seat_matrix",
+    "cutoffs",
+    "fees",
+    "placements",
+    "recruiters",
+    "clubs",
+    "student_experience",
+    "scholarships after verification",
+    "hostels/location after verification",
+    "accreditation after authority check"
+  ],
+  "overall_status": "ready_for_human_review"
+}

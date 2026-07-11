@@ -1,0 +1,36 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": true,
+  "cutoffs": true,
+  "fees": true,
+  "scholarships": true,
+  "placements": true,
+  "recruiters": true,
+  "hostels_and_facilities": false,
+  "clubs": false,
+  "location": true,
+  "student_experience": false,
+  "blocking_issues": [
+    "Current NBA/NAAC validity missing",
+    "Placement-office 419 vs 422 count needs reconciliation",
+    "Hostel rules and qualitative evidence need manual refresh"
+  ],
+  "recommended_import_order": [
+    "college_identity",
+    "admission_routes",
+    "branches",
+    "seat_matrix",
+    "cutoffs",
+    "fees",
+    "scholarships",
+    "NIRF placement records",
+    "recruiters with current-year counts",
+    "location",
+    "placement-office conflicting records after review",
+    "hostels/clubs/student experience after manual review"
+  ],
+  "overall_status": "ready_for_human_review"
+}

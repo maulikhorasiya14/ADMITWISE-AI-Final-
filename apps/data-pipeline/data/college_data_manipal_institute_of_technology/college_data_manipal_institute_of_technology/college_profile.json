@@ -1,0 +1,2179 @@
+{
+  "research_metadata": {
+    "college_requested": "Manipal Institute of Technology",
+    "official_college_name": "Manipal Institute of Technology, Manipal",
+    "target_admission_year": 2026,
+    "research_date": "2026-06-27",
+    "completion_percentage": 79,
+    "overall_status": "ready_for_human_review"
+  },
+  "college": {
+    "full_official_name": "Manipal Institute of Technology, Manipal",
+    "common_short_name": "MIT Manipal",
+    "previous_name": "Manipal Engineering College (requires primary-source confirmation before import)",
+    "official_institute_code": null,
+    "official_counselling_code": null,
+    "ownership_type": "Private",
+    "institution_type": "Constituent engineering institution of a private deemed-to-be university",
+    "affiliated_university": "Manipal Academy of Higher Education",
+    "autonomous_status": "Constituent academic institution; separate statutory autonomous-college status not established",
+    "year_established": 1957,
+    "institute_of_national_importance": false,
+    "deemed_university_status": "MAHE is deemed-to-be university; MIT is constituent",
+    "official_website": "https://www.manipal.edu/mit.html",
+    "official_admission_portal": "https://www.manipal.edu/mu/admission.html",
+    "official_placement_page": "https://www.manipal.edu/mit/why/placements.html",
+    "official_scholarship_page": "https://www.manipal.edu/mu/admission/scholarships.html",
+    "official_hostel_page": "https://www.manipal.edu/mu/campus-life/accommodation.html",
+    "official_student_affairs_page": "https://www.manipal.edu/mit/mit-experience/student-welfare.html",
+    "full_campus_address": "Manipal Institute of Technology, Manipal – 576104, Udupi District, Karnataka, India",
+    "locality": "Manipal university town",
+    "city": "Manipal",
+    "district": "Udupi",
+    "state": "Karnataka",
+    "pincode": "576104",
+    "official_phone": "0820-2571060",
+    "official_general_email": "office.mit@manipal.edu",
+    "campus_scope_note": "MIT Manipal only; other Manipal campuses excluded.",
+    "current_approved_ug_programme_count": 17,
+    "current_approved_intake_total": 2530,
+    "institution_level_cutoff_disclosure": [
+      {
+        "year": 2023,
+        "cutoff_level": 48465,
+        "source_id": "SRC002",
+        "import_status": "excluded; branch/round/category/quota absent"
+      },
+      {
+        "year": 2024,
+        "cutoff_level": 47700,
+        "source_id": "SRC002",
+        "import_status": "excluded; branch/round/category/quota absent"
+      },
+      {
+        "year": 2025,
+        "cutoff_level": 52945,
+        "source_id": "SRC002",
+        "import_status": "excluded; branch/round/category/quota absent"
+      }
+    ],
+    "source_ids": [
+      "SRC001",
+      "SRC002",
+      "SRC015",
+      "SRC022"
+    ]
+  },
+  "accreditation": [
+    {
+      "item": "AICTE disclosure",
+      "value": "Current 2026-27 programme/intake disclosure published",
+      "year": "2026-27",
+      "validity_period": "2026-27",
+      "source_id": "SRC002",
+      "confidence_level": "A"
+    },
+    {
+      "item": "Legal category",
+      "value": "MAHE is a deemed-to-be university; MIT is a constituent institution",
+      "year": null,
+      "validity_period": "Current",
+      "source_id": "SRC015",
+      "confidence_level": "A"
+    },
+    {
+      "item": "Institution of Eminence",
+      "value": "MAHE holds Institution of Eminence status",
+      "year": "2020",
+      "validity_period": "Current; recheck",
+      "source_id": "SRC015",
+      "confidence_level": "A"
+    },
+    {
+      "item": "NAAC",
+      "value": "A++, CGPA 3.65 at MAHE level",
+      "year": "2022",
+      "validity_period": "2022-05-31 to 2027-05-30",
+      "source_id": "SRC014",
+      "confidence_level": "A"
+    },
+    {
+      "item": "NIRF Engineering 2025",
+      "value": {
+        "rank": 59,
+        "score": 52.55,
+        "institution_id": "IR-E-C-7252"
+      },
+      "year": "2025",
+      "validity_period": "2025 ranking",
+      "source_id": "SRC010",
+      "confidence_level": "A"
+    },
+    {
+      "item": "NIRF Engineering 2024",
+      "value": {
+        "rank": 56,
+        "score": 52.12,
+        "institution_id": "IR-E-C-7252"
+      },
+      "year": "2024",
+      "validity_period": "2024 ranking",
+      "source_id": "SRC011",
+      "confidence_level": "A"
+    },
+    {
+      "item": "NIRF Engineering 2023",
+      "value": {
+        "rank": 61,
+        "score": 49.62,
+        "institution_id": "IR-E-C-7252"
+      },
+      "year": "2023",
+      "validity_period": "2023 ranking",
+      "source_id": "SRC012",
+      "confidence_level": "A"
+    }
+  ],
+  "admission_routes": [
+    {
+      "route_name": "MET 2026 – B.Tech common counselling",
+      "entrance_examination": "MET 2026",
+      "counselling_authority": "MAHE",
+      "counselling_portal": "https://counseling.manipal.edu/",
+      "selection_method": "50% MET + 50% qualifying-exam marks as specified",
+      "eligibility": {
+        "required_subjects": [
+          "Physics",
+          "Mathematics",
+          "English",
+          "eligible optional subject"
+        ],
+        "minimum_board_percentage": 50
+      },
+      "quota": "General/common counselling; no home-state quota verified",
+      "admission_year": 2026,
+      "source_id": "SRC003",
+      "confidence_level": "B"
+    },
+    {
+      "route_name": "JEE Main 2026 CRL route",
+      "entrance_examination": "JEE Main 2026",
+      "counselling_authority": "MAHE",
+      "counselling_portal": "https://counseling.manipal.edu/",
+      "selection_method": "JEE Main Common Rank List; one online counselling round",
+      "eligibility": {
+        "minimum_board_percentage": 75,
+        "minimum_jee_main_percentile": 90
+      },
+      "quota": "20% of General-category seats earmarked",
+      "admission_year": 2026,
+      "source_id": "SRC003",
+      "confidence_level": "B"
+    },
+    {
+      "route_name": "Foreign/NRI category",
+      "entrance_examination": "Per official 2026 criteria",
+      "counselling_authority": "MAHE Admissions",
+      "counselling_portal": "https://www.manipal.edu/mu/admission/international.html",
+      "selection_method": "Official foreign/NRI process",
+      "eligibility": "Programme-specific official rules",
+      "quota": "Foreign/NRI",
+      "admission_year": 2026,
+      "source_id": "SRC003",
+      "confidence_level": "B"
+    },
+    {
+      "route_name": "B.Tech lateral entry",
+      "entrance_examination": "Separate MAHE process",
+      "counselling_authority": "MAHE",
+      "counselling_portal": "https://www.manipal.edu/mu/admission/counseling.html",
+      "selection_method": "Separate lateral-entry admission",
+      "eligibility": "Official diploma/other requirements",
+      "quota": "Lateral entry",
+      "admission_year": 2026,
+      "source_id": "SRC003",
+      "confidence_level": "B"
+    },
+    {
+      "route_name": "AICTE TFW counselling",
+      "entrance_examination": "MET 2026",
+      "counselling_authority": "MAHE under AICTE rules",
+      "counselling_portal": "https://counseling.manipal.edu/",
+      "selection_method": "Eligible candidates separately informed",
+      "eligibility": "Parents' annual income below INR 8 lakh/current threshold; up to 5% per branch",
+      "quota": "TFW",
+      "admission_year": 2026,
+      "source_id": "SRC007",
+      "confidence_level": "B"
+    }
+  ],
+  "branches": [
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "official_branch_name": "Biomedical Engineering",
+      "normalized_branch": "BME",
+      "degree": "B.Tech",
+      "duration_years": 4,
+      "approved_intake": 60,
+      "female_supernumerary_seats": null,
+      "tfws_seats": null,
+      "nba_status": "Accredited; 2025-07-01 to 2028-06-30",
+      "academic_year": "2026-27",
+      "source_id": "SRC002"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "official_branch_name": "Automobile Engineering",
+      "normalized_branch": "AUTO",
+      "degree": "B.Tech",
+      "duration_years": 4,
+      "approved_intake": 60,
+      "female_supernumerary_seats": null,
+      "tfws_seats": null,
+      "nba_status": "SAR applied; outcome unverified",
+      "academic_year": "2026-27",
+      "source_id": "SRC002"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "official_branch_name": "Biotechnology",
+      "normalized_branch": "BT",
+      "degree": "B.Tech",
+      "duration_years": 4,
+      "approved_intake": 60,
+      "female_supernumerary_seats": null,
+      "tfws_seats": null,
+      "nba_status": "Accredited; 2022-07-01 to 2028-06-30",
+      "academic_year": "2026-27",
+      "source_id": "SRC002"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "official_branch_name": "Chemical Engineering",
+      "normalized_branch": "CHE",
+      "degree": "B.Tech",
+      "duration_years": 4,
+      "approved_intake": 60,
+      "female_supernumerary_seats": null,
+      "tfws_seats": null,
+      "nba_status": "Accredited; 2025-07-01 to 2028-06-30",
+      "academic_year": "2026-27",
+      "source_id": "SRC002"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "official_branch_name": "Civil Engineering",
+      "normalized_branch": "CE",
+      "degree": "B.Tech",
+      "duration_years": 4,
+      "approved_intake": 60,
+      "female_supernumerary_seats": null,
+      "tfws_seats": null,
+      "nba_status": "Accredited; 2025-07-01 to 2028-06-30",
+      "academic_year": "2026-27",
+      "source_id": "SRC002"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "official_branch_name": "Computer Science and Engineering",
+      "normalized_branch": "CSE",
+      "degree": "B.Tech",
+      "duration_years": 4,
+      "approved_intake": 1020,
+      "female_supernumerary_seats": null,
+      "tfws_seats": null,
+      "nba_status": "Accredited; 2025-07-01 to 2028-06-30",
+      "academic_year": "2026-27",
+      "source_id": "SRC002"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "official_branch_name": "Electrical and Electronics Engineering",
+      "normalized_branch": "EEE",
+      "degree": "B.Tech",
+      "duration_years": 4,
+      "approved_intake": 180,
+      "female_supernumerary_seats": null,
+      "tfws_seats": null,
+      "nba_status": "Accredited; 2025-07-01 to 2028-06-30",
+      "academic_year": "2026-27",
+      "source_id": "SRC002"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "official_branch_name": "Electronics & Communication Engineering",
+      "normalized_branch": "ECE",
+      "degree": "B.Tech",
+      "duration_years": 4,
+      "approved_intake": 200,
+      "female_supernumerary_seats": null,
+      "tfws_seats": null,
+      "nba_status": "Accredited; 2025-07-01 to 2028-06-30",
+      "academic_year": "2026-27",
+      "source_id": "SRC002"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "official_branch_name": "Aeronautical Engineering",
+      "normalized_branch": "AERO",
+      "degree": "B.Tech",
+      "duration_years": 4,
+      "approved_intake": 60,
+      "female_supernumerary_seats": null,
+      "tfws_seats": null,
+      "nba_status": "SAR applied; outcome unverified",
+      "academic_year": "2026-27",
+      "source_id": "SRC002"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "official_branch_name": "Mechanical Engineering",
+      "normalized_branch": "ME",
+      "degree": "B.Tech",
+      "duration_years": 4,
+      "approved_intake": 200,
+      "female_supernumerary_seats": null,
+      "tfws_seats": null,
+      "nba_status": "Accredited; 2025-07-01 to 2028-06-30",
+      "academic_year": "2026-27",
+      "source_id": "SRC002"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "official_branch_name": "Industrial Engineering",
+      "normalized_branch": "IE",
+      "degree": "B.Tech",
+      "duration_years": 4,
+      "approved_intake": 30,
+      "female_supernumerary_seats": null,
+      "tfws_seats": null,
+      "nba_status": null,
+      "academic_year": "2026-27",
+      "source_id": "SRC002"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "official_branch_name": "Mechatronics",
+      "normalized_branch": "MCT",
+      "degree": "B.Tech",
+      "duration_years": 4,
+      "approved_intake": 120,
+      "female_supernumerary_seats": null,
+      "tfws_seats": null,
+      "nba_status": "SAR applied; outcome unverified",
+      "academic_year": "2026-27",
+      "source_id": "SRC002"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "official_branch_name": "Electronics and Instrumentation Engineering",
+      "normalized_branch": "EIE",
+      "degree": "B.Tech",
+      "duration_years": 4,
+      "approved_intake": 60,
+      "female_supernumerary_seats": null,
+      "tfws_seats": null,
+      "nba_status": "Accredited; 2024-07-01 to 2027-06-30",
+      "academic_year": "2026-27",
+      "source_id": "SRC002"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "official_branch_name": "Cyber Physical Systems",
+      "normalized_branch": "CPS",
+      "degree": "B.Tech",
+      "duration_years": 4,
+      "approved_intake": 120,
+      "female_supernumerary_seats": null,
+      "tfws_seats": null,
+      "nba_status": null,
+      "academic_year": "2026-27",
+      "source_id": "SRC002"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "official_branch_name": "Computer Science and Financial Technology",
+      "normalized_branch": "CSFT",
+      "degree": "B.Tech",
+      "duration_years": 4,
+      "approved_intake": 60,
+      "female_supernumerary_seats": null,
+      "tfws_seats": null,
+      "nba_status": null,
+      "academic_year": "2026-27",
+      "source_id": "SRC002"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "official_branch_name": "Electronics Engineering (VLSI Design and Technology)",
+      "normalized_branch": "VLSI",
+      "degree": "B.Tech",
+      "duration_years": 4,
+      "approved_intake": 120,
+      "female_supernumerary_seats": null,
+      "tfws_seats": null,
+      "nba_status": null,
+      "academic_year": "2026-27",
+      "source_id": "SRC002"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "official_branch_name": "Mathematics and Computing",
+      "normalized_branch": "MnC",
+      "degree": "B.Tech",
+      "duration_years": 4,
+      "approved_intake": 60,
+      "female_supernumerary_seats": null,
+      "tfws_seats": null,
+      "nba_status": null,
+      "academic_year": "2026-27",
+      "source_id": "SRC002"
+    }
+  ],
+  "seat_matrix": [
+    {
+      "programme": "Biomedical Engineering",
+      "total_sanctioned_intake": 60,
+      "category_wise_seats": null,
+      "female_only_seats": null,
+      "tfws_seats": null,
+      "nri_seats": null,
+      "seat_matrix_year": "2026-27",
+      "source_id": "SRC002",
+      "notes": "Only total sanctioned intake verified."
+    },
+    {
+      "programme": "Automobile Engineering",
+      "total_sanctioned_intake": 60,
+      "category_wise_seats": null,
+      "female_only_seats": null,
+      "tfws_seats": null,
+      "nri_seats": null,
+      "seat_matrix_year": "2026-27",
+      "source_id": "SRC002",
+      "notes": "Only total sanctioned intake verified."
+    },
+    {
+      "programme": "Biotechnology",
+      "total_sanctioned_intake": 60,
+      "category_wise_seats": null,
+      "female_only_seats": null,
+      "tfws_seats": null,
+      "nri_seats": null,
+      "seat_matrix_year": "2026-27",
+      "source_id": "SRC002",
+      "notes": "Only total sanctioned intake verified."
+    },
+    {
+      "programme": "Chemical Engineering",
+      "total_sanctioned_intake": 60,
+      "category_wise_seats": null,
+      "female_only_seats": null,
+      "tfws_seats": null,
+      "nri_seats": null,
+      "seat_matrix_year": "2026-27",
+      "source_id": "SRC002",
+      "notes": "Only total sanctioned intake verified."
+    },
+    {
+      "programme": "Civil Engineering",
+      "total_sanctioned_intake": 60,
+      "category_wise_seats": null,
+      "female_only_seats": null,
+      "tfws_seats": null,
+      "nri_seats": null,
+      "seat_matrix_year": "2026-27",
+      "source_id": "SRC002",
+      "notes": "Only total sanctioned intake verified."
+    },
+    {
+      "programme": "Computer Science and Engineering",
+      "total_sanctioned_intake": 1020,
+      "category_wise_seats": null,
+      "female_only_seats": null,
+      "tfws_seats": null,
+      "nri_seats": null,
+      "seat_matrix_year": "2026-27",
+      "source_id": "SRC002",
+      "notes": "Only total sanctioned intake verified."
+    },
+    {
+      "programme": "Electrical and Electronics Engineering",
+      "total_sanctioned_intake": 180,
+      "category_wise_seats": null,
+      "female_only_seats": null,
+      "tfws_seats": null,
+      "nri_seats": null,
+      "seat_matrix_year": "2026-27",
+      "source_id": "SRC002",
+      "notes": "Only total sanctioned intake verified."
+    },
+    {
+      "programme": "Electronics & Communication Engineering",
+      "total_sanctioned_intake": 200,
+      "category_wise_seats": null,
+      "female_only_seats": null,
+      "tfws_seats": null,
+      "nri_seats": null,
+      "seat_matrix_year": "2026-27",
+      "source_id": "SRC002",
+      "notes": "Only total sanctioned intake verified."
+    },
+    {
+      "programme": "Aeronautical Engineering",
+      "total_sanctioned_intake": 60,
+      "category_wise_seats": null,
+      "female_only_seats": null,
+      "tfws_seats": null,
+      "nri_seats": null,
+      "seat_matrix_year": "2026-27",
+      "source_id": "SRC002",
+      "notes": "Only total sanctioned intake verified."
+    },
+    {
+      "programme": "Mechanical Engineering",
+      "total_sanctioned_intake": 200,
+      "category_wise_seats": null,
+      "female_only_seats": null,
+      "tfws_seats": null,
+      "nri_seats": null,
+      "seat_matrix_year": "2026-27",
+      "source_id": "SRC002",
+      "notes": "Only total sanctioned intake verified."
+    },
+    {
+      "programme": "Industrial Engineering",
+      "total_sanctioned_intake": 30,
+      "category_wise_seats": null,
+      "female_only_seats": null,
+      "tfws_seats": null,
+      "nri_seats": null,
+      "seat_matrix_year": "2026-27",
+      "source_id": "SRC002",
+      "notes": "Only total sanctioned intake verified."
+    },
+    {
+      "programme": "Mechatronics",
+      "total_sanctioned_intake": 120,
+      "category_wise_seats": null,
+      "female_only_seats": null,
+      "tfws_seats": null,
+      "nri_seats": null,
+      "seat_matrix_year": "2026-27",
+      "source_id": "SRC002",
+      "notes": "Only total sanctioned intake verified."
+    },
+    {
+      "programme": "Electronics and Instrumentation Engineering",
+      "total_sanctioned_intake": 60,
+      "category_wise_seats": null,
+      "female_only_seats": null,
+      "tfws_seats": null,
+      "nri_seats": null,
+      "seat_matrix_year": "2026-27",
+      "source_id": "SRC002",
+      "notes": "Only total sanctioned intake verified."
+    },
+    {
+      "programme": "Cyber Physical Systems",
+      "total_sanctioned_intake": 120,
+      "category_wise_seats": null,
+      "female_only_seats": null,
+      "tfws_seats": null,
+      "nri_seats": null,
+      "seat_matrix_year": "2026-27",
+      "source_id": "SRC002",
+      "notes": "Only total sanctioned intake verified."
+    },
+    {
+      "programme": "Computer Science and Financial Technology",
+      "total_sanctioned_intake": 60,
+      "category_wise_seats": null,
+      "female_only_seats": null,
+      "tfws_seats": null,
+      "nri_seats": null,
+      "seat_matrix_year": "2026-27",
+      "source_id": "SRC002",
+      "notes": "Only total sanctioned intake verified."
+    },
+    {
+      "programme": "Electronics Engineering (VLSI Design and Technology)",
+      "total_sanctioned_intake": 120,
+      "category_wise_seats": null,
+      "female_only_seats": null,
+      "tfws_seats": null,
+      "nri_seats": null,
+      "seat_matrix_year": "2026-27",
+      "source_id": "SRC002",
+      "notes": "Only total sanctioned intake verified."
+    },
+    {
+      "programme": "Mathematics and Computing",
+      "total_sanctioned_intake": 60,
+      "category_wise_seats": null,
+      "female_only_seats": null,
+      "tfws_seats": null,
+      "nri_seats": null,
+      "seat_matrix_year": "2026-27",
+      "source_id": "SRC002",
+      "notes": "Only total sanctioned intake verified."
+    }
+  ],
+  "cutoffs": [],
+  "cutoff_availability": {
+    "official_cutoff_available": false,
+    "normalized_cutoff_rows": 0,
+    "reason": "No official table meeting branch + round + route + category + quota schema located.",
+    "prediction_warning": "Historical/model-based estimates must not be labelled official 2026 cutoffs.",
+    "source_ids": [
+      "SRC002",
+      "SRC004"
+    ]
+  },
+  "fees": {
+    "records_file": "fees.csv",
+    "first_year_calculated_cost_range_inr": {
+      "minimum": 585500,
+      "maximum": 872000,
+      "label": "calculated estimate, not official total"
+    },
+    "four_year_hostel_and_mess_estimate": null,
+    "source_ids": [
+      "SRC005",
+      "SRC006"
+    ]
+  },
+  "scholarships": [
+    {
+      "scholarship_name": "HBSF–MAHE EduEmpower Scholarship",
+      "provider": "Harish and Bina Shah Foundation with MAHE",
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "applicable_programme": "B.Tech",
+      "applicable_year": "2026-27",
+      "category_requirement": "Official school-history and means criteria; top eligible MET ranks",
+      "gender_requirement": null,
+      "income_limit_inr": 1200000,
+      "domicile_requirement": null,
+      "academic_requirement": "At least 70% in Mathematics, Physics and eligible optional subject; school-study conditions apply",
+      "entrance_exam_requirement": "MET 2026 and B.Tech common counselling",
+      "benefit_amount_inr": null,
+      "benefit_description": "100% programme fee, hostel fee and mess waiver",
+      "duration": "Potentially entire programme",
+      "required_documents": "School study, marks, income and tax evidence",
+      "renewal_conditions": "Clear all subjects; failures/incomplete/detention remove benefit for that year",
+      "deadline": null,
+      "application_url": "https://www.manipal.edu/mu/admission/scholarships.html",
+      "source_id": "SRC007",
+      "confidence_level": "B"
+    },
+    {
+      "scholarship_name": "B.Tech Freeship Scholarship",
+      "provider": "MAHE",
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "applicable_programme": "Eligible B.Tech branches",
+      "applicable_year": "2026-27",
+      "category_requirement": "General category; limited seats",
+      "gender_requirement": null,
+      "income_limit_inr": null,
+      "domicile_requirement": null,
+      "academic_requirement": "At least 80% board aggregate; 8 CGPA and no backlogs for continuation/refund",
+      "entrance_exam_requirement": "MET rank 1–100 or JEE Main CRL 1–3000",
+      "benefit_amount_inr": null,
+      "benefit_description": "100% course-fee waiver; living/hostel/mess excluded; minimum annual course fee retained as specified",
+      "duration": "Potentially entire programme",
+      "required_documents": "Marks, rank and MAHE application",
+      "renewal_conditions": "8 CGPA; no failure/incomplete/detention; branch-change and withdrawal rules apply",
+      "deadline": null,
+      "application_url": "https://www.manipal.edu/mu/admission/scholarships.html",
+      "source_id": "SRC007",
+      "confidence_level": "B"
+    },
+    {
+      "scholarship_name": "B.Tech Scholar Scholarship",
+      "provider": "MAHE",
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "applicable_programme": "Eligible B.Tech branches",
+      "applicable_year": "2026-27",
+      "category_requirement": "General category; limited seats",
+      "gender_requirement": null,
+      "income_limit_inr": null,
+      "domicile_requirement": null,
+      "academic_requirement": "At least 80% board aggregate; 8 CGPA and no backlogs",
+      "entrance_exam_requirement": "MET rank 101–5000 or JEE Main CRL 3001–100000",
+      "benefit_amount_inr": null,
+      "benefit_description": "20% course-fee waiver",
+      "duration": "Potentially entire programme",
+      "required_documents": "Marks, rank and MAHE application",
+      "renewal_conditions": "8 CGPA; no failure/incomplete/detention; branch-change rules apply",
+      "deadline": null,
+      "application_url": "https://www.manipal.edu/mu/admission/scholarships.html",
+      "source_id": "SRC007",
+      "confidence_level": "B"
+    },
+    {
+      "scholarship_name": "B.Tech Achiever Scholarship",
+      "provider": "MAHE",
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "applicable_programme": "B.Tech",
+      "applicable_year": "From second year",
+      "category_requirement": "Top 5% of general intake in each branch, excluding Freeship/Scholar recipients",
+      "gender_requirement": null,
+      "income_limit_inr": null,
+      "domicile_requirement": null,
+      "academic_requirement": "Previous-year university performance; official tie-breaks apply",
+      "entrance_exam_requirement": null,
+      "benefit_amount_inr": null,
+      "benefit_description": "20% programme-fee waiver",
+      "duration": "Years 2–4 subject to annual selection",
+      "required_documents": "University academic record",
+      "renewal_conditions": "Re-evaluated annually; no final-year-performance award",
+      "deadline": null,
+      "application_url": "https://www.manipal.edu/mu/admission/scholarships.html",
+      "source_id": "SRC007",
+      "confidence_level": "B"
+    },
+    {
+      "scholarship_name": "Scholarship for Meritorious Girl Students at MIT Manipal",
+      "provider": "MAHE",
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "applicable_programme": "Chemical; Civil; Mechanical Engineering",
+      "applicable_year": "2026-27",
+      "category_requirement": "General category",
+      "gender_requirement": "Female",
+      "income_limit_inr": null,
+      "domicile_requirement": null,
+      "academic_requirement": "At least 60% in Mathematics, Physics and eligible optional subject",
+      "entrance_exam_requirement": "Official admission process",
+      "benefit_amount_inr": null,
+      "benefit_description": "Student pays 30% of programme fee",
+      "duration": "Potentially entire programme in eligible branch",
+      "required_documents": "Marks and MAHE application",
+      "renewal_conditions": "7 CGPA; no failure/incomplete/detention; branch-change conditions apply",
+      "deadline": null,
+      "application_url": "https://www.manipal.edu/mu/admission/scholarships.html",
+      "source_id": "SRC007",
+      "confidence_level": "B"
+    },
+    {
+      "scholarship_name": "AICTE Tuition Fee Waiver Scheme",
+      "provider": "AICTE / MAHE implementation",
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "applicable_programme": "B.Tech",
+      "applicable_year": "2026-27",
+      "category_requirement": "Economically weaker; up to 5% general intake per branch",
+      "gender_requirement": null,
+      "income_limit_inr": 800000,
+      "domicile_requirement": null,
+      "academic_requirement": "Academic eligibility; failures/incomplete/detention remove waiver for that year",
+      "entrance_exam_requirement": "MET 2026; separate TFW counselling communication",
+      "benefit_amount_inr": null,
+      "benefit_description": "Tuition-fee waiver only",
+      "duration": "Potentially entire programme",
+      "required_documents": "Income-tax/income and rank evidence",
+      "renewal_conditions": "Academic eligibility; branch change ends continuation",
+      "deadline": null,
+      "application_url": "https://www.manipal.edu/mu/admission/scholarships.html",
+      "source_id": "SRC007",
+      "confidence_level": "B"
+    },
+    {
+      "scholarship_name": "Merit Scholarship for Wards of Indian Military and CAPF Personnel",
+      "provider": "MAHE",
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "applicable_programme": "Eligible B.Tech programmes",
+      "applicable_year": "2026-27",
+      "category_requirement": "Ward of eligible Indian Military/CAPF personnel",
+      "gender_requirement": null,
+      "income_limit_inr": null,
+      "domicile_requirement": "India",
+      "academic_requirement": "Programme-specific criteria",
+      "entrance_exam_requirement": "Official admission process",
+      "benefit_amount_inr": null,
+      "benefit_description": "Benefit requires manual confirmation from detailed guideline",
+      "duration": "Per official guideline",
+      "required_documents": "Service, relationship and academic evidence",
+      "renewal_conditions": "Official academic/conduct conditions",
+      "deadline": null,
+      "application_url": "https://www.manipal.edu/mu/admission/scholarships.html",
+      "source_id": "SRC007",
+      "confidence_level": "B"
+    },
+    {
+      "scholarship_name": "Scholarship for Konkani-Speaking Students",
+      "provider": "MAHE",
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "applicable_programme": "Eligible programmes including B.Tech",
+      "applicable_year": "2026-27",
+      "category_requirement": "General; mother tongue Konkani; no reserved seat",
+      "gender_requirement": null,
+      "income_limit_inr": null,
+      "domicile_requirement": null,
+      "academic_requirement": "Ordinary admission requirements",
+      "entrance_exam_requirement": "Programme admission route",
+      "benefit_amount_inr": null,
+      "benefit_description": "10% programme-fee waiver",
+      "duration": "Potentially entire programme",
+      "required_documents": "Language eligibility and MAHE documents",
+      "renewal_conditions": "Clear all subjects; failures/incomplete/detention remove benefit for year",
+      "deadline": null,
+      "application_url": "https://www.manipal.edu/mu/admission/scholarships.html",
+      "source_id": "SRC007",
+      "confidence_level": "B"
+    },
+    {
+      "scholarship_name": "Merit Scholarship for Children of MAHE Manipal Alumni",
+      "provider": "MAHE",
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "applicable_programme": "Full-time programmes including B.Tech",
+      "applicable_year": "2026-27",
+      "category_requirement": "General; parent must be eligible MAHE Manipal alumnus",
+      "gender_requirement": null,
+      "income_limit_inr": null,
+      "domicile_requirement": null,
+      "academic_requirement": "UG applicant at least 80% as defined",
+      "entrance_exam_requirement": "Programme route",
+      "benefit_amount_inr": null,
+      "benefit_description": "10% programme-fee waiver; maximum two children",
+      "duration": "Potentially entire programme",
+      "required_documents": "Parent alumni registration, certificates, ID and application",
+      "renewal_conditions": "Official academic/conduct conditions",
+      "deadline": null,
+      "application_url": "https://www.manipal.edu/mu/admission/scholarships.html",
+      "source_id": "SRC007",
+      "confidence_level": "B"
+    },
+    {
+      "scholarship_name": "MAHE Interest Subsidy on Education Loan",
+      "provider": "MAHE",
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "applicable_programme": "Eligible programmes",
+      "applicable_year": "2026-27",
+      "category_requirement": "Eligible education loan and scheme conditions",
+      "gender_requirement": null,
+      "income_limit_inr": null,
+      "domicile_requirement": null,
+      "academic_requirement": "Course-specific norms may apply",
+      "entrance_exam_requirement": null,
+      "benefit_amount_inr": null,
+      "benefit_description": "Interest subsidy from 100% at income up to INR 6 lakh to 10% above INR 15 lakh, subject to guideline",
+      "duration": "Eligible study/loan period",
+      "required_documents": "Loan and income documents",
+      "renewal_conditions": "Attendance, conduct and withdrawal conditions",
+      "deadline": null,
+      "application_url": "https://www.manipal.edu/mu/admission/scholarships.html",
+      "source_id": "SRC007",
+      "confidence_level": "B"
+    }
+  ],
+  "placements": [
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "placement_year": "2021-22",
+      "programme": "UG four-year engineering programmes",
+      "branch": "Overall",
+      "record_scope": "Overall UG four-year; NIRF-reported",
+      "graduating_students": 1879,
+      "eligible_students": null,
+      "registered_students": null,
+      "students_placed": 1090,
+      "placement_percentage": 58.01,
+      "higher_studies_count": 229,
+      "median_package_lpa": 8.0,
+      "average_package_lpa": null,
+      "highest_domestic_package_lpa": null,
+      "highest_international_package_lpa": null,
+      "internship_count": null,
+      "ppo_count": null,
+      "average_stipend": null,
+      "highest_stipend": null,
+      "source_type": "NIRF-reported; percentage calculated",
+      "source_id": "SRC009",
+      "source_page": 3,
+      "notes": "Not branch-specific; placement percentage calculated from graduating and placed counts."
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "placement_year": "2022-23",
+      "programme": "UG four-year engineering programmes",
+      "branch": "Overall",
+      "record_scope": "Overall UG four-year; NIRF-reported",
+      "graduating_students": 1664,
+      "eligible_students": null,
+      "registered_students": null,
+      "students_placed": 1136,
+      "placement_percentage": 68.27,
+      "higher_studies_count": 281,
+      "median_package_lpa": 8.8825,
+      "average_package_lpa": null,
+      "highest_domestic_package_lpa": null,
+      "highest_international_package_lpa": null,
+      "internship_count": null,
+      "ppo_count": null,
+      "average_stipend": null,
+      "highest_stipend": null,
+      "source_type": "NIRF-reported; percentage calculated",
+      "source_id": "SRC009",
+      "source_page": 3,
+      "notes": "Not branch-specific; placement percentage calculated from graduating and placed counts."
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "placement_year": "2023-24",
+      "programme": "UG four-year engineering programmes",
+      "branch": "Overall",
+      "record_scope": "Overall UG four-year; NIRF-reported",
+      "graduating_students": 1755,
+      "eligible_students": null,
+      "registered_students": null,
+      "students_placed": 1140,
+      "placement_percentage": 64.96,
+      "higher_studies_count": 288,
+      "median_package_lpa": 8.5,
+      "average_package_lpa": null,
+      "highest_domestic_package_lpa": null,
+      "highest_international_package_lpa": null,
+      "internship_count": null,
+      "ppo_count": null,
+      "average_stipend": null,
+      "highest_stipend": null,
+      "source_type": "NIRF-reported; percentage calculated",
+      "source_id": "SRC009",
+      "source_page": 3,
+      "notes": "Not branch-specific; placement percentage calculated from graduating and placed counts."
+    }
+  ],
+  "recruiters": [
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "company_name": "Citrix R&D",
+      "placement_year": null,
+      "role": null,
+      "role_category": "Technology/software or financial technology; exact role unpublished",
+      "eligible_branches": "Not officially stated",
+      "hiring_type": "Placement/internship/PPO group listing",
+      "campus_status": "Officially listed, year unavailable",
+      "number_selected": null,
+      "package_or_range": "Grouped among recruiters offering CTC of INR 10 lakh or more; company-specific value unstated",
+      "source_id": "SRC017",
+      "evidence_note": "Undated institution-published CSE page.",
+      "confidence_level": "C"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "company_name": "Cloudera",
+      "placement_year": null,
+      "role": null,
+      "role_category": "Technology/software or financial technology; exact role unpublished",
+      "eligible_branches": "Not officially stated",
+      "hiring_type": "Placement/internship/PPO group listing",
+      "campus_status": "Officially listed, year unavailable",
+      "number_selected": null,
+      "package_or_range": "Grouped among recruiters offering CTC of INR 10 lakh or more; company-specific value unstated",
+      "source_id": "SRC017",
+      "evidence_note": "Undated institution-published CSE page.",
+      "confidence_level": "C"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "company_name": "Cohesity",
+      "placement_year": null,
+      "role": null,
+      "role_category": "Technology/software or financial technology; exact role unpublished",
+      "eligible_branches": "Not officially stated",
+      "hiring_type": "Placement/internship/PPO group listing",
+      "campus_status": "Officially listed, year unavailable",
+      "number_selected": null,
+      "package_or_range": "Grouped among recruiters offering CTC of INR 10 lakh or more; company-specific value unstated",
+      "source_id": "SRC017",
+      "evidence_note": "Undated institution-published CSE page.",
+      "confidence_level": "C"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "company_name": "DBOI Global Services",
+      "placement_year": null,
+      "role": null,
+      "role_category": "Technology/software or financial technology; exact role unpublished",
+      "eligible_branches": "Not officially stated",
+      "hiring_type": "Placement/internship/PPO group listing",
+      "campus_status": "Officially listed, year unavailable",
+      "number_selected": null,
+      "package_or_range": "Grouped among recruiters offering CTC of INR 10 lakh or more; company-specific value unstated",
+      "source_id": "SRC017",
+      "evidence_note": "Undated institution-published CSE page.",
+      "confidence_level": "C"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "company_name": "Goldman Sachs",
+      "placement_year": null,
+      "role": null,
+      "role_category": "Technology/software or financial technology; exact role unpublished",
+      "eligible_branches": "Not officially stated",
+      "hiring_type": "Placement/internship/PPO group listing",
+      "campus_status": "Officially listed, year unavailable",
+      "number_selected": null,
+      "package_or_range": "Grouped among recruiters offering CTC of INR 10 lakh or more; company-specific value unstated",
+      "source_id": "SRC017",
+      "evidence_note": "Undated institution-published CSE page.",
+      "confidence_level": "C"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "company_name": "Komprise India",
+      "placement_year": null,
+      "role": null,
+      "role_category": "Technology/software or financial technology; exact role unpublished",
+      "eligible_branches": "Not officially stated",
+      "hiring_type": "Placement/internship/PPO group listing",
+      "campus_status": "Officially listed, year unavailable",
+      "number_selected": null,
+      "package_or_range": "Grouped among recruiters offering CTC of INR 10 lakh or more; company-specific value unstated",
+      "source_id": "SRC017",
+      "evidence_note": "Undated institution-published CSE page.",
+      "confidence_level": "C"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "company_name": "Microsoft",
+      "placement_year": null,
+      "role": null,
+      "role_category": "Technology/software or financial technology; exact role unpublished",
+      "eligible_branches": "Not officially stated",
+      "hiring_type": "Placement/internship/PPO group listing",
+      "campus_status": "Officially listed, year unavailable",
+      "number_selected": null,
+      "package_or_range": "Grouped among recruiters offering CTC of INR 10 lakh or more; company-specific value unstated",
+      "source_id": "SRC017",
+      "evidence_note": "Undated institution-published CSE page.",
+      "confidence_level": "C"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "company_name": "SAP Labs",
+      "placement_year": null,
+      "role": null,
+      "role_category": "Technology/software or financial technology; exact role unpublished",
+      "eligible_branches": "Not officially stated",
+      "hiring_type": "Placement/internship/PPO group listing",
+      "campus_status": "Officially listed, year unavailable",
+      "number_selected": null,
+      "package_or_range": "Grouped among recruiters offering CTC of INR 10 lakh or more; company-specific value unstated",
+      "source_id": "SRC017",
+      "evidence_note": "Undated institution-published CSE page.",
+      "confidence_level": "C"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "company_name": "VMware",
+      "placement_year": null,
+      "role": null,
+      "role_category": "Technology/software or financial technology; exact role unpublished",
+      "eligible_branches": "Not officially stated",
+      "hiring_type": "Placement/internship/PPO group listing",
+      "campus_status": "Officially listed, year unavailable",
+      "number_selected": null,
+      "package_or_range": "Grouped among recruiters offering CTC of INR 10 lakh or more; company-specific value unstated",
+      "source_id": "SRC017",
+      "evidence_note": "Undated institution-published CSE page.",
+      "confidence_level": "C"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "company_name": "Western Digital",
+      "placement_year": null,
+      "role": null,
+      "role_category": "Technology/software or financial technology; exact role unpublished",
+      "eligible_branches": "Not officially stated",
+      "hiring_type": "Placement/internship/PPO group listing",
+      "campus_status": "Officially listed, year unavailable",
+      "number_selected": null,
+      "package_or_range": "Grouped among recruiters offering CTC of INR 10 lakh or more; company-specific value unstated",
+      "source_id": "SRC017",
+      "evidence_note": "Undated institution-published CSE page.",
+      "confidence_level": "C"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "company_name": "Amazon",
+      "placement_year": null,
+      "role": null,
+      "role_category": null,
+      "eligible_branches": "Not officially stated",
+      "hiring_type": null,
+      "campus_status": "Historical/official example; year unavailable",
+      "number_selected": null,
+      "package_or_range": null,
+      "source_id": "SRC018",
+      "evidence_note": "Named on official page without year.",
+      "confidence_level": "C"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "company_name": "Deloitte",
+      "placement_year": null,
+      "role": null,
+      "role_category": null,
+      "eligible_branches": "Not officially stated",
+      "hiring_type": null,
+      "campus_status": "Historical/official example; year unavailable",
+      "number_selected": null,
+      "package_or_range": null,
+      "source_id": "SRC018",
+      "evidence_note": "Named on official page without year.",
+      "confidence_level": "C"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "company_name": "Infosys",
+      "placement_year": null,
+      "role": null,
+      "role_category": null,
+      "eligible_branches": "Not officially stated",
+      "hiring_type": null,
+      "campus_status": "Historical/official example; year unavailable",
+      "number_selected": null,
+      "package_or_range": null,
+      "source_id": "SRC018",
+      "evidence_note": "Named on official page without year.",
+      "confidence_level": "C"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "company_name": "Samsung",
+      "placement_year": null,
+      "role": null,
+      "role_category": null,
+      "eligible_branches": "Not officially stated",
+      "hiring_type": null,
+      "campus_status": "Historical/official example; year unavailable",
+      "number_selected": null,
+      "package_or_range": null,
+      "source_id": "SRC018",
+      "evidence_note": "Named on official page without year.",
+      "confidence_level": "C"
+    }
+  ],
+  "company_skill_guidance": [
+    {
+      "role_category": "Software engineering",
+      "label": "General career guidance; not college-specific hiring requirement",
+      "essential_technical_skills": [
+        "DSA",
+        "One strong language",
+        "DBMS",
+        "OS",
+        "Networks",
+        "Git"
+      ],
+      "tools": [
+        "C++/Java/Python",
+        "SQL",
+        "Git",
+        "Linux"
+      ],
+      "suggested_projects": [
+        "Full-stack application",
+        "Systems tool",
+        "Open-source contribution"
+      ],
+      "roadmap": {
+        "year_1": "Programming and Git",
+        "year_2": "DSA and projects",
+        "year_3": "Internship and interviews",
+        "year_4": "Company-specific preparation"
+      },
+      "confidence_level": "F"
+    },
+    {
+      "role_category": "Data science and analytics",
+      "label": "General career guidance; not college-specific hiring requirement",
+      "essential_technical_skills": [
+        "Statistics",
+        "Python",
+        "SQL",
+        "Model evaluation",
+        "Visualization"
+      ],
+      "tools": [
+        "Python",
+        "scikit-learn",
+        "SQL",
+        "BI tools"
+      ],
+      "suggested_projects": [
+        "Prediction pipeline",
+        "Dashboard",
+        "Experiment analysis"
+      ],
+      "roadmap": {
+        "year_1": "Python and statistics",
+        "year_2": "SQL and ML",
+        "year_3": "Internship/deployment",
+        "year_4": "Case and interview preparation"
+      },
+      "confidence_level": "F"
+    },
+    {
+      "role_category": "Consulting/product/analytics",
+      "label": "General career guidance; not college-specific hiring requirement",
+      "essential_technical_skills": [
+        "Structured problem solving",
+        "Spreadsheets",
+        "Basic SQL",
+        "Research",
+        "Presentation"
+      ],
+      "tools": [
+        "Spreadsheets",
+        "Slides",
+        "SQL"
+      ],
+      "suggested_projects": [
+        "Market case",
+        "Product teardown",
+        "Process-improvement project"
+      ],
+      "roadmap": {
+        "year_1": "Communication and analytics",
+        "year_2": "Competitions",
+        "year_3": "Internship/leadership",
+        "year_4": "Case interviews"
+      },
+      "confidence_level": "F"
+    },
+    {
+      "role_category": "Electronics/VLSI",
+      "label": "General career guidance; not college-specific hiring requirement",
+      "essential_technical_skills": [
+        "Digital electronics",
+        "Analog basics",
+        "Verilog",
+        "Architecture",
+        "Semiconductors"
+      ],
+      "tools": [
+        "Verilog",
+        "FPGA tools",
+        "SPICE",
+        "MATLAB"
+      ],
+      "suggested_projects": [
+        "FPGA design",
+        "ASIC-flow exercise",
+        "Mixed-signal simulation"
+      ],
+      "roadmap": {
+        "year_1": "Circuits/programming",
+        "year_2": "HDL/FPGA",
+        "year_3": "VLSI project/internship",
+        "year_4": "Core interviews/PG options"
+      },
+      "confidence_level": "F"
+    },
+    {
+      "role_category": "Embedded/CPS",
+      "label": "General career guidance; not college-specific hiring requirement",
+      "essential_technical_skills": [
+        "C/C++",
+        "Microcontrollers",
+        "RTOS",
+        "Sensors",
+        "Protocols"
+      ],
+      "tools": [
+        "ARM/ESP32",
+        "FreeRTOS",
+        "Oscilloscope"
+      ],
+      "suggested_projects": [
+        "Sensor network",
+        "Robot",
+        "RTOS device"
+      ],
+      "roadmap": {
+        "year_1": "Programming/electronics",
+        "year_2": "MCU projects",
+        "year_3": "RTOS/internship",
+        "year_4": "Portfolio/interviews"
+      },
+      "confidence_level": "F"
+    },
+    {
+      "role_category": "Electrical core",
+      "label": "General career guidance; not college-specific hiring requirement",
+      "essential_technical_skills": [
+        "Power systems",
+        "Machines",
+        "Power electronics",
+        "Control"
+      ],
+      "tools": [
+        "MATLAB/Simulink",
+        "ETAP/PSCAD exposure"
+      ],
+      "suggested_projects": [
+        "Motor control",
+        "Converter",
+        "Microgrid simulation"
+      ],
+      "roadmap": {
+        "year_1": "Math/circuits",
+        "year_2": "Machines/simulation",
+        "year_3": "Project/internship",
+        "year_4": "Core/GATE preparation"
+      },
+      "confidence_level": "F"
+    },
+    {
+      "role_category": "Mechanical/automotive/aeronautical",
+      "label": "General career guidance; not college-specific hiring requirement",
+      "essential_technical_skills": [
+        "Mechanics",
+        "Thermodynamics",
+        "Design",
+        "Manufacturing",
+        "CAD/CAE"
+      ],
+      "tools": [
+        "SolidWorks/CATIA",
+        "ANSYS",
+        "MATLAB"
+      ],
+      "suggested_projects": [
+        "SAE subsystem",
+        "FEA/CFD study",
+        "Prototype"
+      ],
+      "roadmap": {
+        "year_1": "CAD/workshop",
+        "year_2": "Design-build",
+        "year_3": "CAE/internship",
+        "year_4": "Core interviews/capstone"
+      },
+      "confidence_level": "F"
+    },
+    {
+      "role_category": "Civil/chemical/biotechnology core",
+      "label": "General career guidance; not college-specific hiring requirement",
+      "essential_technical_skills": [
+        "Domain fundamentals",
+        "Safety",
+        "Data analysis",
+        "Standards"
+      ],
+      "tools": [
+        "AutoCAD/STAAD or Aspen/HYSYS or bioinformatics/lab tools"
+      ],
+      "suggested_projects": [
+        "Design/process study",
+        "Sustainability project",
+        "Research project"
+      ],
+      "roadmap": {
+        "year_1": "Fundamentals",
+        "year_2": "Core labs/tools",
+        "year_3": "Research/industry internship",
+        "year_4": "Core/GATE/higher studies"
+      },
+      "confidence_level": "F"
+    }
+  ],
+  "hostels_and_facilities": {
+    "official_verified": {
+      "hostel_room_types": [
+        "single/double/triple",
+        "common/attached bathroom",
+        "AC/non-AC"
+      ],
+      "first_year_hostel_fee_range_inr": {
+        "minimum_published_total": 127500,
+        "maximum_published_total": 254000
+      },
+      "mess_advance_included_in_examples_inr": 62000,
+      "hostel_allotment_policy": "Subject to availability and official process",
+      "wifi": true,
+      "library": true,
+      "laboratories": true,
+      "innovation_centre": true,
+      "business_incubator": "MUTBI",
+      "sports_facilities": true,
+      "medical_access": "Kasturba Hospital/MAHE health services nearby",
+      "grievance_mechanism": true,
+      "anti_ragging_system": true,
+      "counselling_welfare_support": true,
+      "campus_area_acres": null,
+      "hostel_capacity": null,
+      "hostel_availability_guarantee": null,
+      "official_curfew": null,
+      "source_ids": [
+        "SRC002",
+        "SRC006",
+        "SRC020",
+        "SRC021"
+      ],
+      "confidence_level": "B"
+    },
+    "student_reported_notes": {
+      "summary": "Room, price, climate comfort and Wi-Fi experiences vary by block and use case.",
+      "source_ids": [
+        "SRC103",
+        "SRC106",
+        "SRC109",
+        "SRC110",
+        "SRC111",
+        "SRC027"
+      ],
+      "confidence_level": "D/E"
+    }
+  },
+  "clubs": [
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "club_name": "IEEE Student Branch Manipal",
+      "club_category": "technical/professional",
+      "official_status": "Officially listed by MIT Student Welfare",
+      "description": "technical and professional student organisation",
+      "official_page": "https://www.manipal.edu/mit/mit-experience/student-welfare.html",
+      "latest_activity": "Current dated activity not independently verified",
+      "latest_activity_date": null,
+      "major_achievements": null,
+      "recruitment_process": "Verify with club/student-welfare office",
+      "activity_status": "unable to verify",
+      "source_id": "SRC019",
+      "last_verified_date": "2026-06-27"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "club_name": "ACM Manipal",
+      "club_category": "technical/computing",
+      "official_status": "Officially listed by MIT Student Welfare",
+      "description": "technical and computing student organisation",
+      "official_page": "https://www.manipal.edu/mit/mit-experience/student-welfare.html",
+      "latest_activity": "Current dated activity not independently verified",
+      "latest_activity_date": null,
+      "major_achievements": null,
+      "recruitment_process": "Verify with club/student-welfare office",
+      "activity_status": "unable to verify",
+      "source_id": "SRC019",
+      "last_verified_date": "2026-06-27"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "club_name": "ACM-W Manipal",
+      "club_category": "technical/diversity",
+      "official_status": "Officially listed by MIT Student Welfare",
+      "description": "technical and diversity student organisation",
+      "official_page": "https://www.manipal.edu/mit/mit-experience/student-welfare.html",
+      "latest_activity": "Current dated activity not independently verified",
+      "latest_activity_date": null,
+      "major_achievements": null,
+      "recruitment_process": "Verify with club/student-welfare office",
+      "activity_status": "unable to verify",
+      "source_id": "SRC019",
+      "last_verified_date": "2026-06-27"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "club_name": "Apple Developers Group",
+      "club_category": "technical/development",
+      "official_status": "Officially listed by MIT Student Welfare",
+      "description": "technical and development student organisation",
+      "official_page": "https://www.manipal.edu/mit/mit-experience/student-welfare.html",
+      "latest_activity": "Current dated activity not independently verified",
+      "latest_activity_date": null,
+      "major_achievements": null,
+      "recruitment_process": "Verify with club/student-welfare office",
+      "activity_status": "unable to verify",
+      "source_id": "SRC019",
+      "last_verified_date": "2026-06-27"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "club_name": "Google Developer Student Club",
+      "club_category": "technical/development",
+      "official_status": "Officially listed by MIT Student Welfare",
+      "description": "technical and development student organisation",
+      "official_page": "https://www.manipal.edu/mit/mit-experience/student-welfare.html",
+      "latest_activity": "Current dated activity not independently verified",
+      "latest_activity_date": null,
+      "major_achievements": null,
+      "recruitment_process": "Verify with club/student-welfare office",
+      "activity_status": "unable to verify",
+      "source_id": "SRC019",
+      "last_verified_date": "2026-06-27"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "club_name": "IECSE",
+      "club_category": "technical/computing",
+      "official_status": "Officially listed by MIT Student Welfare",
+      "description": "technical and computing student organisation",
+      "official_page": "https://www.manipal.edu/mit/mit-experience/student-welfare.html",
+      "latest_activity": "Current dated activity not independently verified",
+      "latest_activity_date": null,
+      "major_achievements": null,
+      "recruitment_process": "Verify with club/student-welfare office",
+      "activity_status": "unable to verify",
+      "source_id": "SRC019",
+      "last_verified_date": "2026-06-27"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "club_name": "IOSD Manipal",
+      "club_category": "technical/open source",
+      "official_status": "Officially listed by MIT Student Welfare",
+      "description": "technical and open source student organisation",
+      "official_page": "https://www.manipal.edu/mit/mit-experience/student-welfare.html",
+      "latest_activity": "Current dated activity not independently verified",
+      "latest_activity_date": null,
+      "major_achievements": null,
+      "recruitment_process": "Verify with club/student-welfare office",
+      "activity_status": "unable to verify",
+      "source_id": "SRC019",
+      "last_verified_date": "2026-06-27"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "club_name": "MIST",
+      "club_category": "technical/information security",
+      "official_status": "Officially listed by MIT Student Welfare",
+      "description": "technical and information security student organisation",
+      "official_page": "https://www.manipal.edu/mit/mit-experience/student-welfare.html",
+      "latest_activity": "Current dated activity not independently verified",
+      "latest_activity_date": null,
+      "major_achievements": null,
+      "recruitment_process": "Verify with club/student-welfare office",
+      "activity_status": "unable to verify",
+      "source_id": "SRC019",
+      "last_verified_date": "2026-06-27"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "club_name": "MOSS",
+      "club_category": "technical/open source",
+      "official_status": "Officially listed by MIT Student Welfare",
+      "description": "technical and open source student organisation",
+      "official_page": "https://www.manipal.edu/mit/mit-experience/student-welfare.html",
+      "latest_activity": "Current dated activity not independently verified",
+      "latest_activity_date": null,
+      "major_achievements": null,
+      "recruitment_process": "Verify with club/student-welfare office",
+      "activity_status": "unable to verify",
+      "source_id": "SRC019",
+      "last_verified_date": "2026-06-27"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "club_name": "Research Society Manipal",
+      "club_category": "technical/research",
+      "official_status": "Officially listed by MIT Student Welfare",
+      "description": "technical and research student organisation",
+      "official_page": "https://www.manipal.edu/mit/mit-experience/student-welfare.html",
+      "latest_activity": "Current dated activity not independently verified",
+      "latest_activity_date": null,
+      "major_achievements": null,
+      "recruitment_process": "Verify with club/student-welfare office",
+      "activity_status": "unable to verify",
+      "source_id": "SRC019",
+      "last_verified_date": "2026-06-27"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "club_name": "SAE-IM",
+      "club_category": "technical/automotive",
+      "official_status": "Officially listed by MIT Student Welfare",
+      "description": "technical and automotive student organisation",
+      "official_page": "https://www.manipal.edu/mit/mit-experience/student-welfare.html",
+      "latest_activity": "Current dated activity not independently verified",
+      "latest_activity_date": null,
+      "major_achievements": null,
+      "recruitment_process": "Verify with club/student-welfare office",
+      "activity_status": "unable to verify",
+      "source_id": "SRC019",
+      "last_verified_date": "2026-06-27"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "club_name": "Astronomy Club",
+      "club_category": "technical/science",
+      "official_status": "Officially listed by MIT Student Welfare",
+      "description": "technical and science student organisation",
+      "official_page": "https://www.manipal.edu/mit/mit-experience/student-welfare.html",
+      "latest_activity": "Current dated activity not independently verified",
+      "latest_activity_date": null,
+      "major_achievements": null,
+      "recruitment_process": "Verify with club/student-welfare office",
+      "activity_status": "unable to verify",
+      "source_id": "SRC019",
+      "last_verified_date": "2026-06-27"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "club_name": "Data Alchemists",
+      "club_category": "technical/data",
+      "official_status": "Officially listed by MIT Student Welfare",
+      "description": "technical and data student organisation",
+      "official_page": "https://www.manipal.edu/mit/mit-experience/student-welfare.html",
+      "latest_activity": "Current dated activity not independently verified",
+      "latest_activity_date": null,
+      "major_achievements": null,
+      "recruitment_process": "Verify with club/student-welfare office",
+      "activity_status": "unable to verify",
+      "source_id": "SRC019",
+      "last_verified_date": "2026-06-27"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "club_name": "Enactus Manipal",
+      "club_category": "entrepreneurship/social impact",
+      "official_status": "Officially listed by MIT Student Welfare",
+      "description": "entrepreneurship and social impact student organisation",
+      "official_page": "https://www.manipal.edu/mit/mit-experience/student-welfare.html",
+      "latest_activity": "Current dated activity not independently verified",
+      "latest_activity_date": null,
+      "major_achievements": null,
+      "recruitment_process": "Verify with club/student-welfare office",
+      "activity_status": "unable to verify",
+      "source_id": "SRC019",
+      "last_verified_date": "2026-06-27"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "club_name": "Aaina Dramatics",
+      "club_category": "cultural/drama",
+      "official_status": "Officially listed by MIT Student Welfare",
+      "description": "cultural and drama student organisation",
+      "official_page": "https://www.manipal.edu/mit/mit-experience/student-welfare.html",
+      "latest_activity": "Current dated activity not independently verified",
+      "latest_activity_date": null,
+      "major_achievements": null,
+      "recruitment_process": "Verify with club/student-welfare office",
+      "activity_status": "unable to verify",
+      "source_id": "SRC019",
+      "last_verified_date": "2026-06-27"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "club_name": "Chords & Co.",
+      "club_category": "cultural/music",
+      "official_status": "Officially listed by MIT Student Welfare",
+      "description": "cultural and music student organisation",
+      "official_page": "https://www.manipal.edu/mit/mit-experience/student-welfare.html",
+      "latest_activity": "Current dated activity not independently verified",
+      "latest_activity_date": null,
+      "major_achievements": null,
+      "recruitment_process": "Verify with club/student-welfare office",
+      "activity_status": "unable to verify",
+      "source_id": "SRC019",
+      "last_verified_date": "2026-06-27"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "club_name": "Literary, Debate and Quiz Club",
+      "club_category": "literary/debate/quiz",
+      "official_status": "Officially listed by MIT Student Welfare",
+      "description": "literary and debate and quiz student organisation",
+      "official_page": "https://www.manipal.edu/mit/mit-experience/student-welfare.html",
+      "latest_activity": "Current dated activity not independently verified",
+      "latest_activity_date": null,
+      "major_achievements": null,
+      "recruitment_process": "Verify with club/student-welfare office",
+      "activity_status": "unable to verify",
+      "source_id": "SRC019",
+      "last_verified_date": "2026-06-27"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "club_name": "Mudra",
+      "club_category": "cultural/dance",
+      "official_status": "Officially listed by MIT Student Welfare",
+      "description": "cultural and dance student organisation",
+      "official_page": "https://www.manipal.edu/mit/mit-experience/student-welfare.html",
+      "latest_activity": "Current dated activity not independently verified",
+      "latest_activity_date": null,
+      "major_achievements": null,
+      "recruitment_process": "Verify with club/student-welfare office",
+      "activity_status": "unable to verify",
+      "source_id": "SRC019",
+      "last_verified_date": "2026-06-27"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "club_name": "Rotaract Club",
+      "club_category": "service/community",
+      "official_status": "Officially listed by MIT Student Welfare",
+      "description": "service and community student organisation",
+      "official_page": "https://www.manipal.edu/mit/mit-experience/student-welfare.html",
+      "latest_activity": "Current dated activity not independently verified",
+      "latest_activity_date": null,
+      "major_achievements": null,
+      "recruitment_process": "Verify with club/student-welfare office",
+      "activity_status": "unable to verify",
+      "source_id": "SRC019",
+      "last_verified_date": "2026-06-27"
+    },
+    {
+      "college_name": "Manipal Institute of Technology, Manipal",
+      "club_name": "Showstoppers",
+      "club_category": "cultural/performance",
+      "official_status": "Officially listed by MIT Student Welfare",
+      "description": "cultural and performance student organisation",
+      "official_page": "https://www.manipal.edu/mit/mit-experience/student-welfare.html",
+      "latest_activity": "Current dated activity not independently verified",
+      "latest_activity_date": null,
+      "major_achievements": null,
+      "recruitment_process": "Verify with club/student-welfare office",
+      "activity_status": "unable to verify",
+      "source_id": "SRC019",
+      "last_verified_date": "2026-06-27"
+    }
+  ],
+  "location": {
+    "college_name": "Manipal Institute of Technology, Manipal",
+    "campus_name": "MIT Manipal",
+    "official_address": "Manipal Institute of Technology, Manipal – 576104, Udupi District, Karnataka, India",
+    "locality": "Manipal university town",
+    "city": "Manipal",
+    "district": "Udupi",
+    "state": "Karnataka",
+    "pincode": "576104",
+    "latitude": 13.3513,
+    "longitude": 74.7927,
+    "nearest_railway_station": "Udupi Railway Station",
+    "railway_distance_km": 3,
+    "railway_travel_time_minutes": 20,
+    "nearest_airport": "Mangaluru International Airport",
+    "airport_distance_km": 60,
+    "airport_travel_time_minutes": 90,
+    "nearest_metro": null,
+    "nearest_bus_terminal": "Manipal Tiger Circle / Udupi KSRTC bus station",
+    "nearest_major_hospital": "Kasturba Hospital, Manipal",
+    "hospital_distance_km": 1,
+    "city_centre_distance_km": 1.5,
+    "technology_ecosystem": "On-campus Innovation Centre and MUTBI; smaller surrounding industry ecosystem than a major metro",
+    "cost_of_living_band": "Moderate for a student town; lifestyle-dependent",
+    "data_origin": "Address/travel official; coordinates/local distances map-derived; cost band inferred",
+    "source_id": "SRC002;SRC023;SRC024"
+  },
+  "student_experience_summary": {
+    "senior_junior_culture": {
+      "summary": "AMAs, clubs and project teams create cross-batch contact, but evidence is insufficient for a college-wide judgement on hierarchy or mentorship. No repeated, well-supported ragging pattern was found in the reviewed sources; absence is not proof of absence.",
+      "positive_themes": [
+        "Student AMAs show willingness to answer applicant questions",
+        "Clubs create structured cross-batch interaction"
+      ],
+      "negative_themes": [
+        "Mentorship quality likely varies",
+        "No robust independent fresher-inclusion dataset"
+      ],
+      "evidence_strength": "Limited anecdotal signal",
+      "source_count": 4,
+      "date_range": "2025-2026",
+      "source_agreement": "Broadly consistent but thin",
+      "supporting_source_ids": [
+        "SRC104",
+        "SRC105",
+        "SRC108",
+        "SRC026"
+      ],
+      "conflicting_source_ids": []
+    },
+    "academic_culture": {
+      "summary": "Reports show room for technical exploration, while one recent first-person account alleges strict or subjective attendance/discipline. Faculty quality and flexibility appear instructor- and branch-dependent.",
+      "positive_themes": [
+        "Early technical exploration",
+        "Official labs, research groups and incubator access"
+      ],
+      "negative_themes": [
+        "One recent strict-discipline account",
+        "No institute-wide grading or internship-flexibility dataset"
+      ],
+      "evidence_strength": "Conflicting signal",
+      "source_count": 4,
+      "date_range": "2025-2026",
+      "source_agreement": "Mixed",
+      "supporting_source_ids": [
+        "SRC104",
+        "SRC105",
+        "SRC115",
+        "SRC021"
+      ],
+      "conflicting_source_ids": [
+        "SRC107"
+      ]
+    },
+    "hostel_reality": {
+      "summary": "Strongest repeated signal is variation by block, room type, price and availability. Wi-Fi is generally usable for browsing but gaming reports are mixed.",
+      "positive_themes": [
+        "Many AC/non-AC and sharing options",
+        "Walkable campus access",
+        "Social integration"
+      ],
+      "negative_themes": [
+        "Popular-room competition",
+        "Humidity/AC trade-off",
+        "Mixed gaming performance",
+        "Mess quality cannot be generalized"
+      ],
+      "evidence_strength": "Moderate repeated signal",
+      "source_count": 7,
+      "date_range": "2025-2026",
+      "source_agreement": "Consistent on variation; mixed on Wi-Fi/mess",
+      "supporting_source_ids": [
+        "SRC103",
+        "SRC106",
+        "SRC109",
+        "SRC110",
+        "SRC111",
+        "SRC027",
+        "SRC108"
+      ],
+      "conflicting_source_ids": [
+        "SRC106"
+      ]
+    },
+    "club_and_campus_life": {
+      "summary": "Official listings and student media show a broad technical, cultural, service and performance ecosystem. Hostellers may find evening participation easier. Static listings do not prove every club is active.",
+      "positive_themes": [
+        "Wide club variety",
+        "Recurring events and project teams",
+        "Hosteller access to evening activities"
+      ],
+      "negative_themes": [
+        "Day scholars may miss late events",
+        "Recruitment fairness and current activity unverified"
+      ],
+      "evidence_strength": "Moderate repeated signal",
+      "source_count": 4,
+      "date_range": "2024-2026",
+      "source_agreement": "Broadly consistent",
+      "supporting_source_ids": [
+        "SRC019",
+        "SRC026",
+        "SRC108",
+        "SRC115"
+      ],
+      "conflicting_source_ids": []
+    },
+    "coding_and_placement_culture": {
+      "summary": "There is an active computing/open-source/security ecosystem, but verified placement data are only overall UG NIRF records. Branch-wise community datasets are unverified and core-branch software access remains uncertain.",
+      "positive_themes": [
+        "Multiple computing clubs",
+        "Early peer learning",
+        "Large institution-published recruiter ecosystem"
+      ],
+      "negative_themes": [
+        "No verified branch placement dataset",
+        "Non-CSE eligibility must be checked company-wise",
+        "Recruiter lists mostly undated"
+      ],
+      "evidence_strength": "Conflicting signal",
+      "source_count": 6,
+      "date_range": "2025-2026",
+      "source_agreement": "Opportunity visible; outcomes incomplete",
+      "supporting_source_ids": [
+        "SRC019",
+        "SRC104",
+        "SRC105",
+        "SRC016",
+        "SRC017"
+      ],
+      "conflicting_source_ids": [
+        "SRC112",
+        "SRC113"
+      ]
+    },
+    "locality_and_student_life": {
+      "summary": "Manipal is a compact student town with services and healthcare near campus. Udupi rail access is convenient; the airport is about 60 km away and there is no metro. Major-metro industry exposure is indirect.",
+      "positive_themes": [
+        "Walkable student-town environment",
+        "Nearby hospital and services",
+        "Convenient Udupi rail access"
+      ],
+      "negative_themes": [
+        "Longer airport transfer",
+        "Humidity and heavy monsoon",
+        "Less direct metro-industry exposure"
+      ],
+      "evidence_strength": "Moderate repeated signal",
+      "source_count": 4,
+      "date_range": "2025-2026",
+      "source_agreement": "Broadly consistent",
+      "supporting_source_ids": [
+        "SRC023",
+        "SRC024",
+        "SRC108",
+        "SRC115"
+      ],
+      "conflicting_source_ids": []
+    },
+    "overall_satisfaction": {
+      "summary": "Public evidence most often praises campus life, infrastructure, clubs and opportunity breadth. Main cautions are high cost, block-dependent hostel experience, branch-dependent placement risk and limited current branch-level transparency.",
+      "positive_themes": [
+        "Vibrant student ecosystem",
+        "Established facilities",
+        "Strong opportunity set for self-driven students"
+      ],
+      "negative_themes": [
+        "High cost",
+        "Difficult branch-wise ROI verification",
+        "Variable hostel/academic experience"
+      ],
+      "who_it_appears_best_suited_for": [
+        "Self-driven residential-campus students",
+        "Students with comfortable budget or strong scholarship fit",
+        "Students with clear branch plan"
+      ],
+      "who_may_not_enjoy_it": [
+        "Students seeking low-cost education with transparent branch ROI",
+        "Students preferring a major metro",
+        "Students expecting uniform hostel quality or universal software access"
+      ],
+      "would_choose_again_evidence": "No reliable multi-source evidence found",
+      "evidence_strength": "Moderate repeated signal",
+      "source_count": 8,
+      "date_range": "2024-2026",
+      "source_agreement": "Broad themes agree; outcome judgements vary",
+      "supporting_source_ids": [
+        "SRC101",
+        "SRC102",
+        "SRC108",
+        "SRC115",
+        "SRC026",
+        "SRC027",
+        "SRC104",
+        "SRC109"
+      ],
+      "conflicting_source_ids": []
+    }
+  },
+  "parent_mode_summary": {
+    "label": "Perspective summary",
+    "total_cost": "Mapped four-year academic charges INR 18.02–24.42 lakh; sampled first-year hostel/mess INR 1.275–2.54 lakh; calculated first-year institutional range INR 5.855–8.72 lakh.",
+    "scholarships": "Significant schemes exist but eligibility/renewal are strict and not guaranteed.",
+    "placements": "NIRF overall medians 8.0, 8.8825 and 8.5 LPA for 2021-22 to 2023-24; branch-wise stability unverified.",
+    "travel_and_medical": "Udupi rail nearby; Mangaluru airport about 60 km/1.5 hours; Kasturba Hospital nearby.",
+    "major_unresolved_risks": [
+      "granular cutoffs",
+      "branch placements",
+      "fee mapping",
+      "high cost and scholarship renewal"
+    ]
+  },
+  "student_mode_summary": {
+    "label": "Perspective summary",
+    "branch_fit": "Do not choose solely by institution name; curriculum and placement eligibility differ by branch.",
+    "coding_and_core_culture": "Strong club/project opportunity, but non-CSE software access needs company-wise verification.",
+    "clubs_and_campus_life": "Broad ecosystem; hostellers may access evening events more easily.",
+    "hostel": "Choose by budget, climate, distance and privacy; blocks vary.",
+    "city_exposure": "Concentrated student-town experience rather than major metro.",
+    "placement_roadmap": "Start fundamentals/projects early, use clubs and internships, and prepare separately for branch-core and cross-domain roles."
+  },
+  "decision_risks": [
+    {
+      "risk": "High total cost",
+      "evidence": "Mapped four-year academic charges are about INR 18.02–24.42 lakh before hostel/mess and personal costs.",
+      "severity": "high",
+      "source_ids": [
+        "SRC005",
+        "SRC006"
+      ],
+      "mitigation": "Budget without assuming scholarship renewal."
+    },
+    {
+      "risk": "No import-safe branch/round/category cutoff history",
+      "evidence": "Only institution-level 2023–25 summary values were found.",
+      "severity": "high",
+      "source_ids": [
+        "SRC002",
+        "SRC004"
+      ],
+      "mitigation": "Obtain official archived counselling exports."
+    },
+    {
+      "risk": "No verified branch-wise placement report",
+      "evidence": "NIRF provides overall UG figures; branch community data are unverified.",
+      "severity": "high",
+      "source_ids": [
+        "SRC009",
+        "SRC112"
+      ],
+      "mitigation": "Request dated branch report with denominators."
+    },
+    {
+      "risk": "Large/restructured CSE intake",
+      "evidence": "AICTE disclosure shows 1,020 CSE seats and 2,530 total, differing from older NIRF intake/public presentation.",
+      "severity": "medium-high",
+      "source_ids": [
+        "SRC002",
+        "SRC009",
+        "SRC018"
+      ],
+      "mitigation": "Verify choice codes, internal specialisations and placement pooling."
+    },
+    {
+      "risk": "Programme-to-fee mapping gaps",
+      "evidence": "Several current AICTE branches lack unambiguous regular-entry fee rows.",
+      "severity": "medium",
+      "source_ids": [
+        "SRC002",
+        "SRC005"
+      ],
+      "mitigation": "Obtain written mapping."
+    },
+    {
+      "risk": "Hostel variation",
+      "evidence": "Sample first-year totals range INR 1.275–2.54 lakh and availability varies.",
+      "severity": "medium",
+      "source_ids": [
+        "SRC006",
+        "SRC103",
+        "SRC110"
+      ],
+      "mitigation": "Budget for higher-cost fallback."
+    },
+    {
+      "risk": "Scholarship continuation",
+      "evidence": "Major schemes require 7–8 CGPA/no failures and may have branch-change conditions.",
+      "severity": "medium",
+      "source_ids": [
+        "SRC007"
+      ],
+      "mitigation": "Model full cost without renewal."
+    },
+    {
+      "risk": "Core branch to software mismatch",
+      "evidence": "Company-wise eligible branches are unpublished; student discussion shows uncertainty.",
+      "severity": "medium-high",
+      "source_ids": [
+        "SRC016",
+        "SRC017",
+        "SRC113"
+      ],
+      "mitigation": "Choose core branch on its own merits and verify software eligibility."
+    },
+    {
+      "risk": "Non-metro location",
+      "evidence": "Student town with nearby services but airport about 60 km and indirect metro-industry access.",
+      "severity": "low-medium",
+      "source_ids": [
+        "SRC023",
+        "SRC024"
+      ],
+      "mitigation": "Plan networking, remote internships and travel."
+    }
+  ],
+  "data_gaps": [
+    "Official 2026 final branch-wise cutoffs by round and route.",
+    "Official 2023–25 cutoff tables with branch, round, category, quota and rank type.",
+    "Final 2026 counselling choice codes and CSE umbrella mapping.",
+    "Category-wise/NRI/TFW/supernumerary/gender seat matrix.",
+    "AICTE institute ID in a directly verified public record.",
+    "Unambiguous fees for Automobile, Biomedical, Industrial, CPS, EIE and VLSI programmes.",
+    "Branch-wise placements, eligible/registered counts, averages, highest, internships and PPOs.",
+    "Dated recruiter-by-year list with role, eligible branches and selections.",
+    "Official campus area and MIT-specific hostel capacity.",
+    "Current official curfew and detailed hostel rules.",
+    "Dated activity evidence for every club.",
+    "Robust independent evidence on senior-junior culture, grading strictness and choose-again sentiment."
+  ],
+  "conflicts": [
+    {
+      "conflict_id": "CON001",
+      "data_category": "intake",
+      "field": "annual approved/actual intake",
+      "source_1_id": "SRC002",
+      "source_1_value": "Current branch table totals 2,530; narrative says about 2,000",
+      "source_2_id": "SRC009",
+      "source_2_value": "NIRF approved UG intake for 2023-24 was 2,400",
+      "possible_reason": "Different years, restructuring, approximate narrative or approved versus admitted intake",
+      "recommended_manual_action": "Confirm final 2026-27 counselling seat matrix and CSE umbrella structure",
+      "status": "open"
+    },
+    {
+      "conflict_id": "CON002",
+      "data_category": "programmes",
+      "field": "programme naming and consolidation",
+      "source_1_id": "SRC002",
+      "source_1_value": "17 AICTE labels including CSE 1,020 and separate CPS/CSFT/VLSI/MnC",
+      "source_2_id": "SRC018",
+      "source_2_value": "Public B.Tech navigation does not visibly reconcile every label",
+      "possible_reason": "Website lag or restructuring",
+      "recommended_manual_action": "Map every counselling choice code before import",
+      "status": "open"
+    },
+    {
+      "conflict_id": "CON003",
+      "data_category": "fees",
+      "field": "electronics programme mapping",
+      "source_1_id": "SRC002",
+      "source_1_value": "Separate EIE, CPS and VLSI programmes",
+      "source_2_id": "SRC005",
+      "source_2_value": "Single regular fee row called B.Tech in Electronics Engineering",
+      "possible_reason": "Umbrella band or naming lag",
+      "recommended_manual_action": "Get written programme-to-fee mapping",
+      "status": "open"
+    },
+    {
+      "conflict_id": "CON004",
+      "data_category": "fees",
+      "field": "missing current programme fee rows",
+      "source_1_id": "SRC002",
+      "source_1_value": "Regular programmes include Automobile, Biomedical, Industrial, CPS and EIE",
+      "source_2_id": "SRC005",
+      "source_2_value": "Unambiguous regular-entry fee rows were not found for several programmes",
+      "possible_reason": "Programme not open, renamed or omitted",
+      "recommended_manual_action": "Confirm regular admission and fee for each programme",
+      "status": "open"
+    },
+    {
+      "conflict_id": "CON005",
+      "data_category": "placements",
+      "field": "recruiter/activity count",
+      "source_1_id": "SRC016",
+      "source_1_value": "300+ recruiting teams and 50+ Fortune 500 annually",
+      "source_2_id": "SRC018",
+      "source_2_value": "250+ companies and 1,900+ placements/practice-school internships in an undated last-year statement",
+      "possible_reason": "Different years/counting units",
+      "recommended_manual_action": "Obtain dated annual report with definitions",
+      "status": "open"
+    },
+    {
+      "conflict_id": "CON006",
+      "data_category": "NBA",
+      "field": "Biomedical Engineering validity end date",
+      "source_1_id": "SRC002",
+      "source_1_value": "Disclosure says 31 June 2028",
+      "source_2_id": "SRC013",
+      "source_2_value": "Normalized to 30 June 2028 because 31 June is impossible",
+      "possible_reason": "Typographical error",
+      "recommended_manual_action": "Confirm original NBA letter",
+      "status": "open"
+    },
+    {
+      "conflict_id": "CON007",
+      "data_category": "cutoffs",
+      "field": "historical cutoff granularity",
+      "source_1_id": "SRC002",
+      "source_1_value": "Institution-level 48,465 (2023), 47,700 (2024), 52,945 (2025)",
+      "source_2_id": "SRC004",
+      "source_2_value": "No official table with branch, round, route, category and quota located",
+      "possible_reason": "Summary disclosure versus separate/dynamic counselling data",
+      "recommended_manual_action": "Obtain official archived allotment/cutoff export",
+      "status": "open"
+    }
+  ],
+  "manual_verification_required": [
+    "Confirm final 2026-27 seat matrix and branch choice codes.",
+    "Obtain official 2023, 2024 and 2025 round-wise cutoff exports.",
+    "Confirm JEE Main route application across all programmes.",
+    "Confirm exact regular-entry fees for all ambiguous/missing programmes.",
+    "Resolve electronics umbrella fee mapping.",
+    "Verify Biomedical NBA end date against original letter.",
+    "Obtain branch-wise placement reports and recruiter eligibility.",
+    "Confirm hostel availability, block allocation and curfew.",
+    "Verify each club through dated official activity.",
+    "Recheck all 2026 documents immediately before import."
+  ]
+}

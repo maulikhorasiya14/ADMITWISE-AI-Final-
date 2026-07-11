@@ -1,0 +1,150 @@
+{
+  "senior_junior_culture": {
+    "summary": "No sufficiently broad, recent and independent evidence was found to generalize senior-junior relations. The official SAC and hall governance systems create structured cross-batch interaction, but this is not proof of day-to-day culture.",
+    "positive_themes": [
+      "large official club ecosystem may create mentorship opportunities"
+    ],
+    "negative_themes": [
+      "insufficient direct evidence on hierarchy, mentorship and fresher inclusion"
+    ],
+    "evidence_strength": "No reliable evidence",
+    "supporting_source_ids": [
+      "SRC018"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "Official sources establish a broad programme and research environment. Limited student accounts suggest branch-dependent workload and opportunities, but attendance strictness and faculty accessibility were not adequately verified.",
+    "positive_themes": [
+      "broad research infrastructure",
+      "technical and professional societies"
+    ],
+    "negative_themes": [
+      "branch-dependent academic pressure reported anecdotally",
+      "no representative evidence on grading or attendance enforcement"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "SRC109"
+    ],
+    "conflicting_source_ids": []
+  },
+  "hostel_reality": {
+    "summary": "Official pages describe a fully residential system with dining halls, veg/non-veg options, security, CCTV, ambulance access, online complaint management and 24x7 campus internet. Recent public reports are mixed and include time-specific complaints about mess/water quality and laundry administration.",
+    "positive_themes": [
+      "on-campus accommodation and dining infrastructure",
+      "24x7 internet stated officially",
+      "multiple shops/canteens and complaint system"
+    ],
+    "negative_themes": [
+      "recent complaints about food quality and water",
+      "single-post complaint about laundry charge/timing",
+      "single-room availability reported as limited"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "SRC016",
+      "SRC017",
+      "SRC102",
+      "SRC103",
+      "SRC104",
+      "SRC105",
+      "SRC106",
+      "SRC107"
+    ],
+    "conflicting_source_ids": [
+      "SRC104",
+      "SRC106"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "Official evidence strongly supports a large and diverse club ecosystem: the JoSAA profile describes four societies and 83 clubs, while the current SAC directory lists technical, cultural, music, dance and service groups. Independent recent activity frequency was not systematically verified.",
+    "positive_themes": [
+      "large club choice",
+      "technical and cultural societies",
+      "major campus events listed by SAC"
+    ],
+    "negative_themes": [
+      "club selection fairness and first-year access not verified",
+      "some directory pages lack recent activity dates"
+    ],
+    "evidence_strength": "Strong official signal; limited independent experience evidence",
+    "supporting_source_ids": [
+      "SRC001",
+      "SRC018",
+      "SRC101",
+      "SRC108"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "Official placement and internship data show substantial software, electronics and analytics participation. One alumnus AMA describes a strong coding culture but warns that software-company eligibility can differ by branch. This should be treated as a limited student-reported signal.",
+    "positive_themes": [
+      "Microsoft, Google, CRED, Qualcomm and other technology internships in official report",
+      "active OpenCode, Webwiz and CYBORG clubs",
+      "strong CSE/ECE average CTC in 2024-25 institution report"
+    ],
+    "negative_themes": [
+      "lower-branch eligibility for software roles may be restricted",
+      "company-specific branch eligibility is not published comprehensively"
+    ],
+    "evidence_strength": "Moderate official placement signal; limited anecdotal culture signal",
+    "supporting_source_ids": [
+      "SRC012",
+      "SRC018",
+      "SRC102"
+    ],
+    "conflicting_source_ids": []
+  },
+  "locality_and_student_life": {
+    "summary": "The campus is located within Rourkela steel city and is large enough that student accounts frequently mention cycling. Railway access is officially 7 km away. Current scheduled flights exist from Rourkela, although the JoSAA profile contains an outdated no-commercial-airstrip statement.",
+    "positive_themes": [
+      "self-contained green campus",
+      "rail connectivity",
+      "current scheduled air service",
+      "industrial-city exposure"
+    ],
+    "negative_themes": [
+      "large internal distances",
+      "city and airport travel times require map verification"
+    ],
+    "evidence_strength": "Moderate repeated/official signal",
+    "supporting_source_ids": [
+      "SRC001",
+      "SRC023",
+      "SRC101",
+      "SRC108"
+    ],
+    "conflicting_source_ids": [
+      "SRC001",
+      "SRC023"
+    ]
+  },
+  "overall_satisfaction": {
+    "summary": "Available qualitative material is self-selected and cannot support a numeric rating. Common positives are campus scale, clubs and technical opportunity; common negatives concern hostel/mess consistency and branch-specific placement access.",
+    "positive_themes": [
+      "campus and club variety",
+      "technical opportunities",
+      "residential peer environment"
+    ],
+    "negative_themes": [
+      "mess/hostel service complaints",
+      "branch-dependent software eligibility",
+      "some administrative complaints"
+    ],
+    "evidence_strength": "Conflicting and non-representative",
+    "supporting_source_ids": [
+      "SRC101",
+      "SRC102",
+      "SRC103",
+      "SRC104",
+      "SRC106",
+      "SRC108",
+      "SRC109"
+    ],
+    "conflicting_source_ids": [
+      "SRC104",
+      "SRC106"
+    ]
+  }
+}

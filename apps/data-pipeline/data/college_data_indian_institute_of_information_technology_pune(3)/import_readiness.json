@@ -1,0 +1,35 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": true,
+  "cutoffs": true,
+  "fees": false,
+  "scholarships": false,
+  "placements": false,
+  "recruiters": false,
+  "hostels_and_facilities": false,
+  "clubs": false,
+  "location": false,
+  "student_experience": false,
+  "blocking_issues": [
+    "2026-27 fee and hostel/mess schedule is missing.",
+    "Accreditation/approval records are incomplete.",
+    "The 2025 profile has provisional on-campus denominators, but medians and final complete recent-year results are missing.",
+    "Current hostel operations, club activity and map-derived location fields need verification."
+  ],
+  "recommended_import_order": [
+    "college_identity",
+    "admission_routes",
+    "branches",
+    "seat_matrix",
+    "cutoffs",
+    "location after coordinate verification",
+    "fees after 2026-27 circular",
+    "scholarships after current-year institution-list matching",
+    "placements and recruiters after final reports",
+    "student experience only as separately labelled qualitative evidence"
+  ],
+  "overall_status": "ready_for_human_review"
+}

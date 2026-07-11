@@ -1,0 +1,28 @@
+# Manual Verification Checklist
+
+- [ ] Confirm the institution identity, main-campus address and JoSAA institute code 206.
+- [ ] Confirm that no off-campus or ITEP records were accidentally mixed into the engineering dataset.
+- [ ] Recheck all 13 programme names and 2026 programme codes against JoSAA.
+- [ ] Recheck 2026 programme intake, female-supernumerary totals and category splits; grand totals should be 1,278 capacity + 34 supernumerary = 1,312.
+- [ ] Verify whether 2024 quota value AI in the uploaded JoSAA dataset should be normalized to Other State for NIT Calicut.
+- [ ] Confirm that the 28 blank-rank 2024 JoSAA source rows represent unavailable/vacant combinations and should remain excluded from numeric prediction inputs.
+- [ ] Spot-check at least 5 JoSAA rows per year/category against the official archive, despite the dataset being user-verified.
+- [ ] Spot-check every NIT Calicut page range in CSAB PDFs: Round 1 pages 107-127; Round 2 pages 52-59; Round 3 pages 36-40.
+- [ ] Confirm CSAB category ranks are correctly treated as All India CRL as stated in each PDF.
+- [ ] Confirm exact 2026 JoSAA eligibility (Class XII/top-20 percentile wording) from current business rules before publication.
+- [ ] Confirm that branch change remains unavailable for the 2026 batch.
+- [ ] Confirm current NBA status for Biotechnology after the 2023-2026 period and obtain the exact Engineering Physics validity dates.
+- [ ] Confirm AICTE/UGC/NAAC fields; no current authoritative grade/ID was imported.
+- [ ] Recheck B.Tech, B.Arch and dual-degree fee pages and calculated programme totals.
+- [ ] Clarify the hostel ₹25,000 first-semester advance versus ₹20,000 recurring-credit note before computing annual mess cost.
+- [ ] Confirm E-Grantz eligibility and sanction process; do not promise fee/mess waiver before approval.
+- [ ] Open each 2026-27 scholarship notice when published and capture exact income limits, benefits, deadlines, documents and renewal rules.
+- [ ] Confirm the exact placement cycle/year of the “1000+ placements / 188 companies” institute notice.
+- [ ] Extract branch-specific placement reports from the official CCD portal if they are available in a machine-readable or reviewable format.
+- [ ] Confirm company-specific roles, eligible branches, packages and selection counts; none were inferred as official.
+- [ ] Confirm hostel allocation language for the 2026 reporting instructions; the JoSAA profile statement is an institution-published claim, not an admission guarantee.
+- [ ] Recheck each listed club for current activity, official leadership and recruitment process.
+- [ ] Confirm map coordinates and travel times using a current map; official sources provide distances but not all journey times.
+- [ ] Review all student-experience links for availability, date and speaker/student identity before publishing summaries.
+- [ ] Check all source links for breakage and archive important official PDFs.
+- [ ] Confirm that 2026 official cutoffs are still unavailable/incomplete before using historical trends for prediction.

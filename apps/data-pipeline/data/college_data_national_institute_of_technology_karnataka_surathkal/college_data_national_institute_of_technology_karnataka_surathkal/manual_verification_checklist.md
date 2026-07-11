@@ -1,0 +1,22 @@
+# Manual Verification Checklist
+
+- [ ] Verify exact official identity, institute code 211 and campus address.
+- [ ] Confirm all 11 programme names against the final 2026 JoSAA seat matrix.
+- [ ] Recalculate 956 regular seats and four female supernumerary seats.
+- [ ] Spot-check JoSAA cutoff records for each year and round.
+- [ ] Spot-check all three CSAB PDFs and page references.
+- [ ] Confirm category-rank versus CRL conventions before recommendation logic.
+- [ ] Verify 2026-27 fee documents and all calculated totals.
+- [ ] Confirm tuition-remission documentation requirements.
+- [ ] Verify current scholarship calls, benefits and deadlines.
+- [ ] Confirm NIRF placement cohort scope and units.
+- [ ] Resolve 2024-25 placement outcome scope with CDC.
+- [ ] Verify recruiter year, role, eligible branches and package before company-specific display.
+- [ ] Confirm current NBA validity for every programme.
+- [ ] Confirm current operational hostel count, capacity, sharing and allocation policy.
+- [ ] Verify current curfew and grievance rules.
+- [ ] Confirm club activity status after 2024-25.
+- [ ] Map-verify location coordinates, distances and travel times.
+- [ ] Review all student-experience claims as qualitative only.
+- [ ] Check inaccessible CDC placement-report links.
+- [ ] Confirm no official 2026 cutoff has been published before import.

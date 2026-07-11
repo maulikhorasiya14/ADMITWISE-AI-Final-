@@ -1,0 +1,38 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": false,
+  "cutoffs": false,
+  "fees": false,
+  "scholarships": false,
+  "placements": true,
+  "recruiters": false,
+  "hostels_and_facilities": false,
+  "clubs": false,
+  "location": true,
+  "student_experience": true,
+  "blocking_issues": [
+    "No public official historical or 2026 branch-wise VITEEE cutoff table.",
+    "Public 2026 Category 1–5 B.Tech tuition table not verified.",
+    "Latest extracted branch-wise sanctioned intake is 2024-25.",
+    "Programme-wise NBA validity not verified.",
+    "Placement and recruiter records are not safely isolated to Vellore Campus."
+  ],
+  "recommended_import_order": [
+    "college identity",
+    "admission routes",
+    "current programme list",
+    "historical 2024-25 intake with year warning",
+    "2025-26 academic fees with year warning",
+    "2026-27 hostel fee ranges",
+    "location",
+    "institution-level NIRF placement records",
+    "scholarships after 2026 confirmation",
+    "student experience",
+    "facilities/clubs after manual review",
+    "cutoffs only if officially published"
+  ],
+  "overall_status": "ready_for_human_review"
+}

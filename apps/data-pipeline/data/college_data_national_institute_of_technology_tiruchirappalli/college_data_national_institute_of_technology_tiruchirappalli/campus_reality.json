@@ -1,0 +1,147 @@
+{
+  "senior_junior_culture": {
+    "summary": "Public evidence is too limited for a confident generalisation. Officially, first-year students have structured clubs, NSS/NCC/NSO and hostel governance; student-source coverage did not provide enough independent, specific accounts of senior-junior interaction.",
+    "positive_themes": [
+      "clubs and fests create cross-year interaction opportunities"
+    ],
+    "negative_themes": [
+      "insufficient direct evidence; isolated online comments should not be generalized"
+    ],
+    "evidence_strength": "limited",
+    "supporting_source_ids": [
+      "SRC023",
+      "SRC101",
+      "SRC107"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "Institution sources show a broad technical curriculum and strong research/industry ecosystem. Student reports indicate that workload and CGPA difficulty can vary materially by branch, with EEE frequently described as demanding.",
+    "positive_themes": [
+      "strong peer and technical environment",
+      "research and industry exposure"
+    ],
+    "negative_themes": [
+      "branch-dependent workload",
+      "academic pressure reported by some students"
+    ],
+    "evidence_strength": "limited-to-moderate",
+    "supporting_source_ids": [
+      "SRC007",
+      "SRC102",
+      "SRC107",
+      "SRC108"
+    ],
+    "conflicting_source_ids": []
+  },
+  "hostel_reality": {
+    "summary": "Officially, the institute has a very large residential system with 22 boys and 6 girls hostels and capacity for 6,966 residents. Student reports are mixed: first-year hostels and connectivity receive some positive mentions, while heat, variable amenities and average mess quality recur.",
+    "positive_themes": [
+      "large on-campus accommodation system",
+      "some reports of good first-year hostels and fast hostel internet"
+    ],
+    "negative_themes": [
+      "hot climate",
+      "amenity quality may vary by hostel/year",
+      "mess quality described as average or variable"
+    ],
+    "evidence_strength": "moderate for broad themes; anecdotal for quality claims",
+    "supporting_source_ids": [
+      "SRC016",
+      "SRC101",
+      "SRC102",
+      "SRC106",
+      "SRC107"
+    ],
+    "conflicting_source_ids": [
+      "SRC104"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "Official evidence is strong that NITT has a broad club ecosystem and major student-run fests. Student sources generally describe fests and campus community positively, although some accounts criticise restrictive rules or internal culture.",
+    "positive_themes": [
+      "many technical, cultural and social clubs",
+      "Pragyan, Festember and NITTFEST",
+      "large residential peer community"
+    ],
+    "negative_themes": [
+      "club activity intensity and recruitment selectivity not systematically verified",
+      "some negative anecdotes about fest/team culture"
+    ],
+    "evidence_strength": "strong official evidence; mixed student sentiment",
+    "supporting_source_ids": [
+      "SRC001",
+      "SRC022",
+      "SRC023",
+      "SRC101",
+      "SRC108"
+    ],
+    "conflicting_source_ids": [
+      "SRC104"
+    ]
+  },
+  "coding_and_placement_culture": {
+    "summary": "Official placement outcomes and the presence of technical groups such as Delta Force and Spider R&D support a strong technical/placement environment. Company eligibility by branch and the day-to-day coding culture were not comprehensively verified.",
+    "positive_themes": [
+      "high official placement percentages in several branches",
+      "active technical clubs",
+      "broad recruiter list"
+    ],
+    "negative_themes": [
+      "role and branch eligibility are not published in the brochure",
+      "latest 2024-25/2025-26 final placement statistics unavailable"
+    ],
+    "evidence_strength": "moderate official evidence",
+    "supporting_source_ids": [
+      "SRC017",
+      "SRC018",
+      "SRC022"
+    ],
+    "conflicting_source_ids": []
+  },
+  "locality_and_student_life": {
+    "summary": "The campus is outside central Tiruchirappalli and functions as a large residential environment. Students often mention needing a cycle for internal movement, limited immediately adjacent off-campus options and very hot weather.",
+    "positive_themes": [
+      "large self-contained campus",
+      "bus/rail/airport connectivity to Trichy"
+    ],
+    "negative_themes": [
+      "distance from city centre",
+      "hot climate",
+      "limited nearby off-campus accommodation/entertainment reported"
+    ],
+    "evidence_strength": "moderate",
+    "supporting_source_ids": [
+      "SRC001",
+      "SRC007",
+      "SRC101",
+      "SRC102",
+      "SRC105"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "Available qualitative accounts range from highly positive alumni memories to sharp criticism of weather, hostels and gender-differentiated restrictions. The evidence is not representative enough for a numeric satisfaction rating.",
+    "positive_themes": [
+      "strong peer community",
+      "fests and clubs",
+      "reputation and placement environment"
+    ],
+    "negative_themes": [
+      "heat",
+      "freedom/curfew concerns, especially for women",
+      "variable hostel experience"
+    ],
+    "evidence_strength": "mixed and non-representative",
+    "supporting_source_ids": [
+      "SRC101",
+      "SRC107",
+      "SRC108",
+      "SRC109"
+    ],
+    "conflicting_source_ids": [
+      "SRC103",
+      "SRC104"
+    ]
+  }
+}

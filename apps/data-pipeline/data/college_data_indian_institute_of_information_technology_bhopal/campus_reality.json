@@ -1,0 +1,136 @@
+{
+  "senior_junior_culture": {
+    "summary": "Public student accounts conflict sharply: one recent self-report describes helpful seniors, while another anonymous post alleges unhealthy hierarchy. The evidence is insufficient for a college-wide conclusion.",
+    "positive_themes": [
+      "Some students report helpful and approachable seniors"
+    ],
+    "negative_themes": [
+      "A serious anonymous ragging/hierarchy allegation exists and requires cautious manual review"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "STU003"
+    ],
+    "conflicting_source_ids": [
+      "STU002"
+    ]
+  },
+  "academic_culture": {
+    "summary": "Recent accounts repeatedly describe an industry-oriented computing curriculum, competitive programming and workshops, but independent evidence about attendance, grading and faculty accessibility is limited.",
+    "positive_themes": [
+      "Coding-oriented curriculum",
+      "Workshops and technical events",
+      "Time for self-learning reported by some students"
+    ],
+    "negative_themes": [
+      "Attendance, grading and faculty-access evidence is thin"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "STU001",
+      "STU003"
+    ],
+    "conflicting_source_ids": []
+  },
+  "hostel_reality": {
+    "summary": "Official and student sources consistently show a temporary multi-location hostel model with bus travel and first-year focus. Room quality varies by location, and later-year housing requires confirmation.",
+    "positive_themes": [
+      "Multiple hostel options",
+      "Bus arrangements",
+      "Hostel-tour visual evidence"
+    ],
+    "negative_themes": [
+      "No integrated permanent residential campus",
+      "Availability and later-year accommodation uncertainty",
+      "Commute differs by hostel"
+    ],
+    "evidence_strength": "Strong repeated signal",
+    "supporting_source_ids": [
+      "STU001",
+      "STU003",
+      "STU006",
+      "STU007"
+    ],
+    "conflicting_source_ids": []
+  },
+  "club_and_campus_life": {
+    "summary": "Technical clubs and coding events appear active, while cultural/sports life exists but is constrained by the temporary-campus model and dispersed accommodation.",
+    "positive_themes": [
+      "CODAME and developer activities",
+      "Cultural and technical events",
+      "NIIMACK annual fest"
+    ],
+    "negative_themes": [
+      "Activity levels of several listed clubs are not recently verified"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "STU001",
+      "STU003"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "Coding culture is repeatedly described as a strength. Placement outcomes are officially available by branch, but public discussions show confusion over registered versus participated denominators and internship/PPO interpretation.",
+    "positive_themes": [
+      "Competitive programming environment",
+      "Software recruiter visibility",
+      "Strong CSE/IT averages in official 2023-25 branch data"
+    ],
+    "negative_themes": [
+      "Placement denominator and offer-type interpretation can be misunderstood",
+      "Newer specialisations lack graduate placement history"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "STU001",
+      "STU003",
+      "STU004"
+    ],
+    "conflicting_source_ids": [
+      "STU005"
+    ]
+  },
+  "locality_and_student_life": {
+    "summary": "The temporary campus is centrally located within MANIT and Bhopal city, which supports access to markets and transport. Dispersed hostels create daily commuting dependence.",
+    "positive_themes": [
+      "City location",
+      "MANIT-area access",
+      "Rail and airport connectivity"
+    ],
+    "negative_themes": [
+      "Bus-dependent hostel commute",
+      "Permanent campus not operational"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "STU001",
+      "STU003"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "The institution appears best suited to students prioritising computing specialisations, coding and software placements over a traditional self-contained residential campus. Students seeking mature infrastructure or guaranteed multi-year hostel accommodation should verify conditions carefully.",
+    "positive_themes": [
+      "Computing focus",
+      "Competitive coding",
+      "Official branch-level placement data"
+    ],
+    "negative_themes": [
+      "Temporary campus",
+      "Accommodation uncertainty",
+      "Conflicting senior-junior reports"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "STU001",
+      "STU003",
+      "STU006",
+      "STU008"
+    ],
+    "conflicting_source_ids": [
+      "STU002",
+      "STU005"
+    ]
+  }
+}

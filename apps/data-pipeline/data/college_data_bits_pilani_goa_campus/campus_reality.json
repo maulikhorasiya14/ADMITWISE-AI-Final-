@@ -1,0 +1,150 @@
+{
+  "senior_junior_culture": {
+    "summary": "Student reports describe substantial interaction through clubs and organising departments. Many view this as mentorship and access to peer networks, while some find induction hierarchies intense. No reliable evidence supports a campus-wide claim of ragging; official anti-ragging and welfare channels exist.",
+    "positive_themes": [
+      "early interaction through clubs and departments",
+      "peer guidance and resource sharing reported"
+    ],
+    "negative_themes": [
+      "selection and hierarchy can feel intense to some first-year students"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "SX04",
+      "SX05"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "The strongest repeated student-reported concern is comparatively strict grading and the effect of CGPA on Practice School or placement choices. Attendance flexibility appears course- and policy-dependent rather than safely summarized as an unconditional zero-attendance rule.",
+    "positive_themes": [
+      "academic flexibility and self-directed study remain valued",
+      "some recent students report improved first-year grading"
+    ],
+    "negative_themes": [
+      "strict grading is a repeated concern",
+      "CGPA-sensitive opportunities create pressure",
+      "attendance-policy expectations are changing or unclear"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "SX02",
+      "SX06",
+      "SX08",
+      "SX12"
+    ],
+    "conflicting_source_ids": [
+      "SX08"
+    ]
+  },
+  "hostel_reality": {
+    "summary": "The institution describes a fully residential campus with furnished rooms and internet. Recent student reports say first-year sharing may differ from later-year single-room allocation and that off-campus residence is restricted. Room quality, mess consistency and current allocation rules require direct verification.",
+    "positive_themes": [
+      "residential community",
+      "single rooms reported from later years",
+      "campus facilities are close together"
+    ],
+    "negative_themes": [
+      "first-year room sharing reported",
+      "mess and maintenance quality not independently verified",
+      "off-campus choice may be limited"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "SX01",
+      "SX09"
+    ],
+    "conflicting_source_ids": [
+      "S006"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "Official pages verify technical, social-responsibility and entrepreneurship activities plus the Quark/Waves/Spree festival ecosystem. Student sources repeatedly describe a prominent club and department culture, but public official evidence for many individual clubs is old or incomplete.",
+    "positive_themes": [
+      "wide range of organising opportunities",
+      "strong residential social environment",
+      "technical and entrepreneurship exposure"
+    ],
+    "negative_themes": [
+      "selective induction can exclude beginners",
+      "some public club pages are stale"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S020",
+      "S021",
+      "S022",
+      "S026",
+      "SX03",
+      "SX04",
+      "SX05"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "Official data confirms broad recruiter participation and high overall campus placement percentages in the latest campus-specific three-year table, but branch-level access and current packages are not public. Student reports suggest software opportunities are strongest for CS and circuit branches, while non-circuit students may need substantial extra preparation and face employer eligibility restrictions.",
+    "positive_themes": [
+      "large recruiter list",
+      "Practice School and peer networks can support industry exposure",
+      "software and analytics recruiters are represented"
+    ],
+    "negative_themes": [
+      "branch eligibility is not transparent publicly",
+      "non-circuit access to software roles may be restricted",
+      "latest campus-specific placement statistics are dated"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S018",
+      "S019",
+      "SX06",
+      "SX07"
+    ],
+    "conflicting_source_ids": []
+  },
+  "locality_and_student_life": {
+    "summary": "The campus is residential and close to Dabolim airport, but routine access to Vasco, Margao and other Goa destinations generally requires road transport. The setting offers Goa's cultural and leisure ecosystem without being a city-centre campus.",
+    "positive_themes": [
+      "airport proximity",
+      "residential campus community",
+      "access to Goa leisure destinations"
+    ],
+    "negative_themes": [
+      "not located in central Panaji or a dense technology district",
+      "cab or road transport is often needed"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S006",
+      "S029",
+      "SX03",
+      "SX09"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "Public student discussion commonly values campus life, peer networks, flexibility and opportunities, while raising concerns about fees, grading pressure, current placement transparency and the gap between the 'Goa' image and everyday transport constraints. Evidence is not suitable for a numeric satisfaction score.",
+    "positive_themes": [
+      "residential peer environment",
+      "clubs and festivals",
+      "academic and career optionality"
+    ],
+    "negative_themes": [
+      "high cost",
+      "grading pressure",
+      "dated campus-specific placement disclosures",
+      "variable hostel/mess experience"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "SX01",
+      "SX02",
+      "SX03",
+      "SX05",
+      "SX06",
+      "SX09",
+      "SX10"
+    ],
+    "conflicting_source_ids": []
+  }
+}

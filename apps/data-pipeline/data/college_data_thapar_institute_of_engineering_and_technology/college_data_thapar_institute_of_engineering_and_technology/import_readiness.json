@@ -1,0 +1,41 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": false,
+  "cutoffs": false,
+  "fees": true,
+  "scholarships": true,
+  "placements": true,
+  "recruiters": false,
+  "hostels_and_facilities": false,
+  "clubs": false,
+  "location": true,
+  "student_experience": true,
+  "blocking_issues": [
+    "No official 2023 cutoff series; 2026 is partial.",
+    "No category-wise 2026 seat matrix.",
+    "2026-27 AICTE EoA and complete NBA validity letters not located.",
+    "Official branch-wise placement and dated recruiter evidence unavailable.",
+    "Patiala hostel fee session and headline capacity require confirmation.",
+    "Individual club activity dates are not verified."
+  ],
+  "recommended_import_order": [
+    "college_identity",
+    "admission_routes",
+    "branches",
+    "fees",
+    "scholarships",
+    "overall_placements",
+    "location",
+    "student_experience",
+    "accreditation_after_NBA_review",
+    "hostels_after_rate_confirmation",
+    "seat_matrix_after_category_export",
+    "recruiters_after_year_verification",
+    "clubs_after_activity_verification",
+    "cutoffs_after_2023_and_final_2026_collection"
+  ],
+  "overall_status": "ready_for_human_review"
+}

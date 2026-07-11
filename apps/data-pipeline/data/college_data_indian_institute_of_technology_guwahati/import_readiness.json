@@ -1,0 +1,39 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": true,
+  "cutoffs": true,
+  "fees": true,
+  "scholarships": true,
+  "placements": true,
+  "recruiters": true,
+  "hostels_and_facilities": true,
+  "clubs": true,
+  "location": true,
+  "student_experience": false,
+  "blocking_issues": [
+    "Official 2026 cutoffs are not yet available",
+    "AICTE/NAAC/NBA applicability remains unverified",
+    "Student-experience evidence is not broad enough for college-wide quality claims",
+    "Final 2025-26 placement report is pending"
+  ],
+  "recommended_import_order": [
+    "college_identity",
+    "admission_routes",
+    "branches",
+    "seat_matrix",
+    "cutoffs",
+    "fees",
+    "scholarships",
+    "placements",
+    "recruiters",
+    "hostels_and_facilities",
+    "clubs",
+    "location",
+    "accreditation after verification",
+    "student_experience after editorial review"
+  ],
+  "overall_status": "ready_for_human_review"
+}

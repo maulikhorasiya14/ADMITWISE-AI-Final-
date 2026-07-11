@@ -1,0 +1,138 @@
+{
+  "senior_junior_culture": {
+    "summary": "Limited public student reports describe approachable seniors and low ragging concern, but the evidence is too small to generalize.",
+    "positive_themes": [
+      "helpful seniors reported",
+      "social interaction through hostels and clubs"
+    ],
+    "negative_themes": [
+      "club hierarchy and batch-to-batch variation are not well evidenced"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "STU001",
+      "STU002"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "Public accounts describe reasonable extracurricular freedom, while workload varies materially by branch.",
+    "positive_themes": [
+      "freedom for extracurricular activities reported",
+      "strong research and technical-event ecosystem visible officially"
+    ],
+    "negative_themes": [
+      "branch-dependent workload",
+      "faculty accessibility and grading strictness not sufficiently evidenced"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "STU002",
+      "STU008"
+    ],
+    "conflicting_source_ids": []
+  },
+  "hostel_reality": {
+    "summary": "Hostel social life and campus access are commonly presented positively, while hygiene, water and maintenance experiences vary by block and time. A recent complaint is incident-specific and unverified.",
+    "positive_themes": [
+      "residential peer life",
+      "night canteens and beach access",
+      "visual evidence of rooms/common areas"
+    ],
+    "negative_themes": [
+      "shared washrooms",
+      "block-dependent maintenance",
+      "recent water/maintenance complaint"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "STU001",
+      "STU003",
+      "STU006",
+      "STU007"
+    ],
+    "conflicting_source_ids": [
+      "STU004"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "Official records show a broad and recently active club/fest ecosystem; public visual sources reinforce a lively coastal campus setting.",
+    "positive_themes": [
+      "active technical and cultural festivals",
+      "many clubs",
+      "beach and sports environment"
+    ],
+    "negative_themes": [
+      "club-selection fairness and first-year access are not comprehensively evidenced"
+    ],
+    "evidence_strength": "Strong official signal; moderate student-reported signal",
+    "supporting_source_ids": [
+      "STU005",
+      "STU008",
+      "STU009"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "The institute has strong official recruiter and placement activity. Student accounts describe a good coding environment, but software access and workload may be branch-dependent.",
+    "positive_themes": [
+      "peer learning and coding opportunities",
+      "major recruiter presence",
+      "technical competitions"
+    ],
+    "negative_themes": [
+      "non-CSE software eligibility varies by company",
+      "one account expected a stronger coding culture"
+    ],
+    "evidence_strength": "Moderate mixed signal",
+    "supporting_source_ids": [
+      "STU002",
+      "STU008"
+    ],
+    "conflicting_source_ids": []
+  },
+  "locality_and_student_life": {
+    "summary": "Official transport information indicates good road and rail access to Mangaluru, while the campus is outside the city centre. The coastal campus and beach are recurring positive themes.",
+    "positive_themes": [
+      "beach/coastal setting",
+      "nearby railway station",
+      "public buses on NH66"
+    ],
+    "negative_themes": [
+      "less direct large-city/startup exposure than Bengaluru",
+      "exact evening transport experience not well evidenced"
+    ],
+    "evidence_strength": "Moderate signal",
+    "supporting_source_ids": [
+      "STU001",
+      "STU005",
+      "STU009"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "Public accounts generally value campus life, peer environment and institutional reputation, with hostel maintenance and branch fit as the main caution areas.",
+    "positive_themes": [
+      "campus life",
+      "peer network",
+      "clubs and fests",
+      "placement ecosystem"
+    ],
+    "negative_themes": [
+      "hostel variability",
+      "branch-dependent opportunities",
+      "distance from major technology hubs"
+    ],
+    "evidence_strength": "Moderate repeated signal with important limitations",
+    "supporting_source_ids": [
+      "STU001",
+      "STU002",
+      "STU005",
+      "STU008",
+      "STU009"
+    ],
+    "conflicting_source_ids": [
+      "STU004"
+    ]
+  }
+}

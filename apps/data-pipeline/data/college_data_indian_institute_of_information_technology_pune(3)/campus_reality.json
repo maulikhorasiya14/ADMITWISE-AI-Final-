@@ -1,0 +1,124 @@
+{
+  "senior_junior_culture": {
+    "summary": "No reliable college-wide conclusion. A few student discussions imply peer help and coding interaction, but there are too few independent, identity-verifiable accounts to generalize about mentorship, hierarchy or ragging.",
+    "positive_themes": [
+      "limited mentions of peer learning"
+    ],
+    "negative_themes": [
+      "insufficient evidence on batch interaction and club hierarchy"
+    ],
+    "evidence_strength": "No reliable evidence",
+    "supporting_source_ids": [
+      "STU001"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "Official sources describe programmes and branch-change rules, but recent independent evidence on attendance strictness, grading, faculty accessibility and internship flexibility is insufficient.",
+    "positive_themes": [
+      "official curriculum supports CSE/ECE and new specializations",
+      "branch change exists under a high-CGPA rule"
+    ],
+    "negative_themes": [
+      "student-level workload and flexibility not verified"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "S001",
+      "STU001"
+    ],
+    "conflicting_source_ids": []
+  },
+  "hostel_reality": {
+    "summary": "The official 2026 profile describes permanent-campus hostel capacity, while some older negative reports concern the former transit-campus period. Recent public accounts are too limited to rate cleanliness, mess, water, curfew or complaint resolution.",
+    "positive_themes": [
+      "new permanent-campus hostel buildings are publicly visible",
+      "official profile publishes planned/constructed capacities"
+    ],
+    "negative_themes": [
+      "current allotment guarantee, occupancy, mess fee and day-to-day service quality are not verified"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "S001",
+      "STU002",
+      "STU005"
+    ],
+    "conflicting_source_ids": [
+      "S024",
+      "STU006"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "Official material documents technical, sports, music, drama and entrepreneurship activities in 2022-24. Current 2026 activity of most clubs is not established from recent official posts.",
+    "positive_themes": [
+      "varied technical and cultural groups",
+      "inter-institute events and competitions"
+    ],
+    "negative_themes": [
+      "many latest verifiable activities are older than one year"
+    ],
+    "evidence_strength": "Moderate repeated signal for historical activity; limited for current activity",
+    "supporting_source_ids": [
+      "S001",
+      "S018",
+      "STU001"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "Official evidence shows coding competitions, hackathons and recognisable recruiters; recent student reports are generally positive about coding peers. Placement transparency is incomplete because counts, medians and role-wise results were not consistently published in accessible structured form.",
+    "positive_themes": [
+      "coding competitions and hackathons",
+      "official recruiter list",
+      "student-reported peer coding environment"
+    ],
+    "negative_themes": [
+      "placement-rate denominator and role/branch access are unclear",
+      "new specializations have no historical branch-specific outcomes"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S005",
+      "S006",
+      "S007",
+      "S018",
+      "STU001"
+    ],
+    "conflicting_source_ids": []
+  },
+  "locality_and_student_life": {
+    "summary": "The permanent campus is in the Nanoli-Talegaon/Maval area rather than central Pune. Official distances support rail and road connectivity, but daily city access and late-evening transport convenience remain student-experience questions.",
+    "positive_themes": [
+      "Talegaon railway station and bus stand are within the wider local area",
+      "regional industrial belt may offer hardware/manufacturing exposure"
+    ],
+    "negative_themes": [
+      "distance from central Pune and major technology clusters",
+      "public-transport frequency and last-mile options not verified"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S001",
+      "STU003",
+      "STU004"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "The available recent student evidence is too small and self-selected to estimate college-wide satisfaction or whether most students would choose the institute again.",
+    "positive_themes": [
+      "new campus and peer coding are recurring positives"
+    ],
+    "negative_themes": [
+      "fees, placement transparency, location and unfinished-service uncertainty recur as decision questions"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "STU001",
+      "STU002",
+      "STU003"
+    ],
+    "conflicting_source_ids": []
+  }
+}

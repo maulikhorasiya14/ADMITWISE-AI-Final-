@@ -1,0 +1,37 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": true,
+  "cutoffs": true,
+  "fees": true,
+  "scholarships": false,
+  "placements": false,
+  "recruiters": false,
+  "hostels_and_facilities": false,
+  "clubs": false,
+  "location": true,
+  "student_experience": false,
+  "blocking_issues": [
+    "Final 2026 fee confirmation is pending because JoSAA labels the table tentative.",
+    "Final 2025-26 placements and company-level role/selection data are not available.",
+    "Current hall inventory/room sharing and scholarship deadlines require manual confirmation."
+  ],
+  "recommended_import_order": [
+    "college_identity",
+    "admission_routes",
+    "branches",
+    "seat_matrix",
+    "cutoffs",
+    "fees",
+    "location",
+    "scholarships",
+    "placements",
+    "recruiters",
+    "hostels_and_facilities",
+    "clubs",
+    "student_experience"
+  ],
+  "overall_status": "ready_for_human_review"
+}

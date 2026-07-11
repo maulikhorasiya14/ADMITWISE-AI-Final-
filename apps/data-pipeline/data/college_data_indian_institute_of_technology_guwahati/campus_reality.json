@@ -1,0 +1,154 @@
+{
+  "senior_junior_culture": {
+    "summary": "The official JoSAA profile describes a senior-mentoring culture. Public student accounts support active cross-batch interaction through residential life and clubs, but independent evidence on consistency, hierarchy and fresher inclusion remains limited.",
+    "positive_themes": [
+      "Officially described senior mentoring",
+      "Residential and club-based peer interaction"
+    ],
+    "negative_themes": [
+      "Experience may vary by hostel and group",
+      "Insufficient independent evidence for a college-wide conclusion"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "S002",
+      "S035",
+      "S036"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "Official sources describe a flexible interdisciplinary curriculum, thesis work and access to courses across departments. Student accounts describe strong peer learning and opportunities but also a demanding workload.",
+    "positive_themes": [
+      "Flexible course choices and interdisciplinary exposure",
+      "Strong peer group",
+      "Research and project access"
+    ],
+    "negative_themes": [
+      "Workload and grading experience can vary by course and instructor",
+      "Balancing coding, core academics and clubs may be demanding"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S002",
+      "S035",
+      "S036"
+    ],
+    "conflicting_source_ids": []
+  },
+  "hostel_reality": {
+    "summary": "Official sources state that all students are provided hostel rooms, with single occupancy, mess, LAN, laundry, gym and common facilities. Video and forum sources show substantial residential infrastructure, while mess preferences and block-level conditions vary.",
+    "positive_themes": [
+      "Single-room model in official description",
+      "Campus network access",
+      "Residential peer environment",
+      "Mess and daily facilities within hostels"
+    ],
+    "negative_themes": [
+      "Mess quality is subjective and mixed",
+      "Individual hostel blocks can differ in age and maintenance"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S022",
+      "S031",
+      "S032",
+      "S038"
+    ],
+    "conflicting_source_ids": []
+  },
+  "club_and_campus_life": {
+    "summary": "IIT Guwahati has technical, cultural, sports and welfare boards, major festivals and numerous student clubs. Visual and student sources consistently emphasize the scenic residential campus and active events.",
+    "positive_themes": [
+      "Wide technical and cultural club range",
+      "Major festivals including Alcheringa and Techniche",
+      "Scenic residential campus",
+      "Sports infrastructure"
+    ],
+    "negative_themes": [
+      "Recent dated activity is not available for every static-listed club",
+      "Club induction and workload can be selective or time-intensive"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S002",
+      "S022",
+      "S023",
+      "S024",
+      "S025",
+      "S031",
+      "S033"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "Official placement reports show high placement rates and compensation for CSE, Mathematics and Computing, ECE and DSAI, alongside active coding, analytics, robotics and electronics clubs. Software-role eligibility for each non-CSE branch remains employer-specific.",
+    "positive_themes": [
+      "Strong placement outcomes in computing-related branches",
+      "Coding, robotics, analytics and electronics communities",
+      "Large multi-sector recruiter set"
+    ],
+    "negative_themes": [
+      "Non-CSE access varies by company",
+      "Placement reports use registration denominators and CTC, not guaranteed take-home pay"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S014",
+      "S015",
+      "S016",
+      "S024",
+      "S027"
+    ],
+    "conflicting_source_ids": [
+      "C002",
+      "C003",
+      "C004"
+    ]
+  },
+  "locality_and_student_life": {
+    "summary": "The campus is scenic and self-contained on the north bank of the Brahmaputra, but about 22 km from central Guwahati. Institute buses and road transport provide connectivity; spontaneous city access takes planning.",
+    "positive_themes": [
+      "Scenic, large campus",
+      "Airport and railway access within roughly 30 minutes under normal conditions",
+      "Institute bus connection to city centre"
+    ],
+    "negative_themes": [
+      "Campus is separated from central city life",
+      "Traffic and evening transport conditions can extend travel time"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S002",
+      "S022",
+      "S033",
+      "S038"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "Available evidence suggests a strong fit for students seeking a residential research university with a major peer network, technical opportunities and extensive campus life. Students prioritizing frequent urban access, uniform mess quality or guaranteed software eligibility across all branches should verify those trade-offs.",
+    "positive_themes": [
+      "Reputation and academic breadth",
+      "Campus and peer environment",
+      "Clubs, research and placements"
+    ],
+    "negative_themes": [
+      "Distance from city centre",
+      "Branch-dependent career access",
+      "Limited independent evidence on some hostel and policy details"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S002",
+      "S014",
+      "S022",
+      "S031",
+      "S033",
+      "S035",
+      "S036",
+      "S038"
+    ],
+    "conflicting_source_ids": []
+  }
+}

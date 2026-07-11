@@ -1,0 +1,3 @@
+# Excluded Sources and Claims
+
+Aggregator sites such as Shiksha, Careers360, Collegedunia, CollegeDekho, College Pravesh, coaching pages, copied tables and AI-generated summaries were excluded from verified factual records. Anonymous one-line allegations, private-group content, personal disputes and unsupported accusations were excluded. Public Reddit and YouTube sources are retained only as labelled qualitative evidence. No official 2026 cutoff, guaranteed scholarship, recruiter-specific package, exact medical capability, fixed four-year residential cost or numeric campus-culture score was invented.

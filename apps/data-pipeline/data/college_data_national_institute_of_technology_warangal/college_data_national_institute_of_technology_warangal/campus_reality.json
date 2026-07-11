@@ -1,0 +1,130 @@
+{
+  "senior_junior_culture": {
+    "summary": "Limited student accounts suggest seniors can be approachable and useful for academic or placement guidance, but there is not enough independent evidence to generalize across batches or clubs.",
+    "positive_themes": [
+      "senior guidance reported in some discussions",
+      "residential campus enables batch interaction"
+    ],
+    "negative_themes": [
+      "club hierarchy and fresher inclusion are not well evidenced"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "STU001"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "Student reports are mixed: one account describes manageable workload, while another criticizes frequent assessments. Official regulations and research infrastructure indicate a structured academic environment, but attendance and grading experience may vary by department.",
+    "positive_themes": [
+      "manageable workload reported by one student",
+      "broad research and laboratory ecosystem"
+    ],
+    "negative_themes": [
+      "frequent exam/assessment cadence reported",
+      "branch-dependent workload"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "STU001"
+    ],
+    "conflicting_source_ids": [
+      "STU005"
+    ]
+  },
+  "hostel_reality": {
+    "summary": "Visual and written student sources repeatedly show that room occupancy, cleanliness and maintenance vary by hostel block. Officially, NITW is strongly residential, but accommodation entitlement and current room rules require confirmation.",
+    "positive_themes": [
+      "large residential community",
+      "mess and canteen ecosystem",
+      "peer interaction"
+    ],
+    "negative_themes": [
+      "old-hostel maintenance concerns",
+      "washroom/hygiene complaints in some blocks",
+      "occupancy variation"
+    ],
+    "evidence_strength": "Moderate repeated signal with block-level variation",
+    "supporting_source_ids": [
+      "STU005",
+      "STU007",
+      "STU009"
+    ],
+    "conflicting_source_ids": []
+  },
+  "club_and_campus_life": {
+    "summary": "Official sources list a broad technical, cultural, service and sports ecosystem. Public tours show a large established campus, but current club recruitment fairness and activity intensity are not consistently documented.",
+    "positive_themes": [
+      "many official clubs",
+      "technical and cultural festivals",
+      "sports facilities"
+    ],
+    "negative_themes": [
+      "current activity status is not verified for every club"
+    ],
+    "evidence_strength": "Strong official signal; limited independent student evidence",
+    "supporting_source_ids": [
+      "STU006",
+      "STU008"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "Official placement data show strong outcomes in CSE, ECE and EEE, while software access for non-CSE branches depends on company eligibility and individual preparation. Independent student evidence on coding culture is limited.",
+    "positive_themes": [
+      "strong official placement performance in circuit branches",
+      "software and robotics clubs exist"
+    ],
+    "negative_themes": [
+      "non-CSE software-role eligibility varies",
+      "branch-specific placement differences are substantial"
+    ],
+    "evidence_strength": "Strong official placement signal; limited student-reported signal",
+    "supporting_source_ids": [
+      "STU001"
+    ],
+    "conflicting_source_ids": []
+  },
+  "locality_and_student_life": {
+    "summary": "The campus is close to Kazipet Junction and Warangal city but far from Hyderabad airport and the Hyderabad technology ecosystem. Student sources mention language/food adjustment concerns, though evidence is limited.",
+    "positive_themes": [
+      "rail connectivity",
+      "established city access",
+      "on-campus services"
+    ],
+    "negative_themes": [
+      "distance from Hyderabad",
+      "possible food/language adjustment for some students"
+    ],
+    "evidence_strength": "Moderate official connectivity signal; limited anecdotal lifestyle signal",
+    "supporting_source_ids": [
+      "STU003",
+      "STU006"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "The dominant evidence suggests a strong academic and placement institution with a large residential campus. Common cautions are hostel-maintenance variability, branch fit and the difference between circuit-branch and core-branch placement outcomes.",
+    "positive_themes": [
+      "institutional reputation",
+      "placements",
+      "peer network",
+      "clubs and campus scale"
+    ],
+    "negative_themes": [
+      "hostel variability",
+      "branch-dependent outcomes",
+      "some infrastructure criticism"
+    ],
+    "evidence_strength": "Moderate mixed signal",
+    "supporting_source_ids": [
+      "STU001",
+      "STU003",
+      "STU006",
+      "STU008"
+    ],
+    "conflicting_source_ids": [
+      "STU005"
+    ]
+  }
+}

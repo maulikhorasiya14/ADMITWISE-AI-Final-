@@ -1,0 +1,192 @@
+{
+  "senior_junior_culture": {
+    "summary": "AMAs, clubs and project teams create cross-batch contact, but evidence is insufficient for a college-wide judgement on hierarchy or mentorship. No repeated, well-supported ragging pattern was found in the reviewed sources; absence is not proof of absence.",
+    "positive_themes": [
+      "Student AMAs show willingness to answer applicant questions",
+      "Clubs create structured cross-batch interaction"
+    ],
+    "negative_themes": [
+      "Mentorship quality likely varies",
+      "No robust independent fresher-inclusion dataset"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "source_count": 4,
+    "date_range": "2025-2026",
+    "source_agreement": "Broadly consistent but thin",
+    "supporting_source_ids": [
+      "SRC104",
+      "SRC105",
+      "SRC108",
+      "SRC026"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "Reports show room for technical exploration, while one recent first-person account alleges strict or subjective attendance/discipline. Faculty quality and flexibility appear instructor- and branch-dependent.",
+    "positive_themes": [
+      "Early technical exploration",
+      "Official labs, research groups and incubator access"
+    ],
+    "negative_themes": [
+      "One recent strict-discipline account",
+      "No institute-wide grading or internship-flexibility dataset"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "source_count": 4,
+    "date_range": "2025-2026",
+    "source_agreement": "Mixed",
+    "supporting_source_ids": [
+      "SRC104",
+      "SRC105",
+      "SRC115",
+      "SRC021"
+    ],
+    "conflicting_source_ids": [
+      "SRC107"
+    ]
+  },
+  "hostel_reality": {
+    "summary": "Strongest repeated signal is variation by block, room type, price and availability. Wi-Fi is generally usable for browsing but gaming reports are mixed.",
+    "positive_themes": [
+      "Many AC/non-AC and sharing options",
+      "Walkable campus access",
+      "Social integration"
+    ],
+    "negative_themes": [
+      "Popular-room competition",
+      "Humidity/AC trade-off",
+      "Mixed gaming performance",
+      "Mess quality cannot be generalized"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "source_count": 7,
+    "date_range": "2025-2026",
+    "source_agreement": "Consistent on variation; mixed on Wi-Fi/mess",
+    "supporting_source_ids": [
+      "SRC103",
+      "SRC106",
+      "SRC109",
+      "SRC110",
+      "SRC111",
+      "SRC027",
+      "SRC108"
+    ],
+    "conflicting_source_ids": [
+      "SRC106"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "Official listings and student media show a broad technical, cultural, service and performance ecosystem. Hostellers may find evening participation easier. Static listings do not prove every club is active.",
+    "positive_themes": [
+      "Wide club variety",
+      "Recurring events and project teams",
+      "Hosteller access to evening activities"
+    ],
+    "negative_themes": [
+      "Day scholars may miss late events",
+      "Recruitment fairness and current activity unverified"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "source_count": 4,
+    "date_range": "2024-2026",
+    "source_agreement": "Broadly consistent",
+    "supporting_source_ids": [
+      "SRC019",
+      "SRC026",
+      "SRC108",
+      "SRC115"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "There is an active computing/open-source/security ecosystem, but verified placement data are only overall UG NIRF records. Branch-wise community datasets are unverified and core-branch software access remains uncertain.",
+    "positive_themes": [
+      "Multiple computing clubs",
+      "Early peer learning",
+      "Large institution-published recruiter ecosystem"
+    ],
+    "negative_themes": [
+      "No verified branch placement dataset",
+      "Non-CSE eligibility must be checked company-wise",
+      "Recruiter lists mostly undated"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "source_count": 6,
+    "date_range": "2025-2026",
+    "source_agreement": "Opportunity visible; outcomes incomplete",
+    "supporting_source_ids": [
+      "SRC019",
+      "SRC104",
+      "SRC105",
+      "SRC016",
+      "SRC017"
+    ],
+    "conflicting_source_ids": [
+      "SRC112",
+      "SRC113"
+    ]
+  },
+  "locality_and_student_life": {
+    "summary": "Manipal is a compact student town with services and healthcare near campus. Udupi rail access is convenient; the airport is about 60 km away and there is no metro. Major-metro industry exposure is indirect.",
+    "positive_themes": [
+      "Walkable student-town environment",
+      "Nearby hospital and services",
+      "Convenient Udupi rail access"
+    ],
+    "negative_themes": [
+      "Longer airport transfer",
+      "Humidity and heavy monsoon",
+      "Less direct metro-industry exposure"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "source_count": 4,
+    "date_range": "2025-2026",
+    "source_agreement": "Broadly consistent",
+    "supporting_source_ids": [
+      "SRC023",
+      "SRC024",
+      "SRC108",
+      "SRC115"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "Public evidence most often praises campus life, infrastructure, clubs and opportunity breadth. Main cautions are high cost, block-dependent hostel experience, branch-dependent placement risk and limited current branch-level transparency.",
+    "positive_themes": [
+      "Vibrant student ecosystem",
+      "Established facilities",
+      "Strong opportunity set for self-driven students"
+    ],
+    "negative_themes": [
+      "High cost",
+      "Difficult branch-wise ROI verification",
+      "Variable hostel/academic experience"
+    ],
+    "who_it_appears_best_suited_for": [
+      "Self-driven residential-campus students",
+      "Students with comfortable budget or strong scholarship fit",
+      "Students with clear branch plan"
+    ],
+    "who_may_not_enjoy_it": [
+      "Students seeking low-cost education with transparent branch ROI",
+      "Students preferring a major metro",
+      "Students expecting uniform hostel quality or universal software access"
+    ],
+    "would_choose_again_evidence": "No reliable multi-source evidence found",
+    "evidence_strength": "Moderate repeated signal",
+    "source_count": 8,
+    "date_range": "2024-2026",
+    "source_agreement": "Broad themes agree; outcome judgements vary",
+    "supporting_source_ids": [
+      "SRC101",
+      "SRC102",
+      "SRC108",
+      "SRC115",
+      "SRC026",
+      "SRC027",
+      "SRC104",
+      "SRC109"
+    ],
+    "conflicting_source_ids": []
+  }
+}

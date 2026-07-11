@@ -1,0 +1,133 @@
+{
+  "senior_junior_culture": {
+    "summary": "Public evidence is too limited to generalize. Recent sources do not provide enough independent, detailed accounts of mentorship, hierarchy or fresher inclusion.",
+    "positive_themes": [
+      "Official alumni platform and talks create potential mentoring channels"
+    ],
+    "negative_themes": [
+      "No reliable repeated public evidence on everyday senior-junior interaction"
+    ],
+    "evidence_strength": "No reliable evidence",
+    "supporting_source_ids": [
+      "STU001"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "A recent detailed anonymous account describes knowledgeable faculty but a competitive and tiring 9-to-5 weekday schedule. Older comparison threads also characterize academics as a relative strength. Official rules historically state a 75% attendance threshold.",
+    "positive_themes": [
+      "Faculty guidance and academic quality are repeatedly viewed as strengths",
+      "Strong research and project opportunities are institution-published"
+    ],
+    "negative_themes": [
+      "Workload and competitive pace may feel demanding",
+      "Attendance flexibility should be verified from current regulations"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "STU001",
+      "STU002",
+      "SRC027"
+    ],
+    "conflicting_source_ids": []
+  },
+  "hostel_reality": {
+    "summary": "Official 2026 data confirms multiple room types, regulated entry/exit and a possibility that 80-120 boys may use empanelled PG accommodation in first year. Student-source evidence on room and mess quality is limited and mixed.",
+    "positive_themes": [
+      "On-campus accommodation guaranteed for girls and PwD students",
+      "Campus Wi-Fi, power backup and nearby SAC are officially described"
+    ],
+    "negative_themes": [
+      "Some first-year boys may live up to about 6.5 km away",
+      "Mess and room-quality evidence is too limited for a reliable quality judgment"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "STU001",
+      "STU006",
+      "STU007"
+    ],
+    "conflicting_source_ids": []
+  },
+  "club_and_campus_life": {
+    "summary": "Officially, 19 clubs and several fests operate under the Gymkhana Council. Public student discussions, however, repeatedly describe campus life or fest quality as limited compared with larger institutions.",
+    "positive_themes": [
+      "Current official profile lists technical, cultural, sports and welfare clubs",
+      "Entropy, Yuvaan, Invicta, Sankalp and entrepreneurship events provide formal opportunities"
+    ],
+    "negative_themes": [
+      "Several public accounts describe quieter or weaker campus life",
+      "Club-specific recent activity is not well documented publicly"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "STU001",
+      "STU002",
+      "STU003",
+      "STU004"
+    ],
+    "conflicting_source_ids": [
+      "SRC001",
+      "SRC019"
+    ]
+  },
+  "coding_and_placement_culture": {
+    "summary": "Official placement outcomes and a current Programming Club/ML/robotics developer ecosystem indicate meaningful technical opportunity. Public sources focus more on placement numbers than on day-to-day peer coding culture, so the culture itself remains only moderately evidenced.",
+    "positive_themes": [
+      "Strong CSE placement outcomes and current technical clubs",
+      "Hackathons, coding contests and research projects are institution-published"
+    ],
+    "negative_themes": [
+      "Placement pages combine on-campus and off-campus selections",
+      "Non-CSE access to software roles and recruiter eligibility are not publicly documented"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "STU005",
+      "SRC001",
+      "SRC011"
+    ],
+    "conflicting_source_ids": []
+  },
+  "locality_and_student_life": {
+    "summary": "The permanent campus is close to the airport but about 19-25 km from major railway stations and central Guwahati. Public discussions often perceive the campus as relatively isolated, while official sources emphasize city access and regional travel opportunities.",
+    "positive_themes": [
+      "Airport is about 4 km away",
+      "App-based taxis and some buses serve the approach road"
+    ],
+    "negative_themes": [
+      "Distance from central Guwahati may limit spontaneous city access",
+      "Evening transport convenience is not sufficiently documented"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "STU002",
+      "STU003",
+      "STU004",
+      "STU007"
+    ],
+    "conflicting_source_ids": [
+      "SRC026"
+    ]
+  },
+  "overall_satisfaction": {
+    "summary": "Signals are mixed: academics, faculty and placements are common strengths, while campus life, infrastructure breadth and management are recurrent concerns in public discussions. The evidence is not strong enough to claim a college-wide satisfaction level or whether most students would choose it again.",
+    "positive_themes": [
+      "Academic and placement orientation",
+      "Permanent green campus and current technical facilities"
+    ],
+    "negative_themes": [
+      "Quieter campus-life perception",
+      "First-year accommodation uncertainty for some boys",
+      "Management criticism in a recent anonymous account"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "STU001",
+      "STU002",
+      "STU003",
+      "STU004"
+    ],
+    "conflicting_source_ids": []
+  }
+}

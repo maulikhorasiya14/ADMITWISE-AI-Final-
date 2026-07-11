@@ -1,0 +1,207 @@
+{
+  "senior_junior_culture": {
+    "summary": "Official welfare systems include mentoring, programme representatives, a student council and anti-ragging mechanisms. Public student discussions indicate useful senior guidance for onboarding, clubs and academics, but the evidence is not strong enough for a campus-wide hierarchy judgement.",
+    "positive_themes": [
+      "peer and senior guidance is available",
+      "formal mentoring and student representation",
+      "clubs create cross-year interaction"
+    ],
+    "negative_themes": [
+      "freshers can find onboarding and hostel allocation confusing",
+      "club experience varies by group"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_count": 4,
+    "source_date_range": "2024–2026",
+    "agreement": "Broadly consistent with limited depth",
+    "supporting_source_ids": [
+      "S018",
+      "SX05",
+      "SX12",
+      "SX14"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "FFCS provides timetable and elective choice, while attendance and assessment workload are recurring student concerns. A commonly discussed 75% threshold and high-CGPA exemptions require confirmation from current academic regulations rather than social posts.",
+    "positive_themes": [
+      "flexible-credit and timetable choice",
+      "large elective ecosystem",
+      "projects and technical teams"
+    ],
+    "negative_themes": [
+      "attendance/debarment anxiety",
+      "dense CAT/FAT schedules",
+      "faculty and course experience varies at scale"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_count": 4,
+    "source_date_range": "2024–2026",
+    "agreement": "Students agree on workload but differ on attendance exemptions",
+    "supporting_source_ids": [
+      "SX02",
+      "SX05",
+      "SX08",
+      "SX10"
+    ],
+    "conflicting_source_ids": [
+      "SX02",
+      "SX05"
+    ]
+  },
+  "hostel_reality": {
+    "summary": "Official sources verify a very large residential system with AC/non-AC sharing options, Wi-Fi, laundry, security and multiple mess choices. Student reports consistently describe major differences between blocks, room sizes, bathrooms, walking distance and food experience.",
+    "positive_themes": [
+      "many room and mess options",
+      "on-campus laundry, pharmacy and food services",
+      "large residential community"
+    ],
+    "negative_themes": [
+      "premium options are expensive",
+      "block and washroom quality varies",
+      "mess reports conflict",
+      "freshers may have limited choice"
+    ],
+    "evidence_strength": "Strong repeated signal",
+    "supporting_source_count": 11,
+    "source_date_range": "2024–2026",
+    "agreement": "Strong agreement that experience is block/provider dependent",
+    "supporting_source_ids": [
+      "S019",
+      "S014",
+      "S015",
+      "SX01",
+      "SX04",
+      "SX07",
+      "SX09",
+      "SX12",
+      "SX13",
+      "SX15",
+      "SX16"
+    ],
+    "conflicting_source_ids": [
+      "SX09",
+      "SX12"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "VIT officially publishes a broad club, chapter, festival and student-governance ecosystem. Student sources consistently describe many events and opportunities, while current activity, selection difficulty and value vary by organisation.",
+    "positive_themes": [
+      "large technical and cultural ecosystem",
+      "frequent events and technical exposure",
+      "strong opportunity for proactive students"
+    ],
+    "negative_themes": [
+      "many pages lack dated recent activity",
+      "selection and event quality vary",
+      "some activities involve extra cost"
+    ],
+    "evidence_strength": "Strong repeated signal",
+    "supporting_source_count": 12,
+    "source_date_range": "2024–2026",
+    "agreement": "Broadly consistent",
+    "supporting_source_ids": [
+      "S018",
+      "S030",
+      "S031",
+      "S032",
+      "S033",
+      "S034",
+      "S035",
+      "S036",
+      "S037",
+      "SX05",
+      "SX10",
+      "SX14"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "The institution has a large centralized placement system, technical clubs and a broad employer network. This scale creates both opportunity and intense competition. Students repeatedly recommend independent coding, projects, hackathons and external internship efforts.",
+    "positive_themes": [
+      "large employer network",
+      "developer and competitive-programming clubs",
+      "hackathon/project opportunities",
+      "centralized placement access"
+    ],
+    "negative_themes": [
+      "large cohort competition",
+      "branch and CGPA filters are not publicly transparent",
+      "Vellore-only outcomes are unavailable"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_count": 7,
+    "source_date_range": "2025–2026",
+    "agreement": "Broadly consistent with scope uncertainty",
+    "supporting_source_ids": [
+      "S026",
+      "S027",
+      "S031",
+      "S035",
+      "SX03",
+      "SX06",
+      "SX11"
+    ],
+    "conflicting_source_ids": []
+  },
+  "locality_and_student_life": {
+    "summary": "Katpadi Junction provides strong rail connectivity, while Chennai airport requires a long transfer. Vellore offers healthcare, food and daily services but is not a major technology-city campus; metro-based internships usually require travel or remote arrangements.",
+    "positive_themes": [
+      "Katpadi Junction is close",
+      "frequent intercity rail/bus links",
+      "CMC provides major medical access",
+      "everyday services are nearby"
+    ],
+    "negative_themes": [
+      "airport is far",
+      "limited immediate startup/IT ecosystem",
+      "urban nightlife and exposure are more limited than metro campuses"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_count": 6,
+    "source_date_range": "2024–2026",
+    "agreement": "Broadly consistent",
+    "supporting_source_ids": [
+      "S002",
+      "S020",
+      "S038",
+      "S039",
+      "SX10",
+      "SX14"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "Student evidence commonly frames VIT Vellore as opportunity-rich but crowded and expensive. Students who proactively use clubs, projects and placement preparation report better value; those expecting a small cohort, low fees or highly personalized administration may be less satisfied.",
+    "positive_themes": [
+      "large opportunity set",
+      "strong infrastructure",
+      "active clubs/events",
+      "broad peer and employer network"
+    ],
+    "negative_themes": [
+      "high cost",
+      "crowding and competition",
+      "variable hostel/mess experience",
+      "attendance uncertainty"
+    ],
+    "evidence_strength": "Strong repeated signal",
+    "supporting_source_count": 11,
+    "source_date_range": "2024–2026",
+    "agreement": "Broadly consistent on opportunities and scale-related drawbacks",
+    "supporting_source_ids": [
+      "SX01",
+      "SX03",
+      "SX05",
+      "SX06",
+      "SX07",
+      "SX09",
+      "SX10",
+      "SX11",
+      "SX12",
+      "SX14",
+      "SX18"
+    ],
+    "conflicting_source_ids": []
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "senior_junior_culture": {
+    "summary": "Official clubs and councils create cross-batch interaction, but recent independent evidence on mentorship, hierarchy and fresher inclusion is limited.",
+    "positive_themes": [
+      "Clubs, councils and technical teams provide interaction channels",
+      "Residential campus supports peer contact"
+    ],
+    "negative_themes": [
+      "Insufficient recent independent evidence about hierarchy or mentoring consistency"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "S025",
+      "S036",
+      "S037"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "IIT Hyderabad uses a distinctive fractal academic system. Student accounts describe continuous assessment, branch-dependent attendance rules, project opportunities and meaningful workload variation.",
+    "positive_themes": [
+      "Fractal course structure can reduce a single common exam peak",
+      "Research and project access",
+      "Academic flexibility through minors/double majors where rules permit"
+    ],
+    "negative_themes": [
+      "Continuous assignments and examinations",
+      "Workload and grading experience varies by branch and instructor"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S002",
+      "S036",
+      "S037"
+    ],
+    "conflicting_source_ids": []
+  },
+  "hostel_reality": {
+    "summary": "Official sources report individual rooms, radiant cooling, Wi-Fi/LAN and residential UG life. Recent videos support strong infrastructure, while mess satisfaction and block-to-block cooling experience vary.",
+    "positive_themes": [
+      "Single rooms in official current description",
+      "Radiant cooling",
+      "Modern hostel architecture",
+      "Residential peer environment"
+    ],
+    "negative_themes": [
+      "Mess quality is subjective and conflicting",
+      "Some rooms may experience cooling or maintenance variation",
+      "First-year allocation details require verification"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S022",
+      "S031",
+      "S032",
+      "S033",
+      "S035",
+      "S036",
+      "S037"
+    ],
+    "conflicting_source_ids": [
+      "S036",
+      "S037"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "The institute publishes a broad technical, cultural, literary, service and entrepreneurship ecosystem, including Elan & nVision. Student sources also describe active clubs and inter-hostel events.",
+    "positive_themes": [
+      "Wide technical and cultural range",
+      "Large annual festival",
+      "Entrepreneurship and service opportunities",
+      "Sports complex"
+    ],
+    "negative_themes": [
+      "Current recruitment cycles and selection fairness are not uniformly public"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S025",
+      "S026",
+      "S027",
+      "S028",
+      "S029",
+      "S036",
+      "S037"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "Official placement and internship sources show strong participation by software, finance, consulting, semiconductor and engineering employers. Peer accounts indicate active DSA and non-core preparation, but branch eligibility varies and public company-level rules are incomplete.",
+    "positive_themes": [
+      "Major technology and semiconductor recruiters",
+      "Structured OCS process",
+      "Large internship and PPO pipeline",
+      "Technical clubs and peer preparation"
+    ],
+    "negative_themes": [
+      "Branch outcomes differ",
+      "Company eligibility and role-level data are not fully public",
+      "Placement season can be competitive"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S002",
+      "S013",
+      "S014",
+      "S015",
+      "S016",
+      "S017",
+      "S036",
+      "S037"
+    ],
+    "conflicting_source_ids": []
+  },
+  "locality_and_student_life": {
+    "summary": "The campus is a large, self-contained residential site in Kandi/Sangareddy. Official routes connect it to Hyderabad, but student reports consistently note that malls and central-city activities usually require substantial travel.",
+    "positive_themes": [
+      "Large campus",
+      "On-campus services and food outlets",
+      "Road access toward Hyderabad technology corridors"
+    ],
+    "negative_themes": [
+      "Approximately one-hour access to many city destinations",
+      "Immediate locality is less urban than central Hyderabad"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S002",
+      "S030",
+      "S033",
+      "S036"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "Available evidence supports modern infrastructure, strong academics and a substantial club/recruiter ecosystem. Common trade-offs are academic intensity, mess variation, non-urban location and branch-dependent placement access. No numeric satisfaction score is justified.",
+    "positive_themes": [
+      "Infrastructure",
+      "Research orientation",
+      "Single-room hostel model",
+      "Technical and cultural opportunities"
+    ],
+    "negative_themes": [
+      "Distance from city",
+      "Continuous academic workload",
+      "Mess and branch-placement variation"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S031",
+      "S032",
+      "S033",
+      "S034",
+      "S035",
+      "S036",
+      "S037"
+    ],
+    "conflicting_source_ids": []
+  }
+}

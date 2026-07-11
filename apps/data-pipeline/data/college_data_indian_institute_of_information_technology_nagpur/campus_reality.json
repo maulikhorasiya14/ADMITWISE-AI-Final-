@@ -1,0 +1,159 @@
+{
+  "senior_junior_culture": {
+    "summary": "Public discussions and institute descriptions suggest seniors and coding-club members often provide counselling, coding and preparation guidance. Evidence is not broad enough to generalize across every batch or club. No reliable evidence was used to make a campus-wide ragging claim.",
+    "positive_themes": [
+      "senior-led counselling AMA",
+      "coding-club collaboration",
+      "alumni/senior placement guidance"
+    ],
+    "negative_themes": [
+      "evidence is self-selected",
+      "club hierarchy and fresher inclusion are not systematically documented"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "SEXP001",
+      "SEXP002",
+      "SRC001"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "The curriculum is specialised and includes a compulsory semester internship. Student sources describe a self-driven, technically competitive environment, but public evidence on attendance strictness, grading and faculty accessibility is incomplete.",
+    "positive_themes": [
+      "specialised curricula",
+      "mandatory semester internship",
+      "competitive coding environment"
+    ],
+    "negative_themes": [
+      "attendance and workload evidence is incomplete",
+      "software preparation may still require self-study"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "SRC001",
+      "SRC007",
+      "SEXP001",
+      "SEXP004"
+    ],
+    "conflicting_source_ids": []
+  },
+  "hostel_reality": {
+    "summary": "Hostel availability is the clearest repeated concern. The official 2026 profile states rooms are limited and allotted first come first served, while a 2026 tender seeks external accommodation, mess and transport for about 400-600 students. Student sources consistently report that some students must use PG or external hostel options.",
+    "positive_themes": [
+      "modern permanent hostel block and campus facilities for allotted residents",
+      "mess, laundry, shop and Wi-Fi are officially listed"
+    ],
+    "negative_themes": [
+      "limited on-campus capacity",
+      "off-campus travel and additional cost",
+      "allocation uncertainty around late counselling rounds"
+    ],
+    "evidence_strength": "Strong repeated signal",
+    "supporting_source_ids": [
+      "SRC001",
+      "SRC018",
+      "SEXP002",
+      "SEXP003",
+      "SEXP005",
+      "SEXP006"
+    ],
+    "conflicting_source_ids": []
+  },
+  "club_and_campus_life": {
+    "summary": "The institute runs major technical, cultural and sports events and has multiple technical and cultural clubs. Visual and student sources confirm activity, though campus remoteness and hostel allocation can affect participation and daily social life.",
+    "positive_themes": [
+      "TantraFiesta",
+      "Abhivyakti",
+      "technical hackathons and coding contests",
+      "dance, music, theatre and art clubs"
+    ],
+    "negative_themes": [
+      "some students describe campus life as limited",
+      "sports infrastructure has been described as developing in older sources"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "SRC001",
+      "SRC007",
+      "SEXP003",
+      "SEXP008",
+      "SEXP010"
+    ],
+    "conflicting_source_ids": [
+      "SEXP004"
+    ]
+  },
+  "coding_and_placement_culture": {
+    "summary": "Coding culture is repeatedly described as a strength, supported by official references to competitive coding, technical clubs, hackathons and a compulsory internship. Official placement data should be used instead of social-media package claims, and non-CSE students should verify company eligibility role by role.",
+    "positive_themes": [
+      "competitive coding",
+      "technical clubs",
+      "hackathons",
+      "mandatory internship",
+      "peer learning"
+    ],
+    "negative_themes": [
+      "placement scopes differ across official reports",
+      "company-level eligibility is not public for most recruiters",
+      "social-media package claims are inconsistent"
+    ],
+    "evidence_strength": "Strong repeated signal",
+    "supporting_source_ids": [
+      "SRC001",
+      "SRC007",
+      "SEXP002",
+      "SEXP003",
+      "SEXP004",
+      "SEXP008"
+    ],
+    "conflicting_source_ids": []
+  },
+  "locality_and_student_life": {
+    "summary": "The permanent campus is around 25 km from Nagpur city. Officially published station, airport and bus distances and student discussions consistently indicate that transport and late-evening access require planning. Nearby Butibori options may reduce cost but do not replicate central-city exposure.",
+    "positive_themes": [
+      "permanent 100-acre campus",
+      "near industrial Butibori area",
+      "paid electric autos to the highway"
+    ],
+    "negative_themes": [
+      "remote from city",
+      "limited direct public transport",
+      "external hostel/PG commuting"
+    ],
+    "evidence_strength": "Strong repeated signal",
+    "supporting_source_ids": [
+      "SRC001",
+      "SRC018",
+      "SEXP002",
+      "SEXP005",
+      "SEXP006"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "The college appears best suited to students prioritising CSE/ECE-focused curricula, coding, internships and a developing permanent campus. Students who strongly prioritise guaranteed hostel accommodation, central-city life, broad branch choice or mature sports/social infrastructure should verify those trade-offs carefully.",
+    "positive_themes": [
+      "technology-focused peer group",
+      "coding and internship culture",
+      "modern permanent campus",
+      "active fests"
+    ],
+    "negative_themes": [
+      "hostel uncertainty",
+      "remote location",
+      "young alumni/institutional ecosystem",
+      "limited independent evidence on academics and support services"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "SEXP001",
+      "SEXP002",
+      "SEXP003",
+      "SEXP004",
+      "SEXP008",
+      "SEXP010"
+    ],
+    "conflicting_source_ids": []
+  }
+}

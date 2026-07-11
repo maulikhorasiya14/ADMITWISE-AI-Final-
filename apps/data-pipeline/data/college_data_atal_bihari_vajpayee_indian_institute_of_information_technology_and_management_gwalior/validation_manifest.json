@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-06-26",
+  "official_college_name": "Atal Bihari Vajpayee Indian Institute of Information Technology and Management, Gwalior",
+  "target_admission_year": 2026,
+  "completion_percentage": 87,
+  "validation": {
+    "json_valid": true,
+    "csv_headers_consistent": true,
+    "cutoff_numeric_and_order_valid": true,
+    "cutoff_duplicates_removed": true,
+    "historical_cutoffs_not_labeled_2026": true,
+    "seat_matrix_total": 360,
+    "female_supernumerary_total": 0,
+    "blank_josaa_rows_excluded": 0,
+    "csab_rows_by_round": {
+      "1": 44,
+      "2": 16,
+      "3": 13
+    },
+    "zip_crc_valid": true
+  },
+  "counts": {
+    "sources": 33,
+    "authoritative_sources": 13,
+    "institution_controlled_or_associated_sources": 12,
+    "student_experience_sources": 8,
+    "branches": 5,
+    "seat_matrix_records": 10,
+    "cutoffs_total": 1099,
+    "cutoffs_josaa": 1026,
+    "cutoffs_csab": 73,
+    "fees": 6,
+    "placements": 10,
+    "recruiters": 30,
+    "scholarships": 7,
+    "clubs": 10,
+    "conflicts": 5
+  },
+  "files": {
+    "college_profile.json": {
+      "bytes": 928088,
+      "sha256": "61cecd7e560d8b39c374fa80816323eac6786b3f73e1098c34550a6e8f84b27b"
+    },
+    "campus_reality.json": {
+      "bytes": 5139,
+      "sha256": "eb355bf16035d62e44cae47ecf42cf898037fc84c41e48ea78659717dbf21d9e"
+    },
+    "sources.csv": {
+      "bytes": 11023,
+      "sha256": "361bf0999016fddd9b81b7356736ed18d6dd55e09c82ed213adb236198fe2621"
+    },
+    "branches.csv": {
+      "bytes": 1031,
+      "sha256": "2f67d6ef85a01d156f034736be789e40a8a12ad9084a90594667215400622529"
+    },
+    "cutoffs.csv": {
+      "bytes": 326603,
+      "sha256": "83c3d9025db3f350da4cc3f54cf1a5266e880d37f69e7724b5244816f9e2a3c2"
+    },
+    "fees.csv": {
+      "bytes": 2663,
+      "sha256": "ade53fc9e617cd4c471b1ad893d15eaeb621b388e27297235ffe45d9bc7fa2d5"
+    },
+    "placements.csv": {
+      "bytes": 3102,
+      "sha256": "5711c283e258e531a4bac5d8e704a92b32ccbb6705d2fd354b289c30480d0306"
+    },
+    "recruiters.csv": {
+      "bytes": 11643,
+      "sha256": "2d7ba73793750f29b0b45bc349a7ec62f3c15877f59de91fc6a94d3d2eb9382b"
+    },
+    "scholarships.csv": {
+      "bytes": 4402,
+      "sha256": "57ffed60be82f9a05b0cb457cc559d589b0817e41faec5f6551af285b2a7c48d"
+    },
+    "clubs.csv": {
+      "bytes": 4907,
+      "sha256": "8b07e56957e35b849970af02979d751ea96ca18bb273ca901243d50e941388e2"
+    },
+    "location.csv": {
+      "bytes": 1225,
+      "sha256": "e3ace53e0972ff29e317b4008c269f9061a48d9c7cd5653860adf4244039d313"
+    },
+    "student_experience_sources.csv": {
+      "bytes": 4050,
+      "sha256": "85bf3f3c428cd2d26f3276d748cda05c123a125a2ca2029ec815c3e6913c3592"
+    },
+    "data_conflicts.csv": {
+      "bytes": 1600,
+      "sha256": "7f968e8c64bdf58e5e55f7a0c4280c8de3c1b47c2c4fab68cd3fbdf756e423a9"
+    },
+    "college_summary.md": {
+      "bytes": 7302,
+      "sha256": "60b05088d7d39c757c5eb62324eb81fa1f20ad29a6d74caf72ccc1b07a684df6"
+    },
+    "manual_verification_checklist.md": {
+      "bytes": 1449,
+      "sha256": "ec2c83752c9bf8843341da248d283c6690a6cb10569c294cf4f19d787d5be578"
+    },
+    "excluded_sources.md": {
+      "bytes": 665,
+      "sha256": "7b340731664ccb84c89b1effac4150b016895089628eaa2429e34504bef80a25"
+    },
+    "research_log.md": {
+      "bytes": 1245,
+      "sha256": "b5ee7990294eaeb88ae407b3e75a1bd5573a3592c3b8bb83ed564eb850be89aa"
+    },
+    "import_readiness.json": {
+      "bytes": 1032,
+      "sha256": "7747ed7323edc4b69c2c380d5e736c04923aed6d9e22a0cc4334fd1e42ea4bb2"
+    }
+  }
+}

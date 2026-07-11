@@ -1,0 +1,36 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": true,
+  "cutoffs": true,
+  "fees": true,
+  "scholarships": false,
+  "placements": true,
+  "recruiters": false,
+  "hostels_and_facilities": false,
+  "clubs": false,
+  "location": false,
+  "student_experience": true,
+  "blocking_issues": [
+    "Verify current accreditation and exact NIRF rank/rank band.",
+    "Confirm final 2026-27 external hostel/provider and allotment.",
+    "Verify scholarship-specific live rules.",
+    "Verify recruiter roles/year/eligibility before current-company claims.",
+    "Validate map-derived location data."
+  ],
+  "recommended_import_order": [
+    "college identity",
+    "admission routes",
+    "branches and seat matrix",
+    "historical cutoffs",
+    "official fees",
+    "NIRF and institute placement aggregates as separate scopes",
+    "student experience as labelled qualitative evidence",
+    "scholarships after scheme verification",
+    "recruiters after role/year verification",
+    "hostels, clubs and location after manual freshness checks"
+  ],
+  "overall_status": "ready_for_human_review"
+}

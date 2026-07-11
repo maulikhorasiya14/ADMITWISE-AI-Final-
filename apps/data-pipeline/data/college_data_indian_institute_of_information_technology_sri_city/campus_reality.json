@@ -1,0 +1,169 @@
+{
+  "senior_junior_culture": {
+    "summary": "Admissions megathreads show seniors and alumni answering practical questions, but public evidence is too limited to generalise about all batches, club hierarchies or mentoring. No campus-wide ragging claim is made.",
+    "positive_themes": [
+      "student/alumni Q&A channels",
+      "peer guidance on admissions and placements"
+    ],
+    "negative_themes": [
+      "anonymous self-selection",
+      "insufficient evidence on club hierarchy and fresher inclusion"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "SEXP001",
+      "SEXP002"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "Official sources describe a fast, practice-theory-practice curriculum, early projects, research opportunities and industry-oriented CSE/ECE tracks. Student discussions broadly support an academically focused environment, while workload, grading strictness and faculty accessibility receive mixed or incomplete evidence.",
+    "positive_themes": [
+      "project-based learning",
+      "UG research from second year",
+      "industry-aligned tracks",
+      "specialisations and research honours"
+    ],
+    "negative_themes": [
+      "workload can be demanding",
+      "public evidence on grading and attendance is incomplete"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "SRC001",
+      "SRC010",
+      "SEXP002",
+      "SEXP003",
+      "SEXP008"
+    ],
+    "conflicting_source_ids": []
+  },
+  "hostel_reality": {
+    "summary": "The official 2026 profile states IIIT Sri City is residential and on-campus stay is compulsory, with two boys hostels and one girls hostel functional and additional construction underway. Student reports generally recognise newer infrastructure but differ on room/building quality and earlier arrangements; current allocation and occupancy should be confirmed.",
+    "positive_themes": [
+      "residential campus",
+      "newer first-year infrastructure reported",
+      "Wi-Fi and gym officially listed"
+    ],
+    "negative_themes": [
+      "older hostel blocks receive mixed comments",
+      "construction and occupancy may change",
+      "mess and room quality evidence is inconsistent"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "SRC001",
+      "SEXP002",
+      "SEXP005",
+      "SEXP008",
+      "SEXP009"
+    ],
+    "conflicting_source_ids": [
+      "SEXP005",
+      "SEXP008"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "The official profile lists fourteen technical, cultural and social clubs plus national outreach programmes, and current institute pages show active technical clubs and an entrepreneurship ecosystem. Student sources acknowledge activities but often describe limited outside-city life.",
+    "positive_themes": [
+      "wide club mix",
+      "technical project ecosystem",
+      "cultural and social clubs",
+      "incubation support"
+    ],
+    "negative_themes": [
+      "industrial-town setting limits spontaneous city life",
+      "activity levels vary and some clubs lack dated public updates"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "SRC001",
+      "SRC014",
+      "SRC015",
+      "SRC016",
+      "SRC017",
+      "SRC018",
+      "SRC019",
+      "SEXP002",
+      "SEXP003"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "Official sources show programming from the first year, a full-stack track, competitive programming, internships and semester-long industry projects. Student discussions repeatedly regard coding and placements as strengths, while debating eligibility denominators and whether headline statistics represent the full batch. Official registered-cohort data is retained as the factual record.",
+    "positive_themes": [
+      "early programming and DSA",
+      "full-stack development track",
+      "internship and PPO focus",
+      "hackathon participation",
+      "strong software placement averages"
+    ],
+    "negative_themes": [
+      "placement denominator is registered students rather than total intake",
+      "company-level eligibility is not published",
+      "ECE outcomes trail CSE averages"
+    ],
+    "evidence_strength": "Strong repeated signal",
+    "supporting_source_ids": [
+      "SRC001",
+      "SRC008",
+      "SEXP001",
+      "SEXP002",
+      "SEXP003",
+      "SEXP006"
+    ],
+    "conflicting_source_ids": [
+      "SEXP004",
+      "SEXP012"
+    ]
+  },
+  "locality_and_student_life": {
+    "summary": "The campus is inside the Sri City industrial ecosystem, close to Tada but roughly 60-80 km from major Chennai/Tirupati hubs. Official transport information is detailed, while student sources repeatedly describe limited outside life. The industrial ecosystem may support exposure, but daily city access requires planning.",
+    "positive_themes": [
+      "large industrial ecosystem",
+      "Tada rail access",
+      "Chennai and Tirupati regional connectivity",
+      "residential community"
+    ],
+    "negative_themes": [
+      "limited city nightlife and local market variety",
+      "longer travel for metropolitan opportunities"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "SRC001",
+      "SRC029",
+      "SEXP003",
+      "SEXP007"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "IIIT Sri City appears best suited to students prioritising CSE/AI/ECE curricula, coding, research, placements and a residential technical environment. Students seeking low fees, a broad branch portfolio, mature metropolitan college life or a guaranteed relaxed workload should evaluate the trade-offs carefully.",
+    "positive_themes": [
+      "focused technology programmes",
+      "strong official placement outcomes",
+      "industry-linked location",
+      "project and research orientation"
+    ],
+    "negative_themes": [
+      "high total institutional cost",
+      "limited outside-city life",
+      "young alumni ecosystem",
+      "placement and hostel scopes require careful reading"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "SRC001",
+      "SRC008",
+      "SEXP001",
+      "SEXP002",
+      "SEXP003",
+      "SEXP005"
+    ],
+    "conflicting_source_ids": [
+      "SEXP004",
+      "SEXP012"
+    ]
+  }
+}

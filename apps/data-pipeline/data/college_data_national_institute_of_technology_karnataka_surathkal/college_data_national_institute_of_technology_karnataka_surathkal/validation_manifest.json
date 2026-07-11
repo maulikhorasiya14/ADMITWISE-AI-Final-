@@ -1,0 +1,120 @@
+{
+  "generated_at": "2026-06-26",
+  "folder": "college_data_national_institute_of_technology_karnataka_surathkal",
+  "files": {
+    "branches.csv": {
+      "size_bytes": 2437,
+      "sha256": "e62f33b946e73a68c1617284e9a41e6ce0f0babab27f0f19e8a3edfe8fb7a33e"
+    },
+    "campus_reality.json": {
+      "size_bytes": 4660,
+      "sha256": "3976059256b46e69c6f393ac500d59a5dce310d4cb77150fe2dec3eaf24eb11a"
+    },
+    "clubs.csv": {
+      "size_bytes": 8263,
+      "sha256": "37344ec62fb63ea2ffd06f50905ffc1996364fc084d3b5ef91124d7e42fb74dc"
+    },
+    "college_profile.json": {
+      "size_bytes": 3291526,
+      "sha256": "66b28f4e00b2e6526329619c142f3f994f6f92c04e1ac6efdfbf155fe8eb96c2"
+    },
+    "college_summary.md": {
+      "size_bytes": 6877,
+      "sha256": "fbfe4301b674e3b92f97f9261787c1344e02fa92b7366beeaea066240f8c641e"
+    },
+    "cutoffs.csv": {
+      "size_bytes": 1084631,
+      "sha256": "95383a49b6a55dd7b130a5e0b98e728eafb0d30581e6e34d6f72d1f2971e534b"
+    },
+    "data_conflicts.csv": {
+      "size_bytes": 1689,
+      "sha256": "9eb927979b5f318e7805caac1e3b52973afe141841856567b5d8e4edcf4deece"
+    },
+    "excluded_sources.md": {
+      "size_bytes": 889,
+      "sha256": "29a7f532489cdfacaa464d5fa3f367e1927173fad1ade076acba2003ca2da5b1"
+    },
+    "fees.csv": {
+      "size_bytes": 1741,
+      "sha256": "29337c0038afd4c4a36f5b9152c698b32d484603720e090a7e24f39550505e20"
+    },
+    "import_readiness.json": {
+      "size_bytes": 1185,
+      "sha256": "96709d3de5a5d2490be57e45d3421963dbb21066bf18839eda3ff7b342fd7c05"
+    },
+    "location.csv": {
+      "size_bytes": 932,
+      "sha256": "7aac8efe3860352a1a9b1c93955f7a29fc83a3d655a91ee3c1b459de23e04ce4"
+    },
+    "manual_verification_checklist.md": {
+      "size_bytes": 1356,
+      "sha256": "af6316d4afcff99f295228cae5b3ad40c10b527debcd932adeb526eeb5b0c04e"
+    },
+    "placements.csv": {
+      "size_bytes": 4613,
+      "sha256": "c1d77edd073c488a6cb5d596518600173a36f954f4740d4732c4e87a5d17dd98"
+    },
+    "recruiters.csv": {
+      "size_bytes": 10695,
+      "sha256": "7d0b9ece75ce9b5677c78955fc2781381026c666108c099654a7dbe7c683a06e"
+    },
+    "research_log.md": {
+      "size_bytes": 1726,
+      "sha256": "317f9471f847a80d9dbcc997ba6ce0ccbfdf5e03dd543fb6de6520cbd24c71f8"
+    },
+    "scholarships.csv": {
+      "size_bytes": 3970,
+      "sha256": "a45522bf826e422e9620b057611e5d70c8b9ae17a1261de45b469d628057f18c"
+    },
+    "sources.csv": {
+      "size_bytes": 8244,
+      "sha256": "ecdbefba500214b1ba6b6eb0b958834b13048c02dff068cd18adc6d2c78604d6"
+    },
+    "student_experience_sources.csv": {
+      "size_bytes": 3323,
+      "sha256": "516c6af10291376faa765be40f5f7f27e6c4b9c4ece0948f5258a9b1526c2673"
+    }
+  },
+  "record_counts": {
+    "sources": 22,
+    "authoritative_sources": 12,
+    "institution_controlled_sources": 10,
+    "student_experience_sources": 9,
+    "branches": 11,
+    "seat_matrix_rows": 22,
+    "regular_seat_total": 956,
+    "female_supernumerary_seats": 4,
+    "cutoffs": 4437,
+    "josaa_cutoffs": 4230,
+    "csab_cutoffs": 207,
+    "cutoffs_by_year": {
+      "2023": 1473,
+      "2024": 1256,
+      "2025": 1708
+    },
+    "blank_cutoff_rows_excluded": 4,
+    "fees": 4,
+    "placements": 14,
+    "recruiters": 30,
+    "scholarships": 8,
+    "clubs": 20,
+    "conflicts": 5
+  },
+  "validation": {
+    "required_files_present": true,
+    "json_valid": true,
+    "csv_row_widths_consistent": true,
+    "cutoff_numeric_valid": true,
+    "opening_not_greater_than_closing": true,
+    "exact_cutoff_duplicates_removed": true,
+    "historical_cutoffs_not_labelled_2026": true,
+    "regular_seat_total_956": true,
+    "female_supernumerary_total_4": true,
+    "tier_c_not_used_for_official_numeric_facts": true
+  },
+  "notes": [
+    "Calculated costs are explicitly labelled calculated.",
+    "Student reports remain qualitative.",
+    "Missing values remain null or blank."
+  ]
+}

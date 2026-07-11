@@ -1,0 +1,41 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": true,
+  "cutoffs": true,
+  "fees": true,
+  "scholarships": true,
+  "placements": true,
+  "recruiters": true,
+  "hostels_and_facilities": false,
+  "clubs": true,
+  "location": false,
+  "student_experience": true,
+  "blocking_issues": [
+    "Verify programme-level NBA renewals for MME, Mining, AI and CDS.",
+    "Resolve final 2025-26 placement cohort scope with CDC.",
+    "Confirm current hostel count, sharing, allocation guarantee and rules.",
+    "Verify donor-scholarship 2026-27 calls and deadlines.",
+    "Map-verify remaining location fields."
+  ],
+  "recommended_import_order": [
+    "college_identity",
+    "admission_routes",
+    "branches",
+    "seat_matrix",
+    "cutoffs",
+    "fees",
+    "tuition_remission",
+    "NIRF_placements",
+    "annual_report_branch_placements",
+    "recruiters_with_unknown_fields_preserved",
+    "clubs",
+    "student_experience_as_qualitative_only",
+    "hostels_after_manual_confirmation",
+    "location_after_map_verification",
+    "accreditation_after_renewal_check"
+  ],
+  "overall_status": "ready_for_human_review"
+}

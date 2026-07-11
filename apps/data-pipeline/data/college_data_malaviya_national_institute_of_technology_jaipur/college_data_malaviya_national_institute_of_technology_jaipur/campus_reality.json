@@ -1,0 +1,125 @@
+{
+  "senior_junior_culture": {
+    "summary": "No sufficiently repeated, recent and independently verifiable evidence was found to characterize senior-junior relations college-wide. Official anti-ragging and student-welfare mechanisms exist, but that does not establish lived experience.",
+    "positive_themes": [],
+    "negative_themes": [],
+    "evidence_strength": "No reliable evidence",
+    "supporting_source_ids": [],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "A recent first-year AMA mentions proxy attendance in some subjects, but the available student evidence is too limited to characterize attendance strictness, grading or faculty accessibility across departments.",
+    "positive_themes": [
+      "Large programme and department ecosystem may provide varied academic opportunities, based on official structure rather than student ratings."
+    ],
+    "negative_themes": [
+      "Limited anecdotal concern about uneven classroom attendance enforcement."
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "SEXP002"
+    ],
+    "conflicting_source_ids": []
+  },
+  "hostel_reality": {
+    "summary": "Visual tours and one first-year AMA suggest newer/first-year accommodation can be functional, while another public discussion reports a hostel-allotment dispute. Conditions likely vary by hostel and year; published capacity is not an allotment guarantee.",
+    "positive_themes": [
+      "Newer hostel rooms and common areas are visible in public tours.",
+      "A first-year student described the first-year hostel as decent."
+    ],
+    "negative_themes": [
+      "Hostel quality may vary by building.",
+      "A 2024 dispute raised concerns about allotment and delivery restrictions."
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "SEXP001",
+      "SEXP006"
+    ],
+    "conflicting_source_ids": [
+      "SEXP005"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "Official evidence shows a broad and recently active club ecosystem, including large 2026 cultural events. Student-vlog evidence also shows active campus spaces, but independent student assessment of selection fairness and first-year access is limited.",
+    "positive_themes": [
+      "Official Cultural Society lists 18 active clubs.",
+      "Science and Technology Society lists 13 technical/innovation clubs.",
+      "Youthfest 2026 drew broad participation according to the institute newsletter."
+    ],
+    "negative_themes": [
+      "No robust independent evidence on selection fairness or access for first-year students."
+    ],
+    "evidence_strength": "Moderate institution-published signal; limited independent student evidence",
+    "supporting_source_ids": [
+      "SRC021",
+      "SRC022",
+      "SRC023",
+      "SEXP008",
+      "SEXP010"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "Multiple recent public discussions characterize coding culture as self-driven rather than strongly institution-led, while official records show active technical clubs and substantial software/technology recruiter presence. The evidence therefore suggests opportunity exists, but peer intensity may vary and students should not assume a uniformly strong coding environment.",
+    "positive_themes": [
+      "Official Computer Science, Data Science, Infosec, Robotics and Entrepreneurship clubs exist.",
+      "Recent official reports list major technology recruiters."
+    ],
+    "negative_themes": [
+      "Several recent student comments describe coding culture as weaker than applicant expectations.",
+      "Non-CSE access to specific software roles is not officially published."
+    ],
+    "evidence_strength": "Moderate repeated student-reported signal with institution-published counter-evidence",
+    "supporting_source_ids": [
+      "SEXP002",
+      "SEXP003",
+      "SEXP004"
+    ],
+    "conflicting_source_ids": [
+      "SRC022",
+      "SRC014"
+    ]
+  },
+  "locality_and_student_life": {
+    "summary": "The campus is within Jaipur and close to railway and airport links according to official pages. Public tours indicate an active residential campus, but recent independent evidence on evening transport, food costs and off-campus PG experience is limited.",
+    "positive_themes": [
+      "Urban Jaipur location rather than a remote campus.",
+      "Multiple rail stations and the airport are relatively close by official estimates."
+    ],
+    "negative_themes": [
+      "Exact travel times vary with traffic.",
+      "Nearest metro and current late-evening public transport convenience were not reliably verified."
+    ],
+    "evidence_strength": "Limited anecdotal signal supported by official location facts",
+    "supporting_source_ids": [
+      "SRC025",
+      "SRC026",
+      "SEXP008",
+      "SEXP010"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "Public comments are materially mixed: some describe lively college life and adequate first-year facilities, while others criticize coding culture, placement trends or administrative policies. The evidence is not strong enough to generalize a single satisfaction verdict.",
+    "positive_themes": [
+      "Lively campus and social life appears in first-person and visual sources.",
+      "Strong official club/event footprint."
+    ],
+    "negative_themes": [
+      "Concerns about coding culture and placement volatility.",
+      "Hostel/administrative policy concerns in a dispute context."
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "SEXP001",
+      "SEXP008",
+      "SEXP010"
+    ],
+    "conflicting_source_ids": [
+      "SEXP003",
+      "SEXP004",
+      "SEXP005"
+    ]
+  }
+}

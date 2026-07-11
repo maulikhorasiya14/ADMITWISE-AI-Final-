@@ -1,0 +1,40 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": true,
+  "cutoffs": true,
+  "fees": true,
+  "scholarships": false,
+  "placements": true,
+  "recruiters": true,
+  "hostels_and_facilities": true,
+  "clubs": true,
+  "location": true,
+  "student_experience": true,
+  "blocking_issues": [
+    "Current AICTE and programme-wise NBA records are not verified.",
+    "No official All India historical JEE closure archive was found.",
+    "2026 cutoffs are not final.",
+    "NIRF and audited placement records require distinct UI labels.",
+    "Current NRI/FN fees and some scholarship deadlines need verification."
+  ],
+  "recommended_import_order": [
+    "college identity and aliases",
+    "2026 programmes",
+    "2026 route-wise seat matrix",
+    "admission routes",
+    "2023–2025 ACPC cutoffs",
+    "current domestic fees",
+    "institutional scholarships after eligibility review",
+    "placement records with separate scopes",
+    "recruiters",
+    "hostels and facilities",
+    "clubs",
+    "location",
+    "student experience",
+    "AICTE/NBA and All India cutoffs when verified"
+  ],
+  "overall_status": "ready_for_human_review"
+}

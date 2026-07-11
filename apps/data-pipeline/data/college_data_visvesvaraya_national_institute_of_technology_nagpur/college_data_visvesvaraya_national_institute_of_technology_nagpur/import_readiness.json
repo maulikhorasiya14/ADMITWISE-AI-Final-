@@ -1,0 +1,37 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": true,
+  "cutoffs": true,
+  "fees": true,
+  "scholarships": false,
+  "placements": true,
+  "recruiters": true,
+  "hostels_and_facilities": false,
+  "clubs": false,
+  "location": true,
+  "student_experience": false,
+  "blocking_issues": [
+    "Current NAAC/NBA validity missing",
+    "Detailed 2026-27 hostel/mess cost unavailable",
+    "Latest branch-wise unique-student placement data incomplete",
+    "Current club activity and student-experience evidence limited"
+  ],
+  "recommended_import_order": [
+    "college_identity",
+    "admission_routes",
+    "branches",
+    "seat_matrix",
+    "cutoffs",
+    "fees",
+    "rankings/accreditation items with verified values only",
+    "placements",
+    "recruiters",
+    "location",
+    "scholarships after cycle verification",
+    "hostels/clubs/student experience after manual review"
+  ],
+  "overall_status": "ready_for_human_review"
+}

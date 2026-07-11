@@ -1,0 +1,161 @@
+{
+  "senior_junior_culture": {
+    "summary": "A small recent discussion reports approachable seniors and no ragging, but the evidence is too limited to characterize the entire institute. Official student-welfare and anti-ragging systems should be treated separately from experience claims.",
+    "positive_themes": [
+      "Some reports of helpful seniors",
+      "Large hall and society networks can enable mentorship"
+    ],
+    "negative_themes": [
+      "Experience depends on hall, neighbours and society context",
+      "Insufficient independent evidence"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "U002"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "Official curricula provide double-major, minor, micro-specialization and semester-away flexibility. Student discussions suggest a demanding environment and possible tension between abundant activities and academic focus, but attendance, grading and faculty accessibility vary and are not strongly evidenced.",
+    "positive_themes": [
+      "Broad academic flexibility",
+      "Research and interdisciplinary options",
+      "Large peer and project ecosystem"
+    ],
+    "negative_themes": [
+      "Demanding workload",
+      "Extracurricular overload can affect time management",
+      "Attendance/grading experience may be course-dependent"
+    ],
+    "evidence_strength": "Official structure plus limited/conflicting student signal",
+    "supporting_source_ids": [
+      "S002",
+      "U004",
+      "U007"
+    ],
+    "conflicting_source_ids": []
+  },
+  "hostel_reality": {
+    "summary": "IIT Kharagpur is a highly residential campus with many halls and regular catering. Public experiences show hall-to-hall variation in rooms, mess quality and neighbour experience; one room/video or complaint should not be generalized.",
+    "positive_themes": [
+      "Large residential community",
+      "24-hour internet officially stated",
+      "Night canteens and campus food options",
+      "Some positive reports of helpful hall communities"
+    ],
+    "negative_themes": [
+      "Mess quality complaints recur",
+      "Room and hall conditions vary",
+      "Official hall count/scope is inconsistent"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "S016",
+      "S017",
+      "S018",
+      "S019",
+      "U002",
+      "U003",
+      "U005",
+      "U006"
+    ],
+    "conflicting_source_ids": [
+      "U002",
+      "U003"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "Official TSG pages show a broad and currently active technical, cultural, sports and welfare ecosystem. Independent comments also describe strong society and hall culture, though some students may find the volume of activities distracting.",
+    "positive_themes": [
+      "Many active technical and cultural societies",
+      "Kshitij and Spring Fest ecosystem",
+      "Inter-IIT sports and hall competitions",
+      "First-year exposure to diverse groups"
+    ],
+    "negative_themes": [
+      "Selection processes and society politics were not independently audited",
+      "Time-management pressure"
+    ],
+    "evidence_strength": "Strong institution-published signal; limited student-reported qualification",
+    "supporting_source_ids": [
+      "S021",
+      "S022",
+      "S023",
+      "S024",
+      "U004"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "Official CDC reports document a large placement and internship system and official TSG pages list multiple coding, analytics, robotics and developer societies. Company-level roles and non-CSE access are not sufficiently public to make guarantees.",
+    "positive_themes": [
+      "Multiple coding/data/robotics societies",
+      "Large recruiter participation",
+      "Substantial internship and PPO activity",
+      "Strong technical peer ecosystem"
+    ],
+    "negative_themes": [
+      "Placement denominators vary by source/scope",
+      "Company-wise eligibility and role data are incomplete",
+      "Outcomes are not guaranteed"
+    ],
+    "evidence_strength": "Strong official institutional signal for scale; limited evidence for individual access",
+    "supporting_source_ids": [
+      "S010",
+      "S011",
+      "S012",
+      "S022",
+      "S025"
+    ],
+    "conflicting_source_ids": []
+  },
+  "locality_and_student_life": {
+    "summary": "The main campus is approximately 5 km from Kharagpur Junction and far from Kolkata. The large self-contained campus supports daily life, but students seeking frequent metro-city exposure may find the location relatively isolated.",
+    "positive_themes": [
+      "Large green residential campus",
+      "Railway connectivity",
+      "On-campus shops, banks, food and healthcare"
+    ],
+    "negative_themes": [
+      "Airport and Kolkata access require long travel",
+      "Less immediate metro/startup exposure",
+      "Evening transport evidence is limited"
+    ],
+    "evidence_strength": "Official location evidence plus limited student signal",
+    "supporting_source_ids": [
+      "S002",
+      "S019",
+      "U008"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "Evidence supports academic breadth, strong technical/cultural communities and a large residential ecosystem. Recurring concerns involve mess variability, location isolation and workload/time management. There is not enough representative evidence to state whether students generally would choose IIT Kharagpur again.",
+    "positive_themes": [
+      "Academic flexibility and research",
+      "Technical and cultural ecosystem",
+      "Residential peer community",
+      "Placement and internship scale"
+    ],
+    "negative_themes": [
+      "Mess variability",
+      "Location isolation",
+      "Academic and activity overload for some students"
+    ],
+    "evidence_strength": "Moderate mixed signal; no numeric rating",
+    "supporting_source_ids": [
+      "S002",
+      "S010",
+      "S011",
+      "S012",
+      "S021",
+      "U002",
+      "U003",
+      "U004"
+    ],
+    "conflicting_source_ids": [
+      "U002",
+      "U003"
+    ]
+  }
+}

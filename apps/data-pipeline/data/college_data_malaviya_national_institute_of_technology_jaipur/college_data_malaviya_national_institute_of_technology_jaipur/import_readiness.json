@@ -1,0 +1,39 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": true,
+  "cutoffs": true,
+  "fees": true,
+  "scholarships": true,
+  "placements": true,
+  "recruiters": true,
+  "hostels_and_facilities": false,
+  "clubs": true,
+  "location": true,
+  "student_experience": true,
+  "blocking_issues": [
+    "Current NBA/NAAC status requires verification before accreditation import.",
+    "Map 2024 AI quota label to production taxonomy only after archive spot-check.",
+    "Confirm 2024-25 PPO/company counts because the official report heading appears copied from 2022-23.",
+    "Hostel availability/curfew/current policy must be confirmed for 2026."
+  ],
+  "recommended_import_order": [
+    "college_identity",
+    "admission_routes",
+    "branches",
+    "seat_matrix",
+    "cutoffs",
+    "fees",
+    "placements",
+    "scholarships",
+    "recruiters",
+    "clubs",
+    "location",
+    "hostels_and_facilities",
+    "student_experience",
+    "accreditation"
+  ],
+  "overall_status": "ready_for_human_review"
+}

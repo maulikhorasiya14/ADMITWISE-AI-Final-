@@ -1,0 +1,153 @@
+{
+  "senior_junior_culture": {
+    "summary": "No strong, independently repeated evidence was found to support a definitive claim. One comparison thread reports that ragging was not a problem, while official sources show elected student bodies and formal student-support structures. Treat senior-junior culture as a limited anecdotal signal rather than a verified campus-wide fact.",
+    "positive_themes": [
+      "peer guidance is available in some student discussions",
+      "formal SAC, guidance and anti-ragging structures exist officially"
+    ],
+    "negative_themes": [
+      "insufficient verified first-hand sample",
+      "experiences may differ by hostel, batch and branch"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "SEXP004",
+      "SRC001"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "Official sources describe an autonomous credit-based curriculum with laboratories, computing and library infrastructure. Student discussions generally characterize academics and infrastructure as adequate to strong, but the source sample is too small for claims about strictness, grading pressure or faculty quality by department.",
+    "positive_themes": [
+      "autonomous curriculum",
+      "large library and computing facilities",
+      "research and project opportunities"
+    ],
+    "negative_themes": [
+      "department-level experience not systematically verified",
+      "workload/strictness varies and was not established"
+    ],
+    "evidence_strength": "Moderate official evidence; limited student-reported evidence",
+    "supporting_source_ids": [
+      "SRC001",
+      "SEXP003",
+      "SEXP009"
+    ],
+    "conflicting_source_ids": []
+  },
+  "hostel_reality": {
+    "summary": "The institute officially reports 15 hostels with dining, common/reading rooms and internet. Visual tours and discussions indicate meaningful variation between old and newer blocks; some rooms are described as basic or congested. Mess experience is subjective and may vary by hostel.",
+    "positive_themes": [
+      "residential campus",
+      "multiple hostels and attached dining halls",
+      "internet/common-room facilities",
+      "visual evidence of functioning hostel spaces"
+    ],
+    "negative_themes": [
+      "room size and maintenance vary by block",
+      "some older rooms described as average/congested",
+      "mess quality is inconsistent across personal reports"
+    ],
+    "evidence_strength": "Strong official facility evidence; moderate repeated qualitative signal for block-to-block variation",
+    "supporting_source_ids": [
+      "SRC001",
+      "SRC008",
+      "SEXP003",
+      "SEXP006",
+      "SEXP008"
+    ],
+    "conflicting_source_ids": [
+      "SEXP004"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "Official sources list a broad range of technical, cultural, service and sports clubs, and the institute runs Tathva and Ragam. Visual sources consistently show a large, green residential campus. Activity levels should still be rechecked club by club.",
+    "positive_themes": [
+      "broad official club ecosystem",
+      "technical and cultural festivals",
+      "large green campus",
+      "sports facilities"
+    ],
+    "negative_themes": [
+      "some club pages lack recent dated activity",
+      "participation intensity varies"
+    ],
+    "evidence_strength": "Strong official signal; moderate visual/student-reported support",
+    "supporting_source_ids": [
+      "SRC001",
+      "SRC019",
+      "SEXP006",
+      "SEXP007",
+      "SEXP009"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "The official presence of CPHUB, FOSSCell, AI Club, RIG and CCD training supports an active technical-preparation ecosystem. Student reports are mixed on how strong coding culture feels outside computing-focused peer groups. Official NIRF outcomes show solid overall placements, but branch-specific placement rates and eligibility are not available in the verified dataset.",
+    "positive_themes": [
+      "competitive-programming club",
+      "coding programs and hackathons from CCD",
+      "large official recruiter list",
+      "strong overall NIRF median trend"
+    ],
+    "negative_themes": [
+      "branch-level placement rates unavailable",
+      "student perception of coding culture varies by branch and peer group"
+    ],
+    "evidence_strength": "Strong official infrastructure/outcome signal; conflicting student-reported culture signal",
+    "supporting_source_ids": [
+      "SRC019",
+      "SRC016",
+      "SRC009",
+      "SEXP002"
+    ],
+    "conflicting_source_ids": [
+      "SEXP002"
+    ]
+  },
+  "locality_and_student_life": {
+    "summary": "The campus is scenic and residential but approximately 22 km from Kozhikode city. Official sources report frequent local buses and road access; qualitative reports suggest late-night city travel may be less convenient than daytime travel.",
+    "positive_themes": [
+      "green foothill setting",
+      "frequent daytime buses",
+      "on-campus banks, post office, health care and shops"
+    ],
+    "negative_themes": [
+      "distance from city centre",
+      "late-night public transport may be limited"
+    ],
+    "evidence_strength": "Strong official distance/connectivity evidence; limited anecdotal late-night signal",
+    "supporting_source_ids": [
+      "SRC001",
+      "SEXP005"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "Available evidence points to a generally positive academic and residential-campus proposition, with the strongest recurring cautions being hostel-block variation, distance from the city and uneven branch-specific perceptions of coding/placement culture. The qualitative source base is not large enough to assign a numeric satisfaction rating.",
+    "positive_themes": [
+      "institutional reputation",
+      "green campus",
+      "broad programmes and clubs",
+      "overall placement outcomes"
+    ],
+    "negative_themes": [
+      "hostel variability",
+      "city distance",
+      "limited verified branch-specific data"
+    ],
+    "evidence_strength": "Moderate mixed qualitative signal",
+    "supporting_source_ids": [
+      "SEXP003",
+      "SEXP004",
+      "SEXP006",
+      "SEXP007",
+      "SEXP009",
+      "SRC009"
+    ],
+    "conflicting_source_ids": [
+      "SEXP001",
+      "SEXP002"
+    ]
+  }
+}

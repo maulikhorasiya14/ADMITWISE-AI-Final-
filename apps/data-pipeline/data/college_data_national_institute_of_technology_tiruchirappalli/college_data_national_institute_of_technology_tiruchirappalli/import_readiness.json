@@ -1,0 +1,39 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": true,
+  "cutoffs": true,
+  "fees": true,
+  "scholarships": true,
+  "placements": true,
+  "recruiters": true,
+  "hostels_and_facilities": true,
+  "clubs": true,
+  "location": false,
+  "student_experience": true,
+  "blocking_issues": [
+    "Verify current NAAC and complete NBA roster before accreditation import.",
+    "Map-verify location distances/coordinates.",
+    "Obtain latest final placement report before presenting current package averages/highs.",
+    "Obtain full-year hostel/mess schedule for annual cost."
+  ],
+  "recommended_import_order": [
+    "college_identity",
+    "admission_routes",
+    "branches",
+    "seat_matrix",
+    "cutoffs",
+    "fees",
+    "scholarships",
+    "placements",
+    "recruiters",
+    "hostels_and_facilities",
+    "clubs",
+    "location_after_map_verification",
+    "student_experience_as_qualitative_only",
+    "accreditation_after_manual_verification"
+  ],
+  "overall_status": "ready_for_human_review"
+}

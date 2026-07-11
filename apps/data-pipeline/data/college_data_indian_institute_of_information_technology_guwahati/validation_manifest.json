@@ -1,0 +1,115 @@
+{
+  "generated_at": "2026-06-26",
+  "official_college_name": "Indian Institute of Information Technology Guwahati",
+  "target_admission_year": 2026,
+  "validation": {
+    "json_valid": true,
+    "csv_headers_consistent": true,
+    "all_required_files_reopened": true,
+    "factual_csv_records_have_source_ids": true,
+    "cutoff_numeric_and_order_valid": true,
+    "cutoff_duplicates_removed": true,
+    "historical_cutoffs_not_labeled_2026": true,
+    "seat_matrix_total": 334,
+    "regular_seat_capacity": 277,
+    "female_supernumerary_total": 57,
+    "blank_josaa_rows_excluded": 4,
+    "csab_rows_by_round": {
+      "1": 22,
+      "2": 17,
+      "3": 13
+    },
+    "tier_c_not_used_for_official_cutoffs_fees_seats": true
+  },
+  "counts": {
+    "sources": 28,
+    "authoritative_sources": 14,
+    "institution_controlled_or_associated_sources": 14,
+    "student_experience_sources": 8,
+    "branches": 3,
+    "seat_matrix_records": 3,
+    "cutoffs_total": 479,
+    "cutoffs_josaa": 427,
+    "cutoffs_csab": 52,
+    "fees": 5,
+    "placements": 10,
+    "recruiters": 30,
+    "scholarships": 11,
+    "clubs": 19,
+    "conflicts": 5
+  },
+  "files": {
+    "college_profile.json": {
+      "bytes": 468456,
+      "sha256": "026d8cd7ea26410254f5dcbc7823b426ea258014b3ec699aca38becaf98cdefc"
+    },
+    "sources.csv": {
+      "bytes": 9630,
+      "sha256": "e7266303b8ad6050382679c0090ba5ce1a76bda8b9d7bf511804cd2ce05acab6"
+    },
+    "branches.csv": {
+      "bytes": 789,
+      "sha256": "35e06cc9650b05a42c3b4995ba6cbf416ad4578b19ff372cd8906ccc06e6b7b6"
+    },
+    "cutoffs.csv": {
+      "bytes": 140374,
+      "sha256": "5fb22db9d4452cc53029bb06162cde681fb11167850eebb58862c9b20b457afb"
+    },
+    "fees.csv": {
+      "bytes": 1885,
+      "sha256": "e935b7568b249d72b79b7759e8da96dae86de20c803fae52166acd8e3ec0cbd8"
+    },
+    "placements.csv": {
+      "bytes": 5102,
+      "sha256": "ad0147e4d18f045bf9b22e940a32ec91b5ce441c2cad5e21832b5be9f582d729"
+    },
+    "recruiters.csv": {
+      "bytes": 10928,
+      "sha256": "d0a319b6e53e9a447b48174ae9d9223243f790f288c1a0edb9036d0578d48cfc"
+    },
+    "scholarships.csv": {
+      "bytes": 7214,
+      "sha256": "326f1d38e0572c36846bccbdf6274fc328bac62909daedc28d69770e6d4b5d9c"
+    },
+    "clubs.csv": {
+      "bytes": 8474,
+      "sha256": "53f0ba64a03a012658801f6bff669722057707da39a93c942d135a86fc3aba2f"
+    },
+    "location.csv": {
+      "bytes": 896,
+      "sha256": "937f45842849abfd2f91c47f3bd9eee427889dc2504c94e1ee99c5549e051234"
+    },
+    "student_experience_sources.csv": {
+      "bytes": 3751,
+      "sha256": "7febb0f200bb80ab043b1f750d7ac2a898bb5b6a8f0cbc7b735bc1d8654396d2"
+    },
+    "campus_reality.json": {
+      "bytes": 5662,
+      "sha256": "16ceefd1504de19dd181a50b9de8e3886e5bf3920f936d9d831129f53dd2712a"
+    },
+    "data_conflicts.csv": {
+      "bytes": 1929,
+      "sha256": "233ecc011fcbfee3e3c5cfb94ab28f7dd2f1e9518521c5691160c394c13b78fb"
+    },
+    "college_summary.md": {
+      "bytes": 5837,
+      "sha256": "16f89532391ff038761d60a895637357135a22da5ad1f11074da34aab63619d4"
+    },
+    "manual_verification_checklist.md": {
+      "bytes": 1654,
+      "sha256": "d1387276ad024e02d468ae88682445b1f8fc7160d1affb62c68adce84eb5da94"
+    },
+    "excluded_sources.md": {
+      "bytes": 608,
+      "sha256": "756f59983afe87006a57709dabbdbc0f17c2ec0e9a91ea5764f87b39c4cefe47"
+    },
+    "research_log.md": {
+      "bytes": 1344,
+      "sha256": "ee2d0633380c7fb1c0a6d3a910bc584bf3f0ebf94eb076019be7201fa0964b98"
+    },
+    "import_readiness.json": {
+      "bytes": 1144,
+      "sha256": "19a0576e2661d3f5b0faffc9870dde8ab09d683340ed44b65175e4e668a1bbe9"
+    }
+  }
+}

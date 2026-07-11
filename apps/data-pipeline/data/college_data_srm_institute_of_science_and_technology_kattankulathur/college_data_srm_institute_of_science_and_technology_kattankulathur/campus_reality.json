@@ -1,0 +1,199 @@
+{
+  "senior_junior_culture": {
+    "summary": "Recent public discussions commonly describe seniors as accessible through clubs, AMAs and hostel networks, with no repeated strong ragging signal in the reviewed sample. Evidence is still self-reported and insufficient for a campus-wide guarantee.",
+    "positive_themes": [
+      "AMAs and club communities provide informal help",
+      "Freshers can access senior networks through technical and cultural clubs"
+    ],
+    "negative_themes": [
+      "Mentorship quality depends on the club and personal network",
+      "Absence of repeated reports is not proof that incidents never occur"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "source_count": 4,
+    "date_range": "2024-2026",
+    "source_agreement": "Broadly consistent but self-reported",
+    "supporting_source_ids": [
+      "SRC101",
+      "SRC108",
+      "SRC109",
+      "SRC113"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "The most repeated theme is a structured system with a 75% attendance expectation and a very large cohort. Students report substantial opportunities, but faculty accessibility and teaching quality vary by department and instructor, making self-directed learning important.",
+    "positive_themes": [
+      "Large elective, lab and project ecosystem",
+      "Technical clubs and hackathons supplement classroom learning"
+    ],
+    "negative_themes": [
+      "Attendance is frequently described as strict",
+      "Large classes and faculty variability are recurring concerns"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "source_count": 6,
+    "date_range": "2024-2026",
+    "source_agreement": "Broadly consistent",
+    "supporting_source_ids": [
+      "SRC101",
+      "SRC108",
+      "SRC109",
+      "SRC110",
+      "SRC113",
+      "SRC114"
+    ],
+    "conflicting_source_ids": []
+  },
+  "hostel_reality": {
+    "summary": "Hostel experience is strongly block-dependent. Officially published room categories vary from low-cost common-bathroom sharing to premium AC attached rooms, including some off-campus options. Students repeatedly report that popular rooms fill quickly, girls’ rules can feel stricter, and mess opinions differ.",
+    "positive_themes": [
+      "Wide choice of room occupancy and AC/non-AC formats",
+      "Many options are integrated with the campus",
+      "Hostel life improves access to evening events and peer groups"
+    ],
+    "negative_themes": [
+      "Preferred rooms are not guaranteed",
+      "Some official accommodation is off-campus",
+      "Mess and room-quality opinions vary",
+      "Current curfew was not officially verified"
+    ],
+    "evidence_strength": "Strong repeated signal",
+    "source_count": 8,
+    "date_range": "2025-2026",
+    "source_agreement": "Consistent on variation and booking pressure; conflicting on mess quality",
+    "supporting_source_ids": [
+      "SRC101",
+      "SRC102",
+      "SRC105",
+      "SRC106",
+      "SRC107",
+      "SRC111",
+      "SRC115",
+      "SRC116"
+    ],
+    "conflicting_source_ids": [
+      "SRC112"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "Official pages show a broad cultural, service, sports and technical ecosystem, and student sources consistently describe frequent events and hackathons. With a very large student population, selection and leadership opportunities can be competitive.",
+    "positive_themes": [
+      "Many cultural and technical clubs",
+      "Hackathons and ideathons provide project exposure",
+      "Large campus event calendar"
+    ],
+    "negative_themes": [
+      "Static official lists do not prove every club is active",
+      "Recruitment and leadership roles can be competitive"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "source_count": 6,
+    "date_range": "2024-2026",
+    "source_agreement": "Broadly consistent",
+    "supporting_source_ids": [
+      "SRC026",
+      "SRC027",
+      "SRC028",
+      "SRC101",
+      "SRC102",
+      "SRC113"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "The institution has visible technical clubs, hackathons and a broad recruiter ecosystem. Official NIRF placement counts are strong at engineering-institution level, while student reports stress intense competition created by the large intake and uncertainty about branch/company eligibility. Kattankulathur-only outcomes are not separately proven.",
+    "positive_themes": [
+      "Active coding/open-source/hackathon communities",
+      "Large recruiter list and high NIRF placed counts",
+      "Multiple CSE specialisations and peer communities"
+    ],
+    "negative_themes": [
+      "Large cohort increases competition",
+      "Branch-wise and KTR-only placement transparency is limited",
+      "Non-CSE access to software roles is company-dependent"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "source_count": 7,
+    "date_range": "2024-2026",
+    "source_agreement": "Opportunity is consistent; outcome interpretation varies",
+    "supporting_source_ids": [
+      "SRC008",
+      "SRC014",
+      "SRC028",
+      "SRC104",
+      "SRC108",
+      "SRC109",
+      "SRC110"
+    ],
+    "conflicting_source_ids": [
+      "SRC103"
+    ]
+  },
+  "locality_and_student_life": {
+    "summary": "Kattankulathur/Potheri is a campus-oriented student suburb with suburban-rail access and an on-campus hospital. Central Chennai is roughly 40 km away, so city internships and social access often require train, bus or longer road travel.",
+    "positive_themes": [
+      "Potheri station is immediately accessible",
+      "Large campus provides daily services and healthcare",
+      "Nearby student housing and food ecosystem"
+    ],
+    "negative_themes": [
+      "Far from central Chennai",
+      "Peak traffic can make airport and city travel slow",
+      "Some opportunities require substantial commuting"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "source_count": 5,
+    "date_range": "2024-2026",
+    "source_agreement": "Broadly consistent",
+    "supporting_source_ids": [
+      "SRC024",
+      "SRC025",
+      "SRC031",
+      "SRC101",
+      "SRC110"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "The most repeated positives are infrastructure, choice of programmes, clubs and recruiter breadth. The most repeated concerns are high cost, very large intake, attendance/hostel rules and uneven branch-level transparency. Outcomes appear especially dependent on branch, personal initiative and scholarship affordability.",
+    "positive_themes": [
+      "Broad opportunity set",
+      "Large campus and extracurricular ecosystem",
+      "Strong institutional placement reach at aggregate level"
+    ],
+    "negative_themes": [
+      "High combined tuition and hostel cost",
+      "Large cohort and competition",
+      "No public official branch closing ranks or KTR-only placement sheet"
+    ],
+    "who_it_appears_best_suited_for": [
+      "Self-driven students who will use clubs, projects and internships",
+      "Students comfortable with a large campus and cohort",
+      "Families able to afford the full fee without assuming scholarship renewal"
+    ],
+    "who_may_not_enjoy_it": [
+      "Students wanting small classes and highly personalised administration",
+      "Students seeking a low-cost programme with branch-wise ROI transparency",
+      "Students strongly opposed to attendance or hostel restrictions"
+    ],
+    "would_choose_again_evidence": "Mixed and not supported by a sufficiently large independent sample",
+    "evidence_strength": "Conflicting signal",
+    "source_count": 10,
+    "date_range": "2024-2026",
+    "source_agreement": "Positive opportunity themes agree; value and outcome judgments vary",
+    "supporting_source_ids": [
+      "SRC101",
+      "SRC102",
+      "SRC108",
+      "SRC109",
+      "SRC110",
+      "SRC113",
+      "SRC114",
+      "SRC115",
+      "SRC116",
+      "SRC104"
+    ],
+    "conflicting_source_ids": []
+  }
+}

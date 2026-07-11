@@ -1,0 +1,39 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": true,
+  "cutoffs": true,
+  "fees": false,
+  "scholarships": false,
+  "placements": true,
+  "recruiters": false,
+  "hostels_and_facilities": false,
+  "clubs": false,
+  "location": true,
+  "student_experience": false,
+  "blocking_issues": [
+    "Jul-Nov 2026 mess charge pending tender prevents complete residential-cost total.",
+    "Current-year scholarship deadlines and limited-award availability require confirmation.",
+    "Company-wise roles, branch eligibility and selection counts are unavailable for the recruiter catalogue.",
+    "NAAC/NBA/AICTE fields remain null rather than inferred.",
+    "Individual-club current activity and independent student evidence are incomplete."
+  ],
+  "recommended_import_order": [
+    "college_identity",
+    "admission_routes",
+    "branches",
+    "seat_matrix",
+    "cutoffs",
+    "location",
+    "placements",
+    "fees after mess update",
+    "scholarships after current-year verification",
+    "recruiters after role enrichment",
+    "hostels_and_facilities",
+    "clubs",
+    "student_experience"
+  ],
+  "overall_status": "ready_for_human_review"
+}

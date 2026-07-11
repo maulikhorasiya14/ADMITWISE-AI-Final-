@@ -1,0 +1,45 @@
+﻿college_name,official_branch_name,normalized_branch,degree,duration_years,approved_intake,female_supernumerary_seats,tfws_seats,nba_status,academic_year,source_id
+"SRM Institute of Science and Technology, Kattankulathur",Aerospace Engineering,AERO,B.Tech,4,120,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Aeronautical Engineering,AERONAUTICAL,B.Tech,4,60,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Artificial Intelligence,AI,B.Tech,4,180,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Automation and Robotics,A&R,B.Tech,4,30,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Automobile Engineering,AUTO,B.Tech,4,60,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Automobile Engineering with specialization in Automotive Electronics,AUTO-AE,B.Tech,4,30,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Biomedical Engineering,BME,B.Tech,4,90,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Biomedical Engineering (Machine Intelligence),BME-MI,B.Tech,4,30,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Biotechnology,BT,B.Tech,4,300,,,Accredited; validity through 2027-06-30,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Biotechnology (Computational Biology),BT-CB,B.Tech,4,30,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Biotechnology (Food Technology),BT-FT,B.Tech,4,30,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Biotechnology with specialization in Genetic Engineering,BT-GE,B.Tech,4,90,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Biotechnology with specialization in Regenerative Medicine,BT-RM,B.Tech,4,30,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Chemical Engineering,CHE,B.Tech,4,60,,,Accredited; validity through 2027-06-30,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Civil Engineering,CE,B.Tech,4,90,,,Accredited; validity through 2027-06-30,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Civil Engineering with Computer Applications,CE-CA,B.Tech,4,30,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Computer Science and Business System,CSBS,B.Tech,4,60,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Computer Science and Engineering,CSE,B.Tech,4,1140,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Computer Science and Engineering (Data Science),CSE-DS,B.Tech,4,120,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Computer Science and Engineering with specialization in Artificial Intelligence and Machine Learning,CSE-AI&ML,B.Tech,4,420,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Computer Science and Engineering with specialization in Big Data Analytics,CSE-BDA,B.Tech,4,180,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Computer Science and Engineering with specialization in Blockchain Technology,CSE-BLOCKCHAIN,B.Tech,4,60,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Computer Science and Engineering with specialization in Cloud Computing,CSE-CLOUD,B.Tech,4,180,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Computer Science and Engineering with specialization in Computer Networking,CSE-NETWORKING,B.Tech,4,60,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Computer Science and Engineering with specialization in Cyber Security,CSE-CYBER,B.Tech,4,300,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Computer Science and Engineering with specialization in Gaming Technology,CSE-GAMING,B.Tech,4,60,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Computer Science and Engineering (DevSecOps),CSE-DEVSECOPS,B.Tech,4,60,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Computer Science and Engineering with specialization in Information Technology,CSE-IT,B.Tech,4,120,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Computer Science and Engineering with specialization in Internet of Things,CSE-IOT,B.Tech,4,60,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Computer Science and Engineering with specialization in Software Engineering,CSE-SE,B.Tech,4,180,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Electrical and Electronics Engineering,EEE,B.Tech,4,240,,,Accredited; validity through 2027-06-30,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Electronics and Communication Engineering,ECE,B.Tech,4,480,,,Accredited; validity through 2027-06-30,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Electronics and Communication Engineering with specialization in Cyber Physical Systems,ECE-CPS,B.Tech,4,30,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Electronics and Communication Engineering with specialization in Data Science,ECE-DS,B.Tech,4,60,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Electronics and Computer Engineering,ECOMP,B.Tech,4,60,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Electronics and Instrumentation Engineering,EIE,B.Tech,4,30,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Electronics Engineering (VLSI Design and Technology),VLSI,B.Tech,4,30,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Mathematics and Computing,MnC,B.Tech,4,30,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Mechanical Engineering,ME,B.Tech,4,240,,,Accredited; validity through 2027-06-30,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Mechanical Engineering (Automation and Robotics),ME-A&R,B.Tech,4,30,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Mechanical Engineering with specialization in Artificial Intelligence and Machine Learning,ME-AI&ML,B.Tech,4,60,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Mechatronics Engineering,MCT,B.Tech,4,120,,,Accredited; validity through 2028-06-30,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Mechatronics Engineering with specialization in Robotics,MCT-ROBOTICS,B.Tech,4,60,,,,2026-27,SRC002
+"SRM Institute of Science and Technology, Kattankulathur",Nanotechnology,NANO,B.Tech,4,30,,,,2026-27,SRC002

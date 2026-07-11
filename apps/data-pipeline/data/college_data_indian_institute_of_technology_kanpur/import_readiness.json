@@ -1,0 +1,38 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": true,
+  "cutoffs": true,
+  "fees": false,
+  "scholarships": false,
+  "placements": false,
+  "recruiters": false,
+  "hostels_and_facilities": false,
+  "clubs": false,
+  "location": true,
+  "student_experience": false,
+  "blocking_issues": [
+    "Final 2024-25 and 2025-26 placement reports are pending.",
+    "Food/mess billing is not included in the 2026 MEC figure.",
+    "Current hostel sharing/capacity and several operating rules require confirmation.",
+    "Current scholarship deadlines and external notified-institution matches require verification.",
+    "Company-role, branch-eligibility and selection-count fields are incomplete."
+  ],
+  "recommended_import_order": [
+    "college identity",
+    "admission routes",
+    "branches",
+    "2026 seat matrix",
+    "verified 2023-2025 cutoffs",
+    "rankings",
+    "fee circular with calculation warning",
+    "scholarship catalogue",
+    "placement records with scope labels",
+    "location",
+    "facilities and clubs after manual verification",
+    "student-experience summaries last"
+  ],
+  "overall_status": "ready_for_human_review"
+}

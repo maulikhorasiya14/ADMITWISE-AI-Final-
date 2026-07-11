@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "admitwise-data-pipeline"
+version = "0.1.0"
+description = "FastAPI service and extraction schemas for AdmitWise AI."
+requires-python = ">=3.12"
+dependencies = [
+  "beautifulsoup4>=4.12",
+  "fastapi>=0.115",
+  "httpx>=0.27",
+  "openpyxl>=3.1",
+  "pandas>=2.2",
+  "pdfplumber>=0.11",
+  "pydantic>=2.8",
+  "pypdf>=5.0",
+  "uvicorn[standard]>=0.30"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3",
+  "ruff>=0.6"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*", "extractors*", "normalizers*", "schemas*", "services*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

@@ -1,0 +1,36 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": true,
+  "cutoffs": true,
+  "fees": false,
+  "scholarships": false,
+  "placements": true,
+  "recruiters": false,
+  "hostels_and_facilities": false,
+  "clubs": false,
+  "location": false,
+  "student_experience": false,
+  "blocking_issues": [
+    "Programme-wise NBA validity not verified",
+    "Final 2026-27 line-item fee and hostel-period definitions require confirmation",
+    "Hostel entitlement and current rules require confirmation",
+    "Scholarship and recruiter details require current-cycle verification"
+  ],
+  "recommended_import_order": [
+    "college identity",
+    "admission routes",
+    "branches",
+    "2026 seat matrix",
+    "historical cutoffs",
+    "NIRF and placement records with scope labels",
+    "fees after manual review",
+    "scholarships after deadline verification",
+    "recruiters after year/role verification",
+    "facilities and clubs",
+    "student-experience evidence"
+  ],
+  "overall_status": "ready_for_human_review"
+}

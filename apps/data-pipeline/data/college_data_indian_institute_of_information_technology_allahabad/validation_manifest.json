@@ -1,0 +1,115 @@
+{
+  "generated_at": "2026-06-26",
+  "official_college_name": "Indian Institute of Information Technology, Allahabad",
+  "target_admission_year": 2026,
+  "completion_percentage": 88,
+  "validation": {
+    "json_valid": true,
+    "csv_headers_consistent": true,
+    "cutoff_numeric_and_order_valid": true,
+    "cutoff_duplicates_removed": true,
+    "historical_cutoffs_not_labeled_2026": true,
+    "seat_matrix_total": 461,
+    "female_supernumerary_total": 88,
+    "blank_josaa_rows_excluded": 3,
+    "csab_rows_by_round": {
+      "Special Round 1": 20,
+      "Special Round 2": 9,
+      "Special Round 3": 9
+    },
+    "official_2026_fee_extracted": true,
+    "mess_cost_not_estimated": true,
+    "zip_crc_test": "passed"
+  },
+  "counts": {
+    "sources": 28,
+    "authoritative_sources": 10,
+    "institution_controlled_or_associated_sources": 13,
+    "student_experience_sources": 5,
+    "branches": 6,
+    "seat_matrix_records": 6,
+    "cutoffs_total": 761,
+    "cutoffs_josaa": 723,
+    "cutoffs_csab": 38,
+    "fees": 5,
+    "placements": 5,
+    "recruiters": 30,
+    "scholarships": 9,
+    "clubs": 10,
+    "conflicts": 4
+  },
+  "files": {
+    "branches.csv": {
+      "bytes": 1362,
+      "sha256": "1e6d6359ff81d2bda0289e42b114b6980aaa738ea19843399af92ddd1f65a6d5"
+    },
+    "campus_reality.json": {
+      "bytes": 3761,
+      "sha256": "a768ef9f31484fa7b96e6609e5404fd46fac80ea3ff1b6a3efe716f1bb5965a4"
+    },
+    "clubs.csv": {
+      "bytes": 3535,
+      "sha256": "45795912db528e35f872edd0728c0066a2a51e4f9f6589288549298b616aea00"
+    },
+    "college_profile.json": {
+      "bytes": 626785,
+      "sha256": "9f8efb5abc4f8198733a08d03bf5d4bef1241598a96cd8c4bbbc2128084e20a2"
+    },
+    "college_summary.md": {
+      "bytes": 5712,
+      "sha256": "4910acaa2913ef439f331a30fddcbe19cf36779be3153c8c00b41e039231fbca"
+    },
+    "cutoffs.csv": {
+      "bytes": 197423,
+      "sha256": "1f2d111cf191494e2caef498a2b4a3b3f00e74bfe6fa90dc7a41c66fef28cc7c"
+    },
+    "data_conflicts.csv": {
+      "bytes": 1434,
+      "sha256": "bd44a799764c1a5fb0f4c442267ef7c95b1d619e60b5540af0ec7f9d95daa3fa"
+    },
+    "excluded_sources.md": {
+      "bytes": 477,
+      "sha256": "8e4a9372f0d15fbc1f0746ab27285bbfd8dfc72522fbc6516958c544d7b97334"
+    },
+    "fees.csv": {
+      "bytes": 2232,
+      "sha256": "dacbff4167046f04b48534d8f3c733039638fdf84ac0ec1aa5433a336e5aa56b"
+    },
+    "import_readiness.json": {
+      "bytes": 947,
+      "sha256": "198677c00fd3db8364e71cf1ffec82dbee4710f7f323876a363fb901733c106f"
+    },
+    "location.csv": {
+      "bytes": 971,
+      "sha256": "fdac86681dcc73d08c5ba15a745b09c6100cfeb0a3c00c3a8c03291dc9178364"
+    },
+    "manual_verification_checklist.md": {
+      "bytes": 1354,
+      "sha256": "027e9f6284103dfad203df89ef45e42c0325a4cd7a0d7ba69a003b783cc274ae"
+    },
+    "placements.csv": {
+      "bytes": 1732,
+      "sha256": "a51bb89825af15c279787376668b9927f4261af658081fa17f95b30baaa0821d"
+    },
+    "recruiters.csv": {
+      "bytes": 10146,
+      "sha256": "340f4e5eb23dabdd04825b2df3bde167eb1a9ce8ef61ba6902d520a2629207fe"
+    },
+    "research_log.md": {
+      "bytes": 1100,
+      "sha256": "f4cab98b71ddaf9b22b45bc2d2aa34957d6f9e9c6a2490f6bcab2afdce9a6abe"
+    },
+    "scholarships.csv": {
+      "bytes": 5467,
+      "sha256": "7bf0314da00cbb3db7f8b360119ebaa4e28c0d9df88642934c486771ea68991d"
+    },
+    "sources.csv": {
+      "bytes": 8086,
+      "sha256": "5b8f85233fab0be9eab3dbfe9b5adc9f7a4a64f6f97ebcbc27e2f51c24a43a81"
+    },
+    "student_experience_sources.csv": {
+      "bytes": 2271,
+      "sha256": "ce0aa63a7c32c28d66d3a62688baec088d151c973f0e63ee4ed958a4a6b9efc7"
+    }
+  }
+}

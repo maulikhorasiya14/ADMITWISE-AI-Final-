@@ -1,0 +1,114 @@
+{
+  "generated_at": "2026-06-26",
+  "official_college_name": "Indian Institute of Information Technology Bhopal",
+  "target_admission_year": 2026,
+  "validation": {
+    "json_valid": true,
+    "csv_headers_consistent": true,
+    "all_required_files_reopened": true,
+    "factual_csv_records_have_source_ids": true,
+    "cutoff_numeric_and_order_valid": true,
+    "cutoff_duplicates_removed": true,
+    "historical_cutoffs_not_labeled_2026": true,
+    "seat_matrix_total": 1188,
+    "female_supernumerary_total": 0,
+    "blank_josaa_rows_excluded": 16,
+    "csab_rows_by_round": {
+      "1": 0,
+      "2": 47,
+      "3": 46
+    },
+    "tier_c_not_used_for_official_cutoffs_fees_seats": true
+  },
+  "counts": {
+    "sources": 25,
+    "authoritative_sources": 11,
+    "institution_controlled_or_associated_sources": 14,
+    "student_experience_sources": 8,
+    "branches": 9,
+    "seat_matrix_records": 9,
+    "cutoffs_total": 827,
+    "cutoffs_josaa": 734,
+    "cutoffs_csab": 93,
+    "fees": 6,
+    "placements": 10,
+    "recruiters": 30,
+    "scholarships": 7,
+    "clubs": 10,
+    "conflicts": 5
+  },
+  "files": {
+    "college_profile.json": {
+      "bytes": 698893,
+      "sha256": "e979813b10507fb4086f2315def1887e749699210d029b61fab574482716ab73"
+    },
+    "campus_reality.json": {
+      "bytes": 4940,
+      "sha256": "07d4e2a58ad08be6d9617505e5dbbd545ec19e3f123d6237ae4c3ea0a803dd9b"
+    },
+    "sources.csv": {
+      "bytes": 9851,
+      "sha256": "e3403998570bfbacd8314f7529976c1ddd359d98e9d3fb99b5371a2924cc407e"
+    },
+    "branches.csv": {
+      "bytes": 1812,
+      "sha256": "e2e9c7dca4f89414070679390ca0b10fb8e735e0633ce511e086a28ed9523822"
+    },
+    "cutoffs.csv": {
+      "bytes": 221793,
+      "sha256": "8b299f14b79d4deb87832fd53228636db91bf69df8b24d0c0b4b14ef50eccf76"
+    },
+    "fees.csv": {
+      "bytes": 3067,
+      "sha256": "27378ab3c95ffd3938a730ffd99c5c125f1c8b61f99cb9629cb31cf07269ddbc"
+    },
+    "placements.csv": {
+      "bytes": 3454,
+      "sha256": "6e4cb1db52faee61fdb164b2ec8ecf88fa7bf0cbc4a5b19927859a6b6460a270"
+    },
+    "recruiters.csv": {
+      "bytes": 9768,
+      "sha256": "5f732497a6ea5c300be47561081d30b0e788794fc1e56aab1129f066bb00d492"
+    },
+    "scholarships.csv": {
+      "bytes": 3602,
+      "sha256": "4af72fe8b23e155feb72f4e7fb3057f1faf01631895ccac40299ddb6e3ae2e92"
+    },
+    "clubs.csv": {
+      "bytes": 3037,
+      "sha256": "c7bb7854a8d0346b34281fe4900d00876227de646d6a99303ac1a4d69bc53e1b"
+    },
+    "location.csv": {
+      "bytes": 977,
+      "sha256": "79a42da14e75002254a8ba3f7c6a531abef217f3185b52c03ef102aef8b04986"
+    },
+    "student_experience_sources.csv": {
+      "bytes": 3582,
+      "sha256": "8d8e66acded6f9391f5ff360da9c9c55a155b97079f03c5a39b6bdcdaa3459fb"
+    },
+    "data_conflicts.csv": {
+      "bytes": 1900,
+      "sha256": "0219bb5950ebdc1547325da37c56812aa4f90acd4cb25d7beb0e0171c8998247"
+    },
+    "college_summary.md": {
+      "bytes": 5564,
+      "sha256": "1db2b7e1db44d737bca63b5611cfd5a3d6380986a5418c7553d4a352d14a089c"
+    },
+    "manual_verification_checklist.md": {
+      "bytes": 1316,
+      "sha256": "811296b722f2a98b137572aac7d7ef7fd9f52e53dee775af4c94693b88fd9b78"
+    },
+    "excluded_sources.md": {
+      "bytes": 587,
+      "sha256": "a4b1a0538995cf83a37aa31e97303cfe98fe8abbb0c4bd148ede7acf89e87ca9"
+    },
+    "research_log.md": {
+      "bytes": 1442,
+      "sha256": "bb78f4e5034c0c3fdf47b265e92396fdb03e5cbdda08e9b235e293b38e5d8f4c"
+    },
+    "import_readiness.json": {
+      "bytes": 1085,
+      "sha256": "c6cdde6ae1db32ec4b6fd2897be08d262e7642723e4590320e479f6f60fdc8ed"
+    }
+  }
+}

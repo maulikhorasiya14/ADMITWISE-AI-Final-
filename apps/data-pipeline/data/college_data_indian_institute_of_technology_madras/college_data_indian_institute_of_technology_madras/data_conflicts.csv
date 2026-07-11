@@ -1,0 +1,2 @@
+﻿conflict_id,data_category,field,source_1_id,source_1_value,source_2_id,source_2_value,possible_reason,recommended_manual_action,status
+C001,campus,campus_area_acres,S002,650 acres,S017,617 acres (2.5 km²),"Different rounding, boundary conventions or page update dates.",Use 617 acres as the current official campus-page value while retaining the JoSAA 650-acre institution claim.,open

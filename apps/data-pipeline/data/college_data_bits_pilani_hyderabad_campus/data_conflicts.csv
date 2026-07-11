@@ -1,0 +1,7 @@
+﻿conflict_id,data_category,field,source_1_id,source_1_value,source_2_id,source_2_value,possible_reason,recommended_manual_action,status
+C001,location,distance_from_secunderabad_km,S002,Current page: about 27 km,S003,Older page: about 25 km,"different reference points, route or page age",Use 27 km as current broad figure and mark travel time approximate,documented
+C002,identity,student_population,S002,"Current page: over 6,200 students",S003,"Older page: about 2,800 students",campus expansion and stale page,Use current value with access date,resolved by recency
+C003,hostel,hostel_count,S003,Six boys' and two girls' hostels,S004,Current page gives room types but no hostel counts,campus expansion or removed stale counts,Obtain 2026-27 hostel-allotment circular,open
+C004,placements,placement_success_rate,S005,Broad almost-100% success statement,S006,2023-24 total 81.01%; FD 79.56%,"different period, population, denominator or marketing wording",Use detailed year-specific PDF for numeric records,open
+C005,academics,grading_strictness,SX09,Newer discussion alleges very strict grading,SX10,Earlier comments describe relatively favourable grading,"course, cohort, instructor or policy changes",Do not publish a numeric grading score,open
+C006,medical_access,external_hospital,S003,Older page references Medicity Hospital,S021,Current page lists Yashoda Super Speciality Hospital,multiple or changed referral arrangements,Confirm current emergency referral network,open

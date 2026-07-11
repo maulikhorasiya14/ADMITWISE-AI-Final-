@@ -1,0 +1,150 @@
+{
+  "senior_junior_culture": {
+    "summary": "Public evidence is limited. Gymkhana and club structures support cross-batch interaction, while the available independent discussions do not establish a consistent college-wide picture of mentorship or hierarchy.",
+    "positive_themes": [
+      "Student-run clubs and elected Gymkhana create formal interaction channels."
+    ],
+    "negative_themes": [
+      "Too few verified recent first-person sources to assess senior accessibility or hierarchy."
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "SRC026",
+      "SRC027"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "Official curriculum emphasizes project-based and interdisciplinary learning, including a six-month project-based internship. Student discussions describe a demanding workload and substantial self-learning, but views on faculty and administration vary.",
+    "positive_themes": [
+      "Project-based curriculum",
+      "Strong technical focus",
+      "Minor options and hands-on projects"
+    ],
+    "negative_themes": [
+      "Workload may be demanding",
+      "Faculty/administration experiences are inconsistent in public reports"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "SRC001",
+      "SRC027",
+      "SRC028"
+    ],
+    "conflicting_source_ids": [
+      "SRC030"
+    ]
+  },
+  "hostel_reality": {
+    "summary": "Officially the institute is fully residential with six hostels, central messes and substantial capacity. Independent reports on mess, crowding, network quality and hostel rules are mixed and cannot be generalized.",
+    "positive_themes": [
+      "On-campus residential system",
+      "Multiple hostel types",
+      "Wi-Fi, sports and common-room facilities are officially listed"
+    ],
+    "negative_themes": [
+      "Mess and network complaints appear in some anecdotes",
+      "Current curfew and room allocation should be verified"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "SRC001",
+      "SRC021",
+      "SRC022"
+    ],
+    "conflicting_source_ids": [
+      "SRC028",
+      "SRC030"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "The official profile lists a broad sports, cultural and technical-club ecosystem with several 2023 inter-IIIT achievements. Some student comments describe the campus as less vibrant or events as inconsistent, so current activity levels need club-by-club verification.",
+    "positive_themes": [
+      "Wide club variety",
+      "Strong sports achievements",
+      "Technical fabrication and robotics options"
+    ],
+    "negative_themes": [
+      "Some reports describe limited fests or administrative restrictions",
+      "Several static club pages are old"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "SRC001",
+      "SRC023",
+      "SRC024",
+      "SRC025",
+      "SRC031"
+    ],
+    "conflicting_source_ids": [
+      "SRC030"
+    ]
+  },
+  "coding_and_placement_culture": {
+    "summary": "Coding culture is repeatedly described positively in student discussions, and official placement sources list a broad recruiter set and strong top-end offers. However, public discussions dispute how representative the highest offers are and the share of off-campus outcomes.",
+    "positive_themes": [
+      "Active programming/open-source exposure",
+      "Large recruiter list",
+      "Project-based internships"
+    ],
+    "negative_themes": [
+      "Offer counts are not unique-student placement counts",
+      "On-campus versus off-campus split is not published",
+      "Branch-level placement transparency is limited"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "SRC001",
+      "SRC010",
+      "SRC027",
+      "SRC028"
+    ],
+    "conflicting_source_ids": [
+      "SRC029",
+      "SRC030"
+    ]
+  },
+  "locality_and_student_life": {
+    "summary": "The campus is near Jabalpur airport but outside the city core. Official sources report institute bus service; student discussions commonly frame city access and isolation as trade-offs.",
+    "positive_themes": [
+      "Green residential campus",
+      "Airport is close",
+      "Institute bus to city"
+    ],
+    "negative_themes": [
+      "Campus is away from the city centre",
+      "Local internship/startup exposure may require travel or remote networking"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "SRC020",
+      "SRC028",
+      "SRC030"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "The available evidence suggests a good fit for students prioritizing technical depth, campus infrastructure, coding or design/manufacturing projects and a residential environment. Students prioritizing frequent city exposure, highly transparent branch-level placements or a very relaxed academic culture should investigate further.",
+    "positive_themes": [
+      "Technical focus",
+      "Developed residential campus",
+      "Coding and project ecosystem"
+    ],
+    "negative_themes": [
+      "Campus isolation",
+      "Mixed administration and mess reports",
+      "Placement-scope ambiguity"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "SRC026",
+      "SRC027",
+      "SRC028",
+      "SRC030",
+      "SRC031"
+    ],
+    "conflicting_source_ids": [
+      "SRC029"
+    ]
+  }
+}

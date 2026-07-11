@@ -1,0 +1,38 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": true,
+  "cutoffs": true,
+  "fees": true,
+  "scholarships": true,
+  "placements": true,
+  "recruiters": true,
+  "hostels_and_facilities": false,
+  "clubs": true,
+  "location": true,
+  "student_experience": false,
+  "blocking_issues": [
+    "Accreditation applicability remains unverified",
+    "Current hostel capacity/rules are incomplete",
+    "Student-experience evidence is not broad enough for strong campus-wide conclusions",
+    "Final 2025-26 placement report is pending"
+  ],
+  "recommended_import_order": [
+    "college identity",
+    "admission routes",
+    "branches",
+    "seat matrix",
+    "cutoffs",
+    "fees",
+    "scholarships",
+    "placements",
+    "recruiters",
+    "location",
+    "facilities",
+    "clubs",
+    "student experience"
+  ],
+  "overall_status": "ready_for_human_review"
+}

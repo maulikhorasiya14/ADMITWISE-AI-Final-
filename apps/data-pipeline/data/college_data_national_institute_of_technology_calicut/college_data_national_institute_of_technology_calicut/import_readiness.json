@@ -1,0 +1,40 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": true,
+  "cutoffs": false,
+  "fees": true,
+  "scholarships": false,
+  "placements": true,
+  "recruiters": false,
+  "hostels_and_facilities": true,
+  "clubs": true,
+  "location": true,
+  "student_experience": true,
+  "blocking_issues": [
+    "Verify the 2024 AI quota mapping before importing cutoffs into predictive logic.",
+    "Spot-check the user-verified JoSAA CSV against official archive rows before production import.",
+    "Obtain current NBA/NAAC/AICTE/UGC status where required by schema.",
+    "Wait for/capture 2026-27 scholarship notices and exact scheme fields.",
+    "Confirm recruiter notice year and company-specific role/eligibility data before recruiter analytics."
+  ],
+  "recommended_import_order": [
+    "college_identity",
+    "branches",
+    "seat_matrix",
+    "admission_routes",
+    "fees",
+    "hostels_and_facilities",
+    "location",
+    "clubs",
+    "placements",
+    "student_experience",
+    "cutoffs_after_quota_verification",
+    "accreditation_after_status_check",
+    "scholarships_after_2026_notices",
+    "recruiters_after_year_and_role_verification"
+  ],
+  "overall_status": "ready_for_human_review"
+}

@@ -1,0 +1,153 @@
+{
+  "senior_junior_culture": {
+    "summary": "Official student boards and hostel governance create structured peer interaction, while public evidence about batch hierarchy or mentorship quality is limited.",
+    "positive_themes": [
+      "Student-led hostel and welfare boards",
+      "Peer networks and hostel friendships are repeatedly mentioned"
+    ],
+    "negative_themes": [
+      "Insufficient recent independent evidence on club hierarchy or senior-junior power dynamics"
+    ],
+    "evidence_strength": "Limited to moderate repeated signal",
+    "supporting_source_ids": [
+      "S021",
+      "S031",
+      "S013"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "The credit system offers curricular flexibility, projects and minors, but survey and first-person evidence indicate that workload and balancing academics with activities can be difficult.",
+    "positive_themes": [
+      "Revised curriculum emphasises flexibility, hands-on learning and projects",
+      "First-year student account reports approachable faculty and two projects"
+    ],
+    "negative_themes": [
+      "70–80% struggle with academic/extracurricular balance in the reported fresher survey",
+      "Academic pressure is a meaningful decision factor"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S002",
+      "S030",
+      "S031",
+      "S035"
+    ],
+    "conflicting_source_ids": []
+  },
+  "hostel_reality": {
+    "summary": "Hostel life is central and student-managed, but capacity constraints mean sharing is common and conditions vary by hostel. Public reports on mess, water and cleanliness conflict and should not be generalised.",
+    "positive_themes": [
+      "Strong hostel friendships reported by many survey respondents",
+      "Multiple campus food outlets and laundry facilities",
+      "Student-led hostel governance"
+    ],
+    "negative_themes": [
+      "In-campus capacity is constrained across total enrolment",
+      "Mixed reports on rooms, mess, water and washrooms",
+      "Exact 2026-27 BHM charges require manual confirmation"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "S011",
+      "S012",
+      "S031",
+      "S032",
+      "S033",
+      "S034"
+    ],
+    "conflicting_source_ids": [
+      "S032",
+      "S033",
+      "S034"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "IIT Delhi has a broad cultural, technical, publication, welfare, sports and entrepreneurship ecosystem. Current activity is clearly visible at board level, but the latest activity of every individual club was not independently verified.",
+    "positive_themes": [
+      "Large student-governance ecosystem",
+      "Cultural and technical activities",
+      "Strong city access"
+    ],
+    "negative_themes": [
+      "Club selection fairness and first-year access are not documented consistently"
+    ],
+    "evidence_strength": "Moderate institution-associated signal",
+    "supporting_source_ids": [
+      "S019",
+      "S020",
+      "S022",
+      "S023",
+      "S024",
+      "S025",
+      "S026"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "Official placement outcomes and recruiter participation indicate a very strong employment ecosystem, while independent student-level evidence on placement-cell transparency and non-CSE software access is insufficient.",
+    "positive_themes": [
+      "High NIRF medians",
+      "Large number of offers and PPOs",
+      "Major technology, finance and consulting recruiters"
+    ],
+    "negative_themes": [
+      "Company-wise roles, packages and branch eligibility are not publicly complete",
+      "Placement-office snapshots use different denominators from NIRF"
+    ],
+    "evidence_strength": "Strong official signal; limited student-reported signal",
+    "supporting_source_ids": [
+      "S008",
+      "S014",
+      "S015",
+      "S016",
+      "S017"
+    ],
+    "conflicting_source_ids": []
+  },
+  "locality_and_student_life": {
+    "summary": "The Hauz Khas campus is unusually well connected for a residential institute, with its own metro station and access to South Delhi and NCR opportunities. Off-campus living costs and Delhi air pollution are potential concerns.",
+    "positive_themes": [
+      "Direct Magenta Line metro access",
+      "Proximity to AIIMS and central South Delhi",
+      "Access to Delhi-NCR internships and events"
+    ],
+    "negative_themes": [
+      "High off-campus costs",
+      "Traffic and seasonal air-quality concerns require personal consideration"
+    ],
+    "evidence_strength": "Moderate signal",
+    "supporting_source_ids": [
+      "S027",
+      "S031"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "Evidence supports exceptional academic, research, placement and extracurricular opportunity, alongside significant workload and heterogeneous hostel experiences. It is best suited to students comfortable with a demanding, highly active environment.",
+    "positive_themes": [
+      "Academic and research depth",
+      "Recruiter reach",
+      "Peer and club ecosystem",
+      "Metropolitan connectivity"
+    ],
+    "negative_themes": [
+      "Pressure and balance challenges",
+      "Hostel quality varies",
+      "Some official operating details change by semester"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S002",
+      "S008",
+      "S015",
+      "S019",
+      "S020",
+      "S031"
+    ],
+    "conflicting_source_ids": [
+      "S032",
+      "S033"
+    ]
+  }
+}

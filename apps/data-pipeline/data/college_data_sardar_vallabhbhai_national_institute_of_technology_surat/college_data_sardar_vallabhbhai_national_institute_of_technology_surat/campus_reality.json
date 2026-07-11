@@ -1,0 +1,146 @@
+{
+  "senior_junior_culture": {
+    "summary": "Public sources conflict. One AMA says there was no ragging, while another second-hand review alleges uncomfortable senior introductions. Official anti-ragging squads and helplines exist, but the available evidence is not sufficient for a college-wide conclusion.",
+    "positive_themes": [
+      "Some current-student comments report no ragging and approachable peers."
+    ],
+    "negative_themes": [
+      "A limited source alleges uncomfortable senior-junior practices and language-based groups."
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "SEXP001"
+    ],
+    "conflicting_source_ids": [
+      "SEXP005"
+    ]
+  },
+  "academic_culture": {
+    "summary": "Recent student accounts describe branch-specific faculty quality and substantial workload in some departments. CSE accounts highlight early core-subject exposure and freedom for self-directed work; EE comments report long days.",
+    "positive_themes": [
+      "NEP-aligned early branch subjects",
+      "helpful faculty and research invitations in some departments",
+      "freedom for self-initiative"
+    ],
+    "negative_themes": [
+      "faculty quality varies",
+      "some branches report heavy schedules and limited spare energy"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "SEXP004",
+      "SEXP006",
+      "SEXP009"
+    ],
+    "conflicting_source_ids": []
+  },
+  "hostel_reality": {
+    "summary": "Official sources describe Wi-Fi/LAN, messes and common facilities, but student reports show large variation by building and year. Bhabha Bhavan and mess hygiene attract repeated recent complaints, while other accounts describe rooms and the girls mess more positively.",
+    "positive_themes": [
+      "Some rooms are described as spacious",
+      "one AMA describes the girls hostel mess positively",
+      "hostel committees provide formal representation"
+    ],
+    "negative_themes": [
+      "building-specific maintenance complaints",
+      "Wi-Fi/LAN reliability complaints",
+      "mess hygiene and food-quality allegations",
+      "first-year in-time restrictions reported"
+    ],
+    "evidence_strength": "Conflicting signal with moderate repeated negative signal for specific buildings",
+    "supporting_source_ids": [
+      "SEXP001",
+      "SEXP002",
+      "SEXP003",
+      "SEXP007",
+      "SEXP008"
+    ],
+    "conflicting_source_ids": [
+      "SRC010",
+      "SRC011"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "Official sources show a broad technical, cultural and professional chapter ecosystem, plus SPARSH and MINDBEND. Student accounts generally support an active event calendar, although club-selection fairness and first-year access are not well documented.",
+    "positive_themes": [
+      "many officially listed clubs",
+      "technical and cultural festivals",
+      "large green campus and recurring activities"
+    ],
+    "negative_themes": [
+      "limited independent evidence on selection fairness and actual activity level of every listed club"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "SRC024",
+      "SEXP001",
+      "SEXP006",
+      "SEXP010"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "The clearest repeated theme is that coding culture is opportunity-rich but self-driven. Official recruiter and placement evidence supports access to major technology employers, while student comments stress that peers and personal initiative matter.",
+    "positive_themes": [
+      "major technology and semiconductor recruiters are officially listed",
+      "active ACM/developer/robotics chapters",
+      "good CSE academics reported"
+    ],
+    "negative_themes": [
+      "coding culture is not uniformly strong across branches",
+      "non-CSE software-role eligibility is not transparently published"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "SRC019",
+      "SEXP001",
+      "SEXP006"
+    ],
+    "conflicting_source_ids": []
+  },
+  "locality_and_student_life": {
+    "summary": "SVNIT is in an urban, relatively well-connected part of Surat, about 10 km from both railway station and airport. Students describe the surrounding area and campus walks positively, but evening freedom is affected by hostel in-time rules for some cohorts.",
+    "positive_themes": [
+      "urban location",
+      "regular city buses/autos/taxis",
+      "large campus and nearby developed areas"
+    ],
+    "negative_themes": [
+      "first-year in-time restrictions reported",
+      "Surat may offer a smaller student/startup ecosystem than major metros"
+    ],
+    "evidence_strength": "Moderate signal supported by official location facts",
+    "supporting_source_ids": [
+      "SRC025",
+      "SEXP001",
+      "SEXP008"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "Overall satisfaction is materially mixed. Students value the NIT brand, urban location, established core departments, CSE opportunities and campus events. Concerns center on hostel variation, mess quality, workload, restrictions and uneven coding/sports culture.",
+    "positive_themes": [
+      "strong national-institute brand",
+      "good branch-specific placement potential",
+      "active campus events",
+      "urban connectivity"
+    ],
+    "negative_themes": [
+      "hostel/mess complaints",
+      "administrative restrictions",
+      "branch-dependent experience"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "SEXP001",
+      "SEXP006",
+      "SEXP009"
+    ],
+    "conflicting_source_ids": [
+      "SEXP003",
+      "SEXP004",
+      "SEXP005",
+      "SEXP007"
+    ]
+  }
+}

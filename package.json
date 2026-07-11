@@ -1,0 +1,17 @@
+{
+  "name": "admitwise",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@11.0.7",
+  "scripts": {
+    "dev": "pnpm --filter @admitwise/web dev",
+    "web:dev": "pnpm --filter @admitwise/web dev",
+    "web:build": "pnpm --filter @admitwise/web build",
+    "lint": "pnpm -r lint",
+    "type-check": "pnpm -r type-check",
+    "test": "pnpm -r test"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": true,
+  "cutoffs": true,
+  "fees": true,
+  "scholarships": false,
+  "placements": true,
+  "recruiters": true,
+  "hostels_and_facilities": false,
+  "clubs": true,
+  "location": true,
+  "student_experience": false,
+  "blocking_issues": [
+    "Current NAAC/NBA/AICTE/UGC records incomplete",
+    "Final 2025-26 placement denominator conflict unresolved",
+    "Current scholarship terms and deadlines not fully structured",
+    "Operational hostel capacity and exact 2026 rent need confirmation",
+    "Qualitative evidence needs manual full-source review"
+  ],
+  "recommended_import_order": [
+    "college_identity",
+    "admission_routes",
+    "branches",
+    "seat_matrix",
+    "cutoffs",
+    "fees with calculated-label safeguards",
+    "placements with conflict flags",
+    "recruiters",
+    "clubs",
+    "location",
+    "scholarships after current-cycle verification",
+    "hostels/facilities after operational confirmation",
+    "student experience after manual review"
+  ],
+  "overall_status": "ready_for_human_review"
+}

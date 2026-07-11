@@ -1,0 +1,7 @@
+﻿college_name,official_branch_name,normalized_branch,degree,duration_years,approved_intake,female_supernumerary_seats,tfws_seats,nba_status,academic_year,source_id
+"Indian Institute of Information Technology, Allahabad","Electronics and Communication Engineering (4 Years, Bachelor of Technology)",ECE,B.Tech.,4,121,22,0,,2026-27,SRC001
+"Indian Institute of Information Technology, Allahabad","Information Technology (4 Years, Bachelor of Technology)",IT,B.Tech.,4,242,48,0,,2026-27,SRC001
+"Indian Institute of Information Technology, Allahabad","Information Technology-Business Informatics (4 Years, Bachelor of Technology)",IT-BI,B.Tech.,4,40,8,0,,2026-27,SRC001
+"Indian Institute of Information Technology, Allahabad","Electronics and Communication Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",ECE Dual,B.Tech. + M.Tech./MBA,5,11,2,0,,2026-27,SRC001
+"Indian Institute of Information Technology, Allahabad","Information Technology (5 Years, Bachelor and Master of Technology (Dual Degree))",IT Dual,B.Tech. + M.Tech./MBA,5,25,4,0,,2026-27,SRC001
+"Indian Institute of Information Technology, Allahabad","B. Tech. Information Technology-Business Informatics (IT- BIn) - Master of Business Administration (MBA) (5 Years, Bachelor of Technology and MBA (Dual Degree))",IT-BI + MBA,B.Tech. + M.Tech./MBA,5,22,4,0,,2026-27,SRC001

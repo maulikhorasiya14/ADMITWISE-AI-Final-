@@ -1,0 +1,144 @@
+{
+  "senior_junior_culture": {
+    "summary": "Official AASF/SAC evidence supports organised peer interaction, while public discussions show active senior-access channels. Evidence is insufficient to generalise about every batch or hierarchy.",
+    "positive_themes": [
+      "Orientation and peer-learning forums",
+      "Active online senior guidance"
+    ],
+    "negative_themes": [
+      "Some branch-specific discussions are polarised"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "SRC022",
+      "SRC009",
+      "STU005"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "The brochure documents a 75% minimum attendance expectation. Public discussion suggests a strong technical peer environment but differing workloads across CSE/IT, MSC, EEE and integrated programmes.",
+    "positive_themes": [
+      "Strong coding/technical peer culture repeatedly mentioned",
+      "Research and technical conference exposure"
+    ],
+    "negative_themes": [
+      "Branch workload and dual-degree policy require direct verification",
+      "EEE outcomes are not yet mature"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "SRC009",
+      "STU001",
+      "STU005"
+    ],
+    "conflicting_source_ids": [
+      "STU001",
+      "STU005"
+    ]
+  },
+  "hostel_reality": {
+    "summary": "Current official brochure reports a compulsory residential system with four boys hostels, one girls hostel and 1,700+ occupancy. Room condition, maintenance speed, Wi-Fi and mess quality vary by block and are not reliably established by current independent evidence.",
+    "positive_themes": [
+      "Residential campus",
+      "Internet, water, sports and surveillance officially documented"
+    ],
+    "negative_themes": [
+      "Compulsory 10 PM attendance and mess rules may feel restrictive",
+      "Current block-wise quality requires verification"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "SRC009",
+      "STU006",
+      "STU007"
+    ],
+    "conflicting_source_ids": [
+      "SRC020"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "Official 2024-25 evidence confirms active technical, cultural, sports and entrepreneurship events; student photo-based accounts also describe energetic fest periods.",
+    "positive_themes": [
+      "INFOTSAV, URJA, Inter-IIIT, Aurora and incubation events",
+      "Large sports infrastructure"
+    ],
+    "negative_themes": [
+      "Event schedules can change by year"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "SRC009",
+      "SRC022",
+      "STU003"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "Official placement and event material supports substantial coding, hackathon and software-recruiter activity. Student sources praise CS/IT peers but dispute placement scope and express uncertainty for new EEE cohorts.",
+    "positive_themes": [
+      "Hackathons and competitive coding",
+      "Large technology recruiter list",
+      "Strong CS/IT peer environment reported"
+    ],
+    "negative_themes": [
+      "On-campus/off-campus and eligibility scope should be checked",
+      "EEE placement history is limited"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "SRC009",
+      "SRC013",
+      "STU001",
+      "STU002"
+    ],
+    "conflicting_source_ids": [
+      "STU001",
+      "STU002",
+      "STU004"
+    ]
+  },
+  "locality_and_student_life": {
+    "summary": "The campus is residential and green, around 7 km from Gwalior Junction and 10 km from the airport according to JoSAA. It offers quieter campus life but less immediate metro-scale industry exposure.",
+    "positive_themes": [
+      "Green residential campus",
+      "Road, cab and auto access",
+      "Markets within a short drive officially reported"
+    ],
+    "negative_themes": [
+      "Local internship ecosystem is smaller than major technology metros",
+      "Evening transport experience not independently verified"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "SRC001",
+      "SRC009",
+      "STU008"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "Evidence suggests a strong fit for students prioritising computing, peer learning and residential campus life. Students considering EEE or the integrated IT+MBA route should verify curricula, exit rules and company eligibility directly.",
+    "positive_themes": [
+      "Computing reputation",
+      "Residential campus and events",
+      "Documented placement outcomes"
+    ],
+    "negative_themes": [
+      "Branch-specific uncertainty",
+      "Placement scope and hostel restrictions need personal fit assessment"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "SRC009",
+      "SRC013",
+      "STU003",
+      "STU005"
+    ],
+    "conflicting_source_ids": [
+      "STU001",
+      "STU002",
+      "STU004"
+    ]
+  }
+}

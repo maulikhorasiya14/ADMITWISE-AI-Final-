@@ -1,0 +1,167 @@
+{
+  "senior_junior_culture": {
+    "summary": "A recent public discussion describes seniors as approachable and ragging as absent, while official pages show structured freshie activities and anti-ragging mechanisms. Independent evidence is still too limited for a college-wide conclusion.",
+    "positive_themes": [
+      "Approachable-senior anecdote",
+      "Freshie events through LitSoc",
+      "Formal anti-ragging framework"
+    ],
+    "negative_themes": [
+      "Only one recent detailed independent account"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "S031",
+      "S019",
+      "S015"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "Official sources describe relative grading, continuous assessment, high academic rigour and substantial elective flexibility. Student discussions suggest attendance flexibility but also say lectures remain important; the exact current attendance regulation needs official confirmation.",
+    "positive_themes": [
+      "Flexible electives and minors",
+      "Research-lab access",
+      "Potential dual-degree/IDDD pathways"
+    ],
+    "negative_themes": [
+      "Competitive relative grading",
+      "Continuous assessment workload",
+      "Attendance policy unclear from official public regulations"
+    ],
+    "evidence_strength": "Moderate institutional signal with limited student evidence",
+    "supporting_source_ids": [
+      "S002",
+      "S032",
+      "S033"
+    ],
+    "conflicting_source_ids": [
+      "S032",
+      "S033"
+    ]
+  },
+  "hostel_reality": {
+    "summary": "Official information confirms first-year sharing rooms, LAN in rooms, washing machines, common rooms, sports/music/tech spaces, and campus transport. Recent student comments agree that multiple mess categories exist but disagree sharply on food quality.",
+    "positive_themes": [
+      "Residential campus",
+      "LAN and washing machines",
+      "Multiple mess categories",
+      "Food-court and restaurant alternatives"
+    ],
+    "negative_themes": [
+      "Mess quality repeatedly criticised in small public discussions",
+      "Room-sharing and hostel condition vary by building"
+    ],
+    "evidence_strength": "Moderate repeated signal for mess variability; official verification for facilities",
+    "supporting_source_ids": [
+      "S016",
+      "S029",
+      "S030",
+      "S031",
+      "S035",
+      "S036"
+    ],
+    "conflicting_source_ids": [
+      "S029",
+      "S030"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "Strong institution-backed evidence shows a large, active ecosystem: CFI involved about 1,000 students in 2025, Shaastra and Saarang are major student-run festivals, and many Sangam clubs are officially listed. Activity dates for individual static-list clubs remain uneven.",
+    "positive_themes": [
+      "Large technical and cultural festivals",
+      "Hands-on CFI projects",
+      "Freshie participation opportunities",
+      "Inter-hostel competitions"
+    ],
+    "negative_themes": [
+      "Current recruitment and activity dates are not published for every listed club"
+    ],
+    "evidence_strength": "Strong repeated institutional signal",
+    "supporting_source_ids": [
+      "S019",
+      "S021",
+      "S022",
+      "S023",
+      "S024",
+      "S035"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "Official placement reports show strong software, analytics, consulting, core-engineering and finance participation, while CFI provides a large project-building ecosystem. Company-wise role eligibility and non-CSE software access are not transparently published in the reviewed sources.",
+    "positive_themes": [
+      "High CSE and EE CTC medians",
+      "Large recruiter set",
+      "CFI project culture",
+      "Internship-to-PPO pipeline"
+    ],
+    "negative_themes": [
+      "CTC is not base salary",
+      "Branch-wise placed denominators are often absent",
+      "New 2024–26 programmes have no graduating placement history"
+    ],
+    "evidence_strength": "Strong official outcomes signal; limited student-reported process evidence",
+    "supporting_source_ids": [
+      "S009",
+      "S010",
+      "S011",
+      "S012",
+      "S022",
+      "S034"
+    ],
+    "conflicting_source_ids": []
+  },
+  "locality_and_student_life": {
+    "summary": "The main campus is a large protected-green residential environment in Chennai, linked by institute buses and city transport. Guindy metro and Kasturba Nagar MRTS require last-mile travel, while the Research Park and Taramani technology corridor create nearby industry exposure.",
+    "positive_themes": [
+      "Green self-contained campus",
+      "On-campus shuttle",
+      "Near Research Park and Chennai technology corridor",
+      "City bus and metro/MRTS options"
+    ],
+    "negative_themes": [
+      "Large internal distances",
+      "Chennai heat and humidity",
+      "Metro/rail stations are not at the hostel zone"
+    ],
+    "evidence_strength": "Strong official location signal with limited anecdotal transit evidence",
+    "supporting_source_ids": [
+      "S017",
+      "S026",
+      "S034",
+      "S035",
+      "S036"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "Available evidence points to unusually strong academic, innovation, festival and placement opportunities. The most repeated practical caution is variable mess experience; workload, competition and large-campus logistics may not suit every student. There is insufficient independent evidence to state how many students would choose IIT Madras again.",
+    "positive_themes": [
+      "Academic and research breadth",
+      "Top-ranked engineering institution",
+      "Strong innovation and festival ecosystem",
+      "Wide recruiter participation"
+    ],
+    "negative_themes": [
+      "Competitive workload",
+      "Mess variability",
+      "Incomplete company-role transparency",
+      "New programmes lack graduate outcomes"
+    ],
+    "evidence_strength": "Moderate synthesis; no numeric rating justified",
+    "supporting_source_ids": [
+      "S002",
+      "S005",
+      "S009",
+      "S022",
+      "S029",
+      "S031",
+      "S035"
+    ],
+    "conflicting_source_ids": [
+      "S029",
+      "S030"
+    ]
+  }
+}

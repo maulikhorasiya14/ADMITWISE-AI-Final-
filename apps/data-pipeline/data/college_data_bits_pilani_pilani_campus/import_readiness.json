@@ -1,0 +1,37 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": false,
+  "seat_matrix": false,
+  "cutoffs": true,
+  "fees": true,
+  "scholarships": false,
+  "placements": true,
+  "recruiters": true,
+  "hostels_and_facilities": true,
+  "clubs": false,
+  "location": false,
+  "student_experience": true,
+  "blocking_issues": [
+    "No official branch-wise 2026-27 seat matrix/intake",
+    "Current AICTE/NBA details unverified",
+    "Final 2026 cutoff not yet available",
+    "No Pilani-only 2024-25 placement table",
+    "Current MCN and hostel operational details require manual confirmation"
+  ],
+  "recommended_import_order": [
+    "college_identity",
+    "admission_routes",
+    "historical_cutoffs_2023_2025",
+    "fees_2026_27",
+    "placements_with_scope_labels",
+    "recruiters_company_presence_only",
+    "hostels_and_facilities",
+    "student_experience_labels",
+    "scholarships_after_manual_confirmation",
+    "branches_after_intake_confirmation",
+    "location_after_map_verification"
+  ],
+  "overall_status": "ready_for_human_review"
+}

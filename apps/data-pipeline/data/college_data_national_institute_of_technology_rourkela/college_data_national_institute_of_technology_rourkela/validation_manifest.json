@@ -1,0 +1,112 @@
+{
+  "generated_at": "2026-06-26",
+  "folder": "college_data_national_institute_of_technology_rourkela",
+  "files": {
+    "branches.csv": {
+      "size_bytes": 5367,
+      "sha256": "cb91ec01b78cfe659015573b5363182769e09bcab786ea6f8bf60a91480bc259"
+    },
+    "campus_reality.json": {
+      "size_bytes": 5948,
+      "sha256": "efa66d9b155dc2af6669e740a72daf8f5b887297c43da6f34a5a3456b36b7d36"
+    },
+    "clubs.csv": {
+      "size_bytes": 6395,
+      "sha256": "ee7272f9b2b41f0cccaeedf01baf8a18f51a2b9178af71161728b472c914df2a"
+    },
+    "college_profile.json": {
+      "size_bytes": 5252957,
+      "sha256": "a9284389bdf099229316e8d150ea9c4030c173b06fee2ff44a48a0abfc8d8401"
+    },
+    "college_summary.md": {
+      "size_bytes": 8366,
+      "sha256": "132371f478e1cfe9e0b7db768f2634ce8acc9cefc60f9d6330126e5a710849ed"
+    },
+    "cutoffs.csv": {
+      "size_bytes": 1741880,
+      "sha256": "d596217e94d7abaedd57efdb070c742a68b6c52ad9c075d7ecef1569859ade52"
+    },
+    "data_conflicts.csv": {
+      "size_bytes": 1784,
+      "sha256": "b274443a35cb1fd32930e3ee551a84edbc5b28d2c4f006eab2488fe691fa93ca"
+    },
+    "excluded_sources.md": {
+      "size_bytes": 1228,
+      "sha256": "c0917850264d023a3d82a360757af7686dd6a776db3e1aa282ebd85448fcdfb7"
+    },
+    "fees.csv": {
+      "size_bytes": 1785,
+      "sha256": "a6048e474e9c49e67de141723cb040bcfb50304e82a7a461bd0af453c1ce406c"
+    },
+    "import_readiness.json": {
+      "size_bytes": 1192,
+      "sha256": "c6046e8ef1fc4d76cdcf7f85b4f62e6fc9f37b109ff6744c75cc906b6ba45695"
+    },
+    "location.csv": {
+      "size_bytes": 1204,
+      "sha256": "0fbd9c1c23c83c683a3b96986dd910a8afe1a0cc6edfbe821ed39a1e32bf1d30"
+    },
+    "manual_verification_checklist.md": {
+      "size_bytes": 1801,
+      "sha256": "fe958804699785f96bbfbd7867a7bffe30496dbeb89209ef124b1c245f2c036d"
+    },
+    "placements.csv": {
+      "size_bytes": 2965,
+      "sha256": "22d7f580eaeda43a8f55d6f01f66f565d44ea750363f4fae839a07d14c85783a"
+    },
+    "recruiters.csv": {
+      "size_bytes": 7281,
+      "sha256": "3a8378a64608c4341004fa060c6b28271d9ae6870bff44a8170f1ccc627c51e5"
+    },
+    "research_log.md": {
+      "size_bytes": 1924,
+      "sha256": "a85af75f7535a4230a6cb49e7d70e5febeb1152df064c860265a33b529956dc1"
+    },
+    "scholarships.csv": {
+      "size_bytes": 4108,
+      "sha256": "54af22c13e618232a873041e2efd0f039a12155d157378139456f34cff326145"
+    },
+    "sources.csv": {
+      "size_bytes": 11569,
+      "sha256": "152dca88f13d0153af506686405bdd8d553a018e587db67b7a8a16049d90ea70"
+    },
+    "student_experience_sources.csv": {
+      "size_bytes": 3727,
+      "sha256": "8f4c31a57b17deea5955cbc3ecb97cc6e283607f5d1997ff569bf71556369aee"
+    }
+  },
+  "record_counts": {
+    "sources": 34,
+    "official_or_institution_sources": 25,
+    "student_experience_sources": 9,
+    "branches": 24,
+    "seat_matrix_rows": 48,
+    "seat_total": 1063,
+    "cutoffs": 7178,
+    "josaa_cutoffs": 6775,
+    "csab_cutoffs": 403,
+    "blank_cutoff_rows_excluded": 12,
+    "fees": 5,
+    "placements": 10,
+    "recruiters": 30,
+    "scholarships": 7,
+    "clubs": 20,
+    "conflicts": 5
+  },
+  "validation": {
+    "required_files_present": true,
+    "json_valid": true,
+    "csv_row_widths_consistent": true,
+    "cutoff_numeric_valid": true,
+    "opening_not_greater_than_closing": true,
+    "exact_cutoff_duplicates_removed": true,
+    "historical_cutoffs_not_labelled_2026": true,
+    "seat_total_1063": true,
+    "tier_c_not_used_for_official_numeric_facts": true
+  },
+  "notes": [
+    "Calculated cost records are labelled calculated.",
+    "Student reports are qualitative only.",
+    "Missing values remain null/blank."
+  ]
+}

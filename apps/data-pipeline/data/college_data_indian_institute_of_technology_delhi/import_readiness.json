@@ -1,0 +1,38 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": true,
+  "cutoffs": true,
+  "fees": true,
+  "scholarships": true,
+  "placements": true,
+  "recruiters": false,
+  "hostels_and_facilities": false,
+  "clubs": false,
+  "location": true,
+  "student_experience": false,
+  "blocking_issues": [
+    "Exact 2026-27 BHM/mess charges are pending manual extraction.",
+    "Recruiter records lack company-wise role, branch eligibility, selection count and package.",
+    "Hostel allocation and room type are not guaranteed in this dataset.",
+    "Individual club recency and student-experience claims need human review.",
+    "AICTE/NAAC/NBA applicability or records are unverified."
+  ],
+  "recommended_import_order": [
+    "college identity",
+    "admission routes",
+    "branches",
+    "seat matrix",
+    "cutoffs",
+    "fees",
+    "scholarships",
+    "NIRF placement records",
+    "location",
+    "recruiters after enrichment",
+    "hostels/facilities after current charge and allotment verification",
+    "clubs and student experience after qualitative review"
+  ],
+  "overall_status": "ready_for_human_review"
+}

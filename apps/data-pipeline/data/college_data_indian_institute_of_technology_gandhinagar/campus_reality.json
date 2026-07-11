@@ -1,0 +1,150 @@
+{
+  "senior_junior_culture": {
+    "summary": "Official mentoring assigns small first-year groups to student guides; public evidence about day-to-day hierarchy is limited.",
+    "positive_themes": [
+      "Structured student-guide mentoring",
+      "Public accounts mention help with projects and campus navigation"
+    ],
+    "negative_themes": [
+      "Insufficient independent evidence to generalize club hierarchy or batch interaction"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "S002",
+      "STU001"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "Official sources emphasize academic flexibility, research and project access. Student reports commonly describe approachable faculty, while experiences vary by professor and some describe a demanding workload.",
+    "positive_themes": [
+      "Flexible curriculum and branch-change/major-minor options",
+      "Research and project access",
+      "Small-cohort faculty interaction"
+    ],
+    "negative_themes": [
+      "Professor experience varies",
+      "Workload and disciplinary processes are described inconsistently"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "S002",
+      "STU001",
+      "STU002",
+      "STU006"
+    ],
+    "conflicting_source_ids": [
+      "STU003"
+    ]
+  },
+  "hostel_reality": {
+    "summary": "Official pages describe modern AC hostels, connectivity, security and common facilities. Recent public reports raise batch-specific room-space and maintenance concerns, so current occupancy should be verified.",
+    "positive_themes": [
+      "Modern furnished hostels",
+      "Wi-Fi/LAN and utilities",
+      "On-campus mess and laundry"
+    ],
+    "negative_themes": [
+      "Recent anecdotal space concerns in double rooms",
+      "Anecdotal complaints about water and repair response"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "STU004",
+      "STU005",
+      "STU008"
+    ],
+    "conflicting_source_ids": [
+      "STU001",
+      "STU003"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "Current official pages list 17 cultural and technical clubs and active councils. Independent reports disagree about the depth of club and tech culture.",
+    "positive_themes": [
+      "Wide official club directory",
+      "Current student governance",
+      "Major institute festivals and strong sports infrastructure"
+    ],
+    "negative_themes": [
+      "Some students perceive limited club or competitive-tech intensity"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "S018",
+      "S019",
+      "STU005",
+      "STU007"
+    ],
+    "conflicting_source_ids": [
+      "STU001",
+      "STU002"
+    ]
+  },
+  "coding_and_placement_culture": {
+    "summary": "Metis, SCALE and GRASP provide development, AI and competitive-programming platforms, while CDS supports placements and internships. Public student views on competitive coding and non-core preparation are mixed.",
+    "positive_themes": [
+      "Dedicated development, ML and CP clubs",
+      "International internship support",
+      "Research-oriented environment"
+    ],
+    "negative_themes": [
+      "Some reports describe a smaller competitive-programming community and self-driven non-core preparation"
+    ],
+    "evidence_strength": "Limited/conflicting signal",
+    "supporting_source_ids": [
+      "S018",
+      "S025",
+      "STU001"
+    ],
+    "conflicting_source_ids": [
+      "STU002"
+    ]
+  },
+  "locality_and_student_life": {
+    "summary": "The residential campus has strong road and metro-linked regional connectivity but is outside the main urban core, so last-mile travel is needed for frequent city activity.",
+    "positive_themes": [
+      "Modern self-contained campus",
+      "Airport, rail and metro access with last-mile cabs/autos",
+      "Ahmedabad-Gandhinagar and GIFT City ecosystem"
+    ],
+    "negative_themes": [
+      "Campus can feel isolated for students seeking daily city life"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S021",
+      "S022",
+      "S023",
+      "STU001",
+      "STU002"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "Evidence is polarized: many students value infrastructure, faculty access, research and flexibility, while others report dissatisfaction with placements, administration, maintenance or campus isolation. No numeric rating is justified.",
+    "positive_themes": [
+      "Infrastructure",
+      "Research access",
+      "Flexible academics",
+      "Sports and residential facilities"
+    ],
+    "negative_themes": [
+      "Placement transparency and scale",
+      "Operational complaints",
+      "Isolation",
+      "Uneven perception of club/tech culture"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "STU001",
+      "STU002",
+      "STU004",
+      "STU005",
+      "STU006"
+    ],
+    "conflicting_source_ids": [
+      "STU003"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "college_identity": true,
+  "accreditation": true,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": false,
+  "cutoffs": false,
+  "fees": true,
+  "scholarships": true,
+  "placements": true,
+  "recruiters": false,
+  "hostels_and_facilities": true,
+  "clubs": false,
+  "location": true,
+  "student_experience": true,
+  "blocking_issues": [
+    "No normalized official cutoff rows",
+    "No category/quota seat matrix",
+    "AICTE approval/institute ID unavailable",
+    "Placement/recruiter data are not fully Kattankulathur-specific",
+    "Most club activity is not current-date verified"
+  ],
+  "recommended_import_order": [
+    "college_identity",
+    "accreditation",
+    "admission_routes",
+    "branches",
+    "fees",
+    "scholarships",
+    "placements_with_scope_warning",
+    "location",
+    "hostels_and_facilities",
+    "student_experience",
+    "seat_matrix_after_official_confirmation",
+    "recruiters_after_KTR_verification",
+    "clubs_after_activity_verification",
+    "cutoffs_after_official_export"
+  ],
+  "overall_status": "ready_for_human_review"
+}

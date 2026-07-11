@@ -1,0 +1,120 @@
+{
+  "senior_junior_culture": {
+    "summary": "The reviewed public sources do not provide enough independent first-person evidence to generalise about mentorship, club hierarchy or batch interaction.",
+    "positive_themes": [
+      "large residential campus can enable peer interaction, but this is an inference"
+    ],
+    "negative_themes": [
+      "current mentorship and fresher-inclusion evidence is sparse"
+    ],
+    "evidence_strength": "No reliable evidence",
+    "supporting_source_ids": [],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "Public discussion is too limited to establish attendance or grading strictness across departments. The institute has a research-oriented academic environment, while student posts focus more on placements than classroom experience.",
+    "positive_themes": [
+      "research-project orientation mentioned in one discussion"
+    ],
+    "negative_themes": [
+      "department-level workload, attendance and grading remain unverified"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "STU001"
+    ],
+    "conflicting_source_ids": []
+  },
+  "hostel_reality": {
+    "summary": "A recent claimed-student comment describes first-year mess food as average but says hygiene and nutrition are monitored, while a 2025 visual tour shows rooms, mess and campus facilities. Current rules and experience can vary by block.",
+    "positive_themes": [
+      "hygiene/nutrition monitoring reported",
+      "broad residential infrastructure visible"
+    ],
+    "negative_themes": [
+      "first-year mess taste described as average",
+      "current prohibited-item and curfew rules remain unclear"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "STU003",
+      "STU006"
+    ],
+    "conflicting_source_ids": [
+      "STU008"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "Official records list a broad technical, cultural and social-club ecosystem. Independent public evidence supports the existence of substantial campus infrastructure, but current activity intensity and selection fairness are not well documented.",
+    "positive_themes": [
+      "wide official club range",
+      "visual evidence of a large campus",
+      "one 2026 response calls campus life good"
+    ],
+    "negative_themes": [
+      "activity status and fresher access not verified club by club"
+    ],
+    "evidence_strength": "Strong institution-published signal; limited student-reported signal",
+    "supporting_source_ids": [
+      "STU002",
+      "STU006"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "Several recent discussions criticise software-placement opportunity and coding culture relative to peer NITs, but some comments are hearsay or strongly personal. Official placement data should be used for outcomes, while these posts are treated as a cautionary qualitative signal only.",
+    "positive_themes": [
+      "computing, cybersecurity and technical clubs are officially listed",
+      "students can pursue coding from non-CSE branches with individual preparation"
+    ],
+    "negative_themes": [
+      "repeated criticism of coding culture and software-opportunity breadth",
+      "branch and company eligibility may constrain non-CSE access"
+    ],
+    "evidence_strength": "Moderate repeated student-reported concern with important bias limitations",
+    "supporting_source_ids": [
+      "STU001",
+      "STU005",
+      "STU009"
+    ],
+    "conflicting_source_ids": []
+  },
+  "locality_and_student_life": {
+    "summary": "VNIT is within Nagpur city and has road, railway, airport and metro access. Student lifestyle evidence is limited, so affordability, evening transport and food variety should be checked personally.",
+    "positive_themes": [
+      "urban campus",
+      "railway and airport within roughly single-digit kilometres",
+      "metro network in city"
+    ],
+    "negative_themes": [
+      "exact last-mile metro convenience and late-evening transport not independently assessed"
+    ],
+    "evidence_strength": "Moderate official/map-derived connectivity signal; limited student evidence",
+    "supporting_source_ids": [
+      "STU006"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "Public opinion is conflicting: campus infrastructure and campus life receive positive comments, while recent posts raise concerns about coding culture and placement competitiveness. The evidence is not strong enough to state a college-wide satisfaction level.",
+    "positive_themes": [
+      "infrastructure",
+      "campus life",
+      "urban location"
+    ],
+    "negative_themes": [
+      "software-placement competitiveness concerns",
+      "mess quality varies by year/block"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "STU002",
+      "STU003",
+      "STU006"
+    ],
+    "conflicting_source_ids": [
+      "STU001",
+      "STU005"
+    ]
+  }
+}

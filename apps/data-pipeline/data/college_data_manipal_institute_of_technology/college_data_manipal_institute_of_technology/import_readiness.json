@@ -1,0 +1,40 @@
+{
+  "college_identity": true,
+  "accreditation": true,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": false,
+  "cutoffs": false,
+  "fees": false,
+  "scholarships": true,
+  "placements": true,
+  "recruiters": false,
+  "hostels_and_facilities": true,
+  "clubs": false,
+  "location": true,
+  "student_experience": true,
+  "blocking_issues": [
+    "No normalized official cutoff rows",
+    "No category/quota seat matrix",
+    "Ambiguous/missing programme fee mapping",
+    "Recruiters lack verified year/role/eligible branches",
+    "Club activity lacks dated verification"
+  ],
+  "recommended_import_order": [
+    "college_identity",
+    "accreditation",
+    "admission_routes",
+    "branches",
+    "scholarships",
+    "placements",
+    "location",
+    "hostels_and_facilities",
+    "student_experience",
+    "seat_matrix after confirmation",
+    "fees after mapping",
+    "recruiters after verification",
+    "clubs after verification",
+    "cutoffs after official export"
+  ],
+  "overall_status": "ready_for_human_review"
+}

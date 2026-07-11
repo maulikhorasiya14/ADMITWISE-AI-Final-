@@ -1,0 +1,3 @@
+# Excluded Sources and Claims
+
+The following were excluded from verified factual data: Shiksha, Careers360, Collegedunia, CollegeDekho, College Pravesh, coaching sites, copied cutoff tables, AI-generated summaries and unsourced blogs. Anonymous allegations about individuals, corruption, safety, placement manipulation or academic conduct were not repeated as facts. Private-group content and claims requiring authentication were not accessed. YouTube/search snippets and public reviews are retained only as labelled qualitative leads. No official 2026 cutoff, guaranteed scholarship, unverified recruiter package or unsupported hostel-quality score was generated.

@@ -1,0 +1,6 @@
+﻿college_name,official_branch_name,normalized_branch,degree,duration_years,approved_intake,female_supernumerary_seats,tfws_seats,nba_status,academic_year,source_id
+Indian Institute of Information Technology (IIIT) Pune,Computer Science and Engineering,CSE,B.Tech,4,326,0,,,2026-27,S001
+Indian Institute of Information Technology (IIIT) Pune,Electronics and Communication Engineering,ECE,B.Tech,4,119,0,,,2026-27,S001
+Indian Institute of Information Technology (IIIT) Pune,Computer Science and Engineering (Cyber Security),CSE (Cyber Security),B.Tech,4,65,0,,,2026-27,S001
+Indian Institute of Information Technology (IIIT) Pune,Electronics and Communication Engineering (Microelectronics and VLSI Design),ECE (Microelectronics & VLSI),B.Tech,4,65,0,,,2026-27,S001
+Indian Institute of Information Technology (IIIT) Pune,Computer Science and Engineering (Artificial Intelligence and Data Science),AI & DS,B.Tech,4,99,0,,,2026-27,S001

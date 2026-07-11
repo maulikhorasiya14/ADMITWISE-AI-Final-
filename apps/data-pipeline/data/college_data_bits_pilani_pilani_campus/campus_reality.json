@@ -1,0 +1,177 @@
+{
+  "senior_junior_culture": {
+    "summary": "Student reports generally describe approachable seniors, peer guidance and a strict anti-ragging environment. A few discussions raise localized concerns about hierarchy during some club inductions, so this should not be generalized to the whole campus.",
+    "positive_themes": [
+      "Peer mentoring and informal academic/career guidance",
+      "Reports that unwanted interactions can be refused",
+      "Official anti-ragging reporting structure"
+    ],
+    "negative_themes": [
+      "Selective club processes may feel hierarchical",
+      "Isolated uncomfortable-interaction anecdotes"
+    ],
+    "evidence_strength": "Moderate repeated signal with limited conflicting anecdotes",
+    "supporting_source_ids": [
+      "SX06",
+      "SX12",
+      "SX13",
+      "SX14"
+    ],
+    "conflicting_source_ids": [
+      "SX11"
+    ],
+    "source_count": 5,
+    "source_date_range": "2023-2026"
+  },
+  "academic_culture": {
+    "summary": "The academic environment appears highly peer-driven and competitive, with strong self-learning expectations. Dual-degree students may face additional first-year performance pressure because second-degree allocation depends on early academic performance.",
+    "positive_themes": [
+      "High-achieving peer group",
+      "Flexible pathways and project opportunities",
+      "Substantial self-learning ecosystem"
+    ],
+    "negative_themes": [
+      "Comparison/FOMO pressure",
+      "Dual-degree workload and first-year competition",
+      "Experiences vary by instructor and cohort"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "SX09",
+      "SX14",
+      "SX16"
+    ],
+    "conflicting_source_ids": [],
+    "source_count": 3,
+    "source_date_range": "2023-2026"
+  },
+  "hostel_reality": {
+    "summary": "Officially the campus is fully residential and provides hostel accommodation. Student reports describe functional but variable rooms, significant summer heat, mixed mess satisfaction and occasional utility concerns; campus food alternatives reduce dependence on a single mess experience.",
+    "positive_themes": [
+      "Residential social life",
+      "Campus food alternatives",
+      "Hostel proximity supports peer interaction"
+    ],
+    "negative_themes": [
+      "Heat",
+      "Mixed mess quality",
+      "Occasional water/room-condition complaints"
+    ],
+    "evidence_strength": "Conflicting signal: repeated concerns but large preference variation",
+    "supporting_source_ids": [
+      "SX01",
+      "SX02",
+      "SX07",
+      "SX16"
+    ],
+    "conflicting_source_ids": [
+      "SX08"
+    ],
+    "source_count": 5,
+    "source_date_range": "2023-2026"
+  },
+  "club_and_campus_life": {
+    "summary": "Campus life is repeatedly described as active and strongly shaped by clubs, departments, wings and residential spaces. Entry into some clubs can be selective, and first-year experience depends on initiative and induction outcomes.",
+    "positive_themes": [
+      "Wide variety of technical, cultural and media groups",
+      "Strong residential event culture",
+      "Multiple social spaces for meeting peers"
+    ],
+    "negative_themes": [
+      "Selective inductions",
+      "Localized hierarchy concerns",
+      "Activity levels differ across organizations"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "SX02",
+      "SX10",
+      "SX15",
+      "SX16"
+    ],
+    "conflicting_source_ids": [
+      "SX11"
+    ],
+    "source_count": 5,
+    "source_date_range": "2023-2026"
+  },
+  "coding_and_placement_culture": {
+    "summary": "There is evidence of strong peer learning, coding communities and access to major technology recruiters. Recent discussion raises concern about competitive-programming depth in one cohort, but that is not equivalent to a collapse in development, research or software-placement culture.",
+    "positive_themes": [
+      "Peer mentorship and coding groups",
+      "Strong technology recruiter presence",
+      "Self-driven development opportunities"
+    ],
+    "negative_themes": [
+      "Recent competitive-programming concern",
+      "Participation and outcomes depend heavily on initiative",
+      "Non-CSE software access is company-specific and not publicly guaranteed"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "SX05",
+      "SX06"
+    ],
+    "conflicting_source_ids": [
+      "SX04"
+    ],
+    "source_count": 3,
+    "source_date_range": "2023-2026"
+  },
+  "locality_and_student_life": {
+    "summary": "Pilani is a remote, fully residential campus. Students often value the close-knit environment and reduced city distractions, while also reporting heat, isolation and limited spontaneous access to metropolitan amenities.",
+    "positive_themes": [
+      "Close-knit residential community",
+      "Fewer city distractions",
+      "On-campus social ecosystem"
+    ],
+    "negative_themes": [
+      "Remote location",
+      "Extreme summer heat",
+      "Long travel to Delhi/Jaipur and limited local city exposure"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "SX02",
+      "SX03",
+      "SX15",
+      "SX16"
+    ],
+    "conflicting_source_ids": [
+      "SX17"
+    ],
+    "source_count": 5,
+    "source_date_range": "2023-2026"
+  },
+  "overall_satisfaction": {
+    "summary": "The evidence suggests a strong fit for students who value peers, residential campus life, clubs and self-directed opportunities. It may be a weaker fit for students prioritizing low fees, metropolitan access, modern uniformly premium hostels or low-pressure academics.",
+    "positive_themes": [
+      "Peer quality",
+      "Campus community",
+      "Clubs and opportunities",
+      "Recruiter access"
+    ],
+    "negative_themes": [
+      "High and escalating cost",
+      "Remote location and heat",
+      "Mixed hostel/mess experience",
+      "Competitive pressure"
+    ],
+    "evidence_strength": "Moderate repeated signal; no representative satisfaction survey found",
+    "supporting_source_ids": [
+      "SX02",
+      "SX03",
+      "SX05",
+      "SX09",
+      "SX15",
+      "SX16"
+    ],
+    "conflicting_source_ids": [
+      "SX04",
+      "SX08",
+      "SX17"
+    ],
+    "source_count": 9,
+    "source_date_range": "2023-2026"
+  }
+}

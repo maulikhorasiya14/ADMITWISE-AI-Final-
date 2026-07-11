@@ -1,0 +1,38 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": true,
+  "cutoffs": true,
+  "fees": false,
+  "scholarships": false,
+  "placements": true,
+  "recruiters": true,
+  "hostels_and_facilities": false,
+  "clubs": true,
+  "location": true,
+  "student_experience": false,
+  "blocking_issues": [
+    "Final 2026-27 B.Tech fee circular not verified",
+    "Current NIRF/NAAC/NBA records incomplete",
+    "Current hostel allotment and placement denominators unresolved",
+    "Qualitative evidence requires thread/video-level manual review"
+  ],
+  "recommended_import_order": [
+    "college_identity",
+    "admission_routes",
+    "branches",
+    "seat_matrix",
+    "cutoffs",
+    "placements",
+    "recruiters",
+    "clubs",
+    "location",
+    "fees after 2026 verification",
+    "scholarships after cycle verification",
+    "hostels/facilities after allotment verification",
+    "student experience after manual review"
+  ],
+  "overall_status": "ready_for_human_review"
+}

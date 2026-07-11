@@ -1,0 +1,37 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": true,
+  "cutoffs": true,
+  "fees": true,
+  "scholarships": false,
+  "placements": false,
+  "recruiters": false,
+  "hostels_and_facilities": false,
+  "clubs": false,
+  "location": true,
+  "student_experience": false,
+  "blocking_issues": [
+    "Official 2026 cutoffs are pending counselling.",
+    "Final 2025-26 placement and company-level data are unavailable.",
+    "Current hostel capacity/sharing and scholarship award confirmation require manual verification."
+  ],
+  "recommended_import_order": [
+    "college_identity",
+    "admission_routes",
+    "branches",
+    "seat_matrix",
+    "cutoffs",
+    "fees",
+    "location",
+    "scholarships",
+    "placements",
+    "recruiters",
+    "hostels_and_facilities",
+    "clubs",
+    "student_experience"
+  ],
+  "overall_status": "ready_for_human_review"
+}

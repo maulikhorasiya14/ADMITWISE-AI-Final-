@@ -1,0 +1,151 @@
+{
+  "senior_junior_culture": {
+    "summary": "Student discussions suggest approachable seniors and relatively open club participation, but evidence is limited and self-selected. No reliable college-wide claim about hierarchy or ragging is made.",
+    "positive_themes": [
+      "Seniors may help enthusiastic students enter club activities",
+      "A current branch-specific counselling helpdesk connects applicants with students"
+    ],
+    "negative_themes": [
+      "Some club progression can require sustained time and visibility",
+      "No sufficiently broad independent sample"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "U001",
+      "U005",
+      "U008"
+    ],
+    "conflicting_source_ids": [
+      "U001",
+      "U005"
+    ]
+  },
+  "academic_culture": {
+    "summary": "Official sources establish flexible degree options and extensive research facilities. Two recent graduate accounts describe both initial academic difficulty and meaningful research/course opportunities; workload and grading strictness cannot be generalised.",
+    "positive_themes": [
+      "Research exposure",
+      "Flexible academic pathways",
+      "Internship and higher-study support"
+    ],
+    "negative_themes": [
+      "Adjustment and workload can be challenging"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "S002",
+      "U007"
+    ],
+    "conflicting_source_ids": []
+  },
+  "hostel_reality": {
+    "summary": "IIT Kanpur is residential with hall-based mess systems. Student media documented capacity pressure in 2023, while new hostel construction and changing intake mean current 2026 occupancy must be verified.",
+    "positive_themes": [
+      "Integrated residential community",
+      "Hall and mess governance",
+      "Broad campus mobility reported anecdotally"
+    ],
+    "negative_themes": [
+      "Historical room-allocation pressure",
+      "Mess experience is not independently rated",
+      "Current sharing pattern unavailable"
+    ],
+    "evidence_strength": "Conflicting/limited signal",
+    "supporting_source_ids": [
+      "U002",
+      "U003",
+      "U004"
+    ],
+    "conflicting_source_ids": [
+      "U003"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "Official and student-associated sources show a large technical, cultural, sports and entrepreneurship ecosystem. Student reports indicate participation is possible without holding formal posts, although project quality and time demands vary.",
+    "positive_themes": [
+      "Wide club range",
+      "Large annual festivals",
+      "Hands-on science and technology projects",
+      "Peer-led community"
+    ],
+    "negative_themes": [
+      "Project outcomes and selection experiences vary",
+      "Recent activity was not individually verified for every club"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S010",
+      "S029",
+      "S030",
+      "U001",
+      "U005"
+    ],
+    "conflicting_source_ids": [
+      "U005"
+    ]
+  },
+  "coding_and_placement_culture": {
+    "summary": "Official placement reports show substantial software, core, finance, consulting and analytics participation, with structured SPO preparation. Public student-experience evidence about branch-wise access and placement transparency remains limited.",
+    "positive_themes": [
+      "Strong recruiter breadth",
+      "Programming and robotics ecosystem",
+      "Mock interviews and professional training"
+    ],
+    "negative_themes": [
+      "Company-role and branch eligibility data are incomplete",
+      "Placement percentages use registered-student denominators"
+    ],
+    "evidence_strength": "Official quantitative evidence with limited qualitative evidence",
+    "supporting_source_ids": [
+      "S010",
+      "S012",
+      "S014",
+      "S015",
+      "S016"
+    ],
+    "conflicting_source_ids": []
+  },
+  "locality_and_student_life": {
+    "summary": "The large campus is separated from central Kanpur but now has direct metro connectivity to Kanpur Central. Campus services reduce dependence on the city; independent evidence on evening last-mile experience is limited.",
+    "positive_themes": [
+      "Direct metro station",
+      "Large green residential campus",
+      "On-campus health, clubs and essential services"
+    ],
+    "negative_themes": [
+      "Airport access requires road travel",
+      "City-centre distance",
+      "Limited independent locality evidence"
+    ],
+    "evidence_strength": "Official connectivity evidence; limited student-reported evidence",
+    "supporting_source_ids": [
+      "S027",
+      "S028",
+      "U006"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "Evidence supports strong academics, research, peer life and extracurricular breadth, alongside possible academic adjustment and historical hostel-capacity pressure. There is not enough representative evidence to state whether students generally would choose IIT Kanpur again.",
+    "positive_themes": [
+      "Academic and research depth",
+      "Peer community",
+      "Technical/cultural opportunities",
+      "Placement ecosystem"
+    ],
+    "negative_themes": [
+      "Academic adjustment",
+      "Historical residential pressure",
+      "Variable individual experiences"
+    ],
+    "evidence_strength": "Conflicting/limited signal",
+    "supporting_source_ids": [
+      "U001",
+      "U003",
+      "U006",
+      "U007"
+    ],
+    "conflicting_source_ids": [
+      "U001"
+    ]
+  }
+}

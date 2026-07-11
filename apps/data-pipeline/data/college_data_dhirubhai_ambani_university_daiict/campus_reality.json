@@ -1,0 +1,200 @@
+{
+  "senior_junior_culture": {
+    "summary": "Recent student sources describe hostel friendships, senior advice and extensive student-led clubs and committees. Evidence suggests regular cross-batch interaction, but formal mentorship quality and club hierarchy are not sufficiently documented for a universal conclusion.",
+    "positive_themes": [
+      "freshers receive practical hostel and academic advice",
+      "student-led committees create cross-batch contact",
+      "residential living supports peer networks"
+    ],
+    "negative_themes": [
+      "onboarding details can be unclear",
+      "language-group experiences differ for some out-of-state students"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "SX02",
+      "SX06",
+      "SX08",
+      "SX09",
+      "SX12",
+      "S033"
+    ],
+    "conflicting_source_ids": [
+      "SX06"
+    ]
+  },
+  "academic_culture": {
+    "summary": "A strong repeated student signal describes demanding coursework, frequent assessment and comparatively difficult grading. The official research-oriented curriculum and technical environment are positives, while students disagree on how comfortably academics can be balanced with clubs and placements.",
+    "positive_themes": [
+      "rigorous technical foundations",
+      "research and project exposure",
+      "strong faculty subject knowledge reported",
+      "resilience and problem-solving development"
+    ],
+    "negative_themes": [
+      "heavy workload and tight deadlines",
+      "high CPI can be difficult",
+      "limited free time for some students",
+      "academic-pressure experience varies by individual"
+    ],
+    "evidence_strength": "Strong repeated signal",
+    "supporting_source_ids": [
+      "SX02",
+      "SX03",
+      "SX05",
+      "SX06",
+      "SX12",
+      "SX13",
+      "S009"
+    ],
+    "conflicting_source_ids": [
+      "SX02",
+      "SX03"
+    ]
+  },
+  "hostel_reality": {
+    "summary": "Official evidence confirms compulsory B.Tech residence, furnished non-AC rooms, free internet, hot water, laundry and three halls with calculated capacity around 1,901. Student evidence is broadly positive about hygiene and community but mixed on cost, women's washroom capacity and room/block variation.",
+    "positive_themes": [
+      "residential community",
+      "internet and furnished rooms",
+      "hygiene often reported positively",
+      "hostel friendships and late-night peer life"
+    ],
+    "negative_themes": [
+      "all rooms are non-AC",
+      "cost considered high by some",
+      "women's washroom capacity concern",
+      "individual room and block condition varies"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S026",
+      "S012",
+      "SX02",
+      "SX08",
+      "SX09",
+      "SX12",
+      "SX14",
+      "SX15"
+    ],
+    "conflicting_source_ids": [
+      "SX02"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "The official student-affairs page lists an extensive student-run ecosystem spanning technical, cultural, sports, media and governance activities. Several students describe active clubs, fests and concerts, while a smaller set reports limited campus life, creating a conflicting but overall moderately positive signal.",
+    "positive_themes": [
+      "large student-run club ecosystem",
+      "Synapse, HackOut, YouthRun and Concours",
+      "technical and cultural participation",
+      "residential setting supports events"
+    ],
+    "negative_themes": [
+      "individual experiences of activity level differ",
+      "academic pressure can restrict participation",
+      "some students report low language diversity"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "S033",
+      "S034",
+      "SX02",
+      "SX05",
+      "SX06",
+      "SX12"
+    ],
+    "conflicting_source_ids": [
+      "SX03",
+      "SX06"
+    ]
+  },
+  "coding_and_placement_culture": {
+    "summary": "Coding and competitive-programming culture is a strong repeated positive signal supported by official technical clubs and student accounts. Placement evidence is comparatively transparent for 2023-24 through an audited report, but students disagree about recent cycles and the meaning of headline averages.",
+    "positive_themes": [
+      "strong coding peer group",
+      "Programming, AI and cybersecurity clubs",
+      "prominent software and technology recruiters",
+      "student placement coordination"
+    ],
+    "negative_themes": [
+      "placement-cycle volatility",
+      "headline salary definitions can be misunderstood",
+      "student concern about current placement transparency",
+      "branch-wise outcomes are unavailable"
+    ],
+    "evidence_strength": "Strong repeated signal with placement conflict",
+    "supporting_source_ids": [
+      "S024",
+      "S025",
+      "S033",
+      "SX01",
+      "SX05",
+      "SX07",
+      "SX12"
+    ],
+    "conflicting_source_ids": [
+      "SX01",
+      "SX03",
+      "SX04",
+      "SX07"
+    ]
+  },
+  "locality_and_student_life": {
+    "summary": "The campus is in Gandhinagar near Infocity, with GIFT City and Ahmedabad accessible by road. Students generally value the green, quiet campus and food options; city exposure is less immediate than a central urban campus, while nearby hospitals and technology areas improve practicality.",
+    "positive_themes": [
+      "green campus",
+      "near Infocity and GIFT City",
+      "multiple food options",
+      "airport and Ahmedabad accessible",
+      "major hospital nearby"
+    ],
+    "negative_themes": [
+      "not a central-city campus",
+      "deliveries may stop at the main gate",
+      "out-of-state language comfort varies by peer group"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S001",
+      "S027",
+      "S029",
+      "S037",
+      "SX06",
+      "SX11",
+      "SX12"
+    ],
+    "conflicting_source_ids": [
+      "SX06"
+    ]
+  },
+  "overall_satisfaction": {
+    "summary": "Public student evidence is mixed but often positive about coding culture, campus environment, peer learning, food and residential life. The most repeated concerns are academic pressure, fee growth, non-AC residence, language diversity for some students and uncertainty about recent placement cycles. No numeric culture score is justified.",
+    "positive_themes": [
+      "coding culture",
+      "green campus",
+      "peer community",
+      "clubs and fests",
+      "food and residential life"
+    ],
+    "negative_themes": [
+      "academic pressure",
+      "high and rising fees",
+      "placement-cycle uncertainty",
+      "non-AC hostels",
+      "some diversity/language concerns"
+    ],
+    "evidence_strength": "Conflicting but moderate repeated signal",
+    "supporting_source_ids": [
+      "SX02",
+      "SX05",
+      "SX06",
+      "SX07",
+      "SX12",
+      "SX13"
+    ],
+    "conflicting_source_ids": [
+      "SX03",
+      "SX06"
+    ]
+  }
+}

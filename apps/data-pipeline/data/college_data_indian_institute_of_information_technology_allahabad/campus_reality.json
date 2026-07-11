@@ -1,0 +1,114 @@
+{
+  "senior_junior_culture": {
+    "summary": "Public evidence suggests active peer and club interaction, but the available source set is too weak for a college-wide conclusion.",
+    "positive_themes": [
+      "peer help through technical communities"
+    ],
+    "negative_themes": [
+      "club hierarchy and batch interaction require direct verification"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "STU001",
+      "STU002"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "Frequently described as academically intensive and technology-focused.",
+    "positive_themes": [
+      "strong IT/ECE curriculum and peer coding environment"
+    ],
+    "negative_themes": [
+      "workload can be demanding"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "STU002",
+      "STU005"
+    ],
+    "conflicting_source_ids": []
+  },
+  "hostel_reality": {
+    "summary": "Officially residential with eight hostel buildings; lived experience on mess, room condition and curfew varies and needs recent first-person verification.",
+    "positive_themes": [
+      "on-campus accommodation and sports access"
+    ],
+    "negative_themes": [
+      "mess and room quality may vary"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "STU001",
+      "STU003"
+    ],
+    "conflicting_source_ids": []
+  },
+  "club_and_campus_life": {
+    "summary": "Official Gymkhana and technical communities indicate broad activity, but current club-by-club activity was not fully verified.",
+    "positive_themes": [
+      "music, dance, drama, sports, literary, robotics and developer communities"
+    ],
+    "negative_themes": [
+      "static listings may be outdated"
+    ],
+    "evidence_strength": "Moderate official signal; limited student signal",
+    "supporting_source_ids": [
+      "SRC016",
+      "SRC021",
+      "SRC022",
+      "SRC023",
+      "STU003"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "Repeated public discussion and strong placement outcomes indicate a competitive software/coding environment, while access differs by programme and recruiter.",
+    "positive_themes": [
+      "competitive programming, development and strong software recruiter history"
+    ],
+    "negative_themes": [
+      "branch-specific eligibility is not transparent in public data"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "STU002",
+      "STU005",
+      "SRC009",
+      "SRC010"
+    ],
+    "conflicting_source_ids": []
+  },
+  "locality_and_student_life": {
+    "summary": "The campus is in Jhalwa, outside the central city area but near the airport; travel estimates require map confirmation.",
+    "positive_themes": [
+      "residential campus and lower living costs"
+    ],
+    "negative_themes": [
+      "less spontaneous metro/startup exposure than major technology cities"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "STU003",
+      "STU004"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "Best suited to students prioritising IT/ECE, coding peers and placements; students prioritising a central-city lifestyle or low workload should verify fit carefully.",
+    "positive_themes": [
+      "academic reputation and placement outcomes"
+    ],
+    "negative_themes": [
+      "workload and location trade-offs"
+    ],
+    "evidence_strength": "Limited-to-moderate signal",
+    "supporting_source_ids": [
+      "STU001",
+      "STU002",
+      "STU003",
+      "STU005"
+    ],
+    "conflicting_source_ids": []
+  }
+}

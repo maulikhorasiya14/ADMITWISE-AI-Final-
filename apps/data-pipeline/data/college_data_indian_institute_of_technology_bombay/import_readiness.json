@@ -1,0 +1,40 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": true,
+  "cutoffs": true,
+  "fees": true,
+  "scholarships": true,
+  "placements": true,
+  "recruiters": false,
+  "hostels_and_facilities": false,
+  "clubs": true,
+  "location": true,
+  "student_experience": false,
+  "blocking_issues": [
+    "Final 2025-26 placement report is unavailable.",
+    "Current company-wise recruiter roles, branch eligibility, counts and packages are not publicly complete.",
+    "AICTE/NAAC/NBA applicability or records are unverified.",
+    "Hostel allocation, occupancy and operational rules vary and need current HCU confirmation.",
+    "Independent student-experience evidence is limited and conflicting.",
+    "Official 2026 cutoff rounds have not concluded."
+  ],
+  "recommended_import_order": [
+    "college identity",
+    "admission routes",
+    "2026 branches",
+    "2026 seat matrix",
+    "verified 2023-2025 cutoffs",
+    "2026-27 fees",
+    "scholarships with non-guarantee wording",
+    "official placement records",
+    "location",
+    "clubs after recency review",
+    "hostels/facilities after operational verification",
+    "recruiters after company-level enrichment",
+    "student experience after qualitative review"
+  ],
+  "overall_status": "ready_for_human_review"
+}

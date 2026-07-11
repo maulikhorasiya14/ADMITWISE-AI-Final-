@@ -1,0 +1,39 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": false,
+  "cutoffs": true,
+  "fees": true,
+  "scholarships": false,
+  "placements": true,
+  "recruiters": true,
+  "hostels_and_facilities": false,
+  "clubs": false,
+  "location": true,
+  "student_experience": true,
+  "blocking_issues": [
+    "No official branch-wise sanctioned seat matrix.",
+    "Final 2026 BITSAT cutoffs are not yet available.",
+    "Current AICTE/NBA records were not verified.",
+    "Latest Goa-campus-specific placement outcome table is 2022-23.",
+    "Current hostel allocation and many club-activity details need manual confirmation."
+  ],
+  "recommended_import_order": [
+    "college identity",
+    "admission routes",
+    "branches",
+    "historical cutoffs",
+    "fees",
+    "location",
+    "placements with year/scope warning",
+    "recruiters",
+    "scholarships after manual threshold review",
+    "campus facilities",
+    "student experience",
+    "clubs",
+    "seat matrix when obtained"
+  ],
+  "overall_status": "ready_for_human_review"
+}

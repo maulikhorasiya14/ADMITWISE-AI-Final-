@@ -1,0 +1,37 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": true,
+  "cutoffs": true,
+  "fees": true,
+  "scholarships": false,
+  "placements": true,
+  "recruiters": false,
+  "hostels_and_facilities": false,
+  "clubs": false,
+  "location": true,
+  "student_experience": true,
+  "blocking_issues": [
+    "Resolve current NBA/NAAC status before accreditation import.",
+    "Verify 2024 AI quota mapping before production normalization.",
+    "Confirm 2026 hostel inventory/allotment and mess charges.",
+    "Replace provisional 2025-26 placement data when final.",
+    "Verify scholarship notices and recruiter-level details before publishing as current."
+  ],
+  "recommended_import_order": [
+    "college identity",
+    "admission routes",
+    "branches and seat matrix",
+    "historical cutoffs",
+    "fees",
+    "placement aggregates",
+    "location",
+    "scholarship candidates after verification",
+    "recruiters after year/role verification",
+    "hostels/clubs after freshness check",
+    "student experience as separately labelled qualitative evidence"
+  ],
+  "overall_status": "ready_for_human_review"
+}

@@ -1,0 +1,175 @@
+{
+  "senior_junior_culture": {
+    "summary": "Limited recent evidence shows student-led freshers groups and practical onboarding help. Official clubs create cross-batch contact, but evidence is insufficient for a campus-wide judgement about hierarchy or mentorship quality.",
+    "positive_themes": [
+      "student-created freshers resources",
+      "cross-batch interaction through clubs"
+    ],
+    "negative_themes": [
+      "individual onboarding confusion",
+      "insufficient independent evidence about club hierarchy"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "SX06",
+      "SX07",
+      "S004",
+      "S028"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "Student reports conflict: Hyderabad was historically described by some as relatively lenient, while newer discussions allege stricter grading and pressure. Course, instructor and cohort effects appear important; current rules require official verification.",
+    "positive_themes": [
+      "self-directed study",
+      "Practice School exposure",
+      "some favourable historical grading comparisons"
+    ],
+    "negative_themes": [
+      "new strict-grading concerns",
+      "CGPA-sensitive opportunities",
+      "course-level attendance variation"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "SX09",
+      "SX10",
+      "S005"
+    ],
+    "conflicting_source_ids": [
+      "SX09",
+      "SX10"
+    ]
+  },
+  "hostel_reality": {
+    "summary": "Official sources describe a fully residential campus with single and double non-AC rooms, internet, security and common rooms. Student reports support a self-contained environment but raise concerns about summer heat, variable mess experience, maintenance and onboarding.",
+    "positive_themes": [
+      "residential community",
+      "single/double rooms",
+      "hostel internet",
+      "on-campus essentials"
+    ],
+    "negative_themes": [
+      "non-AC heat",
+      "variable mess experience",
+      "maintenance and onboarding complaints"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S003",
+      "S004",
+      "SX01",
+      "SX03",
+      "SX07",
+      "SX08",
+      "SX12"
+    ],
+    "conflicting_source_ids": []
+  },
+  "club_and_campus_life": {
+    "summary": "Official sources verify cultural, technical, publication, service and entrepreneurship activities. Recent public evidence is strongest for BITScan, CSA and Synapsis; several festival and club pages are old.",
+    "positive_themes": [
+      "broad club categories",
+      "technical and entrepreneurship opportunities",
+      "residential participation",
+      "recent publication activity"
+    ],
+    "negative_themes": [
+      "many club pages lack recent dates",
+      "one transfer account rated fests below Pilani",
+      "academic-pressure concerns may affect participation"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S004",
+      "S023",
+      "S024",
+      "S025",
+      "S026",
+      "S027",
+      "S028",
+      "SX01",
+      "SX09"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "Official evidence shows a large recruiter ecosystem, Practice School and campus-level statistics. Branch-wise outcomes and recruiter eligibility are not public. Core-branch students should not assume unrestricted software-role access.",
+    "positive_themes": [
+      "large recruiter participation",
+      "Practice School",
+      "active CSA and incubator ecosystem",
+      "strong historical median/average CTC"
+    ],
+    "negative_themes": [
+      "2023-24 placement-rate decline",
+      "no branch-wise eligibility or outcomes",
+      "core-to-software may require extra preparation"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S005",
+      "S006",
+      "S007",
+      "S025",
+      "S028",
+      "SX11"
+    ],
+    "conflicting_source_ids": []
+  },
+  "locality_and_student_life": {
+    "summary": "The residential campus is in Jawahar Nagar/Shameerpet, far from central Hyderabad. Bus and road links exist, but students report costly or reluctant cabs and reliance on shared rides. Genome Valley is comparatively nearby; major IT districts require longer travel.",
+    "positive_themes": [
+      "self-contained campus",
+      "official bus route",
+      "nearby life-sciences corridor",
+      "shared travel groups"
+    ],
+    "negative_themes": [
+      "remote from city and IT districts",
+      "costly solo cabs",
+      "long airport trip",
+      "no direct metro"
+    ],
+    "evidence_strength": "Strong repeated signal",
+    "supporting_source_ids": [
+      "S002",
+      "S022",
+      "S031",
+      "SX04",
+      "SX05"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "Common positives are the modern campus, residential peer environment, academic flexibility, facilities and Practice School. Common negatives are fees, distance, heat, variable mess experience, administrative friction and uncertainty around grading and recent placements. No numeric score is justified.",
+    "positive_themes": [
+      "modern infrastructure",
+      "residential peer life",
+      "clubs and technical ecosystem",
+      "Practice School"
+    ],
+    "negative_themes": [
+      "high cost",
+      "remote location",
+      "heat/mess variability",
+      "placement-rate decline",
+      "conflicting grading reports"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "SX01",
+      "SX03",
+      "SX04",
+      "SX08",
+      "SX09",
+      "SX10",
+      "SX12",
+      "SX13"
+    ],
+    "conflicting_source_ids": [
+      "SX09",
+      "SX10"
+    ]
+  }
+}

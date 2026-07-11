@@ -1,0 +1,39 @@
+{
+  "college_identity": true,
+  "accreditation": false,
+  "admission_routes": true,
+  "branches": true,
+  "seat_matrix": false,
+  "cutoffs": true,
+  "fees": true,
+  "scholarships": false,
+  "placements": true,
+  "recruiters": true,
+  "hostels_and_facilities": false,
+  "clubs": false,
+  "location": true,
+  "student_experience": true,
+  "blocking_issues": [
+    "No seat matrix.",
+    "Final 2026 cutoffs unavailable.",
+    "AICTE/NBA not verified.",
+    "No branch-wise placements.",
+    "Hostel capacity/rules need confirmation."
+  ],
+  "recommended_import_order": [
+    "identity",
+    "admission routes",
+    "branches",
+    "historical cutoffs",
+    "fees",
+    "location",
+    "campus placements",
+    "recruiters",
+    "scholarships after review",
+    "facilities",
+    "student experience",
+    "clubs",
+    "seat matrix when obtained"
+  ],
+  "overall_status": "ready_for_human_review"
+}

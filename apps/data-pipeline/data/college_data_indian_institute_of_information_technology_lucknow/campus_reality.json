@@ -1,0 +1,139 @@
+{
+  "senior_junior_culture": {
+    "summary": "Public sources provide too little verified first-person evidence for a college-wide conclusion. Official material describes peer-led societies and teaching-assistant support, while anti-ragging structures are documented.",
+    "positive_themes": [
+      "peer-led technical and cultural societies",
+      "official anti-ragging and grievance mechanisms"
+    ],
+    "negative_themes": [
+      "club hierarchy and batch interaction not independently verified"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "SRC012",
+      "SRC020",
+      "STU002"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "The curriculum is coding-intensive and project-oriented, including competitive coding, software systems and internships. Student-reported workload and grading experiences remain insufficiently verified.",
+    "positive_themes": [
+      "modern computing curriculum",
+      "projects and competitive coding embedded in programme material"
+    ],
+    "negative_themes": [
+      "workload, attendance and grading strictness need direct student verification"
+    ],
+    "evidence_strength": "Moderate institution-published signal; limited independent signal",
+    "supporting_source_ids": [
+      "SRC012",
+      "STU006"
+    ],
+    "conflicting_source_ids": []
+  },
+  "hostel_reality": {
+    "summary": "Accommodation is the largest unresolved student-life risk. Official 2024 minutes record severe shortage and outsourced twin-sharing rooms, while the current brochure highlights a 102-room co-educational hostel. Recent public discussion also raises crowding and off-campus/dorm concerns, but remains anecdotal.",
+    "positive_themes": [
+      "furnished on-campus rooms reported",
+      "outsourced accommodation included internet, security, maintenance and housekeeping in the 2024 approval"
+    ],
+    "negative_themes": [
+      "severe shortage documented",
+      "current allocation and crowding unclear",
+      "mess and commute experience unverified"
+    ],
+    "evidence_strength": "Strong official signal for shortage; limited anecdotal signal for lived quality",
+    "supporting_source_ids": [
+      "SRC016",
+      "SRC017",
+      "SRC018",
+      "STU001",
+      "STU005"
+    ],
+    "conflicting_source_ids": [
+      "SRC016",
+      "SRC017"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "Current institution material lists a broad technical, cultural, sports, social and entrepreneurship ecosystem. Exact recruitment fairness and weekly activity are not independently verified.",
+    "positive_themes": [
+      "Axios technical wings",
+      "active cultural societies",
+      "Equinox, Infinito, E-Summit, Hackofiesta and LucknowFOSS"
+    ],
+    "negative_themes": [
+      "activity levels may differ by club and semester"
+    ],
+    "evidence_strength": "Strong institution-published signal; limited independent signal",
+    "supporting_source_ids": [
+      "SRC012",
+      "SRC022",
+      "SRC023",
+      "STU002"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "Institution material and repeated public discussion indicate a strong competitive-programming and software-placement culture. Public placement percentages lack denominators, and company/branch eligibility is not transparent.",
+    "positive_themes": [
+      "competitive programming achievements",
+      "strong average and median CTC",
+      "technical wings and hackathons"
+    ],
+    "negative_themes": [
+      "placement denominator unavailable",
+      "package claims can dominate public discussion",
+      "current branch eligibility not public"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "SRC011",
+      "SRC012",
+      "STU002",
+      "STU006"
+    ],
+    "conflicting_source_ids": []
+  },
+  "locality_and_student_life": {
+    "summary": "The campus is in C.G. City/IT City on the urban edge of Lucknow. Airport, hospital and city access are feasible by road, but last-mile public transport and evening convenience require personal verification.",
+    "positive_themes": [
+      "near a large city, airport and hospital ecosystem",
+      "moderate living-cost context"
+    ],
+    "negative_themes": [
+      "not on a verified direct metro stop",
+      "off-campus hostel commute may matter"
+    ],
+    "evidence_strength": "Limited-to-moderate signal",
+    "supporting_source_ids": [
+      "SRC016",
+      "SRC025",
+      "STU001",
+      "STU007"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "The institute appears best suited to students prioritising computing branches, coding peers and software placements. Students expecting mature residential infrastructure, transparent placement denominators or a central-city campus should verify those trade-offs carefully.",
+    "positive_themes": [
+      "computing-focused curriculum",
+      "placement reputation",
+      "technical communities"
+    ],
+    "negative_themes": [
+      "hostel shortage and infrastructure still developing",
+      "qualitative evidence is thin"
+    ],
+    "evidence_strength": "Moderate institution-published signal; limited independent signal",
+    "supporting_source_ids": [
+      "SRC012",
+      "SRC017",
+      "STU001",
+      "STU002",
+      "STU006"
+    ],
+    "conflicting_source_ids": []
+  }
+}

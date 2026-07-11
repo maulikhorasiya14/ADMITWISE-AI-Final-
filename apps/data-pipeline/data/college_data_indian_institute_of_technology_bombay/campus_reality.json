@@ -1,0 +1,162 @@
+{
+  "senior_junior_culture": {
+    "summary": "The official Student Mentor Programme and hostel councils provide structured peer interaction. Independent recent evidence is too limited to generalise about hierarchy, mentorship quality or fresher inclusion across the institute.",
+    "positive_themes": [
+      "Formal Student Mentor Programme",
+      "Hostel councils led by senior students",
+      "Large student-run technical and cultural ecosystem"
+    ],
+    "negative_themes": [
+      "No sufficiently broad recent independent evidence on unhealthy hierarchy or day-to-day senior accessibility"
+    ],
+    "evidence_strength": "Limited anecdotal signal plus institution-associated structure",
+    "supporting_source_ids": [
+      "S017",
+      "S037",
+      "S043"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "Official material describes a rigorous credit-based semester system with minors, honours, projects and strong faculty interaction. Student discussions indicate high workload and competition, but individual experience varies by programme and course load.",
+    "positive_themes": [
+      "Strong research and project exposure",
+      "Minors and honours provide curricular breadth",
+      "CSE focus areas and technical clubs support specialised learning"
+    ],
+    "negative_themes": [
+      "High workload and performance pressure are recurrent anecdotal themes",
+      "No branch change for JoSAA programmes from 2023-24"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S002",
+      "S019",
+      "S043"
+    ],
+    "conflicting_source_ids": []
+  },
+  "hostel_reality": {
+    "summary": "IIT Bombay is residential and official sources document hostel internet, messes, laundry and recreation. Room allocation, occupancy and condition vary by hostel and batch; videos and forum posts cannot support a single institute-wide quality rating.",
+    "positive_themes": [
+      "On-campus residential community",
+      "Internet in hostel rooms",
+      "Mess and multiple food outlets",
+      "Laundry, computer and recreation facilities"
+    ],
+    "negative_themes": [
+      "Room sharing/allocation varies",
+      "Facilities differ across old and newer hostels",
+      "Student reports on conditions are not sufficiently consistent for a quality score"
+    ],
+    "evidence_strength": "Conflicting and limited anecdotal signal",
+    "supporting_source_ids": [
+      "S016",
+      "S037",
+      "S040",
+      "S041",
+      "S044"
+    ],
+    "conflicting_source_ids": [
+      "S040",
+      "S041",
+      "S044"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "Current official pages show a broad and active technical, cultural, sports, media and entrepreneurship ecosystem. Recruitment processes often involve orientations, assignments and interviews; fairness and accessibility were not independently evaluated.",
+    "positive_themes": [
+      "Current 2026 hackathons and workshops",
+      "Large technical and cultural umbrella councils",
+      "Major student-run festivals",
+      "Broad first-year project exposure through some clubs"
+    ],
+    "negative_themes": [
+      "Competition for leadership roles and selection experience are not independently documented",
+      "Latest activity dates are unavailable for some organisations"
+    ],
+    "evidence_strength": "Strong institution-associated signal",
+    "supporting_source_ids": [
+      "S018",
+      "S019",
+      "S020",
+      "S022",
+      "S023",
+      "S048",
+      "S049",
+      "S050"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "Official placement reports and WnCC activity indicate a strong coding, analytics, finance, consulting and core-engineering ecosystem. Company-wise roles and branch eligibility are not publicly complete, and forum concerns should not replace official statistics.",
+    "positive_themes": [
+      "Large coding and development club",
+      "High number of accepted placement offers",
+      "Broad sector mix",
+      "Strong internship and PPO activity"
+    ],
+    "negative_themes": [
+      "Current company-wise roles, packages and branch eligibility are incomplete",
+      "Non-CSE access to individual software roles cannot be assumed",
+      "Public placement sentiment is mixed during weaker markets"
+    ],
+    "evidence_strength": "Strong official outcome signal; limited independent process evidence",
+    "supporting_source_ids": [
+      "S011",
+      "S012",
+      "S013",
+      "S019",
+      "S045"
+    ],
+    "conflicting_source_ids": [
+      "S045"
+    ]
+  },
+  "locality_and_student_life": {
+    "summary": "The Powai campus combines a residential environment with access to Mumbai’s corporate, research and startup ecosystem. Travel is supported by suburban rail, buses, taxis and autorickshaws, but Mumbai traffic and off-campus living costs are meaningful constraints.",
+    "positive_themes": [
+      "Access to Mumbai opportunities",
+      "Nearest suburban station at Kanjur Marg",
+      "On-campus hospital and daily facilities",
+      "Large green residential campus"
+    ],
+    "negative_themes": [
+      "Traffic makes travel times variable",
+      "Off-campus Mumbai costs are high",
+      "Construction-related inconvenience may be temporary"
+    ],
+    "evidence_strength": "Moderate official/map-derived signal with limited anecdotes",
+    "supporting_source_ids": [
+      "S002",
+      "S003",
+      "S039",
+      "S042",
+      "S046"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "Available evidence suggests IIT Bombay is best suited to self-directed students seeking rigorous academics, strong peers, wide extracurricular choice and exposure to Mumbai. Students expecting low pressure, guaranteed branch mobility, uniform hostel quality or effortless placement may find the experience less suitable.",
+    "positive_themes": [
+      "Prestigious academic and research environment",
+      "Broad career and extracurricular opportunities",
+      "Residential peer community"
+    ],
+    "negative_themes": [
+      "Pressure and competition",
+      "Variable hostel experience",
+      "Admission does not guarantee a placement, scholarship, preferred role or branch change"
+    ],
+    "evidence_strength": "Moderate synthesis; no numeric rating",
+    "supporting_source_ids": [
+      "S002",
+      "S011",
+      "S012",
+      "S043",
+      "S044",
+      "S045"
+    ],
+    "conflicting_source_ids": []
+  }
+}

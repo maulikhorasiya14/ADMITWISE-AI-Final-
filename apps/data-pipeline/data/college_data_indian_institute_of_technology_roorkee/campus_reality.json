@@ -1,0 +1,140 @@
+{
+  "senior_junior_culture": {
+    "summary": "Student groups and hall life create opportunities for mentoring and batch interaction, but the available sources are not sufficiently independent or numerous for a campus-wide conclusion.",
+    "positive_themes": [
+      "Clubs and teams enable cross-batch interaction",
+      "Student media and technical teams create peer-learning channels"
+    ],
+    "negative_themes": [
+      "Selection and hierarchy experiences are not consistently documented"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "S030",
+      "S035"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "Official sources show broad curricular flexibility, minors, exchange and external project options. Student-media evidence also reports workload and administrative concerns; intensity varies by programme.",
+    "positive_themes": [
+      "Broad curriculum and research exposure",
+      "Exchange/project/internship flexibility"
+    ],
+    "negative_themes": [
+      "Workload and academic pressure are reported"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "S002",
+      "S031"
+    ],
+    "conflicting_source_ids": []
+  },
+  "hostel_reality": {
+    "summary": "Official sources confirm residential bhawans, Wi-Fi and mess infrastructure. Student-media reports identify time-specific construction, connectivity and rule concerns, so current conditions require direct verification.",
+    "positive_themes": [
+      "Residential community",
+      "Wi-Fi and mess infrastructure"
+    ],
+    "negative_themes": [
+      "Infrastructure and rule experiences can vary by bhawan",
+      "Current room sharing is unclear"
+    ],
+    "evidence_strength": "Conflicting signal",
+    "supporting_source_ids": [
+      "S015",
+      "S030",
+      "S032",
+      "S033"
+    ],
+    "conflicting_source_ids": [
+      "S032",
+      "S033"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "The institute has a large technical, cultural, festival, sports and service ecosystem, with recent technical-team evidence. First-year access and selection processes vary by group.",
+    "positive_themes": [
+      "Thomso and Cognizance",
+      "Technical and cultural sections",
+      "Sports and outdoor activities"
+    ],
+    "negative_themes": [
+      "Club selection may be competitive",
+      "Not every directory listing has recent dated evidence"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S016",
+      "S017",
+      "S018",
+      "S030",
+      "S035",
+      "S036"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "Official reports show substantial software, analytics, electronics and core recruitment and hundreds of internships. Student accounts indicate active preparation, while detailed company-role transparency remains incomplete.",
+    "positive_themes": [
+      "Large recruiter exposure",
+      "Technical teams and internships",
+      "Peer preparation"
+    ],
+    "negative_themes": [
+      "Placement process can be stressful",
+      "Company-level eligibility and outcomes are not fully public"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S010",
+      "S011",
+      "S012",
+      "S019",
+      "S034",
+      "S037"
+    ],
+    "conflicting_source_ids": []
+  },
+  "locality_and_student_life": {
+    "summary": "The self-contained campus is well connected by rail and road, with Haridwar and Dehradun nearby. It is not embedded in a major metropolitan technology hub, so spontaneous city-industry access is comparatively limited.",
+    "positive_themes": [
+      "Rail/road connectivity",
+      "Lower local living costs",
+      "Self-contained services"
+    ],
+    "negative_themes": [
+      "Distance from major metro startup ecosystems",
+      "Airport travel requires road transfer"
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "supporting_source_ids": [
+      "S002",
+      "S038"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "Evidence supports strong academic, technical and extracurricular opportunity, but hostel, mess, workload and process experiences vary. No numeric satisfaction score is justified.",
+    "positive_themes": [
+      "Academic reputation",
+      "Diverse activities",
+      "Recruiter and internship exposure"
+    ],
+    "negative_themes": [
+      "Academic pressure",
+      "Hostel/mess variability",
+      "Non-metro location trade-off"
+    ],
+    "evidence_strength": "Limited anecdotal signal",
+    "supporting_source_ids": [
+      "S030",
+      "S031",
+      "S034",
+      "S035",
+      "S037"
+    ],
+    "conflicting_source_ids": []
+  }
+}

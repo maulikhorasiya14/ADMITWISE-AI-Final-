@@ -1,0 +1,96 @@
+{
+  "generated_at": "2026-06-26",
+  "folder": "college_data_national_institute_of_technology_tiruchirappalli",
+  "files": {
+    "branches.csv": {
+      "bytes": 1733,
+      "sha256": "51336ab93b654bfd0b3497405da603cf18de035cfe5662af9ae5d280ed617deb"
+    },
+    "campus_reality.json": {
+      "bytes": 5494,
+      "sha256": "29bb7afd33b9901e3aa0fea070c6b35b6928edd333ba27c46e0ee5ec6bdb796e"
+    },
+    "clubs.csv": {
+      "bytes": 8655,
+      "sha256": "5ef11692877ba202e3f750416f8b36864cd0d5dfef436d578a4a5aade635ec27"
+    },
+    "college_profile.json": {
+      "bytes": 3174125,
+      "sha256": "c8dfa219754d09eb316f831a18c0851f4dbc67e64f568b543a82e478165d5f7c"
+    },
+    "college_summary.md": {
+      "bytes": 7892,
+      "sha256": "4a50d290f5e09a1b63e9de65b581763952aabc122e84796952b353044905e18b"
+    },
+    "cutoffs.csv": {
+      "bytes": 1049793,
+      "sha256": "64bf0a876f2cdaf303377ace55a7252ccd14bd663ea9db40bd0c8b7608531c07"
+    },
+    "data_conflicts.csv": {
+      "bytes": 1088,
+      "sha256": "99491c15988b6128ca41836e721326047ddaf33916efe6867079e77bfc5c852c"
+    },
+    "excluded_sources.md": {
+      "bytes": 1315,
+      "sha256": "ea442db15822d9b8b6d1a60463623bcc183805716073cabdb70471c365ed7d13"
+    },
+    "fees.csv": {
+      "bytes": 2085,
+      "sha256": "a68bd8bb4b50b88500a568054f21eb5ea50b2e63afa550b6c964be958f5cc9bf"
+    },
+    "import_readiness.json": {
+      "bytes": 1068,
+      "sha256": "7c5f7f867f478a17503d2bb181042f525caf207a0b455698ee744fe8a461d198"
+    },
+    "location.csv": {
+      "bytes": 1024,
+      "sha256": "75ca78b9fb88e956af553e04f9b500e9bc544837f633efdb4e058f241ee161bb"
+    },
+    "manual_verification_checklist.md": {
+      "bytes": 1432,
+      "sha256": "6628f87ce42ca8e7449c60d4e43cfef5d507e46205e9202e59a21024e18346a0"
+    },
+    "placements.csv": {
+      "bytes": 10580,
+      "sha256": "e2c9d8954e6ee2369ae50af4596839f621fccbfcd16725b04e34d14e3e60d49f"
+    },
+    "recruiters.csv": {
+      "bytes": 10127,
+      "sha256": "c685d0a03a90e9d220236b5368a864cacb5410aa31511ef034e3790994036326"
+    },
+    "research_log.md": {
+      "bytes": 2717,
+      "sha256": "4a64473a180c0a4c2304406d740fb5b7a4d3e28909992bcd96d41c655c477b39"
+    },
+    "scholarships.csv": {
+      "bytes": 4285,
+      "sha256": "e4f90454c0b863aff29d422ca144dae61bb156f343093f8ce0913f2c47818098"
+    },
+    "sources.csv": {
+      "bytes": 11049,
+      "sha256": "8343d6ba3ed90da54654c68fa7dd79086b0de51c869c7c8522a81227ee1a36dd"
+    },
+    "student_experience_sources.csv": {
+      "bytes": 3765,
+      "sha256": "871598dc2907ee407eb86262ae4d29b247aa4998e69caa5a2889982da1ffca0c"
+    },
+    "validation_manifest.json": {
+      "bytes": 2883,
+      "sha256": "06877e78a7c3b40cbb62ea239532120b926447833da64fa38f92971b39dc3ab8"
+    }
+  },
+  "record_counts": {
+    "sources": 33,
+    "branches": 10,
+    "seat_matrix_rows": 20,
+    "cutoffs": 4275,
+    "fees": 5,
+    "placements": 33,
+    "recruiters": 30,
+    "scholarships": 7,
+    "clubs": 20,
+    "student_experience_sources": 9,
+    "conflicts": 3,
+    "blank_cutoff_rows_excluded": 8
+  }
+}

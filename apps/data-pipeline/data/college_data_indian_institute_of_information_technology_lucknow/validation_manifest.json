@@ -1,0 +1,114 @@
+{
+  "generated_at": "2026-06-26",
+  "official_college_name": "Indian Institute of Information Technology Lucknow",
+  "target_admission_year": 2026,
+  "validation": {
+    "json_valid": true,
+    "csv_headers_consistent": true,
+    "all_required_files_reopened": true,
+    "factual_csv_records_have_source_ids": true,
+    "cutoff_numeric_and_order_valid": true,
+    "cutoff_duplicates_removed": true,
+    "historical_cutoffs_not_labeled_2026": true,
+    "seat_matrix_total": 240,
+    "female_supernumerary_total": 0,
+    "blank_josaa_rows_excluded": 4,
+    "csab_rows_by_round": {
+      "1": 0,
+      "2": 17,
+      "3": 10
+    },
+    "tier_c_not_used_for_official_cutoffs_fees_seats": true
+  },
+  "counts": {
+    "sources": 32,
+    "authoritative_sources": 8,
+    "institution_controlled_or_associated_sources": 16,
+    "student_experience_sources": 7,
+    "branches": 4,
+    "seat_matrix_records": 4,
+    "cutoffs_total": 868,
+    "cutoffs_josaa": 841,
+    "cutoffs_csab": 27,
+    "fees": 4,
+    "placements": 3,
+    "recruiters": 30,
+    "scholarships": 9,
+    "clubs": 19,
+    "conflicts": 4
+  },
+  "files": {
+    "college_profile.json": {
+      "bytes": 705449,
+      "sha256": "d7728c6779b81a7eeb77e3646b68d9e7f20dc8dc2d052136ab30a42f0ab722ad"
+    },
+    "campus_reality.json": {
+      "bytes": 5443,
+      "sha256": "5c2920161db3bf758459d942de7f55c9da110683193005a431d9ed8714e40766"
+    },
+    "sources.csv": {
+      "bytes": 10351,
+      "sha256": "da17d8892e346479b9b70041af863f7bfb4cdb8f45358f45cee40fb699244ecd"
+    },
+    "branches.csv": {
+      "bytes": 781,
+      "sha256": "b5889d2a2333569bd3de3a003400ff489a62d4df089174e7a4df0dedd7019009"
+    },
+    "cutoffs.csv": {
+      "bytes": 213819,
+      "sha256": "fd7a499d49ceb23aa779ea2f52378cef1d39d1446d1b28610f9599477affae2d"
+    },
+    "fees.csv": {
+      "bytes": 2000,
+      "sha256": "8ccb312a2552ee7f36f3b5ca075182b4202aeb7224e158a515602fea3638537a"
+    },
+    "placements.csv": {
+      "bytes": 1371,
+      "sha256": "0d1b51d30d7a956a8e04eedf3f2fa70bb0a7ea38e2c423c998d70d42b313ebe6"
+    },
+    "recruiters.csv": {
+      "bytes": 11324,
+      "sha256": "32884387656de8b444753aab4c133ad9ad5183acc1c0a8006ceff6c47503f7a6"
+    },
+    "scholarships.csv": {
+      "bytes": 4409,
+      "sha256": "43c3bc34f9adab7226c1487c1087b168b4077b186c831ad5e378be000a27e8c1"
+    },
+    "clubs.csv": {
+      "bytes": 6434,
+      "sha256": "1e924e35b82da4642904f70e4f0bab4f1223f283b5f4192d1ea0b78d7c815280"
+    },
+    "location.csv": {
+      "bytes": 1242,
+      "sha256": "d86e682ddebf7a9b265792ceed2406289e71d89bd443b1a8f77835539c5b1017"
+    },
+    "student_experience_sources.csv": {
+      "bytes": 3107,
+      "sha256": "3d2529b562feb7bc9320d62766d5c73dc575f4222799f805586c052ebb1ec11e"
+    },
+    "data_conflicts.csv": {
+      "bytes": 1551,
+      "sha256": "7384ff8aeea5544e9d80c08a8dca470c4e3a254fee58c4d2985d2f4bda7ca756"
+    },
+    "college_summary.md": {
+      "bytes": 6982,
+      "sha256": "f9dfc1b43fe92d49f3c9cd4d3e89a0f4a62468b874a5de54bb5f88c6b358160d"
+    },
+    "manual_verification_checklist.md": {
+      "bytes": 1155,
+      "sha256": "89cbbb48ad854f7ef9ccdb53f76acf0dc4e1d277011392c502c6a370e60688ac"
+    },
+    "excluded_sources.md": {
+      "bytes": 548,
+      "sha256": "9aef7cecf4a6cf2059548e57a0089c5bafb49e77f0351cfe8a73209461d4edd6"
+    },
+    "research_log.md": {
+      "bytes": 1109,
+      "sha256": "6d9a423eb07e9b01b1edb61517a769160b6add284fa72f4a6444fd0683952786"
+    },
+    "import_readiness.json": {
+      "bytes": 1031,
+      "sha256": "34a56e4a2a12940432cab766d3d5aba9b2e0d6a4e9ad6606dcb5a2492f47b7fa"
+    }
+  }
+}

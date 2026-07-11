@@ -1,0 +1,4 @@
+﻿college_name,official_branch_name,normalized_branch,degree,duration_years,approved_intake,female_supernumerary_seats,tfws_seats,nba_status,academic_year,source_id
+"Indian Institute of Information Technology (IIIT), Sri City, Chittoor","Computer Science and Engineering (4 Years, Bachelor of Technology)",CSE,Bachelor of Technology,4,230,46,,,2026-27,SRC001
+"Indian Institute of Information Technology (IIIT), Sri City, Chittoor","Electronics and Communication Engineering (4 Years, Bachelor of Technology)",ECE,Bachelor of Technology,4,80,16,,,2026-27,SRC001
+"Indian Institute of Information Technology (IIIT), Sri City, Chittoor","Artificial Intelligence and Data Science (4 Years, Bachelor of Technology)",AI & DS,Bachelor of Technology,4,55,11,,,2026-27,SRC001

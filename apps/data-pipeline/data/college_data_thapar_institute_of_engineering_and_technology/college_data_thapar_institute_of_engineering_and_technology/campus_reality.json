@@ -1,0 +1,203 @@
+{
+  "senior_junior_culture": {
+    "summary": "Public AMAs and society discussions show accessible peer guidance and cross-batch interaction, especially through Frosh activities, hostels and technical societies. Mentorship quality appears network- and society-dependent. The reviewed evidence is insufficient for a college-wide statement about hierarchy or ragging incidence.",
+    "positive_themes": [
+      "Students and placed seniors answer applicant and junior questions publicly.",
+      "Societies, hostels and project teams create cross-batch contact."
+    ],
+    "negative_themes": [
+      "Mentorship is not uniform and may depend on the student network.",
+      "No robust recent independent evidence on club hierarchy or fresher inclusion across the whole campus."
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "source_count": 5,
+    "date_range": "2025-2026",
+    "source_agreement": "Broadly consistent but self-reported",
+    "supporting_source_ids": [
+      "SRC102",
+      "SRC110",
+      "SRC115",
+      "SRC117",
+      "SRC118"
+    ],
+    "conflicting_source_ids": []
+  },
+  "academic_culture": {
+    "summary": "Student reports describe a workload that is manageable for organized students but varies by branch and instructor. CGPA is repeatedly described as important for scholarships, internships and placement shortlisting. Faculty accessibility and attendance strictness receive mixed reports, so no single institute-wide strictness label is justified.",
+    "positive_themes": [
+      "Official curriculum and societies support project, coding and research activity.",
+      "Students report room to combine academics with societies when time is managed well."
+    ],
+    "negative_themes": [
+      "Faculty and grading experience appears instructor-dependent.",
+      "Attendance/workload reports conflict across branches.",
+      "High CGPA pressure is a repeated student concern."
+    ],
+    "evidence_strength": "Conflicting signal",
+    "source_count": 7,
+    "date_range": "2025-2026",
+    "source_agreement": "Consistent on CGPA importance; mixed on strictness and teaching quality",
+    "supporting_source_ids": [
+      "SRC102",
+      "SRC110",
+      "SRC115",
+      "SRC117",
+      "SRC118",
+      "SRC106"
+    ],
+    "conflicting_source_ids": [
+      "SRC101"
+    ]
+  },
+  "hostel_reality": {
+    "summary": "Official documents show a large residential system with multiple occupancy and AC/non-AC options, mandatory mess, free laundry and a strict 8:00/8:30 pm first-year gate/hostel reporting structure. Videos and student reports confirm substantial block-to-block variation in rooms, common areas, Wi-Fi and social experience.",
+    "positive_themes": [
+      "Residential life and peer bonding are commonly praised.",
+      "Multiple room categories and on-campus services are available.",
+      "Free laundry and mandatory dining infrastructure are officially documented."
+    ],
+    "negative_themes": [
+      "Room and washroom condition vary by block.",
+      "Wi-Fi reliability and mess satisfaction are inconsistent across reports.",
+      "Room type is subject to availability and official curfew may feel restrictive to some students."
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "source_count": 7,
+    "date_range": "2024-2026",
+    "source_agreement": "Consistent on variation and social benefits; mixed on quality",
+    "supporting_source_ids": [
+      "SRC005",
+      "SRC103",
+      "SRC109",
+      "SRC114",
+      "SRC115",
+      "SRC117"
+    ],
+    "conflicting_source_ids": [
+      "SRC101"
+    ]
+  },
+  "club_and_campus_life": {
+    "summary": "The 2026 institutional catalogue lists a broad technical, cultural, service and entrepreneurial ecosystem, and student discussions consistently identify societies and fests as major parts of campus life. Individual society activity and selection quality vary; a static listing is not proof that every society is currently active.",
+    "positive_themes": [
+      "Wide range of technical and cultural choices.",
+      "Fests and society work provide project, leadership and social opportunities.",
+      "First-year activity is supported through Frosh and society recruitment."
+    ],
+    "negative_themes": [
+      "Students report that some societies are more active than others.",
+      "Selection processes and time commitment can be uneven."
+    ],
+    "evidence_strength": "Strong repeated signal",
+    "source_count": 6,
+    "date_range": "2025-2026",
+    "source_agreement": "Broadly consistent",
+    "supporting_source_ids": [
+      "SRC006",
+      "SRC105",
+      "SRC116",
+      "SRC117",
+      "SRC118",
+      "SRC108"
+    ],
+    "conflicting_source_ids": []
+  },
+  "coding_and_placement_culture": {
+    "summary": "Official recruiter and placement-cell pages, computing societies and student accounts indicate an active preparation ecosystem. The strongest student-reported cautions are CGPA screening, market-cycle pressure, large computing intake and branch-dependent access to software roles. Verified outcomes are available only at overall NIRF level; branch-level online statistics remain unverified.",
+    "positive_themes": [
+      "Active computing/open-source/security societies.",
+      "Peer guidance, internships and self-driven coding routes are visible.",
+      "A broad official recruiter roster exists."
+    ],
+    "negative_themes": [
+      "Company-wise branch eligibility is not publicly transparent.",
+      "Community branch placement tables are not official.",
+      "Core-branch software access and 2026 outcomes are disputed."
+    ],
+    "evidence_strength": "Conflicting signal",
+    "source_count": 9,
+    "date_range": "2024-2026",
+    "source_agreement": "Consistent on preparation culture; conflicting on branch outcomes and ROI",
+    "supporting_source_ids": [
+      "SRC020",
+      "SRC021",
+      "SRC102",
+      "SRC106",
+      "SRC110",
+      "SRC111",
+      "SRC117",
+      "SRC118"
+    ],
+    "conflicting_source_ids": [
+      "SRC104",
+      "SRC101"
+    ]
+  },
+  "locality_and_student_life": {
+    "summary": "The campus is in Patiala, a lower-cost and quieter city than a major technology metro. Railway and local city access are practical; Chandigarh airport is around 65 km away. Students often describe the campus itself as the main social ecosystem, while major-city internship networking requires travel or remote engagement.",
+    "positive_themes": [
+      "Large self-contained campus with daily services.",
+      "Patiala railway and local autos/e-rickshaws provide practical connectivity.",
+      "Lower day-to-day cost than many major metros is plausible."
+    ],
+    "negative_themes": [
+      "No metro.",
+      "Airport and Chandigarh/Mohali technology ecosystem require road travel.",
+      "Students seeking constant metropolitan exposure may find the location quieter."
+    ],
+    "evidence_strength": "Moderate repeated signal",
+    "source_count": 5,
+    "date_range": "2024-2026",
+    "source_agreement": "Broadly consistent",
+    "supporting_source_ids": [
+      "SRC022",
+      "SRC028",
+      "SRC105",
+      "SRC107",
+      "SRC119"
+    ],
+    "conflicting_source_ids": []
+  },
+  "overall_satisfaction": {
+    "summary": "The most repeated positives are the campus, hostels, societies, peer network and broad opportunity set. The most repeated negatives are high fees, uncertain branch-level ROI, large intake and market-sensitive placements. Satisfaction appears especially dependent on scholarship support, chosen branch, CGPA and willingness to use societies/projects rather than relying only on classroom teaching.",
+    "positive_themes": [
+      "Vibrant residential campus and societies.",
+      "Strong opportunity set for self-driven students.",
+      "Established recruiter and alumni ecosystem."
+    ],
+    "negative_themes": [
+      "High total cost.",
+      "Branch-level placement transparency is incomplete.",
+      "Outcomes depend strongly on branch, CGPA and individual preparation."
+    ],
+    "who_it_appears_best_suited_for": [
+      "Students seeking a residential campus and active society culture.",
+      "Students who can afford the full cost or have a realistic scholarship plan.",
+      "Self-driven students prepared to build skills and internships early."
+    ],
+    "who_may_not_enjoy_it": [
+      "Students prioritizing the lowest-cost engineering option.",
+      "Students expecting guaranteed software placement from any branch.",
+      "Students who strongly prefer a major-metro environment or dislike strict hostel timings."
+    ],
+    "would_choose_again_evidence": "Public opinions are mixed and too self-selected for a reliable percentage.",
+    "evidence_strength": "Conflicting signal",
+    "source_count": 10,
+    "date_range": "2024-2026",
+    "source_agreement": "Positive campus themes repeat; ROI and placement judgments conflict",
+    "supporting_source_ids": [
+      "SRC105",
+      "SRC107",
+      "SRC108",
+      "SRC115",
+      "SRC116",
+      "SRC117",
+      "SRC118"
+    ],
+    "conflicting_source_ids": [
+      "SRC101",
+      "SRC104",
+      "SRC106"
+    ]
+  }
+}
