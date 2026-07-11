@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { buildAgentPrimer } from "@/features/counsellor/counsellorService";
-import { GeminiAIProvider, getGeminiConfig } from "@/features/counsellor/geminiProvider";
+import { OllamaAIProvider, getOllamaConfig, checkOllamaReachable } from "@/features/counsellor/ollamaProvider";
 import { counsellorStreamRequestSchema, type StreamChunk } from "@/features/counsellor/counsellorTypes";
 import { counsellorSystemInstruction, hasPromptInjectionAttempt, validateProviderResponse } from "@/features/counsellor/counsellorCore";
 
@@ -19,15 +19,16 @@ export async function POST(request: Request) {
       );
     }
 
-    const geminiConfig = getGeminiConfig();
+    const ollamaConfig = getOllamaConfig();
+    const reachability = await checkOllamaReachable(ollamaConfig.baseUrl);
     const encoder = new TextEncoder();
 
-    if (!geminiConfig.success) {
+    if (!reachability.success) {
       const stream = new ReadableStream({
         start(controller) {
           const chunk: StreamChunk = {
             type: "meta",
-            warnings: ["Missing GEMINI_API_KEY."],
+            warnings: ["Ollama is not reachable."],
             missingData: ["AI provider configuration is incomplete."],
             status: "configuration_error"
           };
@@ -35,7 +36,7 @@ export async function POST(request: Request) {
 
           const textChunk: StreamChunk = {
             type: "text",
-            content: "Gemini is not configured yet. Add GEMINI_API_KEY on the server to enable grounded counsellor answers."
+            content: `Ollama is not reachable yet. ${reachability.message ?? ""} Run "ollama serve" and "ollama pull ${ollamaConfig.model}" on the server.`.trim()
           };
           controller.enqueue(encoder.encode(`data: ${JSON.stringify(textChunk)}\n\n`));
 
@@ -73,7 +74,7 @@ export async function POST(request: Request) {
       return new Response(stream, { headers: { "Content-Type": "text/event-stream" } });
     }
 
-    const provider = new GeminiAIProvider({ apiKey: geminiConfig.apiKey, model: geminiConfig.model });
+    const provider = new OllamaAIProvider({ baseUrl: ollamaConfig.baseUrl, model: ollamaConfig.model });
 
     const stream = new ReadableStream({
       async start(controller) {

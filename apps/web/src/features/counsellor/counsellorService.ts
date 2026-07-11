@@ -7,7 +7,7 @@ import {
   runGroundedProvider,
   summarizeProfile
 } from "./counsellorCore";
-import { GeminiAIProvider, getGeminiConfig } from "./geminiProvider";
+import { OllamaAIProvider, getOllamaConfig, checkOllamaReachable } from "./ollamaProvider";
 import { detectCollegesInQuestion, type CollegeSummaryForDetection } from "./collegeDetector";
 import { embedText } from "./embeddingService";
 import {
@@ -134,20 +134,21 @@ export async function answerCounsellorQuestion(
 
   let activeProvider = provider;
   if (!activeProvider) {
-    const geminiConfig = getGeminiConfig();
-    if (!geminiConfig.success) {
+    const ollamaConfig = getOllamaConfig();
+    const reachable = await checkOllamaReachable(ollamaConfig.baseUrl);
+    if (!reachable.success) {
       return {
         success: true,
         data: {
-          answer: "Gemini is not configured yet. Add GEMINI_API_KEY on the server to enable grounded counsellor answers.",
+          answer: `Ollama is not reachable yet. ${reachable.message ?? ""} Run "ollama serve" and "ollama pull ${ollamaConfig.model}" on the server.`.trim(),
           status: "configuration_error",
           evidence: [],
-          warnings: ["Missing GEMINI_API_KEY."],
+          warnings: ["Ollama is not reachable."],
           missingData: ["AI provider configuration is incomplete."]
         }
       };
     }
-    activeProvider = new GeminiAIProvider({ apiKey: geminiConfig.apiKey, model: geminiConfig.model });
+    activeProvider = new OllamaAIProvider({ baseUrl: ollamaConfig.baseUrl, model: ollamaConfig.model });
   }
 
   const recordsResult = await fetchPublishedGroundingRecords({ question: parsed.data.question });
