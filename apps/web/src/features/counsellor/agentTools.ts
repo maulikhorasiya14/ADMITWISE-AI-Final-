@@ -2,6 +2,7 @@ import { Type, type FunctionDeclaration } from "@google/genai";
 import type { fetchPublishedGroundingRecords } from "./counsellorService.ts";
 import type { WebSearchResult } from "./webSearchService.ts";
 import type { GroundingRecord } from "./counsellorTypes.ts";
+import { webSearchResultsToGroundingRecords } from "./groundingFormat.ts";
 
 export const searchCollegeDbDeclaration: FunctionDeclaration = {
   name: "search_college_db",
@@ -73,15 +74,6 @@ export async function executeSearchCollegeDb(
   return { records: result.data, responseForModel: { output: formatRecordsForModel(result.data) } };
 }
 
-/** Mirrors webSearchService.ts's webSearchResultsToGroundingRecords exactly (see note below). */
-function webResultsToGroundingRecords(results: WebSearchResult[]): GroundingRecord[] {
-  return results.map((r) => ({
-    publicationStatus: "unpublished" as const,
-    evidence: { sourceId: `web:${r.url}`, sourceLabel: r.title, sourceType: "web_search", officialUrl: r.url },
-    summary: `[WEB SOURCE — unverified] ${r.title}: ${r.content.slice(0, 400)}`
-  }));
-}
-
 export async function executeSearchInternet(
   args: { query?: unknown },
   deps: { search?: (query: string, opts?: { maxResults?: number }) => Promise<WebSearchResult[]> } = {}
@@ -95,15 +87,15 @@ export async function executeSearchInternet(
   try {
     // Lazily imported (not statically) so this module — which agentTools.test.ts
     // imports directly under plain `node --test` — never has to load
-    // webSearchService.ts, which pulls in `server-only` and `@/`-aliased
-    // modules that only resolve inside Next.js's webpack build. Every test
-    // supplies deps.search, so this dynamic import never actually runs during
-    // `node --test`. Records are built with the local webResultsToGroundingRecords
-    // above (identical output to webSearchService.ts's version) so this path
-    // never has to load that module either.
+    // webSearchService.ts's `searchWeb`, which pulls in `server-only` and
+    // `@/`-aliased modules that only resolve inside Next.js's webpack build.
+    // Every test supplies deps.search, so this dynamic import never actually
+    // runs during `node --test`. webSearchResultsToGroundingRecords is a
+    // static import (from groundingFormat.ts, which has no server-only/@
+    // imports), so it's safe to use directly here.
     const search = deps.search ?? (await import("./webSearchService.ts")).searchWeb;
     const results = await search(query, { maxResults: 5 });
-    const records = webResultsToGroundingRecords(results);
+    const records = webSearchResultsToGroundingRecords(results);
     if (records.length === 0) {
       return { records: [], responseForModel: { output: "No web results found." } };
     }
