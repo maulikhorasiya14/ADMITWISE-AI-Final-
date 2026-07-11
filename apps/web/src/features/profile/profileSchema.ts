@@ -17,7 +17,9 @@ const optionalNumber = (schema: z.ZodNumber) =>
     if (value === "" || value === null || value === undefined) {
       return undefined;
     }
-    return Number(value);
+    const num = Number(value);
+    if (Number.isNaN(num)) return undefined;
+    return num;
   }, schema.optional());
 
 const requiredNumber = (schema: z.ZodNumber) =>
@@ -42,6 +44,7 @@ export const examScoreSchema = z.object({
   exam: z.string().trim().min(1, "Exam is required"),
   examYear: requiredNumber(z.number().int().min(2000).max(2100)),
   rank: optionalNumber(z.number().int().positive("Rank must be positive")),
+  categoryRank: optionalNumber(z.number().int().positive("Category rank must be positive")),
   percentile: optionalNumber(z.number().min(0).max(100, "Percentile must be between 0 and 100")),
   marks: optionalNumber(z.number().min(0, "Marks cannot be negative")),
 });
@@ -84,6 +87,7 @@ export const defaultProfileValues: StudentProfileFormValues = {
       exam: "JEE Main",
       examYear: new Date().getFullYear(),
       rank: undefined,
+      categoryRank: undefined,
       percentile: undefined,
       marks: undefined,
     }

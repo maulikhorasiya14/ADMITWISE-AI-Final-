@@ -1,8 +1,4 @@
-/**
- * Detects college names and branch keywords in a user question.
- * Uses simple substring/keyword matching against published college data.
- * No external NLP or vector search — fast and deterministic.
- */
+
 
 export type CollegeSummaryForDetection = {
   id: string;
@@ -19,7 +15,7 @@ export type DetectionResult = {
   branchKeywords: string[];
 };
 
-/** Common branch name aliases used in student questions. */
+
 const BRANCH_KEYWORD_MAP: Record<string, string[]> = {
   "Computer Science": ["cse", "cs", "computer science", "computer engineering", "comps", "b.tech cse"],
   "Information Technology": ["it", "information technology", "infotech"],
@@ -33,16 +29,12 @@ const BRANCH_KEYWORD_MAP: Record<string, string[]> = {
   "Data Science": ["data science", "ds", "ai", "artificial intelligence", "machine learning", "ml"]
 };
 
-/**
- * Normalise text for matching: lowercase, collapse whitespace, strip punctuation.
- */
+
 function normalise(text: string): string {
   return text.toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
 }
 
-/**
- * Build a set of searchable tokens for a college.
- */
+
 function collegeTokens(college: CollegeSummaryForDetection): string[] {
   const tokens: string[] = [
     normalise(college.name),
@@ -52,7 +44,7 @@ function collegeTokens(college: CollegeSummaryForDetection): string[] {
   if (college.shortName) {
     tokens.push(normalise(college.shortName));
   }
-  // Also add abbreviation (first letters of each word)
+
   const abbrev = college.name
     .split(/\s+/)
     .map((w) => w[0] ?? "")
@@ -64,9 +56,7 @@ function collegeTokens(college: CollegeSummaryForDetection): string[] {
   return tokens.filter((t) => t.length >= 2);
 }
 
-/**
- * Detect which published colleges are referenced in the question.
- */
+
 export function detectCollegesInQuestion(
   question: string,
   colleges: CollegeSummaryForDetection[]
@@ -77,9 +67,9 @@ export function detectCollegesInQuestion(
   for (const college of colleges) {
     const tokens = collegeTokens(college);
     const isMatch = tokens.some((token) => {
-      // Full token match (e.g. "iit bombay" in question)
+
       if (normQuestion.includes(token)) return true;
-      // Word-boundary match for short tokens like abbreviations (e.g. "VJTI")
+
       if (token.length <= 6) {
         const wordBoundaryRegex = new RegExp(`\\b${token}\\b`);
         return wordBoundaryRegex.test(normQuestion);
@@ -92,7 +82,6 @@ export function detectCollegesInQuestion(
     }
   }
 
-  // Detect branch keywords
   const detectedBranches: string[] = [];
   for (const [branchName, aliases] of Object.entries(BRANCH_KEYWORD_MAP)) {
     const found = aliases.some((alias) => normQuestion.includes(alias));
@@ -108,10 +97,7 @@ export function detectCollegesInQuestion(
   };
 }
 
-/**
- * Fetch college summaries suitable for detection.
- * Called once per counsellor request and cached for that request.
- */
+
 export function buildCollegeDetectionIndex(
   colleges: CollegeSummaryForDetection[]
 ): CollegeSummaryForDetection[] {

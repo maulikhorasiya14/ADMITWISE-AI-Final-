@@ -1,10 +1,8 @@
 import { z } from "zod";
 
-// Helper to treat empty strings as undefined during validation
 const emptyToUndefined = (val: unknown) => (val === "" ? undefined : val);
 const emptyNumber = (val: unknown) => (val === "" || Number.isNaN(val) ? undefined : val);
 
-// --- College Identity ---
 
 export const collegeIdentitySchema = z.object({
   name: z.string().min(1, "Name is required").max(300),
@@ -32,7 +30,6 @@ export const collegeIdentitySchema = z.object({
 
 export type CollegeIdentityInput = z.infer<typeof collegeIdentitySchema>;
 
-// --- Branch ---
 
 export const branchInputSchema = z.object({
   id: z.string().uuid().optional(),
@@ -48,7 +45,6 @@ export const branchInputSchema = z.object({
 
 export type BranchInput = z.infer<typeof branchInputSchema>;
 
-// --- Fee ---
 
 export const feeInputSchema = z.object({
   id: z.string().uuid().optional(),
@@ -65,7 +61,6 @@ export const feeInputSchema = z.object({
 
 export type FeeInput = z.infer<typeof feeInputSchema>;
 
-// --- Placement ---
 
 export const placementInputSchema = z.object({
   id: z.string().uuid().optional(),
@@ -82,7 +77,6 @@ export const placementInputSchema = z.object({
 
 export type PlacementInput = z.infer<typeof placementInputSchema>;
 
-// --- Location Metrics ---
 
 export const locationInputSchema = z.object({
   nearest_railway_station: z.preprocess(emptyToUndefined, z.string().optional()),
@@ -100,7 +94,6 @@ export const locationInputSchema = z.object({
 
 export type LocationInput = z.infer<typeof locationInputSchema>;
 
-// --- UUID validator ---
 
 const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 

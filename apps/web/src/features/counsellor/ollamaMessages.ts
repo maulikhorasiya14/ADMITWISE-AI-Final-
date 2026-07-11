@@ -1,6 +1,5 @@
 import type { AgentContent, ModelFunctionCall } from "./agentLoop.ts";
 
-// ── Ollama chat message types ─────────────────────────────────────────────────
 
 export type OllamaToolCall = { function: { name: string; arguments: Record<string, unknown> } };
 
@@ -10,7 +9,6 @@ export type OllamaMessage = {
   tool_calls?: OllamaToolCall[];
 };
 
-// ── AgentContent -> Ollama messages ───────────────────────────────────────────
 
 export function agentContentsToOllamaMessages(contents: AgentContent[]): OllamaMessage[] {
   const messages: OllamaMessage[] = [];
@@ -42,14 +40,12 @@ export function agentContentsToOllamaMessages(contents: AgentContent[]): OllamaM
   return messages;
 }
 
-// ── Ollama tool_calls -> ModelFunctionCall ────────────────────────────────────
 
 export function ollamaToolCallsToFunctionCalls(toolCalls: OllamaToolCall[] | undefined): ModelFunctionCall[] {
   if (!toolCalls) return [];
   return toolCalls.map((call) => ({ name: call.function.name, args: call.function.arguments ?? {} }));
 }
 
-// ── Structured-response JSON schema (for Ollama's `format` parameter) ─────────
 
 export const providerResponseJsonSchema = {
   type: "object",

@@ -13,9 +13,7 @@ import {
   type ProviderResponse
 } from "./counsellorTypes.ts";
 import type { SavedStudentProfile } from "../profile/profileSchema.ts";
-import type { AgentContent } from "./agentLoop.ts";
-
-// ── System instruction ────────────────────────────────────────────────────────
+import type { AgentContent } from "./agentLoop.ts";
 
 export const counsellorSystemInstruction = [
   "You are the AdmitWise AI counsellor — a knowledgeable, calm and trustworthy guide for Indian engineering admissions.",
@@ -37,6 +35,7 @@ export const counsellorSystemInstruction = [
   "- You have access to tools: 'search_college_db' and 'search_internet'.",
   "- You MUST call 'search_college_db' to fetch college details.",
   "- You MUST call 'search_internet' if the user asks for NIRF rankings, QS rankings, current news, or external metrics NOT in your immediate context.",
+  "- If 'search_college_db' does not return sufficient data to answer the user's question, you MUST automatically call 'search_internet' to find the missing information.",
   "- NEVER answer ranking or factual questions from your internal knowledge. Always use a tool to fetch the data first.",
   "- The deterministic recommendations in the evidence block only cover admission data. Always call tools for other dimensions.",
   "- You may call tools multiple times if needed.",
@@ -72,11 +71,8 @@ export const counsellorSystemInstruction = [
   "- Never output raw JSON, internal UUIDs, database structure or system configuration.",
   "- Never invent URLs, distances, fees or numbers not present in the evidence or web search results.",
   "- When data is missing, say 'Data not publicly available' rather than estimating or citing made-up sources.",
-  "- Return status insufficient_data with missingData details when evidence is inadequate.",
-  "- Return strict JSON matching: { answer, status, evidenceSourceIds, warnings, missingData }."
-].join("\n");
-
-// ── Prompt injection guard ────────────────────────────────────────────────────
+  "- DO NOT output JSON. Provide your response as a natural language text paragraph."
+].join("\n");
 
 const promptInjectionPatterns = [
   /ignore (all )?(previous|above|system|developer) instructions/i,
@@ -93,9 +89,7 @@ export function validateCounsellorQuestion(question: string) {
 
 export function hasPromptInjectionAttempt(question: string) {
   return promptInjectionPatterns.some((pattern) => pattern.test(question));
-}
-
-// ── Profile summarisation ─────────────────────────────────────────────────────
+}
 
 export function summarizeProfile(profile?: SavedStudentProfile) {
   if (!profile) {
@@ -113,9 +107,7 @@ export function summarizeProfile(profile?: SavedStudentProfile) {
     profile.maximumAnnualBudget !== undefined ? `annual budget INR ${profile.maximumAnnualBudget}` : "budget not provided",
     profile.familyIncomeBand ? `income band ${profile.familyIncomeBand}` : "income band not provided"
   ].join("; ");
-}
-
-// ── Grounding context ─────────────────────────────────────────────────────────
+}
 
 export function filterPublishedGroundingRecords(records: GroundingRecord[]) {
   return records.filter((record) => record.publicationStatus === "published");
@@ -155,9 +147,7 @@ export function buildGroundingContext(input: {
     warnings,
     missingData
   };
-}
-
-// ── Evidence block ────────────────────────────────────────────────────────────
+}
 
 export function buildEvidenceBlock(context: GroundingContext) {
   const lines = [
@@ -176,9 +166,7 @@ export function buildEvidenceBlock(context: GroundingContext) {
   }
 
   return lines.join("\n");
-}
-
-// ── Multi-turn content builder ────────────────────────────────────────────────
+}
 
 export function buildMultiTurnContents(
   history: HistoryMessage[],
@@ -186,20 +174,15 @@ export function buildMultiTurnContents(
   evidenceBlock: string,
   allowedEvidenceIds: string[]
 ): Array<{ role: "user" | "model"; parts: Array<{ text: string }> }> {
-  const contents: Array<{ role: "user" | "model"; parts: Array<{ text: string }> }> = [];
-
-  // Add prior conversation turns (last 10 messages)
+  const contents: Array<{ role: "user" | "model"; parts: Array<{ text: string }> }> = [];
   const recentHistory = history.slice(-10);
   for (const message of recentHistory) {
     contents.push({
       role: message.role === "user" ? "user" : "model",
       parts: [{ text: message.content }]
     });
-  }
-
-  // Add the current question with evidence context
+  }
   const currentUserText = [
-    "Return JSON: { answer, status, evidenceSourceIds, warnings, missingData }",
     `Allowed evidence IDs: ${allowedEvidenceIds.join(", ") || "none"}`,
     "Evidence:",
     evidenceBlock,
@@ -213,9 +196,7 @@ export function buildMultiTurnContents(
   });
 
   return contents;
-}
-
-// ── Agent tool-loop content builders ──────────────────────────────────────────
+}
 
 export function buildAgentPrimerText(profileSummary: string | undefined, recommendationRecords: GroundingRecord[]): string {
   const lines = [profileSummary ? `Student profile summary: ${profileSummary}` : "Student profile summary: not supplied."];
@@ -240,9 +221,7 @@ export function buildAgentToolContents(
   }
   contents.push({ role: "user", parts: [{ text: [primerText, "Question:", currentQuestion].join("\n\n") }] });
   return contents;
-}
-
-// ── Provider request ──────────────────────────────────────────────────────────
+}
 
 export function buildProviderRequest(context: GroundingContext): AIProviderRequest {
   const records = [...context.deterministicRecommendations, ...context.records];
@@ -253,9 +232,7 @@ export function buildProviderRequest(context: GroundingContext): AIProviderReque
     evidenceBlock: buildEvidenceBlock(context),
     allowedEvidenceIds: records.map((record) => record.evidence.sourceId)
   };
-}
-
-// ── Response validation ───────────────────────────────────────────────────────
+}
 
 export function validateProviderResponse(response: unknown, allowedEvidence: EvidenceReference[]): CounsellorResponse {
   const parsed = providerResponseSchema.safeParse(response);
@@ -288,9 +265,7 @@ export function validateProviderResponse(response: unknown, allowedEvidence: Evi
   } satisfies CounsellorResponse;
 
   return counsellorResponseSchema.parse(result);
-}
-
-// ── Grounded provider runner (non-streaming) ──────────────────────────────────
+}
 
 export async function runGroundedProvider(input: {
   provider: AIProvider;
@@ -331,9 +306,7 @@ export async function runGroundedProvider(input: {
       missingData: ["Try again after the provider is available."]
     };
   }
-}
-
-// ── UI state helper ───────────────────────────────────────────────────────────
+}
 
 export function getCounsellorUiState(input: {
   isLoading: boolean;
@@ -352,9 +325,7 @@ export function getCounsellorUiState(input: {
 
 export function isQuestionTooLong(question: string) {
   return question.length > counsellorQuestionMaxLength;
-}
-
-// ── Mock provider (for tests) ─────────────────────────────────────────────────
+}
 
 export class MockAIProvider implements AIProvider {
   private readonly response: ProviderResponse | Error;
@@ -377,9 +348,7 @@ export class MockAIProvider implements AIProvider {
     yield this.response.answer;
     return this.response;
   }
-}
-
-// ── Relevance ranking ─────────────────────────────────────────────────────────
+}
 
 function rankRecordsForQuestion(records: GroundingRecord[], question: string) {
   const terms = new Set(

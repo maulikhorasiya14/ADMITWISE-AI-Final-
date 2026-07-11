@@ -20,9 +20,7 @@ import {
   type EvidenceReference,
   type GroundingRecord
 } from "./counsellorTypes";
-import type { SavedStudentProfile } from "@/features/profile/profileSchema";
-
-// ── Result types ──────────────────────────────────────────────────────────────
+import type { SavedStudentProfile } from "@/features/profile/profileSchema";
 
 type CounsellorServiceResult =
   | { success: true; data: CounsellorResponse }
@@ -30,9 +28,7 @@ type CounsellorServiceResult =
 
 type GroundingRecordsResult =
   | { success: true; data: GroundingRecord[] }
-  | { success: false; code: string; message: string; status: number };
-
-// ── DB row types ──────────────────────────────────────────────────────────────
+  | { success: false; code: string; message: string; status: number };
 
 type SourceRow = {
   id: string;
@@ -114,9 +110,7 @@ type PlacementRow = {
   colleges: CollegeRow | CollegeRow[] | null;
   college_branches: { id: string; name: string } | Array<{ id: string; name: string }> | null;
   sources: SourceRow | SourceRow[] | null;
-};
-
-// ── Non-streaming answer (kept for backward compatibility) ────────────────────
+};
 
 export async function answerCounsellorQuestion(
   input: unknown,
@@ -172,9 +166,7 @@ export async function answerCounsellorQuestion(
     success: true,
     data: await runGroundedProvider({ provider: activeProvider, context })
   };
-}
-
-// ── Streaming grounding records fetch ─────────────────────────────────────────
+}
 
 async function fetchHybridRecords(
   supabase: Awaited<ReturnType<typeof createSupabaseServerClient>>,
@@ -230,9 +222,7 @@ export async function fetchPublishedGroundingRecords(opts: {
   collegeIds?: string[];
 }): Promise<GroundingRecordsResult> {
   try {
-    const supabase = await createSupabaseServerClient();
-
-    // First, fetch all published colleges for detection
+    const supabase = await createSupabaseServerClient();
     const { data: collegesData, error: collegesError } = await supabase
       .from("colleges")
       .select("id, slug, name, short_name, ownership, city, state, is_published")
@@ -244,9 +234,7 @@ export async function fetchPublishedGroundingRecords(opts: {
       return { success: false, code: "DATA_INCOMPLETE", message: "Unable to load published college list.", status: 500 };
     }
 
-    const allColleges = (collegesData ?? []) as CollegeRow[];
-
-    // Detect colleges from question if no explicit collegeIds provided
+    const allColleges = (collegesData ?? []) as CollegeRow[];
     let targetCollegeIds = opts.collegeIds ?? [];
     if (targetCollegeIds.length === 0 && opts.question) {
       const detectionInput: CollegeSummaryForDetection[] = allColleges.map((c) => ({
@@ -261,11 +249,8 @@ export async function fetchPublishedGroundingRecords(opts: {
       targetCollegeIds = detected.collegeIds;
     }
 
-    const hasTargets = targetCollegeIds.length > 0;
-
-    // Parallel data fetch — targeted or broad
-    const [branches, cutoffs, feesResult, placementsResult] = await Promise.all([
-      // Branches
+    const hasTargets = targetCollegeIds.length > 0;
+    const [branches, cutoffs, feesResult, placementsResult] = await Promise.all([
       (hasTargets
         ? supabase
             .from("college_branches")
@@ -282,9 +267,7 @@ export async function fetchPublishedGroundingRecords(opts: {
             .eq("colleges.is_published", true)
             .order("name", { ascending: true })
             .limit(30)
-      ),
-
-      // Cutoffs
+      ),
       (hasTargets
         ? supabase
             .from("cutoff_records")
@@ -305,9 +288,7 @@ export async function fetchPublishedGroundingRecords(opts: {
             .eq("college_branches.verification_status", "published")
             .order("admission_year", { ascending: false })
             .limit(30)
-      ),
-
-      // Fees — try "fees" table first (migration 3), fallback handled below
+      ),
       (hasTargets
         ? supabase
             .from("fees")
@@ -326,9 +307,7 @@ export async function fetchPublishedGroundingRecords(opts: {
             .eq("colleges.is_published", true)
             .order("academic_year", { ascending: false })
             .limit(20)
-      ),
-
-      // Placements — try "placements" table first (migration 3)
+      ),
       (hasTargets
         ? supabase
             .from("placements")
@@ -348,15 +327,11 @@ export async function fetchPublishedGroundingRecords(opts: {
             .order("placement_year", { ascending: false })
             .limit(20)
       )
-    ]);
-
-    // Log any errors that occurred during the fetch
+    ]);
     if (branches.error) console.error("Branches fetch error:", branches.error);
     if (cutoffs.error) console.error("Cutoffs fetch error:", cutoffs.error);
     if (feesResult.error) console.error("Fees fetch error:", feesResult.error);
-    if (placementsResult.error) console.error("Placements fetch error:", placementsResult.error);
-
-    // Fee/placement errors are non-fatal — table might use different name
+    if (placementsResult.error) console.error("Placements fetch error:", placementsResult.error);
     const feeData = feesResult.error ? [] : ((feesResult.data ?? []) as unknown as FeeRow[]);
     const placementData = placementsResult.error ? [] : ((placementsResult.data ?? []) as unknown as PlacementRow[]);
 
@@ -379,17 +354,9 @@ export async function fetchPublishedGroundingRecords(opts: {
   } catch {
     return { success: false, code: "DATA_INCOMPLETE", message: "Supabase is not configured or is unavailable.", status: 500 };
   }
-}
+}
 
-// ── Agent primer builder ──────────────────────────────────────────────────────
 
-/**
- * Builds the lightweight primer the tool-calling agent starts from — profile
- * summary, deterministic recommendation evidence and target college IDs.
- * Unlike the old buildStreamingContext, this does not eagerly fetch
- * cutoffs/fees/qualitative evidence: the agent's search_college_db tool
- * fetches that on demand during the tool-calling loop.
- */
 export async function buildAgentPrimer(
   input: CounsellorStreamRequest,
   recommendationCollegeIds?: string[]
@@ -422,9 +389,7 @@ export async function buildAgentPrimer(
       recommendationCollegeIds: collegeIds
     }
   };
-}
-
-// ── Recommendation evidence builder ──────────────────────────────────────────
+}
 
 async function buildRecommendationEvidence(
   profile: NonNullable<Parameters<typeof getRecommendationsForProfile>[0]>
@@ -453,9 +418,7 @@ async function buildRecommendationEvidence(
       `source ${recommendation.cutoff.sourceId}`
     ].join("; ")
   }));
-}
-
-// ── Evidence converters ───────────────────────────────────────────────────────
+}
 
 function collegeRowsToEvidence(rows: CollegeRow[]) {
   return rows.map((row): GroundingRecord => ({
@@ -521,9 +484,7 @@ function placementRowsToEvidence(rows: PlacementRow[]) {
       summary: `${college.name}${branch ? ` — ${branch.name}` : ""} placements ${row.placement_year}: placement rate ${row.placement_percentage ?? "not available"}%, median package ${row.median_package ?? "not available"} LPA, average package ${row.average_package ?? "not available"} LPA, highest package ${row.highest_package ?? "not available"} LPA.`
     }];
   });
-}
-
-// ── Utility helpers ───────────────────────────────────────────────────────────
+}
 
 function makeEvidence(
   source: SourceRow | undefined,

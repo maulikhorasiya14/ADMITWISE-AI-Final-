@@ -7,7 +7,7 @@ type ProfileSummaryProps = {
 
 export function ProfileSummary({ profile }: ProfileSummaryProps) {
   const rows = [
-    ["Exams", profile.exams.map(e => `${e.exam} ${e.examYear} (${[e.rank ? `Rank ${e.rank}` : null, e.percentile !== undefined ? `${e.percentile}%ile` : null, e.marks !== undefined ? `${e.marks} marks` : null].filter(Boolean).join(", ")})`).join(" | ")],
+    ["Exams", profile.exams.map(e => `${e.exam} ${e.examYear} (${[e.rank ? `Rank ${e.rank}` : null, e.categoryRank ? `Category Rank ${e.categoryRank}` : null, e.percentile !== undefined ? `${e.percentile}%ile` : null, e.marks !== undefined ? `${e.marks} marks` : null].filter(Boolean).join(", ")})`).join(" | ")],
     ["Category", profile.category],
     ["Gender", profile.gender.replaceAll("_", " ")],
     ["Home", [profile.homeCity, profile.homeState].filter(Boolean).join(", ")],

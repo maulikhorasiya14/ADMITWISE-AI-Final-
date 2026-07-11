@@ -15,7 +15,7 @@ export function buildRecommendations(
   return candidates
     .filter((candidate) => isPublishedCandidate(candidate))
     .filter((candidate) => profile.exams.some(e => e.exam.trim().toLowerCase() === candidate.exam.trim().toLowerCase()))
-    .filter((candidate) => normalized(candidate.category) === normalized(profile.category))
+    .filter((candidate) => normalized(candidate.category) === normalized(profile.category) || ["GENERAL", "OPEN", "UR"].includes(normalized(candidate.category)))
     .filter((candidate) => quotaMatchesProfile(candidate, profile))
     .filter((candidate) => genderPoolMatchesProfile(candidate.gender_pool, profile.gender))
     .map((candidate) => scoreCandidate(profile, candidate))
@@ -24,7 +24,18 @@ export function buildRecommendations(
 
 function scoreCandidate(profile: SavedStudentProfile, candidate: PublishedCutoffCandidate): RecommendationViewModel {
   const profileExam = profile.exams.find(e => e.exam.trim().toLowerCase() === candidate.exam.trim().toLowerCase());
-  const studentScore = profileExam ? (profileExam.rank ?? profileExam.percentile ?? profileExam.marks) : undefined;
+  
+  let studentScore: number | undefined;
+  if (profileExam) {
+    const candidateCat = normalized(candidate.category);
+    if (candidate.counselling_system === "CSAB") {
+      studentScore = profileExam.rank ?? profileExam.percentile ?? profileExam.marks;
+    } else if (candidateCat !== "GENERAL" && candidateCat !== "OPEN" && candidateCat !== "UR") {
+      studentScore = profileExam.categoryRank ?? profileExam.rank ?? profileExam.percentile ?? profileExam.marks;
+    } else {
+      studentScore = profileExam.rank ?? profileExam.percentile ?? profileExam.marks;
+    }
+  }
 
   const admission = scoreAdmissionChance({
     studentRank: studentScore,

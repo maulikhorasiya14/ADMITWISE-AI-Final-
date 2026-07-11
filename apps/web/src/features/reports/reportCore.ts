@@ -82,8 +82,7 @@ export function isSafeReportEvidence(item: Pick<ReportEvidence, "id" | "sourceTy
 
 export function summarizeProfile(profile: SavedStudentProfile) {
   return [
-    `Exams: ${profile.exams.map(e => `${e.exam} ${e.examYear} (${[e.rank ? `Rank ${e.rank}` : null, e.percentile !== undefined ? `${e.percentile}%ile` : null, e.marks !== undefined ? `${e.marks} marks` : null].filter(Boolean).join(", ")})`).join(" | ")}`,
-    // Rank and percentile are now included in the Exams string above
+    `Exams: ${profile.exams.map(e => `${e.exam} ${e.examYear} (${[e.rank ? `Rank ${e.rank}` : null, e.percentile !== undefined ? `${e.percentile}%ile` : null, e.marks !== undefined ? `${e.marks} marks` : null].filter(Boolean).join(", ")})`).join(" | ")}`,
     `${profile.category}, ${profile.gender}`,
     `${profile.homeCity ? `${profile.homeCity}, ` : ""}${profile.homeState}`
   ].filter(Boolean);

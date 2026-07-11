@@ -15,7 +15,6 @@ const suggestedQuestions = [
   "What information is missing for this college?"
 ];
 
-// Helper to read SSE stream on client side
 async function* readCounsellorStream(response: Response): AsyncGenerator<StreamChunk> {
   if (!response.body) {
     yield { type: "error", message: "No response body from server." };
@@ -43,7 +42,7 @@ async function* readCounsellorStream(response: Response): AsyncGenerator<StreamC
           const chunk = JSON.parse(jsonStr) as StreamChunk;
           yield chunk;
         } catch {
-          // malformed chunk — ignore
+
         }
       }
     }
@@ -124,7 +123,7 @@ export function CounsellorChat() {
     setMessages(newMessages);
 
     try {
-      // Send last 10 messages as history
+
       const historyToSend = messages.slice(-10).map(m => ({
         role: m.role,
         content: m.content
@@ -215,9 +214,9 @@ export function CounsellorChat() {
 
   return (
     <div className="flex h-[75vh] flex-col overflow-hidden rounded-lg border bg-card shadow-sm sm:flex-row">
-      {/* Main Chat Area */}
+      {}
       <div className="flex flex-1 flex-col">
-        {/* Header */}
+        {}
         <div className="flex items-center justify-between border-b px-4 py-3">
           <div className="flex items-center gap-2 font-semibold">
             <Bot className="h-5 w-5 text-primary" />
@@ -234,7 +233,7 @@ export function CounsellorChat() {
           </button>
         </div>
 
-        {/* Chat Thread */}
+        {}
         <div className="flex-1 overflow-y-auto p-4 space-y-6">
           {!hasMessages ? (
             <div className="flex h-full flex-col items-center justify-center space-y-4 text-center text-muted-foreground">
@@ -302,7 +301,7 @@ export function CounsellorChat() {
           <div ref={bottomRef} className="h-1" />
         </div>
 
-        {/* Input Area */}
+        {}
         <div className="border-t bg-card/50 p-4">
           <div className="mb-3 flex gap-2 overflow-x-auto pb-1 scrollbar-hide">
             {suggestedQuestions.map((sq) => (
@@ -354,7 +353,7 @@ export function CounsellorChat() {
         </div>
       </div>
 
-      {/* Evidence Panel (Sidebar on desktop, overlay/bottom on mobile could be added) */}
+      {}
       {selectedEvidence && (
         <div className="w-full border-l bg-muted/20 sm:w-80 flex flex-col h-full animate-in slide-in-from-right-8 duration-300">
           <div className="flex items-center justify-between border-b bg-background px-4 py-3">

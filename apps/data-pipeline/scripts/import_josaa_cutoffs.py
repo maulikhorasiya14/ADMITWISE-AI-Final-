@@ -63,8 +63,6 @@ class SupabaseClient:
         return r.json()[0]["id"]
         
     def delete_existing_cutoffs(self):
-        # We need to delete in batches or use a fast delete if we're replacing
-        # For safety and speed, we will just delete where counselling_system = JoSAA
         r = self.client.delete("/cutoff_records?counselling_system=eq.JoSAA")
         r.raise_for_status()
         logging.info("Deleted existing JoSAA cutoffs.")
@@ -82,7 +80,6 @@ def main():
     parser.add_argument("--csv", required=True, help="Path to CSV file")
     args = parser.parse_args()
 
-    # Calculate absolute path for .env.local
     current_dir = Path(__file__).parent.resolve()
     env_path = current_dir.parent.parent / "web" / ".env.local"
     
@@ -102,7 +99,6 @@ def main():
     college_name_to_id = {c["name"]: c["id"] for c in existing_colleges}
     
     existing_branches = client.get_college_branches()
-    # map (college_id, branch_name) to branch_id
     branch_map = {(b["college_id"], b["name"]): b["id"] for b in existing_branches}
     
     logging.info("Deleting old JoSAA cutoffs...")
@@ -139,7 +135,6 @@ def main():
             if closing_rank is None:
                 continue
                 
-            # Get or create college
             if college_name not in college_name_to_id:
                 logging.info(f"Creating missing college: {college_name}")
                 cid = client.create_college(college_name)
@@ -147,7 +142,6 @@ def main():
             
             college_id = college_name_to_id[college_name]
             
-            # Get or create branch
             branch_key = (college_id, branch_name)
             if branch_key not in branch_map:
                 logging.info(f"Creating missing branch: {branch_name} in {college_name}")

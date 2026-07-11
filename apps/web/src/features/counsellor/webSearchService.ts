@@ -1,8 +1,6 @@
 import "server-only";
 
-import { getServerEnv } from "@/lib/env";
-
-// ── Types ─────────────────────────────────────────────────────────────────────
+import { getServerEnv } from "@/lib/env";
 
 export type WebSearchResult = {
   title: string;
@@ -18,9 +16,7 @@ type TavilyResponse = {
     content?: string;
     score?: number;
   }>;
-};
-
-// ── Search function ───────────────────────────────────────────────────────────
+};
 
 export async function searchWeb(
   query: string,
@@ -73,8 +69,6 @@ export async function searchWeb(
     }
     return [];
   }
-}
-
-// ── Convert to grounding records ──────────────────────────────────────────────
+}
 
 export { webSearchResultsToGroundingRecords } from "./groundingFormat.ts";

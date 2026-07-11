@@ -32,7 +32,6 @@ import {
   type LocationInput
 } from "@/features/admin/adminCollegeSchemas";
 
-// --- Tabs ---
 
 const tabs = [
   { key: "identity", label: "Identity", icon: Building2 },
@@ -44,7 +43,6 @@ const tabs = [
 
 type TabKey = (typeof tabs)[number]["key"];
 
-// --- Main Component ---
 
 export function CollegeEditorClient({ data }: { data: CollegeEditorData }) {
   const [activeTab, setActiveTab] = useState<TabKey>("identity");
@@ -58,7 +56,7 @@ export function CollegeEditorClient({ data }: { data: CollegeEditorData }) {
         </div>
       )}
 
-      {/* Tab bar */}
+      {}
       <div className="flex gap-1 overflow-x-auto rounded-lg border bg-muted p-1">
         {tabs.map(({ key, label, icon: Icon }) => (
           <button
@@ -74,7 +72,7 @@ export function CollegeEditorClient({ data }: { data: CollegeEditorData }) {
         ))}
       </div>
 
-      {/* Tab content */}
+      {}
       {activeTab === "identity" && <IdentityTab data={data} readOnly={readOnly} />}
       {activeTab === "branches" && <BranchesTab data={data} readOnly={readOnly} />}
       {activeTab === "fees" && <FeesTab data={data} readOnly={readOnly} />}
@@ -84,7 +82,6 @@ export function CollegeEditorClient({ data }: { data: CollegeEditorData }) {
   );
 }
 
-// --- Shared helpers ---
 
 function StatusMessage({ message, type }: { message: string; type: "success" | "error" }) {
   return (
@@ -114,7 +111,7 @@ function FieldInput({
   disabled
 }: {
   id: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
   register: any;
   error?: string;
   type?: string;
@@ -188,9 +185,8 @@ async function apiCall(url: string, method: string, body?: unknown) {
   return json.data;
 }
 
-// ============================================================
-// IDENTITY TAB
-// ============================================================
+
+
 
 function IdentityTab({ data, readOnly }: { data: CollegeEditorData; readOnly: boolean }) {
   const router = useRouter();
@@ -360,9 +356,8 @@ function IdentityTab({ data, readOnly }: { data: CollegeEditorData; readOnly: bo
   );
 }
 
-// ============================================================
-// BRANCHES TAB
-// ============================================================
+
+
 
 function BranchesTab({ data, readOnly }: { data: CollegeEditorData; readOnly: boolean }) {
   const router = useRouter();
@@ -594,9 +589,8 @@ function BranchModal({
   );
 }
 
-// ============================================================
-// FEES TAB
-// ============================================================
+
+
 
 function FeesTab({ data, readOnly }: { data: CollegeEditorData; readOnly: boolean }) {
   const router = useRouter();
@@ -815,9 +809,8 @@ function FeeModal({ collegeId, fee, onClose, onSaved }: { collegeId: string; fee
   );
 }
 
-// ============================================================
-// PLACEMENTS TAB
-// ============================================================
+
+
 
 function PlacementsTab({ data, readOnly }: { data: CollegeEditorData; readOnly: boolean }) {
   const router = useRouter();
@@ -1058,9 +1051,8 @@ function PlacementModal({
   );
 }
 
-// ============================================================
-// LOCATION TAB
-// ============================================================
+
+
 
 function LocationTab({ data, readOnly }: { data: CollegeEditorData; readOnly: boolean }) {
   const router = useRouter();

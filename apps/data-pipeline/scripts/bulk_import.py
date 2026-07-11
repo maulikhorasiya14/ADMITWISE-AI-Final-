@@ -64,7 +64,6 @@ def main():
     parser.add_argument("--dry-run", action="store_true", help="Parse but do not insert")
     args = parser.parse_args()
 
-    # Load .env.local from web app or root
     load_env(Path("../../.env.local"))
     load_env(Path("../../apps/web/.env.local"))
     
@@ -90,7 +89,6 @@ def main():
             continue
 
         raw_slug = college_dir.name.replace("college_data_", "")
-        # Remove suffix like (3)
         clean_slug = raw_slug.split("(")[0].replace("_", "-")
 
         college_id = None
@@ -102,7 +100,6 @@ def main():
 
         logging.info(f"Processing {college_dir.name}...")
 
-        # 1. Clubs
         clubs_csv = college_dir / "clubs.csv"
         if clubs_csv.exists():
             clubs_payload = []
@@ -117,7 +114,6 @@ def main():
             if not args.dry_run:
                 db.upsert("college_clubs", clubs_payload, "college_id,club_name")
 
-        # 2. Campus Reality
         cr_json = college_dir / "campus_reality.json"
         if cr_json.exists():
             with open(cr_json, "r", encoding="utf-8") as f:
@@ -126,7 +122,6 @@ def main():
             if not args.dry_run:
                 db.upsert("campus_reality", [{"college_id": college_id, "data": norm_cr, "verification_status": "published"}], "college_id")
 
-        # 3. College Profile -> Facilities
         profile_json = college_dir / "college_profile.json"
         if profile_json.exists():
             with open(profile_json, "r", encoding="utf-8") as f:
@@ -136,7 +131,6 @@ def main():
             if not args.dry_run:
                 db.upsert("college_facilities", [{"college_id": college_id, "data": norm_fac, "verification_status": "published"}], "college_id")
 
-        # 4. Location Details
         loc_csv = college_dir / "location.csv"
         if loc_csv.exists():
             loc_payload = []
@@ -150,7 +144,6 @@ def main():
             if not args.dry_run:
                 db.upsert("college_location_details", loc_payload, "college_id")
 
-        # 5. Student Experience Sources
         ses_csv = college_dir / "student_experience_sources.csv"
         if ses_csv.exists():
             ses_payload = []

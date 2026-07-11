@@ -12,7 +12,7 @@ export function loadChat(): ChatMessage[] {
     if (!raw) return [];
     const parsed = JSON.parse(raw) as unknown;
     if (!Array.isArray(parsed)) return [];
-    // Strip any still-streaming messages from a previous crashed session
+
     return (parsed as ChatMessage[]).filter(
       (m) => m.status !== "streaming"
     );
@@ -27,7 +27,7 @@ export function saveChat(messages: ChatMessage[]): void {
     const toSave = messages.slice(-MAX_MESSAGES);
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(toSave));
   } catch {
-    // Storage quota exceeded — silently swallow
+
   }
 }
 
@@ -36,6 +36,6 @@ export function clearChat(): void {
   try {
     window.localStorage.removeItem(STORAGE_KEY);
   } catch {
-    // ignore
+
   }
 }

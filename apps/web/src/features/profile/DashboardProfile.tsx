@@ -200,8 +200,7 @@ function RecommendationSection({
         </p>
       </div>
       <div className="grid gap-4">
-        {groupedArray.map(group => {
-          // Group by branch name
+        {groupedArray.map(group => {
           const branchesMap = group.recommendations.reduce((acc, rec) => {
             if (!acc[rec.branchName]) {
               acc[rec.branchName] = [];
@@ -237,31 +236,36 @@ function RecommendationSection({
                 
                 <div className="space-y-6">
                   {Object.entries(branchesMap).map(([branchName, recs]) => {
-                    // Extract unique years and rounds for this branch
-                    const years = Array.from(new Set(recs.map(r => r.cutoff.admissionYear))).sort((a, b) => a - b);
-                    // Extract rounds by treating them as numbers if possible for correct sorting
-                    const rounds = Array.from(new Set(recs.map(r => String(r.cutoff.round)))).sort((a, b) => {
+                    const expandedBranchName = expandBranchName(branchName);
+                    const years = Array.from(new Set(recs.map(r => r.cutoff.admissionYear))).sort((a, b) => a - b);
+                    const formatRound = (system: string | null | undefined, round: string | number) => {
+                      const sys = system?.toUpperCase() === 'CSAB' ? 'CSAB' : 'JoSAA';
+                      return `${sys} Round ${round}`;
+                    };
+                    const rounds = Array.from(new Set(recs.map(r => formatRound(r.cutoff.counsellingSystem, r.cutoff.round)))).sort((a, b) => {
+                      const isCsabA = a.startsWith('CSAB');
+                      const isCsabB = b.startsWith('CSAB');
+                      if (isCsabA && !isCsabB) return 1;
+                      if (!isCsabA && isCsabB) return -1;
+
                       const numA = parseInt(a.replace(/\D/g, ''), 10);
                       const numB = parseInt(b.replace(/\D/g, ''), 10);
                       if (!isNaN(numA) && !isNaN(numB)) return numA - numB;
                       return a.localeCompare(b);
-                    });
-
-                    // Build a matrix mapping [round][year] to cutoff closing rank
+                    });
                     const matrix: Record<string, Record<string, number | string>> = {};
-                    rounds.forEach(round => {
-                      matrix[round as string] = {};
+                    rounds.forEach(roundKey => {
+                      matrix[roundKey] = {};
                       years.forEach(year => {
-                        const rec = recs.find(r => r.cutoff.admissionYear === year && String(r.cutoff.round) === round);
-                        matrix[round as string][String(year)] = rec ? rec.cutoff.closingRank : '-';
-
+                        const rec = recs.find(r => r.cutoff.admissionYear === year && formatRound(r.cutoff.counsellingSystem, r.cutoff.round) === roundKey);
+                        matrix[roundKey][String(year)] = rec ? rec.cutoff.closingRank : '-';
                       });
                     });
 
                     return (
                       <div key={branchName} className="rounded-md border bg-muted/10 overflow-hidden">
                         <div className="bg-muted/50 px-4 py-3 border-b">
-                          <p className="font-medium text-foreground">{branchName}</p>
+                          <p className="font-medium text-foreground">{expandedBranchName}</p>
                         </div>
                         <div className="overflow-x-auto">
                           <table className="w-full text-sm text-left">
@@ -274,11 +278,11 @@ function RecommendationSection({
                               </tr>
                             </thead>
                             <tbody className="divide-y divide-border">
-                              {rounds.map(round => (
-                                <tr key={round} className="hover:bg-muted/30">
-                                  <td className="px-4 py-2 font-medium whitespace-nowrap">Round {round}</td>
+                              {rounds.map(roundKey => (
+                                <tr key={roundKey} className="hover:bg-muted/30">
+                                  <td className="px-4 py-2 font-medium whitespace-nowrap">{roundKey}</td>
                                   {years.map(year => {
-                                    const val = matrix[round][year];
+                                    const val = matrix[roundKey][year];
                                     return (
                                       <td key={year} className="px-4 py-2 text-right tabular-nums whitespace-nowrap">
                                         {typeof val === 'number' ? val.toLocaleString("en-IN") : val}
@@ -303,4 +307,15 @@ function RecommendationSection({
   );
 }
 
-
+function expandBranchName(name: string) {
+  return name
+    .replace(/\bIMT\b/gi, "Integrated Master of Technology")
+    .replace(/\bIMS\b/gi, "Integrated Master of Science")
+    .replace(/\bIM\b/gi, "Integrated Master")
+    .replace(/\bB\.?Tech\b/gi, "Bachelor of Technology")
+    .replace(/\bM\.?Tech\b/gi, "Master of Technology")
+    .replace(/\bB\.?E\b/gi, "Bachelor of Engineering")
+    .replace(/\bB\.?Arch\b/gi, "Bachelor of Architecture")
+    .replace(/\bB\.?Sc\b/gi, "Bachelor of Science")
+    .replace(/\bM\.?Sc\b/gi, "Master of Science");
+}

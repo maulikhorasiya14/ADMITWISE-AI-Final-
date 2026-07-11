@@ -17,7 +17,20 @@ import { saveGuestProfile } from "@/features/profile/profileStorage";
 import { ProfileSummary } from "@/features/profile/ProfileSummary";
 
 const steps = ["Exam", "Preferences", "Weights", "Review"] as const;
-const branchOptions = ["Computer Science", "Electronics", "Mechanical", "Civil", "Electrical", "AI / Data Science"];
+const branchOptions = [
+  "Computer Science & Allied Branches",
+  "Electronics & Electrical Branches",
+  "Mechanical & Industrial Branches",
+  "Civil & Chemical",
+  "Architecture",
+  "Biotechnology, Biomedical & Life Sciences",
+  "Aerospace & Aviation",
+  "Metallurgical, Materials & Mining",
+  "Mathematics, Computing & Data (Non-CSE)",
+  "Pure Sciences (Physics, Chemistry, Economics, Earth Sciences, etc.)",
+  "B.Tech + MBA / Management Dual Degrees",
+  "Others / Specialized or Interdisciplinary Programs"
+];
 const stateOptions = ["Maharashtra", "Karnataka", "Delhi", "Gujarat", "Rajasthan", "Telangana", "Tamil Nadu"];
 
 export function ProfileWizard() {
@@ -129,8 +142,9 @@ function Select({ children, ...props }: SelectHTMLAttributes<HTMLSelectElement>)
 }
 
 function ExamStep({ form }: { form: FormApi }) {
-  const { register, control, formState } = form;
+  const { register, control, formState, watch } = form;
   const { errors } = formState;
+  const category = watch("category");
   const { fields, append, remove } = useFieldArray({
     control,
     name: "exams"
@@ -141,7 +155,10 @@ function ExamStep({ form }: { form: FormApi }) {
       <h2 className="text-xl font-semibold">Exams and basics</h2>
       
       <div className="space-y-4">
-        {fields.map((field, index) => (
+        {fields.map((field, index) => {
+          const examType = watch(`exams.${index}.exam`);
+          const showCategoryRank = category !== "GENERAL" && (examType === "JEE Main" || examType === "JEE Advanced");
+          return (
           <div key={field.id} className="rounded-md border p-4 relative bg-muted/20">
             {index > 0 && (
               <button 
@@ -172,10 +189,17 @@ function ExamStep({ form }: { form: FormApi }) {
                 <FieldError message={errors.exams?.[index]?.examYear?.message} />
               </div>
               <div>
-                <Label htmlFor={`exams.${index}.rank`}>Rank</Label>
+                <Label htmlFor={`exams.${index}.rank`}>Rank (CRL)</Label>
                 <Input id={`exams.${index}.rank`} type="number" {...register(`exams.${index}.rank` as const, { valueAsNumber: true })} placeholder="Optional" />
                 <FieldError message={errors.exams?.[index]?.rank?.message} />
               </div>
+              {showCategoryRank && (
+                <div>
+                  <Label htmlFor={`exams.${index}.categoryRank`}>Category Rank</Label>
+                  <Input id={`exams.${index}.categoryRank`} type="number" {...register(`exams.${index}.categoryRank` as const, { valueAsNumber: true })} placeholder="Optional" />
+                  <FieldError message={errors.exams?.[index]?.categoryRank?.message} />
+                </div>
+              )}
               <div>
                 <Label htmlFor={`exams.${index}.percentile`}>Percentile</Label>
                 <Input id={`exams.${index}.percentile`} type="number" step="0.001" {...register(`exams.${index}.percentile` as const, { valueAsNumber: true })} placeholder="Optional" />
@@ -189,10 +213,10 @@ function ExamStep({ form }: { form: FormApi }) {
             </div>
             <FieldError message={errors.exams?.[index]?.root?.message} />
           </div>
-        ))}
+        )})}
         <button 
           type="button"
-          onClick={() => append({ exam: "JEE Main", examYear: new Date().getFullYear(), rank: undefined, percentile: undefined, marks: undefined })}
+          onClick={() => append({ exam: "JEE Main", examYear: new Date().getFullYear(), rank: undefined, categoryRank: undefined, percentile: undefined, marks: undefined })}
           className="text-sm font-medium text-primary hover:underline inline-flex items-center gap-1"
         >
           <Plus className="h-4 w-4" aria-hidden="true" /> Add another exam

@@ -27,8 +27,7 @@ type CampusRealityPageProps = {
 
 export default async function CampusRealityPage({ params }: CampusRealityPageProps) {
   const { slug } = await params;
-  
-  // Fetch core college info
+
   const result = await getPublishedCollegeBySlug(slug);
   
   if (!result.success) {
@@ -45,7 +44,6 @@ export default async function CampusRealityPage({ params }: CampusRealityPagePro
 
   const college = result.data.college;
 
-  // Fetch qualitative data in parallel
   const [
     clubs, 
     campusReality, 

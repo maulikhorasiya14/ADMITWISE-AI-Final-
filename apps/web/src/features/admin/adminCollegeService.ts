@@ -17,7 +17,6 @@ import {
 import { createSupabaseServiceRoleClient } from "@/lib/supabase/admin";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 
-// --- Types ---
 
 type ServiceResult<T> =
   | { success: true; data: T }
@@ -113,7 +112,6 @@ export type LocationRow = {
   verification_status: string;
 };
 
-// --- Auth helper (reuses the same pattern as adminReviewService) ---
 
 type AdminUser = { id: string; roles: string[] };
 
@@ -151,7 +149,6 @@ async function requireAdmin(allowedRoles: string[]): Promise<ServiceResult<Admin
   }
 }
 
-// --- List all colleges (admin view, no publication filter) ---
 
 export async function listAllColleges(): Promise<ServiceResult<CollegeListRow[]>> {
   const auth = await requireAdmin(["researcher", "admin"]);
@@ -170,7 +167,6 @@ export async function listAllColleges(): Promise<ServiceResult<CollegeListRow[]>
   return { success: true, data: (data ?? []) as CollegeListRow[] };
 }
 
-// --- Get full college data for editor ---
 
 export async function getCollegeForEditor(collegeId: string): Promise<ServiceResult<CollegeEditorData>> {
   if (!isValidUUID(collegeId)) {
@@ -249,7 +245,6 @@ export async function getCollegeForEditor(collegeId: string): Promise<ServiceRes
   };
 }
 
-// --- College Identity ---
 
 export async function updateCollegeIdentity(
   collegeId: string,
@@ -297,7 +292,6 @@ export async function updateCollegeIdentity(
   return { success: true, data: { id: collegeId } };
 }
 
-// --- Branches ---
 
 export async function upsertBranch(collegeId: string, input: BranchInput): Promise<ServiceResult<{ id: string }>> {
   if (!isValidUUID(collegeId)) return err("VALIDATION_ERROR", "Invalid college ID.", 400);
@@ -325,7 +319,7 @@ export async function upsertBranch(collegeId: string, input: BranchInput): Promi
   };
 
   if (parsed.data.id) {
-    // UPDATE
+
     const { error } = await supabase.from("college_branches").update(payload).eq("id", parsed.data.id).eq("college_id", collegeId);
     if (error) {
       return err("DATA_INCOMPLETE", "Unable to update branch.", 500);
@@ -333,7 +327,6 @@ export async function upsertBranch(collegeId: string, input: BranchInput): Promi
     return { success: true, data: { id: parsed.data.id } };
   }
 
-  // INSERT
   const { data, error } = await supabase.from("college_branches").insert(payload).select("id").single();
   if (error) {
     if (error.code === "23505") {
@@ -362,7 +355,6 @@ export async function deleteBranch(collegeId: string, branchId: string): Promise
   return { success: true, data: { id: branchId } };
 }
 
-// --- Fees ---
 
 export async function upsertFee(collegeId: string, input: FeeInput): Promise<ServiceResult<{ id: string }>> {
   if (!isValidUUID(collegeId)) return err("VALIDATION_ERROR", "Invalid college ID.", 400);
@@ -427,7 +419,6 @@ export async function deleteFee(collegeId: string, feeId: string): Promise<Servi
   return { success: true, data: { id: feeId } };
 }
 
-// --- Placements ---
 
 export async function upsertPlacement(
   collegeId: string,
@@ -498,7 +489,6 @@ export async function deletePlacement(
   return { success: true, data: { id: placementId } };
 }
 
-// --- Location Metrics ---
 
 export async function upsertLocationMetrics(
   collegeId: string,
@@ -539,7 +529,6 @@ export async function upsertLocationMetrics(
   return { success: true, data: { college_id: collegeId } };
 }
 
-// --- Utility ---
 
 function err(code: string, message: string, status: number): ServiceResult<never> {
   return { success: false, code, message, status };

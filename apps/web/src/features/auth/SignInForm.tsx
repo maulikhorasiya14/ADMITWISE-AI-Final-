@@ -73,13 +73,12 @@ export function SignInForm() {
   return (
     <form onSubmit={(event) => void handleSubmit(event)} className="mx-auto max-w-md space-y-4 rounded-lg border bg-card p-5 shadow-sm">
       
-      {/* Demo Credentials Helper */}
+      {}
       <div className="rounded-md border border-amber-200 bg-amber-50 p-3 text-sm text-amber-800 dark:border-amber-800/50 dark:bg-amber-950/30 dark:text-amber-200">
         <p className="font-semibold mb-1">Demo Credentials:</p>
         <ul className="space-y-1 text-xs">
           <li><strong>Admin:</strong> admin@example.com / admin123</li>
           <li><strong>Researcher:</strong> researcher@example.com / researcher123</li>
-          <li><strong>Student:</strong> student@example.com / student123</li>
         </ul>
       </div>
 

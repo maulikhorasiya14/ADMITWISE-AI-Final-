@@ -13,9 +13,7 @@ export const counsellorQuestionSchema = z
 export const counsellorRequestSchema = z.object({
   question: counsellorQuestionSchema,
   profile: studentProfileSchema.optional()
-});
-
-// ── Streaming request (new) ───────────────────────────────────────────────────
+});
 
 export const historyMessageSchema = z.object({
   role: z.enum(["user", "assistant"]),
@@ -27,9 +25,7 @@ export const counsellorStreamRequestSchema = z.object({
   history: z.array(historyMessageSchema).max(20).default([]),
   profile: studentProfileSchema.optional(),
   recommendationCollegeIds: z.array(z.string()).optional()
-});
-
-// ── Evidence ──────────────────────────────────────────────────────────────────
+});
 
 export const evidenceReferenceSchema = z.object({
   sourceId: z.string().min(1),
@@ -52,9 +48,7 @@ export const providerResponseSchema = counsellorResponseSchema.omit({
   evidence: true
 }).extend({
   evidenceSourceIds: z.array(z.string())
-});
-
-// ── Chat message (new) ────────────────────────────────────────────────────────
+});
 
 export const chatMessageStatusSchema = z.enum([
   "grounded",
@@ -73,18 +67,14 @@ export const chatMessageSchema = z.object({
   missingData: z.array(z.string()).default([]),
   status: chatMessageStatusSchema.optional(),
   timestamp: z.number()
-});
-
-// ── Stream chunk types (new) ──────────────────────────────────────────────────
+});
 
 export type StreamChunk =
   | { type: "text"; content: string }
   | { type: "evidence"; data: EvidenceReference[] }
   | { type: "meta"; warnings: string[]; missingData: string[]; status: string }
   | { type: "done" }
-  | { type: "error"; message: string };
-
-// ── Exported types ────────────────────────────────────────────────────────────
+  | { type: "error"; message: string };
 
 export type CounsellorRequest = z.infer<typeof counsellorRequestSchema>;
 export type CounsellorStreamRequest = z.infer<typeof counsellorStreamRequestSchema>;

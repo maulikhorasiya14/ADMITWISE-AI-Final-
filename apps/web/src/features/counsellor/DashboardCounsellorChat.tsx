@@ -8,7 +8,6 @@ import { isQuestionTooLong } from "./counsellorCore";
 import type { SavedStudentProfile } from "@/features/profile/profileSchema";
 import type { RecommendationViewModel } from "@/features/recommendations/recommendationTypes";
 
-// Helper to read SSE stream on client side
 async function* readCounsellorStream(response: Response): AsyncGenerator<StreamChunk> {
   if (!response.body) {
     yield { type: "error", message: "No response body from server." };
@@ -36,7 +35,7 @@ async function* readCounsellorStream(response: Response): AsyncGenerator<StreamC
           const chunk = JSON.parse(jsonStr) as StreamChunk;
           yield chunk;
         } catch {
-          // malformed chunk — ignore
+
         }
       }
     }
@@ -233,7 +232,7 @@ export function DashboardCounsellorChat({ profile, recommendations }: DashboardC
 
   return (
     <div className="flex h-[800px] max-h-[80vh] flex-col overflow-hidden rounded-2xl border border-white/10 bg-card/80 shadow-2xl backdrop-blur-xl dark:bg-zinc-950/80">
-      {/* Header */}
+      {}
       <div className="flex items-center justify-between border-b border-white/10 bg-gradient-to-r from-primary/10 to-transparent px-5 py-4">
         <div className="flex items-center gap-3 font-semibold">
           <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-md">
@@ -255,7 +254,7 @@ export function DashboardCounsellorChat({ profile, recommendations }: DashboardC
         </button>
       </div>
 
-      {/* Context Bar */}
+      {}
       {topRecs.length > 0 && (
         <div className="flex gap-2 overflow-x-auto border-b border-white/5 bg-muted/20 px-4 py-2 scrollbar-hide">
           {topRecs.map((rec, idx) => (
@@ -271,9 +270,9 @@ export function DashboardCounsellorChat({ profile, recommendations }: DashboardC
         </div>
       )}
 
-      {/* Main Area */}
+      {}
       <div className="relative flex flex-1 overflow-hidden">
-        {/* Chat Thread */}
+        {}
         <div className="flex-1 overflow-y-auto p-5 space-y-6">
           {!hasMessages ? (
             <div className="flex h-full flex-col items-center justify-center space-y-5 text-center text-muted-foreground animate-in fade-in duration-700">
@@ -349,7 +348,7 @@ export function DashboardCounsellorChat({ profile, recommendations }: DashboardC
           <div ref={bottomRef} className="h-2" />
         </div>
 
-        {/* Evidence Panel overlay */}
+        {}
         {selectedEvidence && (
           <div className="absolute inset-y-0 right-0 z-10 w-full sm:w-80 border-l border-white/10 bg-card/95 backdrop-blur-xl shadow-2xl animate-in slide-in-from-right-full duration-300 flex flex-col">
             <div className="flex items-center justify-between border-b border-border/50 px-4 py-4 bg-muted/10">
@@ -390,7 +389,7 @@ export function DashboardCounsellorChat({ profile, recommendations }: DashboardC
         )}
       </div>
 
-      {/* Input Area */}
+      {}
       <div className="border-t border-white/5 bg-gradient-to-t from-background to-background/80 p-4 backdrop-blur-md">
         <div className="mb-4 flex gap-2 overflow-x-auto pb-1 scrollbar-hide">
           {suggestedQuestions.map((sq) => (

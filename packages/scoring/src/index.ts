@@ -125,10 +125,36 @@ export function scoreAdmissionChance(input: AdmissionChanceInput): ScoreResult {
   };
 }
 
+const CATEGORY_KEYWORDS: Record<string, string[]> = {
+  "computer science & allied branches": ["computer", "software", "information technology", "ai ", " artificial intelligence", "machine learning", "data science", "cyber", "network", "cloud", "iot", "robotics", "intelligent system"],
+  "electronics & electrical branches": ["electronic", "electrical", "telecommunication", "communication", "instrumentation", "vlsi", "embedded"],
+  "mechanical & industrial branches": ["mechanical", "industrial", "manufacturing", "production", "mechatronics", "automobile", "automotive", "thermal", "design"],
+  "civil & chemical": ["civil", "chemical", "structural", "environmental", "construction", "polymer", "plastic"],
+  "architecture": ["architecture", "planning"],
+  "biotechnology, biomedical & life sciences": ["bio", "genetics", "food", "agriculture", "pharm"],
+  "aerospace & aviation": ["aerospace", "aeronautical", "aviation", "avionics", "space"],
+  "metallurgical, materials & mining": ["metallurg", "material", "mining", "ceramic", "mineral", "petroleum", "geoinformatics", "geology"],
+  "mathematics, computing & data (non-cse)": ["mathematics", "math", "statistics", "computing", "computational", "data engineering", "data analytics"],
+  "pure sciences (physics, chemistry, economics, earth sciences, etc.)": ["physics", "chemistry", "economics", "earth science", "pure science"],
+  "b.tech + mba / management dual degrees": ["management", "mba", "business", "financial"],
+  "others / specialized or interdisciplinary programs": ["textile", "naval", "marine", "ocean", "energy", "fire", "safety", "print", "paper", "leather", "interdisciplinary", "multidisciplinary"]
+};
+
 export function scoreBranchFit(input: BranchFitInput): ScoreResult {
   const normalizedBranch = input.branchName.trim().toLowerCase();
   const preferred = input.preferredBranches.map((branch) => branch.trim().toLowerCase());
-  const isPreferred = preferred.some((branch) => normalizedBranch.includes(branch) || branch.includes(normalizedBranch));
+  
+  let isPreferred = preferred.some((branch) => normalizedBranch.includes(branch) || branch.includes(normalizedBranch));
+
+  if (!isPreferred) {
+    for (const pref of preferred) {
+      const keywords = CATEGORY_KEYWORDS[pref];
+      if (keywords && keywords.some(keyword => normalizedBranch.includes(keyword))) {
+        isPreferred = true;
+        break;
+      }
+    }
+  }
 
   return {
     score: isPreferred ? 100 : 35,

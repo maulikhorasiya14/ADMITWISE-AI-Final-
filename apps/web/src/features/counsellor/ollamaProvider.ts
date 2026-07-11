@@ -20,7 +20,6 @@ import {
 } from "./ollamaMessages";
 import type { AgentContent, CallModelResult } from "./agentLoop";
 
-// ── Config ────────────────────────────────────────────────────────────────────
 
 export function getOllamaConfig() {
   const env = getServerEnv();
@@ -46,7 +45,6 @@ export async function checkOllamaReachable(baseUrl: string): Promise<{ success: 
   }
 }
 
-// ── Ollama HTTP calls ────────────────────────────────────────────────────────
 
 type OllamaChatResponse = {
   message: { role: string; content: string; tool_calls?: OllamaToolCall[] };
@@ -114,12 +112,10 @@ async function* ollamaChatStream(opts: {
   }
 }
 
-// ── Ollama AI Provider ───────────────────────────────────────────────────────
 
 export class OllamaAIProvider implements AIProvider {
   constructor(private readonly config: { baseUrl: string; model: string }) {}
 
-  // ── Non-streaming answer (backward compat) ──────────────────────────────────
 
   async answer(input: AIProviderRequest): Promise<ProviderResponse> {
     const contents = buildMultiTurnContents(input.history, input.question, input.evidenceBlock, input.allowedEvidenceIds);
@@ -131,24 +127,21 @@ export class OllamaAIProvider implements AIProvider {
     const response = await ollamaChat({
       baseUrl: this.config.baseUrl,
       model: this.config.model,
-      messages,
-      format: providerResponseJsonSchema
+      messages
     });
 
     if (!response.message.content) {
       throw new Error("Ollama response was empty.");
     }
 
-    return providerResponseSchema.parse(JSON.parse(response.message.content));
+    return await this.extractStructuredEvidence({ answer: response.message.content, allowedEvidenceIds: input.allowedEvidenceIds });
   }
 
-  // ── Streaming response ──────────────────────────────────────────────────────
 
   async *stream(input: AIProviderRequest): AsyncGenerator<string, ProviderResponse, unknown> {
     return yield* this.synthesizeStream(input);
   }
 
-  // ── Shared streaming synthesis (used by stream() and streamWithAgent()) ─────
 
   private async *synthesizeStream(input: AIProviderRequest): AsyncGenerator<string, ProviderResponse, unknown> {
     const contents = buildMultiTurnContents(input.history, input.question, input.evidenceBlock, input.allowedEvidenceIds);
@@ -166,7 +159,6 @@ export class OllamaAIProvider implements AIProvider {
     return await this.extractStructuredEvidence({ answer: fullText, allowedEvidenceIds: input.allowedEvidenceIds });
   }
 
-  // ── Tool-calling agent streaming ─────────────────────────────────────────────
 
   async *streamWithAgent(input: {
     question: string;
@@ -228,7 +220,6 @@ export class OllamaAIProvider implements AIProvider {
     return { ...finalResponse, allowedEvidence: allRecords.map((record) => record.evidence) };
   }
 
-  // ── Evidence extraction post-stream ────────────────────────────────────────
 
   private async extractStructuredEvidence(opts: {
     answer: string;
@@ -258,7 +249,7 @@ export class OllamaAIProvider implements AIProvider {
 
       return providerResponseSchema.parse(JSON.parse(response.message.content));
     } catch {
-      // Fallback: return the answer with no evidence IDs
+
       return {
         answer: opts.answer,
         status: "grounded",

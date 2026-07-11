@@ -68,13 +68,7 @@ function formatRecordsForModel(records: GroundingRecord[]): string {
 export async function executeSearchCollegeDb(
   args: { query?: unknown; collegeIds?: unknown },
   deps: { fetchRecords?: typeof fetchPublishedGroundingRecords } = {}
-): Promise<ToolExecutionResult> {
-  // Lazily imported (not statically) so this module — which agentTools.test.ts
-  // imports directly under plain `node --test` — never has to load
-  // counsellorService.ts, which pulls in `server-only` and `@/`-aliased
-  // modules that only resolve inside Next.js's webpack build. Every test
-  // supplies deps.fetchRecords, so this dynamic import never actually runs
-  // during `node --test`.
+): Promise<ToolExecutionResult> {
   const fetchRecords = deps.fetchRecords ?? (await import("./counsellorService.ts")).fetchPublishedGroundingRecords;
   const query = typeof args.query === "string" ? args.query : "";
   const collegeIds = Array.isArray(args.collegeIds) ? args.collegeIds.filter((id): id is string => typeof id === "string") : undefined;
@@ -103,15 +97,7 @@ export async function executeSearchInternet(
     return { records: [], responseForModel: { output: "search_internet error: query too short." } };
   }
 
-  try {
-    // Lazily imported (not statically) so this module — which agentTools.test.ts
-    // imports directly under plain `node --test` — never has to load
-    // webSearchService.ts's `searchWeb`, which pulls in `server-only` and
-    // `@/`-aliased modules that only resolve inside Next.js's webpack build.
-    // Every test supplies deps.search, so this dynamic import never actually
-    // runs during `node --test`. webSearchResultsToGroundingRecords is a
-    // static import (from groundingFormat.ts, which has no server-only/@
-    // imports), so it's safe to use directly here.
+  try {
     const search = deps.search ?? (await import("./webSearchService.ts")).searchWeb;
     const results = await search(query, { maxResults: 5 });
     const records = webSearchResultsToGroundingRecords(results);

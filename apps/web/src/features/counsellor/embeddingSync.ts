@@ -66,7 +66,7 @@ export type ExistingEmbeddingRow = {
   updatedAt: string;
 };
 
-/** Pure diff: which source rows need a new or refreshed embedding. */
+
 export function selectRowsNeedingEmbedding(
   sourceRows: EmbeddingSourceRow[],
   existing: ExistingEmbeddingRow[]
@@ -81,14 +81,7 @@ export function selectRowsNeedingEmbedding(
   });
 }
 
-/**
- * Builds a service-role Supabase client without going through `@/lib/supabase/admin`.
- * That module (and the `@/...` path-alias style generally) only resolves inside
- * Next.js's webpack build; this module must also run under plain `node` from the
- * Task 4 backfill script (`scripts/backfill-embeddings.ts`), so it uses relative
- * imports only and builds the client the same way `createSupabaseServiceRoleClient`
- * does (same env vars, same auth options).
- */
+
 function createEmbeddingSyncSupabaseClient() {
   const env = getServerEnv();
   if (!env.SUPABASE_SERVICE_ROLE_KEY) {
