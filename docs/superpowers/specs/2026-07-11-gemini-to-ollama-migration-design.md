@@ -129,12 +129,15 @@ mechanism that prevents a fabricated `[SOURCE:id]` from reaching the user).
 1. **Merge** `worktree-ai-counsellor-agentic-pipeline` into `master`. Check for
    conflicts first (master hasn't diverged much since the branch point).
 2. **Swap** Gemini → Ollama on `master`, per the components above.
-3. **Re-embed**: run `sync-embeddings` (backfill script) against Ollama. This
-   also confirms the `.env.local` root cause (item 4) is resolved now that
-   there's a single working tree sharing the repo-root `.env.local`.
-4. **Push migration**: `supabase db push` to apply
+3. **Push migration**: `supabase db push` to apply
    `20260711120000_agent_hybrid_search.sql` to the linked remote project
    (already authenticated/linked — confirmed via `supabase projects list`).
+   This must happen **before** step 4: `.env.local`'s
+   `NEXT_PUBLIC_SUPABASE_URL` points at the remote project, so the backfill
+   needs `content_embeddings` to already exist there.
+4. **Re-embed**: run `sync-embeddings` (backfill script) against Ollama. This
+   also confirms the `.env.local` root cause (item 4) is resolved now that
+   there's a single working tree sharing the repo-root `.env.local`.
 5. **Verify live**: run `pnpm run eval-counsellor` end-to-end — all 18
    questions, no rate limiting, including the two prompt-injection cases and
    the fabrication-refusal case that were previously never reached live.
