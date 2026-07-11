@@ -6,9 +6,7 @@ import type { PublishedCutoffCandidate } from "../src/features/recommendations/r
 
 const profile: SavedStudentProfile = {
   id: "profile-1",
-  exam: "JEE Main",
-  examYear: 2025,
-  rank: 9000,
+  exams: [{ exam: "JEE Main", examYear: 2025, rank: 9000, percentile: undefined }],
   category: "GENERAL",
   gender: "PREFER_NOT_TO_SAY",
   homeState: "Maharashtra",
@@ -29,6 +27,7 @@ const profile: SavedStudentProfile = {
     culture: 5
   }
 };
+
 
 function candidate(overrides: Partial<PublishedCutoffCandidate> = {}): PublishedCutoffCandidate {
   return {
@@ -72,7 +71,10 @@ test("returns recommendation when rank is inside cutoff", () => {
 });
 
 test("returns lower classification when rank is near cutoff", () => {
-  const results = buildRecommendations({ ...profile, rank: 11000 }, [candidate()]);
+  const results = buildRecommendations(
+    { ...profile, exams: [{ ...profile.exams[0]!, exam: "JEE Main", examYear: 2025, rank: 11000 }] },
+    [candidate()]
+  );
 
   assert.equal(results.length, 1);
   assert.equal(results[0]?.classification, "SMART");

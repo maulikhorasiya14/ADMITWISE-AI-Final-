@@ -6,10 +6,7 @@ import type { CollegeScholarshipRecord, ScholarshipRecord } from "../src/feature
 
 const profile: SavedStudentProfile = {
   id: "profile-1",
-  exam: "JEE Main",
-  examYear: 2025,
-  rank: 9000,
-  percentile: 95,
+  exams: [{ exam: "JEE Main", examYear: 2025, rank: 9000, percentile: 95 }],
   category: "OBC_NCL",
   gender: "FEMALE",
   homeState: "Maharashtra",

@@ -13,8 +13,7 @@ function validProfile(overrides: Partial<SavedStudentProfile> = {}) {
   const parsed = parseStudentProfile({
     ...defaultProfileValues,
     id: "test-profile",
-    rank: 12345,
-    percentile: undefined,
+    exams: [{ exam: "JEE Main", examYear: 2025, rank: 12345, percentile: undefined }],
     homeState: "Maharashtra",
     preferredBranches: ["Computer Science"],
     ...overrides
@@ -24,11 +23,10 @@ function validProfile(overrides: Partial<SavedStudentProfile> = {}) {
   return parsed.data;
 }
 
-test("requires rank or percentile", () => {
+test("requires at least one exam entry", () => {
   const result = parseStudentProfile({
     ...defaultProfileValues,
-    rank: undefined,
-    percentile: undefined,
+    exams: [],
     homeState: "Maharashtra",
     preferredBranches: ["Computer Science"]
   });
@@ -36,11 +34,10 @@ test("requires rank or percentile", () => {
   assert.equal(result.success, false);
 });
 
-test("rejects non-positive rank", () => {
+test("rejects non-positive rank inside an exam entry", () => {
   const result = parseStudentProfile({
     ...defaultProfileValues,
-    rank: 0,
-    percentile: undefined,
+    exams: [{ exam: "JEE Main", examYear: 2025, rank: 0, percentile: undefined }],
     homeState: "Maharashtra",
     preferredBranches: ["Computer Science"]
   });
@@ -48,11 +45,10 @@ test("rejects non-positive rank", () => {
   assert.equal(result.success, false);
 });
 
-test("rejects percentile outside 0 to 100", () => {
+test("rejects percentile outside 0 to 100 inside an exam entry", () => {
   const result = parseStudentProfile({
     ...defaultProfileValues,
-    rank: undefined,
-    percentile: 101,
+    exams: [{ exam: "JEE Main", examYear: 2025, rank: undefined, percentile: 101 }],
     homeState: "Maharashtra",
     preferredBranches: ["Computer Science"]
   });
@@ -103,7 +99,7 @@ test("saves and loads a valid guest profile from localStorage-compatible storage
 
   assert.equal(values.has(profileStorageKey), true);
   assert.equal(loaded?.id, profile.id);
-  assert.equal(loaded?.rank, profile.rank);
+  assert.equal(loaded?.exams[0]?.rank, profile.exams[0]?.rank);
   assert.equal(loaded?.homeState, profile.homeState);
   assert.deepEqual(loaded?.preferredBranches, profile.preferredBranches);
   assert.equal(getPreferenceWeightTotal(profile.weights), 100);

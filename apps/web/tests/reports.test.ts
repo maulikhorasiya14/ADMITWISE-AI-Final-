@@ -16,9 +16,7 @@ import type { ScholarshipMatch } from "../src/features/scholarships/scholarshipT
 
 const profile: SavedStudentProfile = {
   id: "profile-1",
-  exam: "JEE Main",
-  examYear: 2025,
-  rank: 9000,
+  exams: [{ exam: "JEE Main", examYear: 2025, rank: 9000, percentile: undefined }],
   category: "GENERAL",
   gender: "PREFER_NOT_TO_SAY",
   homeState: "Maharashtra",
@@ -40,6 +38,7 @@ const profile: SavedStudentProfile = {
     culture: 5
   }
 };
+
 
 const recommendation: RecommendationViewModel = {
   cutoffId: "cutoff-1",
