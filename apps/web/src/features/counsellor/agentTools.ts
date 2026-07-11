@@ -42,7 +42,7 @@ export const searchInternetDeclaration: OllamaToolDeclaration = {
   function: {
     name: "search_internet",
     description:
-      "Search the public internet. Only call this when search_college_db evidence is missing or insufficient to answer the question.",
+      "Search the public internet for current information. Use this for: (1) external rankings like NIRF, QS, Times Higher Education; (2) recent news or events about colleges; (3) any topic where search_college_db returned no relevant results. Do NOT use for data that is already in the college DB.",
     parameters: {
       type: "object",
       properties: {
@@ -52,6 +52,7 @@ export const searchInternetDeclaration: OllamaToolDeclaration = {
     }
   }
 };
+
 
 export const agentToolDeclarations: OllamaToolDeclaration[] = [searchCollegeDbDeclaration, searchInternetDeclaration];
 
