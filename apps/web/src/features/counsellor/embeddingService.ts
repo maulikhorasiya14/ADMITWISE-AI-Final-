@@ -1,6 +1,4 @@
-import "server-only";
-
-import { getServerEnv } from "@/lib/env";
+import { getServerEnv } from "../../lib/env";
 
 export const embeddingModel = "text-embedding-004";
 export const embeddingDimensions = 768;
