@@ -13,6 +13,7 @@ import {
   type ProviderResponse
 } from "./counsellorTypes.ts";
 import type { SavedStudentProfile } from "../profile/profileSchema.ts";
+import type { AgentContent } from "./agentLoop.ts";
 
 // ── System instruction ────────────────────────────────────────────────────────
 
@@ -199,6 +200,33 @@ export function buildMultiTurnContents(
     parts: [{ text: currentUserText }]
   });
 
+  return contents;
+}
+
+// ── Agent tool-loop content builders ──────────────────────────────────────────
+
+export function buildAgentPrimerText(profileSummary: string | undefined, recommendationRecords: GroundingRecord[]): string {
+  const lines = [profileSummary ? `Student profile summary: ${profileSummary}` : "Student profile summary: not supplied."];
+  if (recommendationRecords.length > 0) {
+    lines.push("The student's deterministic recommendations (already computed, do not recalculate):");
+    recommendationRecords.forEach((record, index) => {
+      lines.push(`${index + 1}. [${record.evidence.sourceId}] ${record.summary}`);
+    });
+  }
+  return lines.join("\n");
+}
+
+export function buildAgentToolContents(
+  history: HistoryMessage[],
+  currentQuestion: string,
+  primerText: string
+): AgentContent[] {
+  const contents: AgentContent[] = [];
+  const recentHistory = history.slice(-10);
+  for (const message of recentHistory) {
+    contents.push({ role: message.role === "user" ? "user" : "model", parts: [{ text: message.content }] });
+  }
+  contents.push({ role: "user", parts: [{ text: [primerText, "Question:", currentQuestion].join("\n\n") }] });
   return contents;
 }
 
