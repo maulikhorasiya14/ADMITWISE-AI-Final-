@@ -240,8 +240,8 @@ export class OllamaAIProvider implements AIProvider {
         `Allowed evidence IDs: ${opts.allowedEvidenceIds.join(", ") || "none"}`,
         `Answer to analyse:\n${opts.answer}`,
         "Rules:",
-        "- status must be 'grounded' if the answer uses published evidence, 'insufficient_data' if it cannot be grounded.",
-        "- evidenceSourceIds must only include IDs from the allowed list above.",
+        "- status must be 'grounded' if the answer uses published evidence, 'insufficient_data' if it cannot be grounded or if data is missing.",
+        "- evidenceSourceIds must only include IDs from the allowed list above. Include the IDs of sources that were used to confirm data is missing (e.g. web search results).",
         "- warnings: array of any caveats.",
         "- missingData: array of what data was unavailable.",
         "- answer: copy the answer text exactly as provided, do not modify it."
