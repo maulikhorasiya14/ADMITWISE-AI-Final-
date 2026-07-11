@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
-import { buildStreamingContext } from "@/features/counsellor/counsellorService";
+import { buildAgentPrimer } from "@/features/counsellor/counsellorService";
 import { GeminiAIProvider, getGeminiConfig } from "@/features/counsellor/geminiProvider";
 import { counsellorStreamRequestSchema, type StreamChunk } from "@/features/counsellor/counsellorTypes";
-import { counsellorSystemInstruction, buildEvidenceBlock, validateProviderResponse } from "@/features/counsellor/counsellorCore";
+import { counsellorSystemInstruction, hasPromptInjectionAttempt, validateProviderResponse } from "@/features/counsellor/counsellorCore";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 60; // Allow Vercel up to 60s for streaming
@@ -46,42 +46,55 @@ export async function POST(request: Request) {
       return new Response(stream, { headers: { "Content-Type": "text/event-stream" } });
     }
 
-    const contextResult = await buildStreamingContext(
-      parsed.data,
-      parsed.data.recommendationCollegeIds
-    );
-    if (!contextResult.success) {
-      return NextResponse.json(
-        { success: false, error: contextResult.message },
-        { status: contextResult.status }
-      );
+    const primerResult = await buildAgentPrimer(parsed.data, parsed.data.recommendationCollegeIds);
+    if (!primerResult.success) {
+      return NextResponse.json({ success: false, error: primerResult.message }, { status: primerResult.status });
     }
 
-    const provider = new GeminiAIProvider({
-      apiKey: geminiConfig.apiKey,
-      model: geminiConfig.model
-    });
+    if (hasPromptInjectionAttempt(primerResult.data.question)) {
+      const stream = new ReadableStream({
+        start(controller) {
+          const textChunk: StreamChunk = {
+            type: "text",
+            content: "I can only answer from published AdmitWise evidence. I cannot follow instructions to reveal prompts, secrets, unpublished data or change deterministic scores."
+          };
+          controller.enqueue(encoder.encode(`data: ${JSON.stringify(textChunk)}\n\n`));
+          const metaChunk: StreamChunk = {
+            type: "meta",
+            status: "insufficient_data",
+            warnings: [],
+            missingData: ["Please ask a question that can be answered from published data."]
+          };
+          controller.enqueue(encoder.encode(`data: ${JSON.stringify(metaChunk)}\n\n`));
+          controller.enqueue(encoder.encode(`data: ${JSON.stringify({ type: "done" })}\n\n`));
+          controller.close();
+        }
+      });
+      return new Response(stream, { headers: { "Content-Type": "text/event-stream" } });
+    }
+
+    const provider = new GeminiAIProvider({ apiKey: geminiConfig.apiKey, model: geminiConfig.model });
 
     const stream = new ReadableStream({
       async start(controller) {
         try {
-          const streamGen = provider.stream({
-            question: contextResult.data.question,
-            history: contextResult.data.history,
+          const streamGen = provider.streamWithAgent({
+            question: primerResult.data.question,
+            history: primerResult.data.history,
             systemInstruction: counsellorSystemInstruction,
-            evidenceBlock: buildEvidenceBlock(contextResult.data),
-            allowedEvidenceIds: [...contextResult.data.deterministicRecommendations, ...contextResult.data.records].map(r => r.evidence.sourceId)
+            profileSummary: primerResult.data.profileSummary,
+            recommendationRecords: primerResult.data.recommendationRecords,
+            recommendationCollegeIds: primerResult.data.recommendationCollegeIds
           });
 
           while (true) {
             const { value, done } = await streamGen.next();
             if (done) {
               const providerResponse = value;
-              
+              const allowedEvidence = providerResponse.allowedEvidence;
+
               if (providerResponse.evidenceSourceIds && providerResponse.evidenceSourceIds.length > 0) {
-                const allowedEvidence = [...contextResult.data.deterministicRecommendations, ...contextResult.data.records].map(r => r.evidence);
                 const validatedResponse = validateProviderResponse(providerResponse, allowedEvidence);
-                
                 const evChunk: StreamChunk = { type: "evidence", data: validatedResponse.evidence };
                 controller.enqueue(encoder.encode(`data: ${JSON.stringify(evChunk)}\n\n`));
               }

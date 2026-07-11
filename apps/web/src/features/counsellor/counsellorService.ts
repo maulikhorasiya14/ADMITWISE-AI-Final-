@@ -4,7 +4,8 @@ import { getRecommendationsForProfile } from "@/features/recommendations/recomme
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import {
   buildGroundingContext,
-  runGroundedProvider
+  runGroundedProvider,
+  summarizeProfile
 } from "./counsellorCore";
 import { GeminiAIProvider, getGeminiConfig } from "./geminiProvider";
 import { detectCollegesInQuestion, type CollegeSummaryForDetection } from "./collegeDetector";
@@ -12,6 +13,7 @@ import { embedText } from "./embeddingService";
 import {
   counsellorRequestSchema,
   counsellorStreamRequestSchema,
+  type AgentPrimer,
   type AIProvider,
   type CounsellorResponse,
   type CounsellorStreamRequest,
@@ -378,53 +380,47 @@ export async function fetchPublishedGroundingRecords(opts: {
   }
 }
 
-// ── Streaming context builder ─────────────────────────────────────────────────
+// ── Agent primer builder ──────────────────────────────────────────────────────
 
 /**
- * Recommendation-aware context builder.
- * When a profile is present, the grounding is pre-targeted to the student's
- * recommended college IDs instead of relying on keyword detection.
+ * Builds the lightweight primer the tool-calling agent starts from — profile
+ * summary, deterministic recommendation evidence and target college IDs.
+ * Unlike the old buildStreamingContext, this does not eagerly fetch
+ * cutoffs/fees/qualitative evidence: the agent's search_college_db tool
+ * fetches that on demand during the tool-calling loop.
  */
-export async function buildStreamingContext(
+export async function buildAgentPrimer(
   input: CounsellorStreamRequest,
   recommendationCollegeIds?: string[]
-) {
-  // Determine target college IDs
+): Promise<{ success: true; data: AgentPrimer } | { success: false; code: string; message: string; status: number }> {
   let collegeIds = recommendationCollegeIds ?? [];
 
-  // If caller didn't supply IDs and we have a profile, derive them from recommendations
   if (collegeIds.length === 0 && input.profile) {
     const recResult = await getRecommendationsForProfile(input.profile);
     if (recResult.success) {
       const seen = new Set<string>();
       for (const r of recResult.data.slice(0, 10)) {
         const id = (r as { collegeId?: string }).collegeId;
-        if (id && !seen.has(id)) { seen.add(id); collegeIds.push(id); }
+        if (id && !seen.has(id)) {
+          seen.add(id);
+          collegeIds.push(id);
+        }
       }
     }
   }
 
-  const recordsResult = await fetchPublishedGroundingRecords({
-    question: input.question,
-    collegeIds: collegeIds.length > 0 ? collegeIds : undefined
-  });
-  if (!recordsResult.success) {
-    return recordsResult;
-  }
+  const recommendationRecords = input.profile ? await buildRecommendationEvidence(input.profile) : [];
 
-  const recommendationRecords = input.profile
-    ? await buildRecommendationEvidence(input.profile)
-    : [];
-
-  const context = buildGroundingContext({
-    question: input.question,
-    history: input.history,
-    profile: input.profile,
-    records: recordsResult.data,
-    deterministicRecommendations: recommendationRecords
-  });
-
-  return { success: true as const, data: context };
+  return {
+    success: true,
+    data: {
+      question: input.question,
+      history: input.history,
+      profileSummary: summarizeProfile(input.profile),
+      recommendationRecords,
+      recommendationCollegeIds: collegeIds
+    }
+  };
 }
 
 // ── Recommendation evidence builder ──────────────────────────────────────────

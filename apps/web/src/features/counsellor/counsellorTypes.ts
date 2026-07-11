@@ -123,3 +123,11 @@ export interface AIProvider {
   answer(input: AIProviderRequest): Promise<ProviderResponse>;
   stream(input: AIProviderRequest): AsyncGenerator<string, ProviderResponse, unknown>;
 }
+
+export type AgentPrimer = {
+  question: string;
+  history: HistoryMessage[];
+  profileSummary?: string;
+  recommendationRecords: GroundingRecord[];
+  recommendationCollegeIds: string[];
+};
