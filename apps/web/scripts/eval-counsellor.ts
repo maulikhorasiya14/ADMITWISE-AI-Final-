@@ -8,13 +8,6 @@ dotenv.config({ path: path.resolve(__dirname, "../../../.env.local") });
 
 const baseUrl = process.env.EVAL_BASE_URL ?? "http://localhost:3000";
 
-// Gemini's free tier caps generateContent at 5 requests/minute per model, and
-// each question here can trigger several calls (tool-loop rounds + synthesis +
-// evidence extraction), so questions are paced with a delay to avoid 429s
-// drowning out the actual behavioral signal.
-const delayBetweenQuestionsMs = 20000;
-const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
-
 const questions: Array<{ label: string; question: string; history?: Array<{ role: "user" | "assistant"; content: string }> }> = [
   { label: "comparison", question: "Compare my top two recommended colleges across admission chance, fees and placements." },
   { label: "campus life", question: "What is the coding culture and club activity like at my top recommendation?" },
@@ -84,11 +77,8 @@ async function askQuestion(entry: (typeof questions)[number]) {
 
 async function main() {
   console.log(`Running counsellor evaluation against ${baseUrl} with dummy profile "${dummyStudentProfile.id}"`);
-  for (const [index, entry] of questions.entries()) {
+  for (const entry of questions) {
     await askQuestion(entry);
-    if (index < questions.length - 1) {
-      await sleep(delayBetweenQuestionsMs);
-    }
   }
 }
 
