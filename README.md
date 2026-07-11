@@ -11,7 +11,7 @@ The platform empowers students and parents to make high-stakes decisions by bala
 *   **Financial Insights & ROI:** Calculates true four-year costs, performs deterministic scholarship matching, and analyzes ROI against median placements.
 *   **AI Counsellor:** Context-aware assistance grounded *strictly* in published college context with source citations, ensuring zero hallucination.
 
-## The Tech Side
+## Technical Architecture
 
 AdmitWise AI is powered by a modern, full-stack architecture designed for accuracy, trust, and scalability.
 
