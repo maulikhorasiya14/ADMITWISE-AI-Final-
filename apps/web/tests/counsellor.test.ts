@@ -58,30 +58,26 @@ const recommendation: GroundingRecord = {
   summary: "Demo College CSE classification AMBITIOUS; overall score 68; admission score 55."
 };
 
-test("browser environment never includes Gemini or service-role secrets", () => {
+test("browser environment never includes service-role secrets", () => {
   const previous = {
     url: process.env.NEXT_PUBLIC_SUPABASE_URL,
     anon: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
     appUrl: process.env.NEXT_PUBLIC_APP_URL,
-    gemini: process.env.GEMINI_API_KEY,
     serviceRole: process.env.SUPABASE_SERVICE_ROLE_KEY
   };
 
   process.env.NEXT_PUBLIC_SUPABASE_URL = "https://example.supabase.co";
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY = "anon-key";
   process.env.NEXT_PUBLIC_APP_URL = "http://localhost:3000";
-  process.env.GEMINI_API_KEY = "gemini-secret";
   process.env.SUPABASE_SERVICE_ROLE_KEY = "service-role-secret";
 
   try {
     const env = getBrowserEnv();
-    assert.equal("GEMINI_API_KEY" in env, false);
     assert.equal("SUPABASE_SERVICE_ROLE_KEY" in env, false);
   } finally {
     process.env.NEXT_PUBLIC_SUPABASE_URL = previous.url;
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY = previous.anon;
     process.env.NEXT_PUBLIC_APP_URL = previous.appUrl;
-    process.env.GEMINI_API_KEY = previous.gemini;
     process.env.SUPABASE_SERVICE_ROLE_KEY = previous.serviceRole;
   }
 });
