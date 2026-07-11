@@ -1,26 +1,27 @@
 import { getServerEnv } from "../../lib/env.ts";
 
-export const embeddingModel = "text-embedding-004";
 export const embeddingDimensions = 768;
 
-export async function embedText(text: string): Promise<number[]> {
+type OllamaEmbedResponse = { embeddings?: number[][] };
+
+export async function embedText(text: string, deps: { fetchImpl?: typeof fetch } = {}): Promise<number[]> {
   const env = getServerEnv();
-  if (!env.GEMINI_API_KEY) {
-    throw new Error("GEMINI_API_KEY is required to generate embeddings.");
-  }
+  const fetchImpl = deps.fetchImpl ?? fetch;
 
-  const { GoogleGenAI } = await import("@google/genai");
-  const ai = new GoogleGenAI({ apiKey: env.GEMINI_API_KEY });
-
-  const response = await ai.models.embedContent({
-    model: embeddingModel,
-    contents: [text],
-    config: { outputDimensionality: embeddingDimensions }
+  const response = await fetchImpl(`${env.OLLAMA_BASE_URL}/api/embed`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ model: env.OLLAMA_EMBED_MODEL, input: text })
   });
 
-  const values = response.embeddings?.[0]?.values;
+  if (!response.ok) {
+    throw new Error(`Ollama embedding request failed: HTTP ${response.status}`);
+  }
+
+  const data = (await response.json()) as OllamaEmbedResponse;
+  const values = data.embeddings?.[0];
   if (!values || values.length === 0) {
-    throw new Error("Gemini embedding response did not include vector values.");
+    throw new Error("Ollama embedding response did not include vector values.");
   }
 
   return values;
