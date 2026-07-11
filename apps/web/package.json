@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "type-check": "tsc --noEmit",
     "test": "node --test tests/*.test.ts",
-    "sync-embeddings": "node scripts/backfill-embeddings.ts"
+    "sync-embeddings": "node scripts/backfill-embeddings.ts",
+    "eval-counsellor": "node scripts/eval-counsellor.ts"
   },
   "dependencies": {
     "@admitwise/scoring": "workspace:*",
