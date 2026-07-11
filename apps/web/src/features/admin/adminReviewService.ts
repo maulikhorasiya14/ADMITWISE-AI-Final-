@@ -25,6 +25,7 @@ import {
 } from "@/features/admin/adminReviewCore";
 import { createSupabaseServiceRoleClient } from "@/lib/supabase/admin";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
+import { syncContentEmbeddings } from "@/features/counsellor/embeddingSync";
 
 type ServiceResult<T> =
   | { success: true; data: T }
@@ -355,6 +356,12 @@ export async function publishApprovedRecord(recordId: string): Promise<ServiceRe
   const publicWrite = await writePublicRecord(loaded.data.record, validation.data.targetTable);
   if (!publicWrite.success) {
     return publicWrite;
+  }
+
+  if (validation.data.targetTable === "scholarships") {
+    void syncContentEmbeddings().catch((err) => {
+      console.error("Post-publish embedding sync failed:", err);
+    });
   }
 
   const now = new Date().toISOString();

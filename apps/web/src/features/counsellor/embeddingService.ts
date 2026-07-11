@@ -1,4 +1,4 @@
-import { getServerEnv } from "../../lib/env";
+import { getServerEnv } from "../../lib/env.ts";
 
 export const embeddingModel = "text-embedding-004";
 export const embeddingDimensions = 768;
