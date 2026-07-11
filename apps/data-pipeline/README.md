@@ -64,3 +64,5 @@ python scripts/import_josaa_cutoffs.py --csv data/merged_jee_cutoff_2018_2025.cs
 ```
 
 > **Note:** The pipeline automatically handles connecting to your local or remote Supabase instance by reading the `.env.local` file from the `apps/web/` directory.
+
+> **Note:** `bulk_import.py` publishes qualitative rows (clubs, facilities, campus reality, location) directly and bypasses the TypeScript admin-review workflow, so it does **not** trigger the AI counsellor's automatic embedding sync. After running it, manually run `pnpm --filter web run sync-embeddings` so the counsellor's semantic search picks up the new or changed content.

@@ -4,15 +4,16 @@ import { getRecommendationsForProfile } from "@/features/recommendations/recomme
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import {
   buildGroundingContext,
-  runGroundedProvider
+  runGroundedProvider,
+  summarizeProfile
 } from "./counsellorCore";
 import { GeminiAIProvider, getGeminiConfig } from "./geminiProvider";
 import { detectCollegesInQuestion, type CollegeSummaryForDetection } from "./collegeDetector";
-import { searchWeb, webSearchResultsToGroundingRecords } from "./webSearchService";
-import { detectSearchIntent } from "./searchIntentDetector";
+import { embedText } from "./embeddingService";
 import {
   counsellorRequestSchema,
   counsellorStreamRequestSchema,
+  type AgentPrimer,
   type AIProvider,
   type CounsellorResponse,
   type CounsellorStreamRequest,
@@ -115,62 +116,6 @@ type PlacementRow = {
   sources: SourceRow | SourceRow[] | null;
 };
 
-type ScholarshipRow = {
-  id: string;
-  name: string;
-  provider: string;
-  description: string | null;
-  benefit_description: string;
-  benefit_amount: number | null;
-  application_deadline: string | null;
-  official_url: string | null;
-  source_id: string;
-  verification_status: string;
-  is_published: boolean;
-  sources: SourceRow | SourceRow[] | null;
-};
-
-type CampusRealityRow = {
-  college_id: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  data: Record<string, any>;
-  verification_status: string;
-  colleges: CollegeRow | CollegeRow[] | null;
-};
-
-type CollegeClubRow = {
-  id: string;
-  college_id: string;
-  club_name: string;
-  club_category: string | null;
-  activity_status: string | null;
-  description: string | null;
-  major_achievements: string | null;
-  verification_status: string;
-  colleges: CollegeRow | CollegeRow[] | null;
-};
-
-type CollegeFacilitiesRow = {
-  college_id: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  data: Record<string, any>;
-  verification_status: string;
-  colleges: CollegeRow | CollegeRow[] | null;
-};
-
-type CollegeLocationRow = {
-  college_id: string;
-  campus_name: string | null;
-  locality: string | null;
-  nearest_metro: string | null;
-  railway_travel_time_minutes: number | null;
-  airport_travel_time_minutes: number | null;
-  technology_ecosystem: string | null;
-  cost_of_living_description: string | null;
-  verification_status: string;
-  colleges: CollegeRow | CollegeRow[] | null;
-};
-
 // ── Non-streaming answer (kept for backward compatibility) ────────────────────
 
 export async function answerCounsellorQuestion(
@@ -230,6 +175,55 @@ export async function answerCounsellorQuestion(
 
 // ── Streaming grounding records fetch ─────────────────────────────────────────
 
+async function fetchHybridRecords(
+  supabase: Awaited<ReturnType<typeof createSupabaseServerClient>>,
+  question: string,
+  collegeIds: string[]
+): Promise<GroundingRecord[]> {
+  if (question.trim().length < 3) {
+    return [];
+  }
+
+  let queryEmbedding: number[];
+  try {
+    queryEmbedding = await embedText(question);
+  } catch (err) {
+    console.error("Embedding query failed, skipping hybrid search:", err);
+    return [];
+  }
+
+  const { data, error } = await supabase.rpc("match_documents", {
+    query_embedding: queryEmbedding,
+    query_text: question,
+    match_college_ids: collegeIds.length > 0 ? collegeIds : null,
+    match_count: 12
+  });
+
+  if (error) {
+    console.error("match_documents RPC failed:", error);
+    return [];
+  }
+
+  return (data ?? []).map(
+    (row: {
+      id: string;
+      college_id: string | null;
+      content_type: string;
+      source_table: string;
+      source_row_id: string;
+      text_content: string;
+    }): GroundingRecord => ({
+      publicationStatus: "published",
+      evidence: {
+        sourceId: `${row.source_table}:${row.source_row_id}`,
+        sourceLabel: `${row.content_type} (${row.source_table})`,
+        sourceType: "qualitative_data"
+      },
+      summary: row.text_content
+    })
+  );
+}
+
 export async function fetchPublishedGroundingRecords(opts: {
   question: string;
   collegeIds?: string[];
@@ -269,7 +263,7 @@ export async function fetchPublishedGroundingRecords(opts: {
     const hasTargets = targetCollegeIds.length > 0;
 
     // Parallel data fetch — targeted or broad
-    const [branches, cutoffs, feesResult, placementsResult, scholarships, campusRealityResult, clubsResult, facilitiesResult, locationResult] = await Promise.all([
+    const [branches, cutoffs, feesResult, placementsResult] = await Promise.all([
       // Branches
       (hasTargets
         ? supabase
@@ -352,83 +346,6 @@ export async function fetchPublishedGroundingRecords(opts: {
             .eq("colleges.is_published", true)
             .order("placement_year", { ascending: false })
             .limit(20)
-      ),
-
-      // Scholarships — always broad (not college-specific)
-      supabase
-        .from("scholarships")
-        .select("id, name, provider, description, benefit_description, benefit_amount, application_deadline, official_url, source_id, verification_status, is_published, sources(id, title, source_type, source_url, academic_year, confidence_level)")
-        .eq("verification_status", "published")
-        .eq("is_published", true)
-        .order("name", { ascending: true })
-        .limit(20),
-
-      // Campus Reality
-      (hasTargets
-        ? supabase
-            .from("campus_reality")
-            .select("college_id, data, verification_status, colleges!inner(id, slug, name, short_name, ownership, city, state, is_published)")
-            .eq("verification_status", "published")
-            .eq("colleges.is_published", true)
-            .in("college_id", targetCollegeIds)
-            .limit(10)
-        : supabase
-            .from("campus_reality")
-            .select("college_id, data, verification_status, colleges!inner(id, slug, name, short_name, ownership, city, state, is_published)")
-            .eq("verification_status", "published")
-            .eq("colleges.is_published", true)
-            .limit(10)
-      ),
-
-      // College Clubs
-      (hasTargets
-        ? supabase
-            .from("college_clubs")
-            .select("id, college_id, club_name, club_category, activity_status, description, major_achievements, verification_status, colleges!inner(id, slug, name, short_name, ownership, city, state, is_published)")
-            .eq("verification_status", "published")
-            .eq("colleges.is_published", true)
-            .in("college_id", targetCollegeIds)
-            .limit(50)
-        : supabase
-            .from("college_clubs")
-            .select("id, college_id, club_name, club_category, activity_status, description, major_achievements, verification_status, colleges!inner(id, slug, name, short_name, ownership, city, state, is_published)")
-            .eq("verification_status", "published")
-            .eq("colleges.is_published", true)
-            .limit(30)
-      ),
-
-      // College Facilities
-      (hasTargets
-        ? supabase
-            .from("college_facilities")
-            .select("college_id, data, verification_status, colleges!inner(id, slug, name, short_name, ownership, city, state, is_published)")
-            .eq("verification_status", "published")
-            .eq("colleges.is_published", true)
-            .in("college_id", targetCollegeIds)
-            .limit(10)
-        : supabase
-            .from("college_facilities")
-            .select("college_id, data, verification_status, colleges!inner(id, slug, name, short_name, ownership, city, state, is_published)")
-            .eq("verification_status", "published")
-            .eq("colleges.is_published", true)
-            .limit(10)
-      ),
-
-      // College Location Details
-      (hasTargets
-        ? supabase
-            .from("college_location_details")
-            .select("college_id, campus_name, locality, nearest_metro, railway_travel_time_minutes, airport_travel_time_minutes, technology_ecosystem, cost_of_living_description, verification_status, colleges!inner(id, slug, name, short_name, ownership, city, state, is_published)")
-            .eq("verification_status", "published")
-            .eq("colleges.is_published", true)
-            .in("college_id", targetCollegeIds)
-            .limit(10)
-        : supabase
-            .from("college_location_details")
-            .select("college_id, campus_name, locality, nearest_metro, railway_travel_time_minutes, airport_travel_time_minutes, technology_ecosystem, cost_of_living_description, verification_status, colleges!inner(id, slug, name, short_name, ownership, city, state, is_published)")
-            .eq("verification_status", "published")
-            .eq("colleges.is_published", true)
-            .limit(10)
       )
     ]);
 
@@ -437,15 +354,12 @@ export async function fetchPublishedGroundingRecords(opts: {
     if (cutoffs.error) console.error("Cutoffs fetch error:", cutoffs.error);
     if (feesResult.error) console.error("Fees fetch error:", feesResult.error);
     if (placementsResult.error) console.error("Placements fetch error:", placementsResult.error);
-    if (scholarships.error) console.error("Scholarships fetch error:", scholarships.error);
 
     // Fee/placement errors are non-fatal — table might use different name
     const feeData = feesResult.error ? [] : ((feesResult.data ?? []) as unknown as FeeRow[]);
     const placementData = placementsResult.error ? [] : ((placementsResult.data ?? []) as unknown as PlacementRow[]);
-    const campusRealityData = campusRealityResult.error ? [] : ((campusRealityResult.data ?? []) as unknown as CampusRealityRow[]);
-    const clubsData = clubsResult.error ? [] : ((clubsResult.data ?? []) as unknown as CollegeClubRow[]);
-    const facilitiesData = facilitiesResult.error ? [] : ((facilitiesResult.data ?? []) as unknown as CollegeFacilitiesRow[]);
-    const locationData = locationResult.error ? [] : ((locationResult.data ?? []) as unknown as CollegeLocationRow[]);
+
+    const hybridRecords = await fetchHybridRecords(supabase, opts.question, targetCollegeIds);
 
     const dbRecords: GroundingRecord[] = [
       ...collegeRowsToEvidence(allColleges),
@@ -453,24 +367,12 @@ export async function fetchPublishedGroundingRecords(opts: {
       ...cutoffRowsToEvidence(cutoffs.error ? [] : ((cutoffs.data ?? []) as unknown as CutoffRow[])),
       ...feeRowsToEvidence(feeData),
       ...placementRowsToEvidence(placementData),
-      ...scholarshipRowsToEvidence(scholarships.error ? [] : ((scholarships.data ?? []) as unknown as ScholarshipRow[])),
-      ...campusRealityRowsToEvidence(campusRealityData),
-      ...clubRowsToEvidence(clubsData),
-      ...facilitiesRowsToEvidence(facilitiesData),
-      ...locationRowsToEvidence(locationData)
+      ...hybridRecords
     ];
-
-    // Web search — run only when warranted, non-blocking
-    const { needsSearch, searchQuery } = detectSearchIntent(opts.question, dbRecords.length);
-    const webRecords: GroundingRecord[] = [];
-    if (needsSearch && opts.question.length >= 8) {
-      const webResults = await searchWeb(searchQuery, { maxResults: 5 });
-      webRecords.push(...webSearchResultsToGroundingRecords(webResults));
-    }
 
     return {
       success: true,
-      data: [...dbRecords, ...webRecords]
+      data: dbRecords
     };
 
   } catch {
@@ -478,53 +380,47 @@ export async function fetchPublishedGroundingRecords(opts: {
   }
 }
 
-// ── Streaming context builder ─────────────────────────────────────────────────
+// ── Agent primer builder ──────────────────────────────────────────────────────
 
 /**
- * Recommendation-aware context builder.
- * When a profile is present, the grounding is pre-targeted to the student's
- * recommended college IDs instead of relying on keyword detection.
+ * Builds the lightweight primer the tool-calling agent starts from — profile
+ * summary, deterministic recommendation evidence and target college IDs.
+ * Unlike the old buildStreamingContext, this does not eagerly fetch
+ * cutoffs/fees/qualitative evidence: the agent's search_college_db tool
+ * fetches that on demand during the tool-calling loop.
  */
-export async function buildStreamingContext(
+export async function buildAgentPrimer(
   input: CounsellorStreamRequest,
   recommendationCollegeIds?: string[]
-) {
-  // Determine target college IDs
+): Promise<{ success: true; data: AgentPrimer } | { success: false; code: string; message: string; status: number }> {
   let collegeIds = recommendationCollegeIds ?? [];
 
-  // If caller didn't supply IDs and we have a profile, derive them from recommendations
   if (collegeIds.length === 0 && input.profile) {
     const recResult = await getRecommendationsForProfile(input.profile);
     if (recResult.success) {
       const seen = new Set<string>();
       for (const r of recResult.data.slice(0, 10)) {
         const id = (r as { collegeId?: string }).collegeId;
-        if (id && !seen.has(id)) { seen.add(id); collegeIds.push(id); }
+        if (id && !seen.has(id)) {
+          seen.add(id);
+          collegeIds.push(id);
+        }
       }
     }
   }
 
-  const recordsResult = await fetchPublishedGroundingRecords({
-    question: input.question,
-    collegeIds: collegeIds.length > 0 ? collegeIds : undefined
-  });
-  if (!recordsResult.success) {
-    return recordsResult;
-  }
+  const recommendationRecords = input.profile ? await buildRecommendationEvidence(input.profile) : [];
 
-  const recommendationRecords = input.profile
-    ? await buildRecommendationEvidence(input.profile)
-    : [];
-
-  const context = buildGroundingContext({
-    question: input.question,
-    history: input.history,
-    profile: input.profile,
-    records: recordsResult.data,
-    deterministicRecommendations: recommendationRecords
-  });
-
-  return { success: true as const, data: context };
+  return {
+    success: true,
+    data: {
+      question: input.question,
+      history: input.history,
+      profileSummary: summarizeProfile(input.profile),
+      recommendationRecords,
+      recommendationCollegeIds: collegeIds
+    }
+  };
 }
 
 // ── Recommendation evidence builder ──────────────────────────────────────────
@@ -624,101 +520,6 @@ function placementRowsToEvidence(rows: PlacementRow[]) {
       summary: `${college.name}${branch ? ` — ${branch.name}` : ""} placements ${row.placement_year}: placement rate ${row.placement_percentage ?? "not available"}%, median package ${row.median_package ?? "not available"} LPA, average package ${row.average_package ?? "not available"} LPA, highest package ${row.highest_package ?? "not available"} LPA.`
     }];
   });
-}
-
-function scholarshipRowsToEvidence(rows: ScholarshipRow[]) {
-  return rows.map((row): GroundingRecord => {
-    const source = first(row.sources);
-    return {
-      publicationStatus: row.verification_status === "published" && row.is_published ? "published" : "unpublished",
-      evidence: makeEvidence(source, row.source_id, `${row.name} scholarship source`, "scholarships", undefined, row.official_url ?? undefined),
-      summary: `${row.name} by ${row.provider}: ${row.description ?? row.benefit_description}; benefit ${row.benefit_amount ? `INR ${row.benefit_amount}` : row.benefit_description}; application deadline ${row.application_deadline ?? "not available"}.`
-    };
-  });
-}
-
-function campusRealityRowsToEvidence(rows: CampusRealityRow[]) {
-  return rows.map((row): GroundingRecord | null => {
-    const college = first(row.colleges);
-    if (!college) return null;
-    
-    let crStr = "Not available";
-    if (row.data) {
-      crStr = Object.entries(row.data)
-        .filter(([k, v]: [string, any]) => v && v.summary)
-        .map(([k, v]: [string, any]) => `${k.replace(/_/g, " ")}: ${v.summary}`)
-        .join("; ");
-    }
-    
-    return {
-      publicationStatus: row.verification_status === "published" && college.is_published ? "published" : "unpublished",
-      evidence: {
-        sourceId: `campus_reality:${row.college_id}`,
-        sourceLabel: `Campus Reality: ${college.name}`,
-        sourceType: "qualitative_data"
-      },
-      summary: `${college.name} campus reality: ${crStr}`
-    };
-  }).filter((r): r is GroundingRecord => r !== null);
-}
-
-function clubRowsToEvidence(rows: CollegeClubRow[]) {
-  return rows.map((row): GroundingRecord | null => {
-    const college = first(row.colleges);
-    if (!college) return null;
-    
-    return {
-      publicationStatus: row.verification_status === "published" && college.is_published ? "published" : "unpublished",
-      evidence: {
-        sourceId: `club:${row.id}`,
-        sourceLabel: `Club: ${row.club_name} at ${college.name}`,
-        sourceType: "qualitative_data"
-      },
-      summary: `${college.name} club: ${row.club_name} (${row.club_category ?? "General"}). Status: ${row.activity_status ?? "Unknown"}. Description: ${row.description ?? "N/A"}. Achievements: ${row.major_achievements ?? "N/A"}.`
-    };
-  }).filter((r): r is GroundingRecord => r !== null);
-}
-
-function facilitiesRowsToEvidence(rows: CollegeFacilitiesRow[]) {
-  return rows.map((row): GroundingRecord | null => {
-    const college = first(row.colleges);
-    if (!college) return null;
-    
-    let facStr = "Not available";
-    if (row.data) {
-      facStr = Object.entries(row.data)
-        .filter(([k, v]: [string, any]) => v && v.summary)
-        .map(([k, v]: [string, any]) => `${k.replace(/_/g, " ")}: ${v.summary}`)
-        .join("; ");
-    }
-    
-    return {
-      publicationStatus: row.verification_status === "published" && college.is_published ? "published" : "unpublished",
-      evidence: {
-        sourceId: `facilities:${row.college_id}`,
-        sourceLabel: `Facilities: ${college.name}`,
-        sourceType: "qualitative_data"
-      },
-      summary: `${college.name} facilities: ${facStr}`
-    };
-  }).filter((r): r is GroundingRecord => r !== null);
-}
-
-function locationRowsToEvidence(rows: CollegeLocationRow[]) {
-  return rows.map((row): GroundingRecord | null => {
-    const college = first(row.colleges);
-    if (!college) return null;
-    
-    return {
-      publicationStatus: row.verification_status === "published" && college.is_published ? "published" : "unpublished",
-      evidence: {
-        sourceId: `location:${row.college_id}`,
-        sourceLabel: `Location: ${college.name}`,
-        sourceType: "qualitative_data"
-      },
-      summary: `${college.name} location: Campus ${row.campus_name ?? "Main"} in ${row.locality ?? "N/A"}. Nearest metro: ${row.nearest_metro ?? "N/A"}. Railway travel time: ${row.railway_travel_time_minutes ?? "N/A"} mins. Airport travel time: ${row.airport_travel_time_minutes ?? "N/A"} mins. Tech ecosystem: ${row.technology_ecosystem ?? "N/A"}. Cost of living: ${row.cost_of_living_description ?? "N/A"}.`
-    };
-  }).filter((r): r is GroundingRecord => r !== null);
 }
 
 // ── Utility helpers ───────────────────────────────────────────────────────────

@@ -45,7 +45,7 @@ For each task:
 - Never expose staging or rejected data in student-facing queries.
 - Every factual record must carry source, academic year and verification metadata.
 - Student-facing database queries must only use records with `status = 'published'`.
-- Do not add a vector database during the MVP unless explicitly instructed.
+- A vector database (pgvector, via the `content_embeddings` table and `match_documents` RPC — see ADR-009) is used for qualitative/narrative counsellor content only. Structured numeric facts (cutoffs, fees, placements) must stay exact SQL — never route them through vector search.
 - Do not add new frameworks when the existing stack can solve the problem.
 - Do not create a separate Node/Express backend.
 - Python is reserved for scraping, parsing and extraction workflows.

@@ -70,6 +70,23 @@ Record important decisions here so future coding agents do not reverse them acci
 
 ---
 
+## ADR-009 — Vector search for the AI counsellor agent
+
+**Decision:** Add a `pgvector`-backed `content_embeddings` table and hybrid (cosine similarity + full-text) `match_documents` RPC in Supabase, used exclusively by the AI counsellor's `search_college_db` tool for qualitative/narrative content (campus reality, clubs, facilities, location, scholarships).
+
+**Supersedes:** ADR-006 ("No vector database in MVP").
+
+**Reason:** The counsellor became a genuine Gemini function-calling agent instead of a fixed keyword-matched pipeline. Structured numeric facts (cutoffs, fees, placements) remain exact SQL, unaffected by this decision — only narrative/qualitative text benefits from semantic ranking, and the plain keyword-overlap ranking previously used for that content was weak for conceptual questions ("what's the coding culture like").
+
+**Alternatives considered:** Self-hosted embedding model (BAAI/bge-large-en-v1.5) via a Python inference service — rejected because it would violate the "Python is reserved for scraping/extraction, no separate backend" rule and add infrastructure a 2-person hackathon team doesn't need; Gemini's `text-embedding-004` reuses the existing `GEMINI_API_KEY` with zero new infrastructure.
+
+**Consequences:** A new migration and an embedding-sync step (manual after `bulk_import.py` runs, automatic after the TS admin-review scholarship publish path) must stay in sync with published qualitative data, or the agent's semantic search will miss recently-published content until the next sync.
+
+**Date:** 2026-07-11
+**Owner:** AI counsellor redesign
+
+---
+
 ## How to add a decision
 
 Use:

@@ -13,6 +13,7 @@ import {
   type ProviderResponse
 } from "./counsellorTypes.ts";
 import type { SavedStudentProfile } from "../profile/profileSchema.ts";
+import type { AgentContent } from "./agentLoop.ts";
 
 // ── System instruction ────────────────────────────────────────────────────────
 
@@ -32,9 +33,17 @@ export const counsellorSystemInstruction = [
   "- If evidence is inadequate or missing, say so clearly and list what is missing.",
   "- When qualitative data (campus life, facilities, clubs) is requested, summarize the extracted student themes honestly, including both positives and concerns.",
   "",
+  "TOOL USAGE RULES:",
+  "- You have two tools: search_college_db and search_internet.",
+  "- Always call search_college_db first for every factual question.",
+  "- Only call search_internet when search_college_db evidence is missing or insufficient to answer the question.",
+  "- You may call search_college_db more than once with different queries for multi-part questions.",
+  "- Never tell the user which tool supplied an answer — just cite [SOURCE:id].",
+  "",
   "RECOMMENDATION CONTEXT:",
   "- If the student has recommended colleges listed in the evidence, prioritize data about those specific colleges.",
   "- Safe colleges are likely for admission, Smart colleges have a good chance, Ambitious colleges are stretch goals.",
+  "- Deterministic recommendation scores and classifications are supplied as evidence; explain them without changing their scores or classifications.",
   "",
   "COMPARISON FORMAT (when user asks to compare two or more colleges):",
   "- Structure the answer by dimension: Admission Chance → Fees → Placements → Scholarships → Location & Campus Reality.",
@@ -199,6 +208,33 @@ export function buildMultiTurnContents(
     parts: [{ text: currentUserText }]
   });
 
+  return contents;
+}
+
+// ── Agent tool-loop content builders ──────────────────────────────────────────
+
+export function buildAgentPrimerText(profileSummary: string | undefined, recommendationRecords: GroundingRecord[]): string {
+  const lines = [profileSummary ? `Student profile summary: ${profileSummary}` : "Student profile summary: not supplied."];
+  if (recommendationRecords.length > 0) {
+    lines.push("The student's deterministic recommendations (already computed, do not recalculate):");
+    recommendationRecords.forEach((record, index) => {
+      lines.push(`${index + 1}. [${record.evidence.sourceId}] ${record.summary}`);
+    });
+  }
+  return lines.join("\n");
+}
+
+export function buildAgentToolContents(
+  history: HistoryMessage[],
+  currentQuestion: string,
+  primerText: string
+): AgentContent[] {
+  const contents: AgentContent[] = [];
+  const recentHistory = history.slice(-10);
+  for (const message of recentHistory) {
+    contents.push({ role: message.role === "user" ? "user" : "model", parts: [{ text: message.content }] });
+  }
+  contents.push({ role: "user", parts: [{ text: [primerText, "Question:", currentQuestion].join("\n\n") }] });
   return contents;
 }
 

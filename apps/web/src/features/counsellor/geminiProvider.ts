@@ -6,10 +6,13 @@ import {
   providerResponseSchema,
   type AIProvider,
   type AIProviderRequest,
+  type EvidenceReference,
+  type GroundingRecord,
   type HistoryMessage,
   type ProviderResponse
 } from "./counsellorTypes";
 import { buildMultiTurnContents } from "./counsellorCore";
+import type { AgentContent } from "./agentLoop";
 
 // ── Config helper ─────────────────────────────────────────────────────────────
 
@@ -76,8 +79,7 @@ export class GeminiAIProvider implements AIProvider {
       config: {
         systemInstruction: input.systemInstruction,
         temperature: 0.2,
-        responseMimeType: "application/json",
-        tools: [{ googleSearch: {} }]
+        responseMimeType: "application/json"
       },
       contents
     }) as GeminiGenerateResponse;
@@ -98,24 +100,20 @@ export class GeminiAIProvider implements AIProvider {
   // ── Streaming response ──────────────────────────────────────────────────────
 
   async *stream(input: AIProviderRequest): AsyncGenerator<string, ProviderResponse, unknown> {
+    return yield* this.synthesizeStream(input);
+  }
+
+  // ── Shared streaming synthesis (used by stream() and streamWithAgent()) ─────
+
+  private async *synthesizeStream(input: AIProviderRequest): AsyncGenerator<string, ProviderResponse, unknown> {
     const { GoogleGenAI } = await import("@google/genai");
     const ai = new GoogleGenAI({ apiKey: this.config.apiKey });
 
-    const contents = buildMultiTurnContents(
-      input.history,
-      input.question,
-      input.evidenceBlock,
-      input.allowedEvidenceIds
-    );
+    const contents = buildMultiTurnContents(input.history, input.question, input.evidenceBlock, input.allowedEvidenceIds);
 
-    // Stream plain text first for real-time display
     const streamResult = await ai.models.generateContentStream({
       model: this.config.model,
-      config: {
-        systemInstruction: input.systemInstruction,
-        temperature: 0.2,
-        tools: [{ googleSearch: {} }]
-      },
+      config: { systemInstruction: input.systemInstruction, temperature: 0.2 },
       contents
     });
 
@@ -128,15 +126,79 @@ export class GeminiAIProvider implements AIProvider {
       }
     }
 
-    // After streaming is done, do a second focused call to extract structured evidence
-    // This avoids mid-stream JSON parsing issues while keeping streaming UX
-    const structuredResponse = await this.extractStructuredEvidence({
-      answer: fullText,
-      input,
-      ai
+    return await this.extractStructuredEvidence({ answer: fullText, input, ai });
+  }
+
+  // ── Tool-calling agent streaming ─────────────────────────────────────────────
+
+  async *streamWithAgent(input: {
+    question: string;
+    history: HistoryMessage[];
+    systemInstruction: string;
+    profileSummary?: string;
+    recommendationRecords: GroundingRecord[];
+    recommendationCollegeIds: string[];
+  }): AsyncGenerator<string, ProviderResponse & { allowedEvidence: EvidenceReference[] }, unknown> {
+    const { GoogleGenAI } = await import("@google/genai");
+    const { agentToolDeclarations, executeSearchCollegeDb, executeSearchInternet } = await import("./agentTools");
+    const { runAgentToolLoop } = await import("./agentLoop");
+    const { buildAgentPrimerText, buildAgentToolContents, buildEvidenceBlock } = await import("./counsellorCore");
+
+    const ai = new GoogleGenAI({ apiKey: this.config.apiKey });
+    const primerText = buildAgentPrimerText(input.profileSummary, input.recommendationRecords);
+    const initialContents = buildAgentToolContents(input.history, input.question, primerText);
+
+    const callModel = async (contents: AgentContent[]): Promise<{ functionCalls: Array<{ name: string; args: Record<string, unknown> }> }> => {
+      const response = (await ai.models.generateContent({
+        model: this.config.model,
+        config: {
+          systemInstruction: input.systemInstruction,
+          temperature: 0.2,
+          tools: [{ functionDeclarations: agentToolDeclarations }],
+          automaticFunctionCalling: { disable: true }
+        },
+        contents: contents as unknown as import("@google/genai").Content[]
+      })) as GeminiGenerateResponse;
+
+      const parts = response.candidates?.[0]?.content?.parts ?? [];
+      const functionCalls: Array<{ name: string; args: Record<string, unknown> }> = [];
+      for (const part of parts as Array<{ functionCall?: { name?: string; args?: Record<string, unknown> } }>) {
+        if (part.functionCall?.name) {
+          functionCalls.push({ name: part.functionCall.name, args: part.functionCall.args ?? {} });
+        }
+      }
+      return { functionCalls };
+    };
+
+    const loopResult = await runAgentToolLoop({
+      initialContents,
+      callModel,
+      executors: {
+        search_college_db: executeSearchCollegeDb,
+        search_internet: executeSearchInternet
+      }
     });
 
-    return structuredResponse;
+    const allRecords = [...input.recommendationRecords, ...loopResult.records];
+    const evidenceBlock = buildEvidenceBlock({
+      question: input.question,
+      history: input.history,
+      profileSummary: input.profileSummary,
+      records: loopResult.records,
+      deterministicRecommendations: input.recommendationRecords,
+      warnings: [],
+      missingData: []
+    });
+
+    const finalResponse = yield* this.synthesizeStream({
+      question: input.question,
+      history: input.history,
+      systemInstruction: input.systemInstruction,
+      evidenceBlock,
+      allowedEvidenceIds: allRecords.map((record) => record.evidence.sourceId)
+    });
+
+    return { ...finalResponse, allowedEvidence: allRecords.map((record) => record.evidence) };
   }
 
   // ── Evidence extraction post-stream ────────────────────────────────────────
