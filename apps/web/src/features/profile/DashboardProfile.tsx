@@ -253,7 +253,8 @@ function RecommendationSection({
                       matrix[round as string] = {};
                       years.forEach(year => {
                         const rec = recs.find(r => r.cutoff.admissionYear === year && String(r.cutoff.round) === round);
-                        matrix[round as string][year as string] = rec ? rec.cutoff.closingRank : '-';
+                        matrix[round as string][String(year)] = rec ? rec.cutoff.closingRank : '-';
+
                       });
                     });
 
