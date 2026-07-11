@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { executeSearchCollegeDb, executeSearchInternet } from "../src/features/counsellor/agentTools.ts";
+import { agentToolDeclarations, executeSearchCollegeDb, executeSearchInternet } from "../src/features/counsellor/agentTools.ts";
 import type { GroundingRecord } from "../src/features/counsellor/counsellorTypes.ts";
 
 const sampleRecord: GroundingRecord = {
@@ -82,4 +82,14 @@ test("executeSearchInternet rejects overly short queries without calling search"
 
   assert.equal(called, false);
   assert.match(result.responseForModel.output as string, /too short/);
+});
+
+test("agentToolDeclarations exposes search_college_db and search_internet as Ollama function-tool schemas", () => {
+  assert.equal(agentToolDeclarations.length, 2);
+  assert.deepEqual(agentToolDeclarations.map((decl) => decl.function.name), ["search_college_db", "search_internet"]);
+  for (const decl of agentToolDeclarations) {
+    assert.equal(decl.type, "function");
+    assert.equal(decl.function.parameters.type, "object");
+    assert.ok(decl.function.parameters.required?.includes("query"));
+  }
 });

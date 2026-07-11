@@ -1,41 +1,59 @@
-import { Type, type FunctionDeclaration } from "@google/genai";
 import type { fetchPublishedGroundingRecords } from "./counsellorService.ts";
 import type { WebSearchResult } from "./webSearchService.ts";
 import type { GroundingRecord } from "./counsellorTypes.ts";
 import { webSearchResultsToGroundingRecords } from "./groundingFormat.ts";
 
-export const searchCollegeDbDeclaration: FunctionDeclaration = {
-  name: "search_college_db",
-  description:
-    "Search AdmitWise's published college database: cutoffs, fees, placements, scholarships, campus life, clubs, facilities and location. Always call this before search_internet.",
-  parameters: {
-    type: Type.OBJECT,
-    properties: {
-      query: { type: Type.STRING, description: "Search query, reformulated from the student's question." },
-      collegeIds: {
-        type: Type.ARRAY,
-        items: { type: Type.STRING },
-        description: "Optional: restrict the search to these specific college IDs."
-      }
-    },
-    required: ["query"]
+export type OllamaToolDeclaration = {
+  type: "function";
+  function: {
+    name: string;
+    description: string;
+    parameters: {
+      type: "object";
+      properties: Record<string, unknown>;
+      required?: string[];
+    };
+  };
+};
+
+export const searchCollegeDbDeclaration: OllamaToolDeclaration = {
+  type: "function",
+  function: {
+    name: "search_college_db",
+    description:
+      "Search AdmitWise's published college database: cutoffs, fees, placements, scholarships, campus life, clubs, facilities and location. Always call this before search_internet.",
+    parameters: {
+      type: "object",
+      properties: {
+        query: { type: "string", description: "Search query, reformulated from the student's question." },
+        collegeIds: {
+          type: "array",
+          items: { type: "string" },
+          description: "Optional: restrict the search to these specific college IDs."
+        }
+      },
+      required: ["query"]
+    }
   }
 };
 
-export const searchInternetDeclaration: FunctionDeclaration = {
-  name: "search_internet",
-  description:
-    "Search the public internet. Only call this when search_college_db evidence is missing or insufficient to answer the question.",
-  parameters: {
-    type: Type.OBJECT,
-    properties: {
-      query: { type: Type.STRING, description: "Web search query." }
-    },
-    required: ["query"]
+export const searchInternetDeclaration: OllamaToolDeclaration = {
+  type: "function",
+  function: {
+    name: "search_internet",
+    description:
+      "Search the public internet. Only call this when search_college_db evidence is missing or insufficient to answer the question.",
+    parameters: {
+      type: "object",
+      properties: {
+        query: { type: "string", description: "Web search query." }
+      },
+      required: ["query"]
+    }
   }
 };
 
-export const agentToolDeclarations: FunctionDeclaration[] = [searchCollegeDbDeclaration, searchInternetDeclaration];
+export const agentToolDeclarations: OllamaToolDeclaration[] = [searchCollegeDbDeclaration, searchInternetDeclaration];
 
 export type ToolExecutionResult = {
   records: GroundingRecord[];
