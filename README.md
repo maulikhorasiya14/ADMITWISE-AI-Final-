@@ -11,7 +11,7 @@ The platform empowers students and parents to make high-stakes decisions by bala
 *   **Financial Insights & ROI:** Calculates true four-year costs, performs deterministic scholarship matching, and analyzes ROI against median placements.
 *   **AI Counsellor:** Context-aware assistance grounded *strictly* in published college context with source citations, ensuring zero hallucination.
 
-## Technical Architecture
+## The Tech Side
 
 AdmitWise AI is powered by a modern, full-stack architecture designed for accuracy, trust, and scalability.
 
@@ -40,6 +40,7 @@ The Indian engineering admission landscape is opaque, with raw data locked in PD
 *   pnpm 11 or newer
 *   Python 3.12 or newer
 *   A Supabase project (for database/auth)
+*   [Ollama](https://ollama.com/) (required for the local AI Counsellor and vector embeddings)
 
 ### 1. Web Application Setup
 Clone the repo and install dependencies:
@@ -75,5 +76,13 @@ uvicorn app.main:app --reload --port 8000
 ```
 The extraction API runs at `http://localhost:8000`.
 
+### 3. Local AI Setup (Ollama)
+The AI Counsellor feature runs entirely locally using Ollama for privacy and zero API costs.
+Ensure Ollama is installed and running, then pull the required models:
+```bash
+ollama pull qwen2.5:7b
+ollama pull nomic-embed-text
+```
+By default, the Next.js app will connect to Ollama at `http://localhost:11434`.
+
 ---
-*Built for the FlowZint 2026 Hackathon.*
