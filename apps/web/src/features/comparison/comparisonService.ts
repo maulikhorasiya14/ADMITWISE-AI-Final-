@@ -124,24 +124,43 @@ export async function listPublishedComparisonOptions(): Promise<
 > {
   try {
     const supabase = await createSupabaseServerClient();
-    const { data, error } = await supabase
-      .from("college_branches")
-      .select("id, name, degree, verification_status, confidence_level, colleges!inner(id, slug, name, city, state, is_published)")
-      .eq("verification_status", "published")
-      .eq("colleges.is_published", true)
-      .order("name", { ascending: true });
+    let allData: any[] = [];
+    let start = 0;
+    const step = 1000;
+    let hasMore = true;
 
-    if (error) {
-      return { success: false, message: "Unable to load comparison options." };
+    while (hasMore) {
+      const { data, error } = await supabase
+        .from("college_branches")
+        .select("id, name, degree, verification_status, confidence_level, colleges!inner(id, slug, name, city, state, is_published)")
+        .eq("verification_status", "published")
+        .eq("colleges.is_published", true)
+        .order("name", { ascending: true })
+        .order("id", { ascending: true })
+        .range(start, start + step - 1);
+
+      if (error) {
+        return { success: false, message: "Unable to load comparison options." };
+      }
+
+      if (data && data.length > 0) {
+        allData = allData.concat(data);
+      }
+
+      if (!data || data.length < step) {
+        hasMore = false;
+      } else {
+        start += step;
+      }
     }
 
-    const rows = ((data ?? []) as unknown as BranchQueryRow[]).map((row) => {
+    const rows = (allData as unknown as BranchQueryRow[]).map((row) => {
       const college = Array.isArray(row.colleges) ? row.colleges[0] : row.colleges;
       return {
-      optionId: row.id,
-      collegeName: college?.name ?? "Unknown college",
-      branchName: row.name,
-      label: `${college?.name ?? "Unknown college"} - ${row.name}`
+        optionId: row.id,
+        collegeName: college?.name ?? "Unknown college",
+        branchName: row.name,
+        label: `${college?.name ?? "Unknown college"} - ${row.name}`
       };
     });
 

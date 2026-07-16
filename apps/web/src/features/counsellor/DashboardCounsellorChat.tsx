@@ -231,9 +231,9 @@ export function DashboardCounsellorChat({ profile, recommendations }: DashboardC
   }
 
   return (
-    <div className="flex h-[800px] max-h-[80vh] flex-col overflow-hidden rounded-2xl border border-white/10 bg-card/80 shadow-2xl backdrop-blur-xl dark:bg-zinc-950/80">
+    <div className="flex h-[800px] max-h-[80vh] flex-col overflow-hidden rounded-xl border bg-card shadow-sm">
       {}
-      <div className="flex items-center justify-between border-b border-white/10 bg-gradient-to-r from-primary/10 to-transparent px-5 py-4">
+      <div className="flex items-center justify-between border-b bg-muted/30 px-5 py-4">
         <div className="flex items-center gap-3 font-semibold">
           <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-md">
             <Bot className="h-4 w-4" />
@@ -256,7 +256,7 @@ export function DashboardCounsellorChat({ profile, recommendations }: DashboardC
 
       {}
       {topRecs.length > 0 && (
-        <div className="flex gap-2 overflow-x-auto border-b border-white/5 bg-muted/20 px-4 py-2 scrollbar-hide">
+        <div className="flex gap-2 overflow-x-auto border-b bg-muted/10 px-4 py-2 scrollbar-hide">
           {topRecs.map((rec, idx) => (
             <button
               key={idx}
@@ -294,7 +294,7 @@ export function DashboardCounsellorChat({ profile, recommendations }: DashboardC
                   className={`relative max-w-[88%] rounded-2xl px-5 py-4 text-sm shadow-sm transition-all duration-300 ${
                     m.role === "user" 
                       ? "bg-gradient-to-br from-primary to-primary/80 text-primary-foreground rounded-tr-sm" 
-                      : "bg-background/80 border border-white/10 rounded-tl-sm backdrop-blur-md"
+                      : "bg-muted/50 border rounded-tl-sm"
                   }`}
                 >
                   {m.role === "assistant" && (
@@ -390,7 +390,7 @@ export function DashboardCounsellorChat({ profile, recommendations }: DashboardC
       </div>
 
       {}
-      <div className="border-t border-white/5 bg-gradient-to-t from-background to-background/80 p-4 backdrop-blur-md">
+      <div className="border-t bg-card p-4">
         <div className="mb-4 flex gap-2 overflow-x-auto pb-1 scrollbar-hide">
           {suggestedQuestions.map((sq) => (
             <button
@@ -423,7 +423,7 @@ export function DashboardCounsellorChat({ profile, recommendations }: DashboardC
                 }
               }}
               placeholder="Ask about these colleges..."
-              className="relative w-full resize-none rounded-xl border border-white/10 bg-background/80 px-4 py-3.5 pr-12 text-sm shadow-sm backdrop-blur-sm focus:outline-none focus:ring-1 focus:ring-primary/50 transition-all"
+              className="relative w-full resize-none rounded-xl border bg-background px-4 py-3.5 pr-12 text-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-primary/50 transition-all"
               rows={Math.min(4, Math.max(1, question.split('\n').length))}
               disabled={isStreaming}
             />
