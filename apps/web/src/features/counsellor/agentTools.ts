@@ -97,9 +97,9 @@ export async function executeSearchInternet(
     return { records: [], responseForModel: { output: "search_internet error: query too short." } };
   }
 
-  try {
+  try {
     const search = deps.search ?? (await import("./webSearchService.ts")).searchWeb;
-    const results = await search(query, { maxResults: 5 });
+    const results = await search(query, { maxResults: 3 });
     const records = webSearchResultsToGroundingRecords(results);
     if (records.length === 0) {
       return { records: [], responseForModel: { output: "No web results found." } };

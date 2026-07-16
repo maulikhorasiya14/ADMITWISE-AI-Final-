@@ -49,7 +49,6 @@ git clone <your-repo-url>
 cd AdmitWiseAI
 pnpm install
 ```
-
 ### Step 2: Database Setup (Local Supabase)
 We use the Supabase CLI to run a full local Postgres + Auth stack via Docker.
 1. Start the local database:
@@ -57,13 +56,17 @@ We use the Supabase CLI to run a full local Postgres + Auth stack via Docker.
 npx supabase start
 ```
 2. When the command finishes, it will print your local API credentials (e.g., `API_URL`, `ANON_KEY`, `SERVICE_ROLE_KEY`).
-3. Copy `.env.example` to `.env.local` and paste in your local Supabase credentials:
+3. Configure your environment variables by copying `.env.example` to `.env.local` and adding your Supabase credentials:
 ```env
 NEXT_PUBLIC_SUPABASE_URL=http://127.0.0.1:54321
 NEXT_PUBLIC_SUPABASE_ANON_KEY=<your-local-anon-key>
 SUPABASE_SERVICE_ROLE_KEY=<your-local-service-role-key>
 NEXT_PUBLIC_APP_URL=http://localhost:3000
+TAVILY_API_KEY=your_tavily_key
+GEMINI_API_KEY=your_gemini_key
+OPENROUTER_API_KEY=your_openrouter_key
 ```
+
 *(Note: Supabase CLI automatically applies all database migrations during `start`).*
 
 ### Step 3: Local AI Setup (Ollama)

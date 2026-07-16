@@ -16,6 +16,7 @@
     "@admitwise/scoring": "workspace:*",
     "@admitwise/shared-types": "workspace:*",
     "@hookform/resolvers": "^5.2.0",
+    "@openrouter/sdk": "^0.13.55",
     "@radix-ui/react-slot": "^1.2.0",
     "@supabase/ssr": "^0.8.0",
     "@supabase/supabase-js": "^2.50.0",

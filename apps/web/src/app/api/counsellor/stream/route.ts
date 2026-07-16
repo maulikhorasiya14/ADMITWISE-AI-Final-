@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 import { buildAgentPrimer } from "@/features/counsellor/counsellorService";
+import { getServerEnv } from "@/lib/env";
+import { OpenRouterAIProvider, getOpenRouterConfig } from "@/features/counsellor/openRouterProvider";
 import { OllamaAIProvider, getOllamaConfig, checkOllamaReachable } from "@/features/counsellor/ollamaProvider";
 import { counsellorStreamRequestSchema, type StreamChunk } from "@/features/counsellor/counsellorTypes";
 import { counsellorSystemInstruction, hasPromptInjectionAttempt, validateProviderResponse } from "@/features/counsellor/counsellorCore";
@@ -19,32 +21,42 @@ export async function POST(request: Request) {
       );
     }
 
-    const ollamaConfig = getOllamaConfig();
-    const reachability = await checkOllamaReachable(ollamaConfig.baseUrl);
+    const env = getServerEnv();
     const encoder = new TextEncoder();
+    let provider: any;
+    
+    // Use OpenRouter if API key is provided
+    if (env.OPENROUTER_API_KEY) {
+      provider = new OpenRouterAIProvider({ apiKey: env.OPENROUTER_API_KEY });
+    } else {
+      const ollamaConfig = getOllamaConfig();
+      const reachability = await checkOllamaReachable(ollamaConfig.baseUrl);
 
-    if (!reachability.success) {
-      const stream = new ReadableStream({
-        start(controller) {
-          const chunk: StreamChunk = {
-            type: "meta",
-            warnings: ["Ollama is not reachable."],
-            missingData: ["AI provider configuration is incomplete."],
-            status: "configuration_error"
-          };
-          controller.enqueue(encoder.encode(`data: ${JSON.stringify(chunk)}\n\n`));
+      if (!reachability.success) {
+        const stream = new ReadableStream({
+          start(controller) {
+            const chunk: StreamChunk = {
+              type: "meta",
+              warnings: ["Ollama is not reachable."],
+              missingData: ["AI provider configuration is incomplete."],
+              status: "configuration_error"
+            };
+            controller.enqueue(encoder.encode(`data: ${JSON.stringify(chunk)}\n\n`));
 
-          const textChunk: StreamChunk = {
-            type: "text",
-            content: `Ollama is not reachable yet. ${reachability.message ?? ""} Run "ollama serve" and "ollama pull ${ollamaConfig.model}" on the server.`.trim()
-          };
-          controller.enqueue(encoder.encode(`data: ${JSON.stringify(textChunk)}\n\n`));
+            const textChunk: StreamChunk = {
+              type: "text",
+              content: `Ollama is not reachable yet. ${reachability.message ?? ""} Run "ollama serve" and "ollama pull ${ollamaConfig.model}" on the server.`.trim()
+            };
+            controller.enqueue(encoder.encode(`data: ${JSON.stringify(textChunk)}\n\n`));
 
-          controller.enqueue(encoder.encode(`data: ${JSON.stringify({ type: "done" })}\n\n`));
-          controller.close();
-        }
-      });
-      return new Response(stream, { headers: { "Content-Type": "text/event-stream" } });
+            controller.enqueue(encoder.encode(`data: ${JSON.stringify({ type: "done" })}\n\n`));
+            controller.close();
+          }
+        });
+        return new Response(stream, { headers: { "Content-Type": "text/event-stream" } });
+      }
+      
+      provider = new OllamaAIProvider({ baseUrl: ollamaConfig.baseUrl, model: ollamaConfig.model });
     }
 
     const primerResult = await buildAgentPrimer(parsed.data, parsed.data.recommendationCollegeIds);
@@ -73,8 +85,6 @@ export async function POST(request: Request) {
       });
       return new Response(stream, { headers: { "Content-Type": "text/event-stream" } });
     }
-
-    const provider = new OllamaAIProvider({ baseUrl: ollamaConfig.baseUrl, model: ollamaConfig.model });
 
     const stream = new ReadableStream({
       async start(controller) {

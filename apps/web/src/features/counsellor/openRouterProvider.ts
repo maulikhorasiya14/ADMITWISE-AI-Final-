@@ -13,109 +13,70 @@ import {
 import { buildMultiTurnContents } from "./counsellorCore";
 import {
   agentContentsToOllamaMessages,
-  ollamaToolCallsToFunctionCalls,
-  providerResponseJsonSchema,
-  type OllamaMessage,
-  type OllamaToolCall
+  type OllamaMessage
 } from "./ollamaMessages";
-import type { AgentContent, CallModelResult } from "./agentLoop";
+import type { AgentContent } from "./agentLoop";
+import { OpenRouter } from "@openrouter/sdk";
 
+// Define the 3 models as requested
+const OPENROUTER_MODELS = [
+  "google/gemma-4-31b-it:free",
+  "nvidia/nemotron-3-nano-30b-a3b:free",
+  "nvidia/nemotron-3-ultra-550b-a55b:free"
+];
 
-export function getOllamaConfig() {
+function getRandomModel(): string {
+  const randomIndex = Math.floor(Math.random() * OPENROUTER_MODELS.length);
+  return OPENROUTER_MODELS[randomIndex];
+}
+
+export function getOpenRouterConfig() {
   const env = getServerEnv();
   return {
-    baseUrl: env.OLLAMA_BASE_URL,
-    model: env.OLLAMA_MODEL,
-    embedModel: env.OLLAMA_EMBED_MODEL
+    apiKey: env.OPENROUTER_API_KEY
   };
 }
 
-export async function checkOllamaReachable(baseUrl: string): Promise<{ success: boolean; message?: string }> {
-  try {
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 2000);
-    const response = await fetch(`${baseUrl}/api/tags`, { signal: controller.signal });
-    clearTimeout(timer);
-    if (!response.ok) {
-      return { success: false, message: `Ollama responded with HTTP ${response.status}.` };
+export class OpenRouterAIProvider implements AIProvider {
+  private openrouter: OpenRouter;
+
+  constructor(private readonly config: { apiKey?: string }) {
+    if (!this.config.apiKey) {
+      throw new Error("OPENROUTER_API_KEY is not configured.");
     }
-    return { success: true };
-  } catch {
-    return { success: false, message: `Cannot reach Ollama at ${baseUrl}.` };
-  }
-}
-
-
-type OllamaChatResponse = {
-  message: { role: string; content: string; tool_calls?: OllamaToolCall[] };
-  done: boolean;
-};
-
-async function ollamaChat(opts: {
-  baseUrl: string;
-  model: string;
-  messages: OllamaMessage[];
-  tools?: unknown[];
-  format?: unknown;
-}): Promise<OllamaChatResponse> {
-  const response = await fetch(`${opts.baseUrl}/api/chat`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      model: opts.model,
-      messages: opts.messages,
-      tools: opts.tools,
-      format: opts.format,
-      stream: false
-    })
-  });
-
-  if (!response.ok) {
-    throw new Error(`Ollama chat request failed: HTTP ${response.status}`);
+    this.openrouter = new OpenRouter({ apiKey: this.config.apiKey });
   }
 
-  return (await response.json()) as OllamaChatResponse;
-}
+  private async chatWithFallback(messages: OllamaMessage[], isExtraction = false): Promise<string> {
+    // Try to pick a random model, and fallback to others if it fails
+    const shuffledModels = [...OPENROUTER_MODELS].sort(() => 0.5 - Math.random());
 
-async function* ollamaChatStream(opts: {
-  baseUrl: string;
-  model: string;
-  messages: OllamaMessage[];
-}): AsyncGenerator<string, void, unknown> {
-  const response = await fetch(`${opts.baseUrl}/api/chat`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ model: opts.model, messages: opts.messages, stream: true })
-  });
-
-  if (!response.ok || !response.body) {
-    throw new Error(`Ollama chat stream request failed: HTTP ${response.status}`);
-  }
-
-  const reader = response.body.getReader();
-  const decoder = new TextDecoder();
-  let buffer = "";
-
-  while (true) {
-    const { done, value } = await reader.read();
-    if (done) break;
-    buffer += decoder.decode(value, { stream: true });
-    const lines = buffer.split("\n");
-    buffer = lines.pop() ?? "";
-    for (const line of lines) {
-      if (!line.trim()) continue;
-      const chunk = JSON.parse(line) as OllamaChatResponse;
-      if (chunk.message?.content) {
-        yield chunk.message.content;
+    for (let i = 0; i < shuffledModels.length; i++) {
+      const model = shuffledModels[i];
+      try {
+        const response = await this.openrouter.chat.send({
+          chatRequest: {
+            model,
+            messages: messages as any,
+            stream: false
+          }
+        });
+        
+        // Handle extraction for JSON 
+        // @openrouter/sdk format might not natively have response_format yet, so we just rely on prompt for :free models
+        // @ts-ignore
+        const content = response.choices?.[0]?.message?.content || "";
+        if (content) return content;
+      } catch (err) {
+        console.error(`OpenRouter model ${model} failed:`, err);
+        // If this is the last model, throw
+        if (i === shuffledModels.length - 1) {
+          throw err;
+        }
       }
     }
+    throw new Error("All OpenRouter models failed.");
   }
-}
-
-
-export class OllamaAIProvider implements AIProvider {
-  constructor(private readonly config: { baseUrl: string; model: string }) {}
-
 
   async answer(input: AIProviderRequest): Promise<ProviderResponse> {
     const contents = buildMultiTurnContents(input.history, input.question, input.evidenceBlock, input.allowedEvidenceIds);
@@ -124,24 +85,18 @@ export class OllamaAIProvider implements AIProvider {
       ...agentContentsToOllamaMessages(contents as AgentContent[])
     ];
 
-    const response = await ollamaChat({
-      baseUrl: this.config.baseUrl,
-      model: this.config.model,
-      messages
-    });
+    const content = await this.chatWithFallback(messages);
 
-    if (!response.message.content) {
-      throw new Error("Ollama response was empty.");
+    if (!content) {
+      throw new Error("OpenRouter response was empty.");
     }
 
-    return await this.extractStructuredEvidence({ answer: response.message.content, allowedEvidenceIds: input.allowedEvidenceIds });
+    return await this.extractStructuredEvidence({ answer: content, allowedEvidenceIds: input.allowedEvidenceIds });
   }
-
 
   async *stream(input: AIProviderRequest): AsyncGenerator<string, ProviderResponse, unknown> {
     return yield* this.synthesizeStream(input);
   }
-
 
   private async *synthesizeStream(input: AIProviderRequest): AsyncGenerator<string, ProviderResponse, unknown> {
     const contents = buildMultiTurnContents(input.history, input.question, input.evidenceBlock, input.allowedEvidenceIds);
@@ -151,14 +106,46 @@ export class OllamaAIProvider implements AIProvider {
     ];
 
     let fullText = "";
-    for await (const chunkText of ollamaChatStream({ baseUrl: this.config.baseUrl, model: this.config.model, messages })) {
-      fullText += chunkText;
-      yield chunkText;
+    
+    // Auto fallback for streaming
+    const shuffledModels = [...OPENROUTER_MODELS].sort(() => 0.5 - Math.random());
+    let streamSuccess = false;
+
+    for (let i = 0; i < shuffledModels.length; i++) {
+      const model = shuffledModels[i];
+      try {
+        const stream = await this.openrouter.chat.send({
+          chatRequest: {
+            model,
+            messages: messages as any,
+            stream: true
+          }
+        });
+
+        for await (const chunk of stream) {
+          const content = chunk.choices?.[0]?.delta?.content;
+          if (content) {
+            fullText += content;
+            yield content;
+          }
+        }
+        
+        streamSuccess = true;
+        break; // Stop after first successful stream
+      } catch (err) {
+        console.error(`OpenRouter stream with ${model} failed:`, err);
+        if (i === shuffledModels.length - 1) {
+          throw err;
+        }
+      }
+    }
+
+    if (!streamSuccess) {
+      throw new Error("All OpenRouter models failed during streaming.");
     }
 
     return await this.extractStructuredEvidence({ answer: fullText, allowedEvidenceIds: input.allowedEvidenceIds });
   }
-
 
   async *streamWithAgent(input: {
     question: string;
@@ -201,13 +188,13 @@ export class OllamaAIProvider implements AIProvider {
     return { ...finalResponse, allowedEvidence: combinedRecords.map((record) => record.evidence) };
   }
 
-
   private async extractStructuredEvidence(opts: {
     answer: string;
     allowedEvidenceIds: string[];
   }): Promise<ProviderResponse> {
     try {
       const extractionPrompt = [
+        "You are a strict JSON formatter. ONLY output valid JSON. DO NOT wrap in markdown blocks like ```json.",
         "Given this AI counsellor answer and the list of allowed evidence IDs, extract which evidence IDs were actually referenced or relevant.",
         `Allowed evidence IDs: ${opts.allowedEvidenceIds.join(", ") || "none"}`,
         `Answer to analyse:\n${opts.answer}`,
@@ -219,18 +206,16 @@ export class OllamaAIProvider implements AIProvider {
         "- answer: copy the answer text exactly as provided, do not modify it."
       ].join("\n");
 
-      const response = await ollamaChat({
-        baseUrl: this.config.baseUrl,
-        model: this.config.model,
-        messages: [{ role: "user", content: extractionPrompt }],
-        format: providerResponseJsonSchema
-      });
+      const responseText = await this.chatWithFallback([{ role: "user", content: extractionPrompt }], true);
+      
+      // Cleanup markdown block if model ignored the prompt
+      let cleanJson = responseText.trim();
+      if (cleanJson.startsWith("```json")) {
+        cleanJson = cleanJson.replace(/```json/g, "").replace(/```/g, "").trim();
+      }
 
-      if (!response.message.content) throw new Error("Empty extraction response");
-
-      return providerResponseSchema.parse(JSON.parse(response.message.content));
+      return providerResponseSchema.parse(JSON.parse(cleanJson));
     } catch {
-
       return {
         answer: opts.answer,
         status: "grounded",
