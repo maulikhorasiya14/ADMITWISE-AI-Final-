@@ -29,6 +29,22 @@ The Indian engineering admission landscape is opaque, with raw data locked in PD
 *   **Staging & Verification:** Data is pushed to staging tables in Supabase. Human researchers can verify the data for accuracy.
 *   **Publication:** Admins "Publish" data. The student-facing Next.js app queries *only* published data, ensuring absolute trustworthiness.
 
+### 🏆 What I Built (My Contributions)
+This project serves as my core showcase for AI and Data Science. My specific contributions to the architecture include:
+
+#### 1. The Python Data Pipeline
+I architected and built the robust data ingestion pipeline (`apps/data-pipeline`) that transforms chaotic, unstructured admission data into a clean, queryable Postgres database.
+*   **Tech:** Python 3.12, FastAPI, Pydantic, Pandas, and PyMuPDF.
+*   **Features:** Developed bulk import scripts to parse massive CSVs (e.g., JoSAA cutoffs from 2018-2025) and extract textual information from PDF brochures. Implemented data normalization algorithms to resolve naming inconsistencies (like "cse" vs "Computer Science and Engineering") and built a staging layer in Supabase for human verification before publication.
+
+#### 2. The Explainable AI Chat Counsellor
+I engineered the intelligent, context-aware AI counsellor system that grounds responses in verified data and internet facts, ensuring zero hallucination.
+*   **Tech:** Next.js API Routes, OpenRouter SDK, Ollama (Local LLM), Server-Sent Events (SSE) for streaming, and `pgvector` for RAG.
+*   **Features:**
+    *   **Retrieval-Augmented Generation (RAG):** Created a system that dynamically retrieves published college data and student profile context via `pgvector` embeddings and injects it into the LLM context window.
+    *   **Strict Grounding Protocol:** Designed prompt engineering techniques and validation layers that force the AI to cite specific `source_ids`. If the AI cannot ground its answer in the provided evidence or the web, it gracefully falls back to an `insufficient_data` state instead of hallucinating.
+    *   **Multi-Provider Fallback Routing:** Built a resilient AI orchestration layer that routes queries to OpenRouter (`google/gemma-4-31b-it:free`) first, with automatic fallbacks to Google Gemini API (`googleSearchRetrieval`), and local Ollama models (`qwen2.5:7b`) to guarantee high availability and real-time internet search capabilities for missing context.
+
 ---
 
 ## 🚀 Step-by-Step Setup Guide
