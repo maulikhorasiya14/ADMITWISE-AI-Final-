@@ -19,7 +19,7 @@ export function matchScholarships(input: MatchScholarshipsInput): ScholarshipMat
 
   return input.scholarships
     .filter(isPublishedScholarship)
-    .filter((scholarship) => !allowedScholarshipIds || allowedScholarshipIds.has(scholarship.id) || isGlobalScholarship(scholarship))
+    .filter((scholarship) => !allowedScholarshipIds || allowedScholarshipIds.has(scholarship.id))
     .map((scholarship) => evaluateScholarship({
       scholarship,
       profile: input.profile,
@@ -132,7 +132,7 @@ function isPublishedCollegeScholarship(link: CollegeScholarshipRecord) {
 }
 
 function isGlobalScholarship(scholarship: ScholarshipRecord) {
-  return scholarship.applicable_states.length > 0 || scholarship.applicable_categories.length > 0;
+  return scholarship.applicable_states.length === 0 && scholarship.applicable_categories.length === 0;
 }
 
 function matchesList(values: string[], profileValue: string) {

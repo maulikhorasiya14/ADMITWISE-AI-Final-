@@ -8,8 +8,8 @@ export const collegeListItemSchema = z.object({
   name: z.string().min(1),
   short_name: z.string().nullable(),
   ownership: ownershipSchema,
-  city: z.string().min(1),
-  state: z.string().min(1),
+  city: z.string(),
+  state: z.string(),
   is_published: z.boolean()
 });
 

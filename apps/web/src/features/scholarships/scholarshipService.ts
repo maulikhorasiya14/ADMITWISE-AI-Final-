@@ -26,7 +26,7 @@ export async function getScholarshipMatches(input: {
 }): Promise<ScholarshipServiceResult<ScholarshipMatch[]>> {
   try {
     const [scholarships, collegeLinks, fourYearCollegeCost] = await Promise.all([
-      fetchPublishedScholarships(),
+      fetchPublishedScholarships(input.collegeId),
       fetchPublishedCollegeScholarships(input.collegeId),
       input.collegeId ? fetchLatestFourYearCost(input.collegeId) : Promise.resolve(null)
     ]);
@@ -55,7 +55,7 @@ export async function listPublishedScholarshipsForCollege(collegeId: string): Pr
 }>>> {
   try {
     const [scholarships, links] = await Promise.all([
-      fetchPublishedScholarships(),
+      fetchPublishedScholarships(collegeId),
       fetchPublishedCollegeScholarships(collegeId)
     ]);
 
@@ -73,20 +73,39 @@ export async function listPublishedScholarshipsForCollege(collegeId: string): Pr
   }
 }
 
-async function fetchPublishedScholarships(): Promise<ScholarshipServiceResult<ScholarshipRecord[]>> {
+async function fetchPublishedScholarships(collegeId?: string): Promise<ScholarshipServiceResult<ScholarshipRecord[]>> {
   const supabase = await createSupabaseServerClient();
-  const { data, error } = await supabase
+  let selectQuery = "id, name, provider, description, applicable_states, applicable_categories, gender_requirement, maximum_family_income, minimum_marks, minimum_rank, benefit_amount, benefit_description, required_documents, renewal_conditions, application_deadline, official_url, source_id, verification_status, is_published, sources(id, title, source_type, academic_year, confidence_level)";
+  
+  if (collegeId) {
+    selectQuery += ", college_scholarships!inner(college_id)";
+  }
+
+  let query = supabase
     .from("scholarships")
-    .select("id, name, provider, description, applicable_states, applicable_categories, gender_requirement, maximum_family_income, minimum_marks, minimum_rank, benefit_amount, benefit_description, required_documents, renewal_conditions, application_deadline, official_url, source_id, verification_status, is_published, sources(id, title, source_type, academic_year, confidence_level)")
+    .select(selectQuery)
     .eq("verification_status", "published")
     .eq("is_published", true)
     .order("name", { ascending: true });
+
+  if (collegeId) {
+    query = query.eq("college_scholarships.college_id", collegeId);
+  }
+
+  const { data, error } = await query;
 
   if (error) {
     return { success: false, message: "Unable to load published scholarships." };
   }
 
-  const parsed = scholarshipListSchema.safeParse(data ?? []);
+  // Supabase returns the joined data, which might fail schema validation if we don't strip it or if the schema doesn't expect it.
+  // The safeParse will ignore extra keys if z.object is used, but we can also map it to be safe.
+  const cleanedData = (data ?? []).map((d: any) => {
+    const { college_scholarships, ...rest } = d;
+    return rest;
+  });
+
+  const parsed = scholarshipListSchema.safeParse(cleanedData);
   if (!parsed.success) {
     return { success: false, message: "Scholarship data did not match the expected format." };
   }
